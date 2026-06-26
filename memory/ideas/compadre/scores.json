@@ -1,0 +1,61 @@
+{
+  "dimension_scores": {
+    "demand": 78,
+    "competition": 82,
+    "monetization": 35,
+    "distribution": 80,
+    "retention": 40,
+    "founder_market_fit": 64
+  },
+  "weights_applied": {
+    "demand": 0.20,
+    "competition": 0.10,
+    "monetization": 0.20,
+    "distribution": 0.20,
+    "retention": 0.15,
+    "founder_market_fit": 0.15
+  },
+  "floor_penalty": 1.0,
+  "base_score": 62.4,
+  "missing_discount": 1.0,
+  "final_score": 62,
+  "verdict": "test",
+  "score_confidence": "medium",
+  "missing_inputs": [
+    "Structured dimension JSONs from upstream pipeline (desire_scores, competitors, pricing, cac, distribution, retention) were not generated — scores were synthesized from reports/01-06 + pm-role.md.",
+    "No validated pricing/CAC data — monetization scored on qualitative B2B2C plausibility only.",
+    "No real retention/usage data — CAR registration is largely an episodic (often one-time) job."
+  ],
+  "framing_caveat": "This rubric targets commercial indie B2C apps. Compadre is an open-source public good for a government hackathon (haCARthon). The monetization axis is partly N/A for the immediate hackathon goal (win + ship an open-source MVP); it matters only for post-hackathon sustainability. Do not over-weight the low monetization score against the near-term objective.",
+  "top_strengths": [
+    { "dimension": "competition", "score": 82, "reason": "Empty niche: no WhatsApp CAR assistant for small/low-literacy farmers. RAImundo (Embrapa) doesn't cover CAR; Agrotools/ScoreCAR serves corporations, not the producer (report 04)." },
+    { "dimension": "distribution", "score": 80, "reason": "96% of producers use WhatsApp for business (report 03); cooperatives/ATER are pre-existing trust channels; team has cooperative contacts (Mario). Plausible compadre-to-compadre word-of-mouth loop." }
+  ],
+  "top_weaknesses": [
+    { "dimension": "monetization", "score": 35, "reason": "No proven payer. Producer value prop is explicitly 'sem pagar caro', so producer WTP is low. Viable paths (cooperative/government/credit-linked B2B2C) are plausible but unvalidated." },
+    { "dimension": "retention", "score": 40, "reason": "Core job (regularize the CAR) is episodic, often one-time. Low natural usage frequency unless expanded to recurring rural-bureaucracy needs or annual updates." }
+  ],
+  "killer_dimensions": [],
+  "riskiest_assumption_test": {
+    "assumption": "Pequenos produtores vao confiar e usar um 'compadre' no WhatsApp para resolver o CAR — E a orientacao em linguagem simples e correta e segura o bastante para eles agirem sem risco juridico.",
+    "category": "demand",
+    "criticality": 5,
+    "uncertainty": 4,
+    "rat_score": 20,
+    "experiment": {
+      "type": "Concierge MVP (humano no loop, via cooperativa)",
+      "description": "Por 1-2 cooperativas (contato do Mario), abrir um numero de WhatsApp 'Compadre' operado manualmente por voces, com UM conhecedor de CAR/EMATER validando cada resposta. 15-30 produtores mandam duvidas por audio; voces respondem em linguagem simples e guiam o proximo passo. Medir COMPORTAMENTO, nao opiniao. Versao comprimida (5-10 produtores em 48-72h) cabe dentro da maratona.",
+      "duration": "10-14 dias (ou 48-72h comprimido na maratona)",
+      "estimated_cost": "~R$0 (WhatsApp manual)",
+      "pass_threshold": ">=60% dos produtores dao o proximo passo concreto do CAR apos a orientacao (sinal comportamental) E 100% das respostas validadas como corretas por um especialista (sinal de seguranca/precisao).",
+      "fail_action": "pivot"
+    },
+    "all_assumptions_ranked": [
+      { "assumption": "A orientacao do bot sobre CAR e precisa e segura o bastante para o produtor agir (risco de erro juridico/perda de terra; RAG juridico alucina 17-43%, report 05).", "criticality": 5, "uncertainty": 4, "rat_score": 20 },
+      { "assumption": "Alguem (cooperativa/governo/banco) vai pagar para sustentar a solucao apos o premio.", "criticality": 4, "uncertainty": 5, "rat_score": 20 },
+      { "assumption": "O pequeno produtor de baixa escolaridade vai engajar um assistente no WhatsApp para uma tarefa legal/burocratica.", "criticality": 5, "uncertainty": 3, "rat_score": 15 },
+      { "assumption": "As cooperativas vao efetivamente distribuir/endossar o Compadre.", "criticality": 4, "uncertainty": 3, "rat_score": 12 },
+      { "assumption": "O time consegue construir o MVP (WhatsApp + STT + RAG juridico) no prazo da maratona.", "criticality": 4, "uncertainty": 2, "rat_score": 8 }
+    ]
+  }
+}
