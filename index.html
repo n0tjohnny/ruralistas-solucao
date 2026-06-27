@@ -708,6 +708,60 @@
     </div>
   </section>
 
+  <!-- ============ FONTES & VERIFICAÇÃO ============ -->
+  <section data-screen-label="Fontes" style="padding: 84px 40px 96px; background: #1F2D22; color: #DCD3BE;">
+    <div style="max-width: 1080px; margin: 0 auto;">
+      <p style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--ga-accent, #D6A23E); font-weight: 700; margin: 0 0 18px;">Fontes &amp; verificação</p>
+      <h2 style="font-family: 'Spectral', serif; font-weight: 700; font-size: 38px; line-height: 1.1; margin: 0 0 16px; max-width: 880px; color:#F3ECDC; letter-spacing: -0.3px;">Todo número desta página tem origem rastreável.</h2>
+      <p style="font-size: 17px; line-height: 1.6; max-width: 860px; margin: 0 0 44px; color: #9FB191;">Os dados foram checados contra fontes primárias (SFB, INPE, MapBiomas, Copernicus) numa verificação adversarial de 10 agentes — registrada em <strong style="color:#C7CFB9;">reports/09</strong>, que prevalece em caso de conflito. Onde um número é <em>meta</em> e não dado observado, está marcado como tal.</p>
+
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 22px;">
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">~66 mil/dia · +1 mi · 9 UFs</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">Capacidade da Análise Dinamizada do SICAR e cadastros já analisados (jun/2026).</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">SFB / Min. Agricultura · Canal Rural<br><a href="https://www.gov.br/florestal/pt-br/assuntos/noticias/2026/junho/sfb-apoia-estados-na-analise-de-mais-de-um-milhao-de-cadastros-rurais" style="color:#9FB191; word-break:break-all;">gov.br/florestal</a> · <a href="https://www.canalrural.com.br/agricultura/sistema-de-analise-dinamizada-do-car/" style="color:#9FB191; word-break:break-all;">canalrural.com.br</a></p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">2,3% → 5,9% · 8,1 mi · ~94%</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">Balanço Sicar 2025: 8.154.567 cadastros, 480.700 concluídos (5,9%; era 2,3% até 2024) → ~94% sem conclusão.</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">SFB / balanço Sicar 2025<br><a href="https://portaldbo.com.br/select_post/conclusoes-do-cadastro-ambiental-rural-car-enfim-decolam/" style="color:#9FB191; word-break:break-all;">portaldbo.com.br</a></p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">~3% em ~12 anos</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">Ritmo histórico da análise manual do CAR — o contraste que justifica a automação. ~8 h por cadastro no manual.</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">SFB (relato) · verificado em reports/09 #3<br><a href="https://dialogoflorestal.org.br/apenas-33-das-propriedades-brasileiras-tiveram-a-analise-do-cadastro-ambiental-rural-car-concluida/" style="color:#9FB191; word-break:break-all;">dialogoflorestal.org.br</a></p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">PRODES/DETER · 6,25 ha</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">Alertas de mudança contínuos e gratuitos; 6,25 ha é a área mínima mapeável (MMU) do PRODES. Shapefile/WFS.</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">INPE · TerraBrasilis<br><a href="https://terrabrasilis.dpi.inpe.br/downloads/" style="color:#9FB191; word-break:break-all;">terrabrasilis.dpi.inpe.br</a></p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">MapBiomas Col.10 · Sentinel‑2</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">t0 aberto: Col.10 é anual e <strong style="color:#C7CFB9;">Landsat 30 m</strong> (o produto 10 m é via GEE — não usado). Sentinel‑2 10 m via Copernicus/CDSE.</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">MapBiomas · Copernicus<br><a href="https://brasil.mapbiomas.org/colecoes-mapbiomas/" style="color:#9FB191; word-break:break-all;">brasil.mapbiomas.org</a> · <a href="https://dataspace.copernicus.eu/" style="color:#9FB191; word-break:break-all;">dataspace.copernicus.eu</a></p>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.18); border-radius: 16px; padding: 26px 24px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:var(--ga-accent, #D6A23E); margin:0 0 4px; line-height:1;">Edital nº 158/2026</p>
+          <p style="font-size:13px; line-height:1.5; margin:0 0 12px; color:#C7CFB9;">Regras do haCARthon: remoto, R$75k (5×15k), open source esperado (não obrigatório). SICAR ingere shapefile/KML em SIRGAS 2000.</p>
+          <p style="font-size:12px; line-height:1.5; margin:0; color:#8FA383;">ENAP · repositório oficial<br><a href="https://repositorio.enap.gov.br/handle/1/9909" style="color:#9FB191; word-break:break-all;">repositorio.enap.gov.br</a></p>
+        </div>
+
+      </div>
+
+      <div style="display:flex; gap:14px; align-items:flex-start; padding:18px 22px; background:rgba(214,162,62,0.10); border-radius:12px;">
+        <div style="width:26px;height:26px;border-radius:7px;background:var(--ga-accent, #D6A23E);color:#1F2D22;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;flex:none;">i</div>
+        <p style="font-size:14px; line-height:1.55; margin:0; color:#C7CFB9;"><strong style="color:#F3ECDC;">São metas, não dados observados:</strong> kappa ≥ 0,70, recall do delta ≥ 0,90, falso‑negativo visível = 0 e score 73/100 são <em>critérios de aceitação propostos</em> a validar no piloto (backtest H1), não medições já realizadas. O cockpit e os nomes de imóvel são ilustrativos.</p>
+      </div>
+    </div>
+  </section>
+
 </div>
 </body>
 </html>
