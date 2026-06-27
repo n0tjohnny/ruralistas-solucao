@@ -810,7 +810,10 @@
   var nav=document.getElementById('ga-navbar'); if(!nav) return;
   var btns=nav.querySelectorAll('button[data-nav]');
   var tabs=document.querySelectorAll('[data-tab]');
+  var order=Array.prototype.map.call(btns,function(b){return b.getAttribute('data-nav');});
+  var cur=0;
   function show(name){
+    var idx=order.indexOf(name); if(idx<0) return; cur=idx;
     for(var i=0;i<tabs.length;i++){ tabs[i].style.display = tabs[i].getAttribute('data-tab')===name?'block':'none'; }
     for(var j=0;j<btns.length;j++){
       var on=btns[j].getAttribute('data-nav')===name;
@@ -822,8 +825,21 @@
     }
     if(window.scrollTo) window.scrollTo(0,0);
   }
+  function go(delta){ var n=cur+delta; if(n<0||n>=order.length) return; show(order[n]); }
   for(var k=0;k<btns.length;k++){ btns[k].removeAttribute('onclick'); btns[k].style.cursor='pointer';
     (function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-nav')); }); })(btns[k]); }
+  // swipe horizontal entre abas (Android/touch). Nao bloqueia scroll vertical; ignora a navbar (que rola sozinha).
+  var sx=0, sy=0, track=false;
+  document.addEventListener('touchstart',function(e){
+    if(e.touches.length!==1){ track=false; return; }
+    if(e.target && e.target.closest && e.target.closest('#ga-navbar')){ track=false; return; }
+    track=true; sx=e.touches[0].clientX; sy=e.touches[0].clientY;
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(!track) return; track=false;
+    var t=e.changedTouches[0], dx=t.clientX-sx, dy=t.clientY-sy;
+    if(Math.abs(dx)>60 && Math.abs(dx)>Math.abs(dy)*1.6){ go(dx<0?1:-1); }
+  },{passive:true});
   show('resumo');
 })();
 </script>
