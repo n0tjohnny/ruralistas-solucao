@@ -1,0 +1,365 @@
+00:00:02 - 00:01:06
+[música] [música] [música] Olá, pessoal. Tudo bem com vocês? Sejam muito bem-vindos e bem-vindas. Abertura oficial do RCK cartom, a maratona de soluções pro cadastro ambiental rural UCAR. Uma realização conjunta aí do Ministério da Gestão e da Inovação em Serviços Públicos, UMGI, da Fundação Brasileira Pro Desenvolvimento Sustentável, né, o FBDS, do governo da Noruega por meio do Ministério das Relações Exteriores e Embaixada da Noruega no Brasil, da Escola Nacional de Administração Pública ANAP e do Impact
+
+00:00:56 - 00:02:01
+Hub Brasil. E chegou o grande dia, gente. Quero começar já perguntando quem é que tá na expectativa aí, quem é que tá com ansiedade de começar, né? Finalmente chegou o grande dia aí do nosso Racatom. Tá empolgado? Comenta aí no chat. Diga aí a cidade que você é, gente, o número da sua equipe. Pessoal, já são 178 equipes formadas, então superou aí todas as nossas expectativas. A gente tá sendo, a gente tá super feliz, né? A gente tá vendo aí vocês conversarem, né? equipes se conectando diferentes cidades, diferentes regiões
+
+00:01:28 - 00:02:33
+do Brasil para propor soluções. Então, muito bacana ver tanta gente reunida, né, para essa causa tão importante. Então, equipe 93 tá aqui, equipe 31, equipe 19. Quem mais tá aqui? Comenta no chat as equipes 106, 126. É isso aí. Piauí tá aqui presente, pessoal. Eu sou a Ana da Penic Lobster, né? Vou com vou estar aqui com vocês ao longo desses dias acompanhando, né, a operação da maratona. Vou estar aqui passando orientações para vocês, ajudando, né, a esclarecer dúvidas e garantir que vocês consigam, né, aproveitar o máximo essa
+
+00:02:01 - 00:02:58
+jornada. A gente começa agora oficialmente o RCA. a gente já teve algumas lives, né, alguns encontros anteriores ali, onde a gente trouxe conteúdo preparatório para vocês. Então, se você perdeu, recomendo que você assista, assista as gravações, gente, porque a gente traz muita dica, muito conteúdo ali para auxiliar vocês no desenvolvimento das soluções. Então, assistam, porque a partir de agora, pessoal, é que o jogo começa, a partir de agora é mão na massa. Então, durante esse final de semana aí vocês vão
+
+00:02:30 - 00:03:24
+trabalhar, né, para desenvolver essas propostas de solução pros desafios, né, ligados ao car. Então vocês vão ter que pensar aí ideias, né, que possam eh contribuir para tornar essa ferramenta mais simples, ainda mais eficiente, né, mais integrada e que traga mais impacto pro Brasil. Então, essa live é justamente para pra gente dar esse start, né, a gente dá esse essa largada aí pra gente relembrar também algumas orientações para vocês, para falar sobre as entregas obrigatórias e também é um momento de tirar dúvidas, tá? Então
+
+00:02:56 - 00:03:49
+vocês vão poder esclarecer as dúvidas de vocês sobre a plataforma do CAR. Então somente hoje, pessoal, sexta-feira, vocês vão ter a oportunidade de esclarecer aí a dúvida de vocês com o pessoal do MGI, da data prévia. Então a gente já já vai ter um momento de tirar dúvidas e às 7 horas da noite a gente também vai ter outra live exclusiva para essas dúvidas. E ali no Discord também vocês vão poder ir mandando as dúvidas técnicas que a gente vai levar pro time e vai fazer essa ponte com vocês. Então
+
+00:03:23 - 00:04:21
+a gente já disponibilizou para vocês tutorial de como navegar ali no ambiente de teste, a gente passou vários sites ali com insumos das plataformas, né? Então pessoal, assistam os materiais porque vocês têm que estar por dentro, né? Saber mergulhar aí sobre os desafios para conseguir propor uma solução. Beleza? Então, pra gente começar, quero chamar aqui alguns representantes, né, das instituições organizadoras para dar as boas-vindas para vocês. Então, para abrir essa rodada, quero chamar Giovana
+
+00:03:52 - 00:05:04
+Aguiara, ela que é coordenadora geral de gestão de sistemas do CAR. G, boa tarde. Conta pra gente aí qual que é a importância da gente ter uma maratona dedicada ao car. Boa tarde, gente. Eh, bom, eu sou Giovana Aguiar, sou coordenadora geral de gestão de sistemas do CAR aqui no MGI, sou engenheira florestal. Eh, eu primeiro quero dar a boa-vinda a todos vocês, as boas-vindas, né, a todos vocês, todos os participantes. Eh, não só o nosso primeiro racartom, né, o primeiro racartal rural, mas também é o mundo do cadastro
+
+00:04:28 - 00:05:29
+ambiental rural. Então, só de saber que a gente tem mais de 1000 pessoas com todo tipo de perfil, né, com todo tipo de histórico, de formação, conhecendo, se aprofundando no cadastro ambiental rural, estudando sobre código florestal, conhecendo as nossas ferramentas, podendo ajudar, né, a partir de agora difundir um pouco mais sobre a legislação ambiental brasileira, sobre o cadastro ambiental rural. Isso já é assim pra gente fantástico, sabe? E o cadastro ambiental rural é a ferramenta de gestão ambiental mais importante do
+
+00:04:58 - 00:06:03
+nosso país. Nós temos a totalidade praticamente dos imóveis rurais cadastrados eh no CAR e ele liga as informações sobre a terra, as pessoas e as informações ambientais. Então é um potencial para ser utilizado para diversas políticas públicas, né? E [roncando] nesse contexto, o nosso maior desafio é trazer as pessoas para perto do carro, é garantir que eles compreendam quais são as implicações do cadastro mental rural para eles, do código florestal, pros seus imóveis, pra sua vida e garantir também que eles têm
+
+00:05:31 - 00:06:30
+a melhor experiência possível interagir com cadastro, interagir com o sistema, interagir com o meu imóvel rural, com as diversas ferramentas que a gente tem à disposição paraa população lidar, né, com seu cadastro, interagir com os órgãos ambientais de meio ambiente, estaduais, eh, com os órgãos estaduais de meio ambiente, aliás. Então, vocês vão ter oportunidade de conhecer várias dessas nossas ferramentas. Eu aconselho que mergulhem nisso, realmente estudem, se aprofundem, tirem dúvidas. A gente tá
+
+00:06:00 - 00:06:59
+à disposição ao longo dos próximos dias para tirar as dúvidas de vocês e as inovações que a gente vai pensar aqui vão poder fazer a diferença na vida de muita gente, sabe? Então, desejo a todos vocês uma ótima competição, que vocês tenham um final de semana de trabalho muito rico, muito divertido também, né? Muito prazeroso. E tenho em mente que é isso, o que vocês estão fazendo aqui vai impactar a gestão ambiental do nosso país, vai impactar a vida de eh milhares de produtores e produtoras rurais.
+
+00:06:30 - 00:07:32
+Então, bom trabalho. A gente tá torcendo por todos vocês. >> Que maravilha. Gi, você continua com a gente que no final a gente volta ali para tirar as dúvidas do pessoal e você é especialista nisso, representando aqui a MGI. Então continua acompanhando a gente nos bastidores que eu já te puxo de volta, beleza? Então agora eu convido Carolina Salcedo, ela que é gerente de projetos, gente, do FBDS, ponto focal aí do projeto Car DPG na Fundação. Carol, seja bem-vinda. Queria passar a palavra para você aí,
+
+00:07:00 - 00:08:07
+compartilhar um pouco, né, do papel aí da fundação sobre essa iniciativa e do projeto KDPG nesse movimento. Boa tarde. >> Boa tarde. Boa tarde a todos. Super obrigada, Ana. Bom, é uma alegria paraa FBDS tá aqui participando desse evento e também ver o Racaton reunindo esse número enorme de pessoas aí para esse desafio que é tão relevante pro Brasil. Aproveito aí para agradecer todo mundo que tá fazendo esse esse evento acontecer, né? MGI, ENAP, Datap, Impact Hub, Governo da Noruega e todos os
+
+00:07:34 - 00:08:42
+outros parceiros que fazem parte do projeto CardPG. Então, o Racaton, ele faz parte de uma das entregas do do projeto CARD DPG, que é o projeto de cadastro ambiental rural como bem público digital. Então, que é um projeto bastante ambicioso, né? ele quer fortalecer o car e trazendo bastante soluções, sempre soluções abertas, interoperáveis e colaborativas, transformando o carro num bem público digital pra gente conseguir fazer com que essas soluções saiam evoluindo continuamente, né, sendo compartilhadas
+
+00:08:08 - 00:09:16
+e reutilizadas e adaptadas. Essa é a grande intenção. Para além disso, o projeto CARDPG, ele ele tem uma tem um outro lado que é para além dessa desse desenvolvimento tecnológico que já vem acontecendo, né? vários produtos do projeto já vem sendo entregues desde o início dele, mas a gente tem uma intenção de formar uma comunidade tanto de pessoas quanto instituições comprometidas com inovação aberta, né, voltadas paraa gestão pública. Então, ao longo do projeto, né, estamos junto aí até 2028, acontecerão workshops,
+
+00:08:42 - 00:09:45
+encontros, capacitações, outros espaços de troca. Daqui a pouco a gente tá aí lançando o website do projeto, o próprio GitHub, que boa parte aí tenho certeza que os participantes já exploraram, né? Então a gente tem essa intenção de fortalecer essa rede, ampliar esse conhecimento do que que é um bem público digital, entender qual é a utilidade dele pro desenvolvimento do nosso país. Ã, que mais? Acho que assim, dentro do projeto Cardp, né, a gente com essa intenção de criar essa essa comunidade, a gente quer
+
+00:09:14 - 00:10:16
+fortalecer essa autonomia, né, assim, a inovação e a transformação dentro do setor público brasileiro. É isso. Eh, bom, e aí queria também trazer que essa empolgação toda tem muito a ver com o Racaton, né, que ele é uma praticamente o início, né, que dessa dessa construção dessa comunidade que a gente tá querendo criar. Então, a gente tá esperando aqui um monte de gente tá entrando para participar desse desafio, mas na verdade o que a gente espera é que várias pessoas continuem com a gente nessa construção do projeto e também
+
+00:09:45 - 00:10:52
+dessa agenda. Então, como a Giovana aí já colocou, né, nesses três dias, para além de de de soluções, inovações, a gente vai tá trazendo um um um eh caminhos, né, para fortalecer a implementação do Código Florestal, da política ambiental, né, cuidar aí de fato, eh, apoiar e ampliar a conservação da biodiversidade. Então, os impactos são múltiplos, é muito mais do que a gente tá conseguindo medir da parte da FBDS. A gente acredita nisso, né? Que ciência, tecnologia, inovação só fazem sentido quando a gente tá ali
+
+00:10:19 - 00:11:28
+encontrando benefícios concretos para pessoas e também pro meio ambiente. É isso. Ã, Ricardo, então, aí pros participantes, muitíssimo obrigado por toparem esse desafio. Eh, cada uma das equipes que estão se formando, elas são únicas, né? Estão trazendo aí as personalidades, os conhecimentos, tudo que já viveu, essa diversidade de ideias. Então, é isso que é muito rico, eh isso que tá deixando aí a gente com muito brilho nos olhos. Aproveitem, divirtam-se, troquem, aprendam com os mentores, com colaborem uns com os
+
+00:10:53 - 00:11:54
+outros. A ideia é exatamente é essa, né? A essa perspectiva de que a soluções para problemas muito complexos dificilmente vão sair de uma de uma mente só. Precisa dessa diversidade de olhares. É isso. Então é isso que tá inspirando aí o projeto CARDPG, o Racarton e tenha inspirado muito a atuação da FBDS. Desejo a todos um ótimo evento. Obrigada mais uma vez. >> Maravilha, Carol. Muito obrigada pela sua fala. É isso, gente. Vocês estão fazendo parte de um movimento, né? Esse movimento que tá sendo começado agora
+
+00:11:24 - 00:12:27
+com essa comunidade que a gente tá criando, com certeza vai gerar bastante impacto aí. Carol, muito obrigada. Continua acompanhando a gente aí nos bastidores, tá bom? Tchau, tchau gente. Na sequência então eu quero chamar aqui Michael Trento, ele que é gerente de projetos da Coordenação Geral de Inovação Aberta da Diretoria de Inovação da ENAP, Michael, a ENAP ela tem uma atuação aí muito forte, né? inovação aberta no setor público. Então, deixa a mensagem aí paraas equipes, né, que estão começando essa jornada hoje.
+
+00:11:55 - 00:13:03
+Boa tarde, Ana, obrigado pelo convite. Eh, primeiramente eu vou saudar toda essa todos os inovadores que se inscreveram neste prêmio, uma quantidade enorme de pessoas, todas as equipes que estarão conosco aí nesse final de semana de Racatom. Eh, saudar também o pessoal do do MGI, com os quais a gente tem uma relação umbilical, né? Nós somos fundação vinculada ao MGI, a FBDS, Fundação Brasileira de Desvimento Sustentável, Data Preve, Serviço Florestal Brasileiro, Impact Hub e, não menos importante, quem tá patrocinando aqui o
+
+00:12:30 - 00:13:41
+governo da Noruega, né? Eh, como você falou, a INAP tem uma relação umbilical com a inovação. A gente tá fazendo 40 anos este ano. É uma escola que uma instituição que começou como como a escola de governo, continua sendo escola de governo, mas lá atrás ela foi muito voltada paraa formação de servidores, né, em especial aqueles que passam nos concursos públicos federais. Hoje a gente tá aqui com o pessoal do concurso público nacional unificado, duas turmas, escola lotada, mas a escola foi crescendo, eh, também oferecendo
+
+00:13:05 - 00:14:17
+custo de aperfeiçoamento tanto para servidor público federal como também de outros estados e municípios. Hoje temos curso de pós-graduação, especialização, mestrado, doutorado. Eh, com o tempo a instituição foi se transformando em mais que uma escola, uma espécie de hub de conhecimento, né, investindo em pesquisa. análise de dados, eh, estudo de evidências. E hoje a gente tá fazendo 10 anos da em que a inovação chegou forte na escola, né? A inovação sempre foi a marca da escola. A gente tem um prêmio, um
+
+00:13:41 - 00:14:40
+concurso inovação, por exemplo, já tá na passou da sua 30ª edição, mas de 10 anos para cá a gente fundou um laboratório de inovação. A gente tem incentivado transformação governamental por meio da inovação e investimos na inovação aberta. Eu sou da Coordenação Geral de Inovação ATA, que tá é o ponto focal da escola para esse tipo de de prêmio, né? A gente que envolve um racatom e já vou dar a deixa, tem dois desafios de inovação aberta ainda que virão no âmbito do cadastro metal rural. Então vocês
+
+00:14:10 - 00:15:15
+>> vocês serão aí convidados privilegiados nesse aspecto, né? Eh, e hoje a INAP é muito mais que uma escola, como eu sempre digo, é uma ICT, é uma instituição que que voltada pro ensino, voltada para pesquisa, voltada paraa inovação. A gente tem Escola Virtual de Governo, por exemplo, que é é aberta para todo mundo, com cursos gratuitos. Temos mais de 1000 cursos abertos, mais de 10 milhões de certificados emitidos. Talvez um curso que você esteja pagando esteja lá, só para provocar aqui. Tem curso
+
+00:14:43 - 00:15:48
+para tudo lá, especialmente voltado paraa formação, tem trilhas de inovação lá, tem a nossa plataforma desafios, eh, mediante a qual vocês, eh, se interaram desse prêmio e tem outros lá também, não só que a INAP realiza, mas no qual a gente abriga iniciativas de estado, município, instituições diversas lá. Então com, né, convido vocês a pesquisar um pouquinho os cursos que tem na EVG, olhar o nosso portal INAP, plataforma desafios, sigam a gente nas redes sociais e se sintam à vontade para fazer
+
+00:15:15 - 00:16:22
+parte desse time, entendeu? Ó, desejo maior sorte para todo mundo. Bom trabalho, boa diversão esse final de semana e que a gente possa se rever aqui na escola, especial na semana de inovação. Novembro tá aí. E se vocês não puderem estar presente aqui, eh, participem virtualmente e se puder e passar aqui e me reconhecer, vai, vai ganhar um grande abraço e até um bombom. Um abração, gente. Fique com Deus. >> Valeu, Mael. É isso aí. Então gente, ó, conheçam mais sobre NAAP e as inúmeras possibilidades. O pessoal tá comentando
+
+00:15:49 - 00:16:46
+aqui no chat que já faz curso, então tem outras oportunidades também, desafio de inovação. Michael, muitíssimo obrigada pela sua participação, continua acompanhando a gente nos bastidores. E pra gente fechar essa rodada de boas-vindas, pessoal, eu quero chamar aqui a Isadora Starlin. Ela que é gerente de projetos da Impact Hub Brasil e Brasília. Isa, seja bem-vinda. Fala um pouquinho pra gente aí da importância, né, da colaboração entre instituições e participantes, né, de uma maratona como essa. Boa tarde.
+
+00:16:17 - 00:17:16
+>> Oi, Ana. Obrigada. Um oi enérgico aqui para todos os participantes que se inscreveram, que se interessaram. Eh, a gente com os parceiros aqui, a gente foi de maneira empolgada desde a semana passada vendo o volume das inscrições crescerem. Era uma vibração atrás de outra, né? e superou as nossas expectativas de engajamento. Por isso também agradecer muito a gerente de projetos, a Thaísa Magalhães, junto com o especialista de inovação aberta, o Rulan, que faz parte da equipe do Impact Hub, que tá nos bastidores colocando a
+
+00:16:47 - 00:17:52
+mão na massa para fazer também tudo isso acontecer com vocês. E também mandar uma saudação eh de agradecimento aos nossos parceiros, né, Embaixada da Noruega, MGI, FBDS e ENAP. E também que dizer que é importante a gente trazer um pouquinho o contexto da como que surgiu Impactub dentro dessa desse círculo de inovação, né? Então a gente tá já trabalha com a ecossistema de inovação e impacto social no mundo todo. Estamos espalhados em mais de 160 países e aqui no Brasil também estamos em vários estados
+
+00:17:19 - 00:18:26
+brasileiros e aqui em Brasília na capital federal, eh, onde eu estou sediada. E aí é importante falar que a gente tá com uma parceria eh de lançar desafios de inovação aberta, aceleração ao longo de uma parceria longeva com a ENAP, que foi fechada em 2024, no qual a gente vai lançar mais de 54 desafios via plataforma desafios. Então fiquem atento lá, porque a gente sempre tá lançando. Temos outros editais também de inovação aberta, eh, já abertos, eh, conexões inovação aberta Nordeste, agora a gente
+
+00:17:52 - 00:19:02
+tem o Racart e vão sair outros esse ano e ano que vem. Então, é um convite para vocês estarem atentos, participando. A gente vai colocar vocês no meil aí também. E agora eu queria só falar um pouquinho da importância da colaboração e de trazer o que que a Carolina Salcedo falou muito da criação de uma comunidade no qual o Impact tem expertise. Então, a nossa ideia eh da maratona não é só também eh enviar premiação, mas também criar um ambiente de colaboração, de aprendizado, de trocas e de experiências
+
+00:18:27 - 00:19:32
+no quais a gente reúne várias partes interessadas, né? Estudante, vão ter empresários, vão ter startups, vão ter pesquisadores no qual vão estar nesse momento intenso, né? Porque a gente sabe que em dois dias e meio eh trabalhar tudo que vocês vão ter que fazer é uma aventura, mas é uma aventura que deve ser divertida e também cheia de aprendizados. Então, a gente acha que esse papel de reunir parceiros de várias vertentes num ambiente inovador e colaborativo é o que a gente tem de entregar, eh, é o que a gente entrega de
+
+00:19:00 - 00:20:14
+melhor. Então é dizer que o Racaton não é apenas uma competição, né, mas é um mecanismo mesmo de mobilização, é uma oportunidade para que vocês consigam cocriarem soluções para desafios reais e com o potencial de gerar benefícios para milhares de pessoas, porque a gente tá eh diretamente eh relacionado a instituições públicas a nível federativo, que tem um poder eh de impacto social, ambiental enorme no Brasil a nível federal, estadual e municipal. E aí, se a gente for descer um pouquinho a lupa, a gente também tá falando eh das
+
+00:19:37 - 00:20:42
+comunidades que estão lá, os produtores rurais, os analistas ambientais que estão trabalhando. Então, a gente vai ajudar a trazer decisões mais qualificadas para as políticas públicas, mais eficiente, conectados a essas pessoas que estão realmente em campo no dia a dia. Então o nosso convite aqui é que vocês aproveitem esses dias com muita curiosidade, espírito colaborativo e muita disposição para construir juntos, compartilhar conhecimento, desafiar ideias. A gente às vezes tem aquelas ideias prontas, mas
+
+00:20:09 - 00:21:18
+será que aquilo que eu tava pensando é o melhor para vocês experimentarem? É um laboratório de experiências aqui que o Racaton vai propiciar e com os especialistas técnicos de alto padrão, alto nível, que vocês vão ter acesso. Então aproveitem. E as melhores soluções realmente nascem eh, não nascem de respostas prontas, elas nascem de comunidades que acredito que é possível construir um futuro melhor em conjunto. Então, em nome do Impact Hub parceiros, a gente acredita que por meio de uma construção coletiva, a gente vai
+
+00:20:43 - 00:21:40
+conseguir os melhores resultados. Desejo um excelente racatom a todos e a todas e muito obrigada, >> Isa. Muitíssimo obrigada. fala super inspiradora. E é isso mesmo, gente, participar de um racatom, eu falo que é uma experiência assim paraa vida, porque vocês desenvolvem habilidades de comunicação, de trabalho em equipe, né, de propor soluções. Então, aproveitem esse aprendizado como a Isa trouxe. Aproveitem essa oportunidade para aprender, para trocar, para ensinar e para se divertir. Isa, obrigada, viu?
+
+00:21:12 - 00:22:17
+Continua acompanhando a gente aí nos bastidores. Gente, agora sim foi dada a largada aí pro nosso Rartom. Então, como vocês viram, né, pessoal, essa maratona aí reúne diferentes instituições em torno de um objetivo, que é fortalecer o cadastro ambiental rural, né, como uma infraestrutura essencial aí pro país. Então, mais do que pensarí em uma melhoria de sistema, né, a gente tá falando em criar soluções mesmo que podem apoiar melhores decisões pro território brasileiro, né? Então, sobre regularização ambiental, sobre a
+
+00:21:44 - 00:22:48
+produção rural, sobre conservação, restauração. Então, se você tá aqui hoje, é porque você também se importa. Então, a gente tá super feliz e agradece seu tempo, a sua participação e a sua dedicação. Agora bora então começar, bora fazer uma retrospectiva rápida, né, das principais orientações aqui para todo mundo começar já alinhado, né? Logo na sequência a gente já vai falar sobre a primeira entrega deção, mas aproveitem, vão mandando aí, ó, as dúvidas de vocês no chat, que daí a gente vai responder a tudo no final.
+
+00:22:16 - 00:23:15
+Mas, principalmente, pessoal, foquem nas dúvidas sobre a plataforma, sobre os desafios, porque a Geovana vai voltar aqui para responder pra gente no final, beleza gente? Então, bora lá. Retrospectiva, objetivo. Então, vocês já sabem, em três dias vão precisar criar uma solução para um dos desafios que são esses daí. tá surgindo dúvida. Ah, mas eu posso fazer uma solução pros três desafios? Gente, pode ser que a sua solução de alguma forma ela resolva e atinge os três desafios, mas você vai ter que escolher um principal, você vai
+
+00:22:46 - 00:23:50
+ter que mirar nele, tá? Então, cada equipe vai escolher um desafio e vai propor uma solução. Ana, eu posso fazer parte de duas equipes? Não, gente, você só pode participar de uma equipe e vai escolher um desafio, tá? Então, muita atenção a isso. Nós disponibilizamos para vocês muitos materiais, tá? Então, tem o briefing dos desafios com todas as orientações, tem ali todas as lives preparatórias que a gente já trouxe material para vocês, tem vídeos tutoriais de como navegar no ambiente teste, tem vídeos que a gente preparou e
+
+00:23:18 - 00:24:17
+disponibilizou para vocês. Lá dentro do Discord tem um canal chamado Materiais de Apoio, que tem todos os links, pessoal, de outras plataformas também conectadas ali o carlementam o car. Então é fundamental que vocês mergulhem, pessoal, que vocês mergulhem aí nos desafios, nas plataformas já existentes, existentes, porque vocês precisam entender, né, o problema e precisam entender, navegar, se aprofundar para poder propor soluções. Então, a gente disponibilizou todo esse material para vocês e vocês têm que ter conhecimento
+
+00:23:47 - 00:24:45
+do que já existe para não desenvolver algo que já existe, que já tá sendo rodado, tá? Então, verifiquem esses materiais, tá? tá no grupo de WhatsApp, tá no e-mail e também tá no Discord disponível para vocês. Beleza? Como que funciona então Racaton Online, pessoal? 100% dentro do ambiente virtual, então é dentro do Discord, né, que vão rolar as interações. Tem ali a programação com todos os links das lives. É ali que vocês vão ter as mentorias também que vão pedir auxílio dos mentores, orientação das entregas e também depois
+
+00:24:16 - 00:25:08
+a avaliação vai ser feita de forma online. Então vocês vão ter aí três dias começando hoje e acabando domingo para colocar a mão na massa e desenvolver as soluções. A gente vai trazer lives de tirúvidas, né? Então, como eu falei, daqui a pouquinho e também às 7 horas da noite, live exclusiva de tirar dúvidas para vocês. Aí vocês vão começar a desenvolver também as entregas. A gente vai ter três entregas parciais. Já vou explicar quais são essas entregas aqui. Vão contar ali com a ajuda dos mentores,
+
+00:24:42 - 00:25:37
+né, para desenvolver ali essas entregas. No final desses três dias, vocês precisam submeter essas entregas para concorrer à premiação. Então, a gente tem premiação aí para cinco melhores equipes. As cinco melhores ideias, independente do desafio, vão ganhar premiação em dinheiro, que vai ser dividida aí entre todos os integrantes da equipe. Beleza? Importante, pessoal, confiram o edital, né? Ali tem os critérios todos que a gente vai avaliar pela banca. Então, leiam os materiais. A gente disponibilizou muita coisa para
+
+00:25:09 - 00:26:11
+vocês acompanharem e estarem preparados, tá? equipes. Já tem dúvidas aqui sobre as equipes, pessoal? São vocês mesmos que vão formar as equipes. A gente já tem aí quase 180 equipes formadas, né? No mínimo duas pessoas e no máximo seis integrantes. Essas equipes precisam estar formadas até hoje, 11:59 da noite, tá? Então elas têm que ser formadas dentro do Discord, porque quando você forma a equipe, você recebe uma numeração. Com essa numeração, a sua vaga está garantida dentro do Rartom. E tem muita gente ainda sem time. Então,
+
+00:25:40 - 00:26:37
+se a sua equipe tem vaga, pessoal, vai lá, não tô sem time, recruta pessoas que estão querendo muito contribuir. Bora acolher todo mundo, bora fazer todo mundo participar aí dessa experiência, tá? Entregas, gente, muita atenção em relação às entregas, tá? Então, a gente vai ter três etapas: Ideação, protótipo e PIT. Vale a pena reforçar que a gente já fez lives preparatórias falando sobre ação, falando sobre protótipo, falando sobre PIT, aonde a gente traz dicas, a gente traz conteúdo para vocês. Então é
+
+00:26:09 - 00:27:09
+fundamental que vocês assistam, porque isso vai ajudar a direcionar vocês, né, na construção das soluções. Então, esses links também estão disponíveis para vocês aí em todos os canais que a gente disponibilizou, tá? E aí, para essas etapas que a gente já trouxe o conteúdo, a gente vai ter entregas, tá? Então, na entrega deação vocês vão responder perguntas sobre o processo de criação da ideia. Já vou mostrar ela para vocês. No protótipo vocês vão precisar desenvolver, né, um vídeo demonstração mostrando como essa solução funciona.
+
+00:26:39 - 00:27:35
+Lembrando que vocês não vão precisar nenhum entregar, né, nenhum código, nem desenvolver de fato um sistema funcionando aí durante o Racarton. O nosso foco é justamente a construção e validação da ideia. Então o que os jurados querem entender, né, é qual problema vocês estão resolvendo, para quem, né, como que resolve esse problema, por que ele é relevante e o potencial de impacto. Então esse é o foco. Então a entrega, gente, é de um protótipo. Então você pode fazer ele por desenho de telas, por navegação, enfim,
+
+00:27:07 - 00:28:08
+pode desenvolver da forma como quiserem, mas vocês vão fazer um vídeo demonstração pra gente para publicar nessa entrega. Beleza? falando do PIT, então, então o protótipo vocês vão ter 2 minutos para mostrar como funciona. E por fim, o pit, né, que é uma apresentação geral da ideia ali que vocês vão ter que fazer o pit utilizando slides e áudio, tá? Esse pit vai ter no máximo 3 minutos. Então, a gente vai ter protótipo de 2 minutos, pit de 3 minutos e mais um material de ideação. São essas três entregas que os jurados vão
+
+00:27:37 - 00:28:33
+avaliar. Então, as entregas todas elas são complementares e os jurados vão analisar as três entregas para votar nas soluções. Beleza? Onde que eu vou realizar essas entregas? Na plataforma que a gente desenvolveu para vocês, pro HCartou. Logo depois da live, a gente vai liberar esse acesso para vocês. Então, vocês vão conferir lá no Discord o link e aí vocês vão ver que na plataforma vai tá divididinho assim, né? Inclusive, a primeira entrega que a gente tem ali é sobre o cadastro da equipe. Então, ali você vai oficialmente
+
+00:28:05 - 00:29:03
+colocar o número do Discord ali dentro, vai colocar os integrantes que fazem parte. Então isso vocês precisam fazer até hoje, meia-noite, tá? As outras entregas, entrega 1, 2 e três, você tem até domingo à noite para realizar. E aí, gente, vocês vão ver que na plataforma de entregas, ao clicar em cada uma desses quadradinhos, tem as orientações do que precisa ser feito, tá? Então vocês conseguem já ver o que vai acontecer. E lá para baixo tem o botão de fazer a entrega e é bem tranquilinho na plataforma vocês vão colocando as
+
+00:28:33 - 00:29:34
+respostas, tá? Sugestão, façam isso no Discord, no Drive, algum rascunho e depois de ter as respostas vocês entrem na plataforma para escrever, tá? Copiem e colhem ali. Por quê? Porque tem gente que preenche direto na plataforma, internet cai, luz cai, perde o que tá escrito, tá? Então a plataforma só vai salvar quando vocês enviarem. Então, muita atenção, não escrevam direto na plataforma sem enviar, senão vocês correm risco de perder o material. Beleza? Mas é bem tranquilinho aqui, campos para vocês digitarem e muita
+
+00:29:04 - 00:30:00
+atenção, quero trazer esse ponto de atenção paraa entrega do Pit, né? Então, eh, muita gente acompanhou a live de Pit, aonde eu trouxe ali uma sugestão de estrutura e também mostrei onde deveria ser a gravação do PIT, né? Em primeiro momento, a gente ia fazer a gravação do PIT dentro da plataforma do Rartom, mas a gente teve aí esse sucesso aí de equipes, a gente tá com quase 200 equipes. Então, para não sobrecarregarem o sistema e gerar lentidão, a gente sabe que o tempo de vocês é precioso também.
+
+00:29:32 - 00:30:31
+Então, a gente vai fazer, a gente mantém, né, com slides e áudio, mas é livre aonde vocês vão gravar esse pit, tá? Então, a gente sugere ali o próprio Canva, você pode fazer os slides ali já gravar e baixar. Então o pit vai ser feito da mesma forma que o protótipo. Vocês vão gravar ele, subir no YouTube e colocar o link nessa entrega, tá? Então, diferente do que eu tinha apresentado na live de Pit, a gente fez essa atualização, mas todas as orientações estão descritas para vocês dentro das entregas, tá? Então, o pit tem que ter
+
+00:30:01 - 00:30:58
+no máximo 3 minutos, tem que ser obrigatoriamente feito com slides e áudio. Então, você vai gravar, fazer uma apresentação de slides e vai gravar áudio em cima, né, navegando pelos slides, como se você tivesse fazendo uma apresentação ao vivo, tá? Pode gravar em qualquer plataforma. A gente recomenda o Canva. Tem inclusive um tutorial mostrando como você grava isso no Canva. Depois você vai pegar esse vídeo, subir no YouTube e colocar o link na entrega. Mas falarei mais sobre isso, né, no domingo, quando a gente trouxer ali, né,
+
+00:30:29 - 00:31:29
+as orientações da live eh do da entrega de pit. Beleza? Então, ah, todos os integrantes da equipe têm que responder a entrega, não. Escolham aí uma pessoa da equipe, né? Uma entrega por equipe. Então, uma pessoa vai preencher e realizar as entregas. Ah, Ana, mas eu enviei de ação, mas a gente conversou aqui com o mentor e mudou, a gente revu aqui. Que que eu faço? É só você submeter de de novo, né, a entrega deção, porque a gente sempre vai considerar a última versão enviada, tá? Então não tem problema, envia de novo
+
+00:31:00 - 00:32:06
+que a gente vai excluir a anterior e considerar sempre a última que você enviar. Beleza, pessoal? Todas as entregas devem ser realizadas até domingo, dia 28, às 11:59 da noite, horário de Brasília. a gente tem Brasil todo participando, então muita atenção. É 11:59 do horário de Brasília, tá? A plataforma ela vai fechar nesse horário e aí vocês não vão conseguir realizar mais nenhuma das entregas. Então não deixem pra última hora, pessoal. A gente vai liberar já já depois dessa live o link para essa plataforma para vocês
+
+00:31:33 - 00:32:29
+verem as entregas e já começar a trabalhar nas submissões, combinado? mentores, gente. Então vocês vão ter acesso, né, a mentores de diferentes áreas do conhecimento. Então as orientações a gente também vai colocar lá dentro do Discord para vocês, mas dentro da sala exclusiva da sua equipe, você vai pedir mentoria sobre o que você estiver precisando, tá? E aí a gente vai fazer essa conexão, o mentor vai até a tua sala conversar com vocês. Então vocês viram que cada sala tem canal de áudio também, então sugiro que vocês
+
+00:32:01 - 00:32:55
+conversem com o mentor. Às vezes a mentoria por chat, gente, ela não flui tão bem. É mais fácil chamar o mentor pro canal de áudio. Mentor, tô querendo desenvolver isso, isso e aquilo. O que que você acha? É muito mais fácil vocês terem essa troca por voz, tá? Então a nossa sugestão é que vocês puxem essas mentorias pro canal de voz, tá? Então depois a gente vai passar essas orientações de como vocês pedem os mentorias por lá. Como eu já falei, mentorias sobre os desafios a gente vai ter somente hoje, sexta-feira, pessoal.
+
+00:32:27 - 00:33:26
+Então aproveitem, mandem as dúvidas de vocês sobre os desafios, sobre a plataforma, tá? A gente vai responder algumas aqui, outras que não derem tempo, a gente vai responder para vocês no Discord também. A gente vai ter uma live mais tarde, às 7 horas, para tirar dúvidas exclusivas de vocês sobre os desafios. Então aproveitem aí para tirar essas dúvidas, beleza? programação. Então, começamos hoje, a gente vai até domingo, então tem aí amanhã às 9 da manhã e domingo às 9 da manhã a gente vai fazer uma live rápida só para abrir
+
+00:32:57 - 00:33:55
+a entrega ali de protótipo, explicar o que tem que fazer, abrir a entrega de pit, explicar o que tem que fazer e tirar eventuais dúvidas que vocês tenham. Então, participem aí das lives. O prazo, como eu falei, para inscrição de equipe é hoje, mas as outras entregas você vai entregar ali até domingo, combinado? Lembrando, 11:59 da noite. Eu vou falar isso bastante para vocês não esquecerem. Então, Discord, pessoal, todo mundo tem que tá lá dentro do Discord, já falei, tá? Tem tudo lá, tem todas as orientações. Então, separem um
+
+00:33:26 - 00:34:21
+tempinho para ler as orientações. Ah, mas eu não sei qual que é minha equipe, se eu já tô numa equipe. Gente, lá embaixo, ó, lá embaixo, no canto esquerdo, tem o número da sua equipe. Se tiver aparecendo ali, é o número da sua equipe, tá? Aqui eu trouxe o exemplo da equipe cinco, mas o número que estiver aparecendo é o número da sua equipe. Ah, mas não tem número nenhum ali, então você ainda não tá com a sua equipe registrada, tá? Porque a sala exclusiva da sua equipe vai estar aparecendo ali embaixo, beleza? Comunicação, pessoal,
+
+00:33:54 - 00:34:45
+fiquem de olho no grupo de WhatsApp, também no canal de avisos do Discord, a gente vai passar as orientações lá dentro. Então agora a gente não vai mandar tanto e-mail para vocês, a gente vai centralizar as informações nesses ambientes pra gente ganhar mais agilidade, beleza? Para finalizar, então, respeito o pessoal acima de tudo, né? a gente quer que esse seja um ambiente seguro, né, colaborativo e acolhedor para vocês. Então, a gente não vai tolerar nenhum tipo de preconceito, discriminação,
+
+00:34:19 - 00:35:20
+assédio, comportamento aí inadequado. Então, se vocês passarem por alguma situação desconfortável, até mesmo com mentor, algo assim, percebeu algo errado, chama a organização, conversa com a gente. A gente tá aqui, né, para eh ter essa oportunidade de aprender, de trocar, de testar ideias, né, de construir junto. Então, a gente quer que vocês aproveitem a jornada, não é? Não é para vocês ficarem ansiosos, com medo, mas a gente disponibilizou para vocês muita informação. Então, a gente quer também que vocês eh verifiquem tudo que
+
+00:34:50 - 00:35:50
+a gente preparou, porque com certeza muitas dúvidas de vocês estão sanadas já com os materiais de apoio, tá? A gente tá aqui para ajudar vocês. Então, sigam as etapas, não tenham medo de perguntar. A gente tá aqui para tornar essa experiência também a mais divertida possível, tá bom? A gente quer que vocês curtam aí a jornada. dúvidas. Gente, eu já vi que vocês foram mandando várias dúvidas aí no chat. Mandem as dúvidas. Eu vou abrir rapidinho aqui. Já vou puxar a GI para cá. Mas eu vou abrir rapidinho aqui, gente, a entregue então
+
+00:35:19 - 00:36:24
+de ideação, para já puxar para vocês o que que a gente vai pedir, tá? Compartilhar só aqui minha tela. Então, dá um zoom aqui. A gente tem então aqui a plataforma, né, pessoal? E aqui então o cadastro de equipe, como eu falei para vocês, o prazo é hoje, então todas as equipes devem preencher aqui hoje, tá? É só clicar, preencher as informações que tão ali, tá? Então rolou, tranquilinho, preencheu. E aqui é entrega um de ideação, pessoal. Então, entrega um que que a gente tá pedindo para vocês, né? Aqui processo de
+
+00:35:57 - 00:36:46
+brainstorm, então para vocês contarem pra gente como que foi esse processo da escolha da ideia, né? Quais ideias surgiram? Qual ideia vocês vão desenvolver para vocês contarem aí pra gente esse processo de construção, qual problema vocês querem resolver, quem enfrenta esse problema, o que que acontece hoje, né, que gera essa dificuldade, por que esse problema é importante? Então vocês vão responder pra gente. Solução, descreva a solução que vocês estão querendo criar, como é que ela funciona, como é que ela resolve
+
+00:36:21 - 00:37:10
+o problema que vocês apresentaram aqui em cima. Para quem é a solução de vocês, quem que vai se beneficiar, né? Produtor rural, analista ambiental, quem que vai ser? Escolham, né? Expliquem porque vocês escolheram esse público. Impacto. Então, quais são os impactos e resultados esperados com a ideia de vocês, né? O que que mudaria pra vida do produtor rural, pro car, pros órgãos ambientais? Então, seja quem foi teu público alvo, qual que é o impacto que você vai gerar com essa ideia diferencial? O que que torna essa
+
+00:36:46 - 00:37:36
+solução? Então, interessante, né? Como é que esse problema é resolvido hoje? Que que a proposta de vocês traz de diferente? Tragam aqui pra gente esse diferencial. Viabilidade, então se a solução ela é viável de ser desenvolvida, né, em termos legais, tecnológicos, operacionais. Então fale um pouquinho sobre isso também. Quanto tempo que vocês acreditam que é necessário para implementar a solução? Então, se vocês tivessem todos os recursos disponíveis aí, quais seriam as principais etapas dessa implementação?
+
+00:37:11 - 00:38:02
+Aqui uma pergunta sobre código aberto, né? Como vocês sabem, como a Carol trouxe ali o cartão, ele busca incentivar soluções que possam evoluir, né, como bem público digital. Então, como que essa solução ela poderia ser compartilhada depois para que outras organizações, estados ou países também pudessem, né, utilizar? Então a ideia aqui é vocês explicarem como essa solução ela pode ser compartilhada, tá? Então não é para trazer código nem nada. E por fim mentoria, né? Vocês vão pedir mentoria e vão apresentar a solução de
+
+00:37:36 - 00:38:37
+vocês e coletar feedback para colocar aqui nessa entrega. Então aqui tão, né, as perguntas. Isso daqui é o processo de ideação. Então com essas perguntas vocês agora vão se reunir com a equipe e vão começar a definir qual proposta vocês vão desenvolver, tá gente? Então esse processo deção faz muito parte da construção do que vocês estão querendo desenvolver. Então a gente quer respostas aqui. Então não é nenhum testão gigante, é muito mais objetividade para ajudar vocês nesse processo de construção da ideia.
+
+00:38:06 - 00:39:17
+Combinado? Essa entrega, gente, dúvidas em relação às entregas, comentem aí. Depois a gente vai explicando, né, sobre as outras entregas que vão ser realizadas. Então, eh, nas outras lives a gente vai falar sobre isso, mas o foco de agora é ideação. Então, vou trazer aqui, ó. Ideação é até hoje às 23:59? Não, gente, ideação, protótipo e pit é até domingo, tá? Hoje somente é cadastro das equipes, tá, pessoal? Então, para hoje é só cadastro das equipes. Levi tá falando que tá tudo tranquilo por enquanto. Maravilha. Então, vou trazer a
+
+00:38:41 - 00:39:58
+Gi para cá. Gi, quando eu vou puxando as perguntas do pessoal aqui, me diga, tem alguma coisa que você acha importante reforçar já para eles das orientações, do que você imagina? >> Oi, Ana. Tava aqui olhando também as perguntas já ali no YouTube, né, e vi que uma pergunta tava eh falando sobre o o map biomas. Eh, então vou voltar nessa questão do que você acabou de falar, né, sobre eh as soluções serem baseadas em em soluções abertas, né, de de código aberto. A gente precisa, claro que aqui
+
+00:39:22 - 00:40:33
+não é para ninguém desenvolver código, né? Eu acho que isso é uma uma premissa, mas é importante que as ideias não dependam de plataformas específicas, sabe? Que as ideias sejam feitas de uma forma genérica que possam ser implementadas. independente da plataforma, né? A gente fala agnósticas, porque não adianta, por exemplo, fazer uma solução excelente, mas que depende de uma conta no Google Earth Engine ou que depende de ter uma licença do ARGIS, sabe? Então isso pensando ali no no desafio dois, né? E pros outros desafios
+
+00:39:57 - 00:41:09
+também, assim. Então, não adianta pensar numa solução que eh ainda que seja só um protótipo, mas que aquele protótipo para ser desenvolvido no futuro vai depender de soluções fechadas, de soluções eh pagas e etc., né? Então, eh MAPBOMAS é uma iniciativa muito importante, né, no Brasil, embora não seja um dado oficial, né, não é um dado produzido pelo governo, mas e assim por instituições independentes, mas que tá ancorado no Google Eartend. Então, eh, podem ser usados os dados, eu acho, para, para a pessoa, né, pensar na
+
+00:40:32 - 00:41:35
+ideia dela, para ela, eh, montar ali um raciocínio, mas a solução não pode estar ancorada nele, né, ou similar a ele, ancorado ao Google Athending. Então, só um já respondendo aqui uma das perguntas que surgiu e deixando esse recado para todos. Perfeito. Vamos puxar então. Vou começar a puxar algumas perguntas aqui que o pessoal trouxe. Eh, em relação a essa pergunta surgiu bastante, né? E quando a sua ideia contempla todos os tópicos, né? quando a sua ideia eh ela permeia pelos três desafios. Isso pode
+
+00:41:05 - 00:42:12
+acontecer, né, G, de alguma forma, mas eles vão escolher apenas um desafio. Então, se você quiser trazer bem pontualmente sobre cada um dos desafios, o que que vocês esperam para conseguir ajudar eles a determinar qual desafio eles vão seguir, eh, vai ser bacana, Gi. Ah, legal. Bom, a gente tem é isso, tem com certeza tem ideias, né, que vão contemplar tudo. A gente tem um desafio focado principalmente em comunicação, né, em levar assim, conseguir chegar no produtor, fazer ele interagir com cadastro, fazer com que ele às vezes
+
+00:41:39 - 00:42:44
+retifique seu cadastro, receba as notificações, veja o que tá acontecendo, interage com algo de meio ambiente. a gente tem uma solução baseada em bases de referência, mapeamento, né, um componente de aespacial, talvez esse seja mais diferente do dos três desafios. E a gente tem um desafio também muito focado em legislação, né, em difusão desse conhecimento, difusão, como é que a gente faz para para que o produtor consiga entender o que que o Código Florestal quer dele, né, ou dela? Porque o código florestal é uma lei
+
+00:42:11 - 00:43:17
+complexa, né? Eh, para ele entender o que que significa regularização ambiental, entender o que que implica ali. Não é só fazer o cadastro, o cadastro vai ter outras implicações depois eh para aquele produtor, né? Eu acho que eh quando o cadastro começou a ser povoado ali em 2014, as pessoas, muitas pessoas acharam que era isso, fazia o cadastro e esquecia disso, né? E hoje a gente tá em 2026 com uma certa dificuldade de fazer as pessoas voltarem para olhar seu cadastro, verem se foram notificadas, se tem que fazer alguma
+
+00:42:44 - 00:43:44
+coisa com ele. Então tem também esse lado de, né, tanto da comunicação quanto de entender a legislação. São desafios diferentes, um e o três ali. Eh, então é isso. Eu vejo dois muito diferente dos outros, sinceramente, mas os outros dois consigo ver, né, que tem ali, dá para ter ideias que que tratam as duas coisas, mas acho que os participantes têm que escolher também a o desafio que parece que a sua solução tenha mais aderência, né? >> Exatamente isso. Escolha o que tem mais aderência a sua solução. Em relação ao
+
+00:43:15 - 00:44:18
+desafio dois, pede para atualizarmos o sistema do cara anualmente de forma mais rápida. Como isso é feito atualmente, Gi? >> É, então é porque não é bem atualizar o sistema, sabe, gente? atualizar os mapeamentos usados pelo sistema. Então, como que isso funciona hoje, né? Eh, vamos dizer que a gente tem uma imagem de satélite 2025 e a partir dessa imagem de satélite 2025 é feito um mapeamento, né, uma vetorização das informações que são vistas ali na imagem para que elas sejam usadas no carro. Então, claro que
+
+00:43:46 - 00:44:54
+a gente foca no nas informações que são relevantes para a implementação do código florestal, né? a área de vegetação nativa, área consolidada, área de hidrografia, que daí vai derivar o eh a PP de de hidrografia, as áreas de relevo, né? Então, essas são as áreas relevantes. A partir daquela imagem de satélite, a gente vai transformar em mapas que aí o nosso sistema consegue confrontar com o que o produtor declarou. É muito importante que a gente consiga ter essa atualização anual. Hoje a gente não tem, hoje a gente tem essa
+
+00:44:21 - 00:45:35
+atualização a cada 2 anos, 2 anos e meio, dependendo do estado, às vezes até mais tempo, porque demora para fazer esse mapeamento, demora pegar uma a imagem de um estado, né, ainda mais se for um estado grande e e dizer assim, né, eh transformar essa imagem em mapa. E aí hoje o que a gente o que acontece é que até a gente pegar uma imagem nova, transformar em mapa, colocar dentro do sistema, vão 2 anos, 2 anos e meio. Então os estados já começam a usar os mapeamentos com uma defasagem grande, né? Eh, então o desafio é para isso,
+
+00:44:58 - 00:46:00
+assim, o que que a gente pode fazer para tornar isso mais rápido? para que quando o analista ambiental do estado vai analisar o cadastro que tá lá no car, ele tenha uma informação mais eh precisa, mais atual possível, sem ter que esperar tanto tempo para isso. É por aí o desafio. Perfeito, gente. Priorizem perguntas relacionadas ao desafio, tá? Ai tá aqui para esclarecer para vocês. Tô vendo muita pergunta sobre o processo. Acho que é natural, né? Porque a gente tá na primeira live, acredito que a live das 7
+
+00:45:29 - 00:46:19
+da noite, vocês vão ter mais perguntas direcionadas a Giovana aqui também, mas aproveitem para tirar as dúvidas sobre os desafios, tá pessoal? Eu vou responder rapidinho enquanto vocês não mandam aqui algumas perguntas gerais que surgiram aqui, né? Então tem template deção, acabei de mostrar como é, gente, vocês vão responder diretamente dentro da plataforma. Eu tenho minha dupla, como que eu sei que a minha equipe tá cadastrada lá dentro do Discord, pessoal? Tem que ter número, tem que entrar no Discord, tem que registrar a
+
+00:45:54 - 00:46:52
+equipe lá dentro. Se você não tá no Discord, sua equipe não está participando, tá? Pode ser áudio feito por IA? Não, Jorge, não pode. Áudio gravado por algum integrante da equipe. Link da plataforma de entregas vamos liberar somente depois da live. Tem prazo para escolher os desafios hoje, Maissa? Mas hoje vocês vão registrar lá a equipe e vão colocar o desafio de vocês. Mas a gente sabe que ao longo do racatom vocês vão poder eh pode ser que vocês mudam desafio, vocês estão desenvolvendo algo e aí vocês chegam num
+
+00:46:23 - 00:47:13
+ponto que fala: "Hum, mas isso que a gente tá desenvolvendo faz mais sentido no desafio dois do que desafio um". Então não tem problema nenhum mudar, tá? Em todas as entregas tem ali a escolha do desafio. Então a entrega final de pit vocês vão ter que registrar qual é o desafio de vocês. Não tem problema mudar ao longo do racatom. a gente sabe que isso pode acontecer, que vocês podem pivotar a ideia, que vocês podem a todo momento estar interagindo aí com o que vocês estão desenvolvendo, tá? A solução
+
+00:46:48 - 00:47:44
+precisa ser necessariamente um sistema ou pode ser outras estruturas, como a gente trouxe, né? Pode ser outras estruturas complementares ali de alguma forma. Não é um sistema, gente. Vocês vão aperfeiçoar o que já existe. Vocês vão buscar ali soluções para serem implementadas. Então, muita atenção, verifiquem lá o briefing dos desafios. A gente já teve live sobre isso também, tá? Nível de fidelidade esperada pro protótipo. Basta mocaps de telas ou precisa ter código? Não precisa de código, basta um mocaps de tela. A gente
+
+00:47:16 - 00:48:08
+quer ver como funciona a solução de vocês, como funcionaria, tá? Mas não precisa tá rodando ali. A equipe foi registrada no Discord, precisa ser cadastrada em outro ambiente também? Sim, gente, na plataforma de entregas, aonde eu coloquei, vocês vão oficialmente cadastrar ali agora que vocês já têm um número da equipe. Podemos cadastrar um novo usuário para entregar nosso grupo hoje ou somente para quem se cadastrou na plataforma até ontem? Só pode inscrever hoje e inserir no time quem já tá inscrito. As
+
+00:47:42 - 00:48:34
+inscrições acabaram ontem, então se a pessoa tá inscrita, ela pode ser inserida na equipe. Senão, não. Então, é obrigatório utilizar a mentoria? Sim, Leia. pelo menos um mentor você vai ter que conversar para colocar o feedback na entrega, tá? As equipes escolhidas para premiação depende do problema escolhido. É possível que entre as cinco escolhidas nenhum seja do problema um. A gente vai ter duas bancas, Paulo. Então, eh, na primeira banca a gente já vai selecionar as top de cada desafio que vão seguir
+
+00:48:08 - 00:49:17
+pra segunda banca. Mas pode acontecer sim, eh, das ganhadoras, né, terem aí, eh, acho difícil isso acontecer. a gente já faz, enfim, vários racatons, então tem bastante eh diversificação ali nas equipes vencedoras, mas pode acontecer de algum desafio, um, dois ou três, ter mais equipes vencedoras, tá? Vamos puxar novas dúvidas que surgiram aí. Vamos ver. Dos gargalos apresentados no desafio um, exclusão digital, retificações e comunicação. Qual hoje gera o maior impacto pros órgãos ambientais? G.
+
+00:48:45 - 00:49:48
+Bom, eh, é um impacto em cadeia, né? Então, assim, eh, talvez o o nosso maior gargalo hoje para que o o a o cadastro ambiental rural avance é que os proprietários venham pro cadastro fazer as retificações solicitadas, né? Então, a gente precisa que quando o órgão ambiental pede pro proprietário retificar, que ele realmente volte no CIC e faça a retificação que foi solicitada. Mas por que que eles não voltam? E aí a gente entra em todas essas outras questões, né? Às vezes são questões de exclusão digital, às vezes
+
+00:49:16 - 00:50:28
+são questões de comunicação, às vezes é porque quem fez o cadastro paraa pessoa foi um técnico, né, que ela já nem tem mais contato e que usou o próprio e-mail do técnico e aí a pessoa nunca fica sabendo que, né, que precisa interagir com cadastro. Eh, enfim, a gente tem n razões, né? Mas eh eu diria que hoje um dos principais gargalos aí no carro são as retificações que não são atendidas. Mesmo tem uma expectativa de quanto tempo um analista leva para analisar um cadastro no car ou um lote? >> Ah, a gente tem duas ferramentas
+
+00:49:53 - 00:50:52
+diferentes paraa análise do cara. Uma é um pouco mais manual, ela é semiautomática, né? Então nela um analista leva algumas horas porque ele vai olhar detalhadamente um imóvel de cada vez, né? né? E aí geralmente eles usam essa ferramenta quando tem eh alguma questão que fazem eles precisarem usar essa ferramenta mesmo mais detalhada. E a gente tem uma ferramenta de análise automatizada em que um lote de cadastros aí de 20.000, 30.000 cadastros é analisado em um dia, sabe, por um estado. Então varia bastante de
+
+00:50:23 - 00:51:30
+acordo com o estado, com o tipo de móvel, etc. Quando você menciona que leva cerca de 2 anos para os dados aparecerem nos sistemas, isso se refere ao processo de coleta e atualização feito por drones? Teria outro método? Como é feito isso? >> Tá, não, não é isso. Eh, isso significa o processo de transformar uma imagem de satélite, que via de regra é o que a gente utiliza, né? É o que os estados utilizam, são imagens de satélite em um mapa vetorial. Então, é esse processo de classificação da imagem de satélite nas
+
+00:50:58 - 00:51:55
+classes que são necessárias para usar no no SICAR, né, que são necessárias pro comprimento do código florestal, é o que demora um tempo para ser feito, porque é um processo de classificação normalmente semiautomatizada, mas que tem muita interação humana, eh, um processo de correção longo, assim, podemos incluir uma ORL de demo interativa com material complementar na entrega será considerado pelos avaliadores. Ivan, sim, tem uma opção lá que você pode colocar um link extra, tá? Eh, mas é extra para os jurados
+
+00:51:30 - 00:52:30
+avaliarem, então eles vão olhar esse material também, mas não tem uma nota específica para isso, tá? Entendo que não é um sistema completo, mas não está claro se a solução precisa ser algo complementar ao sistema siicar existente ou se pode ser uma ação que acontece fora da estrutura do sistema. Eh, pode ser uma coisa fora, gente, não precisa ser no SICAR, não. Assim, essa foi uma das também das premissas que a gente adotou, né? a gente sabe, o SICAR é um sistema de 12 anos, ele tem mais de 38 módulos ao todo, então ele é um
+
+00:51:58 - 00:52:57
+sistema complexo, né, grande. E então a gente sabe, né, que que vão ter soluções por fora e é desejável até que tenha soluções por fora. Quando a gente fala ali, principalmente, né, desafio um, desafio três, eh, não tem nenhum problema que que as soluções sejam fora. Também não tem nenhum problema se vocês verem ali, né, no próprio SICAR, nos módulos que vocês vão interagir, que são os módulos que o proprietário possuedor interage, eh possibilidade de melhoria. Qual o benefício vocês oferecem para as
+
+00:52:29 - 00:53:28
+pessoas fazerem essa retificação ou cadastro rural? Que benefício vocês oferecem? Eh, as pessoas são obrigadas a retificar, gente. Elas são obrigadas a declarar pela legislação. Elas são obrigadas a fazer a o cadastro no carro e mantê-lo atualizado, né, e prestar as informações corretas. Então, é como um cadastro da do imposto de renda, por exemplo, muito similar. Eu acho que para para ficar mais claro, né? Você faz o seu o seu declaração do imposto de renda, se você declara alguma coisa errada, a receita vai te avisar: "Olha,
+
+00:52:59 - 00:54:09
+isso aqui tá estranho, tá errado". E aí você tem a oportunidade de lá eh retificar isso, né, e declarar corretamente. Então é a mesma lógica. Além disso, né, quem tem o seu cadastro validado e aí muitas vezes a retificação é uma etapa necessária para essa validação acontecer. Eh, tem acesso a crédito rural mais barato, pode ter acesso a outras políticas públicas também. Então, tem uma série de eh direitos e benefícios que a pessoa tem caso ela tenha um um car, né, regular, certinho, validado, sabe?
+
+00:53:34 - 00:54:40
+Alguns estados possuem seus próprios sistemas estaduais, como por exemplo, o Goiás. Sobre o desafio dois, segue a mesma lógica das bases de referências? Ah, pois é, o, essa questão das bases de referências, ela varia muito de acordo com o estado e com qual sistema eles usam, né? Hoje a gente tem eh 11 estados que usam seus próprios sistemas diferentes do SICAR. Eh, todos eles precisam de base de referência. Agora, como cada estado decide fazer essas bases de referências, varia bastante. Eh, de modo geral, todos fazem o mesmo
+
+00:54:07 - 00:55:13
+processo de pegar a imagem de satélite, eh, transformar em mapas, né, vetoriais para depois confrontar com os cadastros. Mas aí tem uns que fazem ah pro município, então eles fazem o mapeamento do município de cada vez. Tem outros que pegam a imagem pro estado inteiro e vão fazer essa transformação em mapa, sabe? Varia bastante, mas a lógica é sim a mesma para todos. Além do cadastro, a retificação também é feita pelo HER? Já existe algum tipo de notificação, por exemplo, por e-mail ou WhatsApp?
+
+00:54:42 - 00:55:44
+Eh, não, gente, deixa eu explicar um pouco melhor assim, né? O hoje pros usuários do Brasil, eh, tudo é feito pelo SICAR para os estados, é lógico, que usam SICAR, né? Eh, então vamos falar aqui dos 16 que usam SICAR federal. Então, eh, eles fazem o cadastro pelo SICAR, eles fazem retificações pelo SICAR, recebem notificações também pelo SICAR. Hoje a gente não tá em nenhuma integração com WhatsApp das notificações eh do SICAR, mas tem integração com e-mail. Então eles recebem no e-mail o aviso de que
+
+00:55:13 - 00:56:29
+teve uma notificação na central do proprietário possuidor. Eh, o R foi uma versão eh open source que a gente fez do módulo de cadastro para ser compartilhado, né, com com outros países, com outras instituições ou até outros estados que queiram utilizar. E e o R a partir dele a gente construiu o módulo de cadastro pré-preenchido, que vocês vão ter acesso, né, para navegar, testar e conhecer que o módulo de cadastro pré-preenchido foi lançado em novembro do ano passado para cadastros e aí esse ano a gente implementou também
+
+00:55:50 - 00:56:58
+retificações nele. E ele já traz as informações de cinco bases de dados que o do governo, né? Então ele traz CPF, CNPJ, CP, eh, e duas, dois sistemas fundiários, que é o CGEF e o SNCR. Então assim, a gente fez o ré, que vocês podem navegar e vão ver que ele é um pouco mais simples, ele é tem uma uma carinha mais light assim, né, mais eh customizável, ele é feito para que outros países adaptem as suas necessidades ou estados, né, adaptem suas necessidades. E a partir dele a gente transformou no cadastro
+
+00:56:25 - 00:57:28
+pré-preenchido que tá em produção e é o que os os produtores rurais utilizam hoje para fazer seus cadastros e retificações. No início do caro, muitas pessoas fizeram, né, declararam sem critérios. Então, seria interessante ter uma política para resolver isso e daí partir para outras soluções? Eh, sim, é uma das frentes que a gente tem. Eh, o cadastro pré-preenchido, né, como eu falei, ele é uma dessas frentes. Então, ele já começa a cruzar dados com a Receita Federal, cruzar dados com o INCRA, para que a gente vai fechando,
+
+00:56:57 - 00:58:01
+né, esse cerco e não deixando, eh, qualquer cadastro entrar sem critérios, como como você falou na pergunta. Eh, mas são várias frentes que a gente tem que atacar, né? Hoje a gente tem mais de 8 milhões de cadastros na base, então eles também têm que ser analisados e validados pelos estados. E a gente tem uma série de filtros também. Então é isso, a gente vai fechando por vários lados para deixar o cadastro cada vez melhor e mais qualificado. >> O SICAR possui API documentada? O CICA possui quatro APS documentadas,
+
+00:57:29 - 00:58:35
+não são APIs públicas, elas são para eh outros órgãos públicos, né? Elas estão disponíveis no na plataforma Conecta Goov. E vocês podem dar uma olhada lá no nos dados e na documentação das quatro. O CAR que foi disponibilizado pela MGI como digital publicado como base no RCA. Teremos acesso ao SICAR. O hair pode ser usado como base no hacatom para vocês conhecerem, entenderem um pouco a lógica dele, mas não é obrigatório de jeito nenhum, até porque a gente não vai trabalhar com soluções com código, né, Ana? Então,
+
+00:58:03 - 00:59:04
+assim, a gente não vai trabalhar com desenvolvimento de soluções aqui, só com protótipo nesse primeiro momento. Eh, vocês têm acesso ao SICAR, eh, no módulo de sustentação dele para testes e aí vocês vão conseguir conhecer o módulo de cadastro offline, o módulo de cadastro pré-preenchido e a central do proprietário possuidor. Eh, vão ser disponibilizados ou já foram, né, Ana, os links para que vocês conheçam vídeos também mostrando como navegar neles, tá? dentro da dentro do Discord de materiais
+
+00:58:33 - 00:59:45
+de apoio, tem todos esses materiais para vocês. Pessoal, as retificações, elas são solicitadas de forma recorrente, principalmente devido à sobreposições. Hoje o sistema identifica sobreposição automaticamente ou isso depende de uma análise manual? Eh, sim, o sistema identifica sobreposições automaticamente. Dependendo da sobreposição, vai ser enviado um alerta pro proprietário eh retificar, né, ou enviar documentação quando, por exemplo, tem uma sobreposição como unidade de conservação. Eh, enfim, tem outros casos também, né?
+
+00:59:08 - 01:00:21
+Uma área embargada, etc. Eh, mas a ideia é que a aicação seja feita ou só uma vez ou sempre que mudar alguma coisa no imóvel, né? Então, se não nunca mudou nada no imóvel e você fez um cadastro errado, o órgão ambiental vai te pedir para retificar, deixando esse cadastro correto. Eh, e aí você deixou ele correto e nada mais mudou, pronto, tá feito. Agora, eh, se você vendeu um pedaço ou você, eh, mudou a cobertura de de e uso do solo do imóvel, aí é necessário fazer uma retificação para informar que algo mudou no imóvel,
+
+00:59:46 - 01:01:00
+entende? Então, não é uma coisa anual, por exemplo, como imposto de renda. Eh, e os órgãos ambientais têm a premissa de mandar o pedido de retificação uma vez só pro mesmo erro, né? Eh, ou pros erros que foram identificados naquele momento, mas eh sempre que mudar algo no imóvel é necessário retificar. Podemos incluir o CAF no desafio? Porque o CAF é o benefício que o governo prospera, o produtor atrás do CAR para ter o direito ao CAF e conseguir o crédito no banco e investir na sua propriedade.
+
+01:00:23 - 01:01:29
+Não sei se você acompanhou a IG. >> Acompanhei. Eh, então, gente, a gente tem o aplicativo Meu Imóvel Rural, que também foi desenvolvido aqui pelo MGI e ao qual vocês também vão ter acesso a um vídeo para explicar o que que ele faz, né? Ele também tá disponível para ser baixado eh tanto por aplicativo quanto site. Eh, no aplicativo Meio Móvel Rural a gente traz os dados do CAF também ligados ao car, né? Então ele traz o meio imóvel rural, ele é um aplicativo para mostrar pro proprietário os dados do seu imóvel.
+
+01:00:56 - 01:01:54
+Então ali a gente traz o car, a gente traz as informações fundiárias do CGFNCR, a gente traz as informações do CAF também. Então assim, nada impede, se for relevante, né, paraa sua solução trazer os dados do CAF, eh, pode ser feito, sem problemas, pessoal. Últimas perguntas, então, aqui que a gente vai buscar responder nesta live, que já tá passando do nosso tempo aqui. A gente não quer ocupar muito também o tempo de vocês, mas vocês vão poder continuar mandando perguntas lá dentro do Discord e preparar as
+
+01:01:25 - 01:02:21
+perguntas paraa nossa live às 7 horas, tá? Dúvidas mais técnicas. Últimas perguntinhas aqui de então, qual é a motivação e aumentar o entendimento das legislações do CAR pro pequeno e pro médio produtor? É, a motivação é porque essas legislações os afetam, né? Eles precisam cuidar da sua propriedade, gerenciar suas propriedades e postes rurais de acordo com a legislação ambiental. Então, para isso, eles precisam entender que legislação é essa, o que que ela tá pedindo dele, o que ela tá exigindo
+
+01:01:53 - 01:03:01
+dele, né? Então, é muito importante que eles que eles tenham ciência do que é uma reserva legal, o que que pode fazer na reserva legal, o que é uma PP, né, uma área de proteção permanente, o que que eles podem fazer nessa área, eh se eles precisam recuperar alguma área dentro do seu imóvel, se eles têm um excedente de vegetação nativa, eh, que pode ser gerar benefícios para ele, né? Então, a gente hoje tem a cota de reserva ambiental em que o produto rural pode eh comercializar, né, mesmo essas cotas no
+
+01:02:27 - 01:03:20
+mercado. Então, assim, é muito importante que eles entendam, porque é isso que guia todo o trabalho deles, né, toda a vida deles ali no imóvel rural. >> Maravilha, gente. Então, selecionamos aqui algumas dúvidas que não foram respondidas, que a gente vai responder na live das 7 horas. Quem tiver outras dúvidas, manda lá no Discord que a gente vai reunir essas dúvidas também para esclarecer, para bater esse papo na live das 7. Essa live foi mais de orientação também para vocês, mas vocês já pegaram
+
+01:02:54 - 01:03:45
+o jeito, né, que vocês é papum, vocês mandam dúvida, a gente já responde aqui de bate pronto com a Giovana também. Então a gente espera vocês às 7 horas da noite. Gi, muito obrigada aí pela sua participação. Obrigada a todo mundo que participou aí desse momento de dúvidas. Já já vocês vão receber então acesso à plataforma de entregas e também como solicitar mentoria ali dentro do Discord, né? Então é uma ajuda super importante que vocês vão ter ali de mentores de diferentes áreas do conhecimento, mas as dúvidas dos
+
+01:03:19 - 01:04:20
+desafios a gente volta às 7 horas da noite, beleza? Então gente, aproveitem aí, né, para entrar no Discord, quem ainda não formou equipe, entrem lá, peçam ajuda, quem tá precisando de ajuda, a gente tá aqui para auxiliar vocês. Valeu todo mundo que tá aqui acompanhando, né, essa abertura agora. Rarton começou oficialmente. Aproveitem a maratona e bora colocar a mão na massa, Gi. A gente se encontra também às 7 horas da noite aqui. Valeu, gente. Bom racartão para todo mundo. Ciao. Ciao.

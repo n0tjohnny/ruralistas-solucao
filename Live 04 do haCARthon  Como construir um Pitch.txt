@@ -1,0 +1,347 @@
+00:00:01 - 00:01:04
+[música] [música] [música] [música] >> Olá pessoal, bom dia. Tudo bem com vocês? Como é que vocês estão? Bom dia Michael, Natália, Emerson, Guilherme, Carolina. Quem mais está aqui? Bom dia para vocês, sejam muito bem-vindos e bem-vindas a mais uma live preparatória do Hackathon, gente. Amanhã começa oficialmente, né, a nossa maratona. Então eu quero saber quem que já está ligadinha aqui com a gente. Então comenta aí no chat, comenta aí o número da sua equipe, fale de que cidade você é, quero saber porque temos o Brasil
+
+00:00:54 - 00:01:56
+todo participando do Hackathon, gente. Então coloca aqui sua cidade, o número da sua equipe. Eu quero ver as equipes que já estão on por aqui acompanhando. Para quem ainda não me conhece, eu sou a Ana, vou estar com vocês aí nessa jornada de criação, né, do Hackathon. Essa maratona de inovação que busca desenvolver soluções para fortalecer o Cadastro Ambiental Rural, o CAR, apoiando aí, né, processos mais simples, acessíveis, eficientes e conectados à realidade de quem usa esse sistema no dia a dia. E gente, o Hackathon é uma
+
+00:01:25 - 00:02:30
+realização do Ministério da Gestão e da Inovação em Serviços Públicos, o MGI, da Fundação Brasileira para o Desenvolvimento Sustentável, a FBDS, do Governo da Noruega, né, por meio aí do Ministério das Relações Exteriores e da Embaixada da Noruega no Brasil, da Escola Nacional de Administração Pública INAP e do Impact Hub Brasil. A operação é da Península Lobster. E gente, está chegando a hora, o Hackathon começa amanhã e vai até domingo. Então serão três dias aí para vocês colocarem a mão na massa, né, mergulharem nos desafios e
+
+00:01:57 - 00:02:59
+criarem uma solução para um dos temas que a gente trouxe para vocês. Então a gente já realizou, né, algumas lives preparatórias. Então, se você perdeu alguma, gente, eu recomendo muito que vocês assistam as gravações, porque a gente falou sobre o funcionamento da maratona, né, como é que vai ser a dinâmica, as entregas, a gente falou sobre ideação, sobre protótipo e hoje a nossa live vai falar sobre pitch. E o que que é pitch, gente? De forma simples, é a maneira como vocês vão apresentar, né, a solução de vocês.
+
+00:02:28 - 00:03:26
+E vou falar uma coisa, gente, não é só porque eu sou da área da comunicação, não, mas eu acho essa uma das etapas mais importantes, porque de nada adianta, né, você ter aí uma ideia super incrível, né, uma solução assim super criativa, se vocês não conseguirem apresentar e explicar essa ideia, né, de forma clara, de forma objetiva, de forma convincente. Então o pitch, ele é justamente esse momento, né? Ele é uma técnica para que vocês possam apresentar, explicar e vender, que é principalmente o projeto de vocês. Então
+
+00:02:57 - 00:03:53
+já aproveita, chama aí todo mundo, chama o pessoal da equipe, manda lá no grupo, chama a galera, porque essa live, gente, é super importante para todo mundo que vai participar do Hackathon, tá bom? E antes da gente começar, quero trazer alguns recadinhos rápidos, mas ó, tem gente do Rio de Janeiro, Belo Horizonte, Porto Velho, Rondônia, Pouso Alegre, Minas Gerais. Ó, o Sul também tá aqui, Porto Alegre, São Paulo. Bom dia, pessoal, quem tá entrando aí agora, comenta aí no chat então sua equipe e
+
+00:03:24 - 00:04:21
+sua cidade. Gente, recadinhos rápidos. Primeiro, equipes, para participar do Hackathon vocês precisam estar dentro de uma equipe e essas equipes elas precisam ser fechadas até amanhã dentro do Discord, que é a plataforma, né, que a gente tá usando aí para a maratona. Então quando vocês registrarem a equipe lá dentro do Discord, que que vai acontecer? Vocês vão receber um número e esse vai ser o número oficial da equipe de vocês. Então assim, se você ainda não tem número de equipe, isso significa que
+
+00:03:54 - 00:04:51
+a tua equipe ainda não tá registrada oficialmente, pessoal. Então, muita atenção. Às vezes, né, vocês já criaram um grupinho ali no WhatsApp, já combinaram com os amigos, acham que tá tudo certo, mas não é bem assim. A equipe precisa estar formada dentro do Discord para você receber esse número e para você poder participar da maratona. Beleza? Todas essas orientações estão ali no e-mail de vocês, também no grupo de WhatsApp. Então, fiquem atentos, confiram as mensagens. Quem não tá vendo nossos e-mails, procura lá como
+
+00:04:22 - 00:05:16
+Hackathon, tá? Procura lá no spam, na caixa de promoção. Às vezes, o Gmail joga para promoção, então, dá uma olhadinha, procurem para vocês não deixarem para a última hora. Beleza? E se vocês ainda não tem time, entra no Discord também, lá tem uma sala chamada Tô sem time, com várias pessoinhas ali incríveis procurando equipe. Então, dá uma olhada, conversa no privado, ainda dá tempo, gente, de vocês participarem. Tá bom? Segundo recadinho, então, amanhã a gente começa oficialmente, né? A abertura vai ser às
+
+00:04:49 - 00:05:38
+2:00 da tarde, horário de Brasília. Sempre as nossas lives têm horário de Brasília, tá na nossa comunicação, então, fiquem atentos, como a gente tem Brasil inteiro aqui participando, né? Piauí tá em peso aqui também. Quem mais? Rio de Janeiro, Ceará tá aqui também. Então, ó, a gente tem gente de todos os cantos, então, muita atenção, tá? Ao fuso, pessoal. Então, a gente vai trazer amanhã nessa live de abertura, né, o nosso start, nossas boas-vindas para vocês, com algumas orientações e na sequência a
+
+00:05:14 - 00:06:10
+gente já vai abrir a primeira entrega obrigatória que vocês vão precisar fazer, a de ideação, tá? A gente também vai trazer ali os especialistas desses temas, dos desafios, para tirar as dúvidas de vocês. Então, pessoal, anotem as dúvidas, revisem os desafios e venham preparados para essa live, porque ela vai ser superimportante, tá? Amanhã, sexta-feira, é o dia que a gente vai ter mentores dos desafios, tá? A gente vai ter às 2:00 da tarde live de tira-dúvidas e às 7:00 da noite. Então, é somente amanhã que vocês vão poder
+
+00:05:42 - 00:06:40
+esclarecer todas as dúvidas sobre o carro, sobre a plataforma, sobre os desafios. Então, estudem, vejam os desafios e venham preparados para amanhã nosso plantão de dúvidas sobre os desafios. Beleza? Recados dados? Tem dúvida, gente? Quem tiver dúvida, qualquer dúvida, manda aqui no chat que a gente já vai respondendo. Vocês têm que estar, ó, preparados para nossa maratona que começa amanhã. Beleza? Bora falar de pitch, então? Então, deixa eu colocar aqui na tela nossa apresentação de pitch para a gente
+
+00:06:10 - 00:07:04
+começar a conversar. Mato Grosso do Sul tá em peso aqui, muito bom. Quem tá chegando aí agora, pessoal, comenta aqui no chat número da sua equipe e também sua cidade. Estamos com o Brasil todo aqui participando. E agora a gente vai começar nosso conteúdo, nosso último conteúdo, né, nossa última live preparatória. A gente vai falar sobre pitch, gente. O pitch é um ponto, né, como eu falei, super importante em qualquer projeto, porque o pitch, pessoal, é o momento em que vocês conseguem transformar, né, todo o
+
+00:06:37 - 00:07:39
+trabalho que vocês fizeram em uma apresentação rápida e fácil de entender. E mais do que entender, né, a ideia é que as pessoas consigam explicar o projeto de vocês para outras pessoas, né? Então, o pitch ele tem que ser claro. A ideia circula melhor quando as pessoas entendem, né? Chega em mais gente, então, é por isso que a gente busca ser tão claro e objetivo num pitch, para que mais pessoas despertem o interesse de conhecer a sua solução. Então, sim, o pitch é uma etapa muito importante aqui dentro do Hackathon.
+
+00:07:09 - 00:08:06
+Mas pitch, gente, ele vem aí, é uma palavra em inglês, né? Vem de sales pitch. Traduzindo aí, né, de um jeito bem direto, pitch nada mais é que um discurso de vendas, né? E dentro de um processo de inovação, o pitch é a apresentação curta de uma ideia. Então, é o momento que vocês têm aí de explicar, né, o que que foi criado, qual o problema ele tá resolvendo, como que a solução funciona, né, e por que que ela faz sentido, né? Então, inclusive, eh ele tem uma característica muito importante, que é ser curto, claro e
+
+00:07:37 - 00:08:32
+objetivo, né? Muita gente fala aí, usa o termo pitch de elevador. Não sei se vocês já ouviram falar esse termo pitch de elevador. É, mas a ideia é justamente essa, né? De você conseguir apresentar uma ideia de uma forma tão simples, é, tão rápida que numa subida e descida de elevador aí, numa conversa rápida, você consiga apresentar o seu projeto, né? Então, o pitch ele não tem característica de ser uma apresentação longa, cheia de detalhes. Não, a gente quer justamente uma fala direta, objetiva, que ajude a pessoa a entender
+
+00:08:04 - 00:09:02
+de forma rápida o valor da sua solução. Então, é justamente você escolher as melhores partes do seu projeto para apresentar. Beleza? E o pitch, gente, ele é usado como uma ferramenta mesmo do empreendedor, né? A gente pode ter pitch aí para diferentes públicos e objetivos. Então, é super importante que você tenha isso em mente, né? Então, por exemplo, tem pitch, é, para investidor, né? Que é quando você quer convencer alguém aí a botar dinheiro, apoiar, financiar sua ideia, né? Tem pitch de vendas, que é quando
+
+00:08:34 - 00:09:23
+você quer vender alguma coisa, dessa, quer apresentar tua solução aí para potenciais clientes, para usuários que vão usar a tua ferramenta. Então, tem essa veia também. E existe o pitch de recrutamento, que é quando você quer, é, trazer pessoas para fazer parte do teu time, né? Então, vocês já estão agora tendo que dar o pitch de vocês para formar as equipes, né? O pessoal não tô sem time. Olha, pessoal, eu sou assim, assado, eu quero desafio tal, venham para o meu time. Vocês já tão recrutando
+
+00:08:58 - 00:09:49
+pessoas, dando o pitch de vocês para recrutar outros integrantes para fazer parte da sua equipe. Então, sempre que vocês forem construir um pitch, né, gente? A primeira pergunta é: para quem que eu tô apresentando essa ideia? Porque isso vai mudar totalmente, né? O conteúdo que vocês vão desenhar, o conteúdo que vocês vão trazer. Então, aqui, né, no Hackathon, o pitch de vocês ele vai se aproximar bastante aí ao pitch de investidor, né? Não que vocês vão necessariamente pedir investimento financeiro, mas vocês vão
+
+00:09:23 - 00:10:16
+apresentar aí a solução para para banca de jurados, né? Que vai precisar entender, vai precisar avaliar e se convencer de que a ideia de vocês realmente ela é relevante. Então, tenham isso em mente que o pitch de vocês é para um investidor, tá? E qual que é o objetivo então de um pitch, gente? O objetivo é não é só mostrar, né, que vocês tiveram uma ideia, né? O objetivo é vocês mostrarem que justamente essa ideia ela tem um potencial, né? Que ela é um bom projeto, né? Que ela resolve um problema real,
+
+00:09:50 - 00:10:50
+que ela pode, eh, gerar algum tipo de impacto positivo, seja para para as pessoas, seja para alguma organização, para o governo, para o meio ambiente, né? Então, como que a gente mostra isso, né? A gente pode mostrar de algumas formas. A gente pode mostrar que a sua ideia representa uma boa oportunidade, né? Então, por exemplo, ah, a solu a solução de vocês ela pode, por exemplo, eh, melhorar um processo, ela pode reduzir custos, pode economizar tempo, ela pode facilitar ali o trabalho, né, de uma
+
+00:10:20 - 00:11:16
+equipe ou de repente transformar também um produto ou um serviço no futuro, né? Pode ser uma nova ferramenta, uma nova plataforma. Então, no hackathon isso pode aparecer bastante aí quando vocês mostrarem, né, que a solução ela ajuda a tornar, por exemplo, o carro mais simples, mais eficiente, eh, mais acessível, mostrar que o carro ele pode ser mais fácil de usar, né? Então, você tá mostrando aqui uma oportunidade, tá? Uma outra forma de mostrar também que a tua ideia gera impacto ou uma outra eh uma outra forma, né, é
+
+00:10:48 - 00:11:46
+você mostrar que a tua ideia ela pode gerar impacto, né? Então, esse impacto ele pode ser um impacto ambiental, ele pode ser um impacto social, pode ser um impacto institucional ou até mesmo um impacto operacional, né? Que isso vocês vão trazer bastante aqui. Então, por exemplo, a solução de vocês ela vai poder contribuir, né, para melhorar a gestão ambiental, ela pode, eh, contribuir para facilitar a vida, né, dos produtores rurais, ela pode, apoiar técnicos, né, os gestores públicos, eh, a reduzir erros ali também
+
+00:11:17 - 00:12:13
+no cadastro, eh, melhorar a qualidade das informações. Então, assim, impacto é aquilo, gente, que melhora, tá? Quando a solução de vocês começa a rodar. Então, o que que melhora na prática? Isso gera impacto, beleza? E uma terceira forma de mostrar, né, que a ideia de vocês é um bom projeto, é mostrar que ela gera algum tipo de mudança. E aqui a gente tá falando de mudança de comportamento, mudança de processo, eh, mudança de cultura ou também na forma de tomar uma decisão, né? Então, por exemplo, uma
+
+00:11:45 - 00:12:49
+solução ela pode ajudar, eh, os produtores a entenderem melhor ali quais são as obrigações ambientais que eles têm, ela pode ajudar, eh, técnicos a analisarem ali as informações de forma mais rápida, pode ajudar os órgãos, né, os gestores a verem com mais clareza ali os dados, né, na plataforma. Enfim, então quando a gente fala de mudança, a gente tá falando dessa transformação que a solução ela pode provocar, né, no dia a dia de quem usa o sistema, de quem usa o CAR. Beleza? Então, resumindo, pessoal, o objetivo do pitch é mostrar
+
+00:12:17 - 00:13:22
+que a sua ideia é um bom projeto, acima de qualquer coisa. Então, vocês podem fazer isso mostrando que ela é uma boa oportunidade, que ela gera algum tipo de impacto positivo ou que ela provoca uma mudança importante. Pessoal, muita atenção, tá? Muita atenção. O mais importante é que o jurado do hackathon ele consiga entender qual o problema do CAR vocês querem, né, vocês escolheram, quem sofre esse problema, qual é a solução que vocês criaram e por que que essa solução ela melhora o processo. Se isso ficar claro, vocês já
+
+00:12:49 - 00:13:53
+deram aí um passo enorme para construir um bom pitch de vocês. Beleza? Então, essas são já as primeiras dicas. Combinado? Então, o objetivo de vocês é justamente, né, vender essa ideia, né, de uma forma muito clara, rápida e objetiva e interessante, né, eh, de entender como que funciona o projeto que vocês desenvolveram, tá? Eu tô falando aqui um pouquinho sobre o conceito do pitch, porque isso não serve só para o hackathon, serve também para outros projetos que vocês vão, eh, aplicar, tá, no dia a dia de vocês, que
+
+00:13:22 - 00:14:23
+vocês vão desenvolver. Então, a estrutura de pitch ela segue aí o mesmo padrão, então é legal que essas dicas vocês já levam para a vida aí de vocês. Se vocês forem tendo dúvidas, vocês vão mandando aqui no chat, tá, gente? Eh, e uma forma, pessoal, interessante, né, de entender esse processo de venda, digamos assim, né, de um de um projeto, é você pensar assim, que a gente tá, imagine que quando a gente tá fazendo um pitch, né, o que que acontece, né, você tem aí, eh, uma troca de informação entre dois
+
+00:13:52 - 00:14:51
+cérebros, né, então existe um cérebro de quem tá apresentando o pitch, vocês, e também existe o cérebro de quem tá assistindo, né, que nesse caso seria a banca de jurados. Então, a ideia começa na cabeça de vocês, né, vocês que passaram aí horas, né, pensando no problema, que vão criar a solução de vocês, que vocês vão testar aí as possibilidades, enfim, vão fazer o protótipo, então, essa ideia tá na cabeça de vocês, aquilo faz sentido. O desafio do pitch é justamente vocês conseguirem pegar essa ideia
+
+00:14:22 - 00:15:19
+que tá clara na cabeça de vocês e explicar para outra pessoa o que é essa ideia, né, então, essa ideia que tá aqui, ela tem que passar a morar na cabeça da outra pessoa, tá, a gente quer que o jurado ele consiga entender a sua solução, que ele consiga visualizar como que ela funciona, que ele consiga perceber por que que ela é relevante para o cara, e isso não acontece só porque a ideia é boa, né, isso acontece porque a explicação é boa. Muitas vezes a gente chega em casa e fala: "Nossa, eu conheci lá uma uma
+
+00:14:51 - 00:15:44
+pessoa que tem um projeto maravilhoso, mas eu não sei nem de contar como é que é esse projeto, é tão complexo como ela te contou que você entendeu, mas você não consegue reproduzir". E esse que é o diferencial, a gente quer que as pessoas possam reproduzir, a gente quer que um jurado depois chegue para o outro e fale: "Nossa, eu avaliei uma solução que era isso para resolver tal problema", que isso circule, que isso, né, con tenha continuidade, né, então, a gente quer que gere realmente esse essa
+
+00:15:17 - 00:16:11
+multiplicação aí da sua ideia de forma orgânica, né, quando a explicação ela é muito boa, essa ideia ela começa a circular. Então a pessoa que ouviu ela conta para outra, ela consegue contar para outra e assim a ideia vai ganhando força também. Então isso é o poder de um bom pitch, gente. É o que faz essa solução ser lembrada, ser compreendida, ser replicada, tá? Então em algum momento essa ideia pode chegar ali já num gestor, alguém que vai falar: "Eu quero essa ideia, eu quero apoiar, eu quero testar, quero
+
+00:15:44 - 00:16:45
+implementar ela, vamos contratar a equipe que desenvolveu isso". Enfim, então é muito importante que o pitch de vocês seja claro. Beleza? Então, gente, dúvidas até aqui? Tudo certo? Em relação ao conceito de pitch, o que é pitch, a importância, a necessidade do pitch? Comentem aí no chat. Se tiver tudo certo, vão colocando joinha para eu saber que vocês estão acompanhando aí o raciocínio, tá? "Beleza, Ana, entendi já o objetivo do pitch, mas como que eu faço isso? Nunca fiz um pitch, né? Como é que a gente
+
+00:16:15 - 00:17:20
+começa a planejar um pitch, uma boa apresentação?" Eu gosto de seguir essas três etapas aí que para mim são as principais. Contexto, conteúdo e comunicação. Gente, primeiro contexto. Contexto é o momento de vocês entenderem onde e como esse pitch vai acontecer. Então, por exemplo, o pitch ele vai ser ao vivo ou gravado? Ele vai ter slide? A pergunta aqui, ó, do da Ruth: "O tempo para apresentar". Isso é vocês entenderem o contexto. É uma banca mais técnica? Quem vai assistir? É uma banca
+
+00:16:47 - 00:17:39
+mais leiga? As pessoas conhecem o tema ou eu preciso explicar desde o começo?" Então, pessoal, o contexto são perguntas que vocês vão fazer muito importantes para que possa ajudar vocês a definirem o que que vai entrar no pitch, né? Qual conteúdo vocês vão trazer. Então existe muita diferença, né, você explicar um projeto para alguém técnico e você chegar em casa e explicar o mesmo projeto para tua vó, né? Você não vai conseguir explicar com o mesmo linguajar. Então, por isso que é importante entender qual é o público que
+
+00:17:13 - 00:18:12
+vai assistir, as circunstâncias daquilo para que você possa, né, desenvolver o melhor conteúdo para explicar, né? Então, por isso que a análise de contexto ela é fundamental. E já respondendo a Ruth aqui, trazendo um pouco mais de contexto aqui do Hackathon para vocês, o pitch de vocês não vai ser ao vivo, ele vai ser gravado, ele vai ser gravado dentro da plataforma do Hackathon que a gente vai disponibilizar para vocês e vocês vão utilizar slides e áudio. Vocês vão ter lá os o PDF do da apresentação, vai subir o PDF e vão
+
+00:17:43 - 00:18:42
+gravar o áudio em cima, então o rosto de ninguém vai aparecer, é só a voz. Uma pessoa da equipe grava, vocês podem escolher quem da equipe tem a melhor habilidade de comunicação e vocês vão ter no máximo 3 minutos para gravar esse pitch, tá? Então, são 3 minutos aí para apresentar. E quem que vai assistir no Hackathon, pessoal? A banca de jurados. Então, é uma banca mista, a gente vai ter jurados técnicos, jurados aí dos órgãos organizadores, mas também pessoas ligadas à inovação, à tecnologia que
+
+00:18:13 - 00:19:14
+podem não dominar aí todos os detalhes do CA, eh, também da legislação ambiental, né? Eh, da tech que vocês vão propor, então por isso não pode ficar tão técnico demais, tá? Então, não adianta encher aí a apresentação de siglas, de termos jurídicos, né, termos de programação, eh, porque talvez a banca não consiga acompanhar. Então, o desafio de vocês é justamente usar uma linguagem mais acessível, mas sem perder aí a consistência da solução. Beleza? Tá claro, gente? Então, beleza. E aí depois de definir o
+
+00:18:43 - 00:19:39
+contexto, vem a segunda etapa que é o conteúdo. Então, o conteúdo nada mais é que vocês organizarem, né, tudo que vocês vão apresentar. Então, qual é o problema que vocês vão mostrar, como é que, eh, vai funcionar a solução de vocês, quais funcionalidades, blá blá blá blá blá, impacto. Então, eu já vou falar, já vou falar detalhadamente aqui sobre todos os tópicos que vocês precisam ter no pitch, né? Então, calma. E por fim, vem a terceira etapa aí que é a comunicação, que é a forma como vocês vão falar. Então, é a questão do ritmo,
+
+00:19:11 - 00:20:17
+da clareza, né, da energia, né? Eh, os slides que vocês vão apresentar, as imagens, enfim, é o jeito de vocês conduzirem a explicação. Então, ó, daqui para frente eu vou explicar para vocês aí conteúdo e comunicação. Então, primeiro a gente vai organizar o conteúdo do pitch e depois como comunicar aí o que a gente vai fazer. Beleza? E aí, gente, um pitch, ele é composto aí também nesses três tópicos: introdução, proposta de valor e pedido, tá? Eh, se vocês passarem aí por essas três partes, vocês já vão ter
+
+00:19:44 - 00:20:43
+a base de um pitch, né? Então, a introdução é quando vocês situam a banca, né, quem são vocês, qual é o projeto, o que que vocês vão falar. A proposta de valor é quando vocês mostram o problema, né, apresentam a solução, explicam como que ela funciona e por que que ela é relevante. E o pedido é o momento que vocês têm de mostrar qual é o próximo passo, né, o que que vocês precisam para testar, para validar, para implementar ou evoluir com essa solução. E aí, dependendo do que vocês têm, eh, do tempo que vocês têm,
+
+00:20:13 - 00:21:17
+né, eh, vocês vão aprofundando aí mais ou menos cada uma dessas partes. Então, tem pitch de 30 segundos, pessoal, tem pitch de 1 minuto, tem pitch de 5, de 3. Enfim, mas normalmente eles são curtos, tá? Então, 30 segundos é um pitch muito rápido, mas ele sempre vai passar por esses três tópicos: introdução, proposta de valor e pedido, tá? Então, o pitch que vocês vão fazer aqui no hackathon, ele vai ter 3 minutos. E aí eu trago para vocês aqui uma sugestão de estrutura para ajudar vocês a não deixarem passar aí nenhuma informação
+
+00:20:45 - 00:21:37
+importante. "Ah, Ana, mas eu preciso seguir exatamente o que tá escrito aí?" Não, gente, não precisa seguir exatamente essa ordem, mas se vocês quiserem, né, trazer as informações principais que os jurados vão tá de olho ali, eu recomendo fortemente que vocês usem essa estrutura como guia. Lembrando que o pitch é de vocês, então fiquem à vontade aí para mudar a ordem, né, se fizer sentido inverter algum ponto, né? Às vezes vocês querem contar a história de um outro jeito, tudo bem, não tem
+
+00:21:11 - 00:22:18
+problema. O mais importante é que no final da banca, como eu falei, a banca consiga entender qual o problema vocês querem resolver do CAR, quem que sofre com esse problema, qual solução vocês criaram e por que essa solução melhora o processo. Então, tenham isso com muito carinho, tá? E agora eu vou falar então sobre cada uma aí dessas etapas, né? Do que eu trago como sugestão de estrutura de pitch para vocês, para vocês pegarem aí algumas dicas. Então, gente, introdução. Introdução fundamental, né? Às vezes a
+
+00:21:45 - 00:22:40
+gente vê pitch que a pessoa começa a falar direto da solução, mas a pessoa não se apresenta, não fala o nome do projeto, não explica o que que ele é. E aí quem tá assistindo fica tentando, tá, mas sobre o que que essa pessoa tá falando mesmo? Às vezes já começa ali a falar, ah, desenvolvemos tal coisa. Tá, mas que que que problema que você tá resolvendo, né? Então, fica meio confuso. Então, introdução, gente, introdução rápida e objetiva. Vocês precisam trazer três coisas, né? Quem é você, o nome do projeto e resumir ali, talvez,
+
+00:22:12 - 00:23:08
+em uma frase aí, o que é a solução de vocês. Porque daí isso fica mais fácil, né? Então, o jurado ele vai escutar os primeiros segundos do teu pitch, ele já vai falar, um, opa, já entendi, essa solução vai falar sobre tal assunto, né? Então, para ficar mais fácil assim de vocês entenderem, imagina que eu desenvolvi uma solução chamada CAR Fácil, tá? CAR Fácil é uma ferramenta aí para guiar o produtor rural passo a passo no preenchimento do CAR, tá? Então, minha introdução, por exemplo, poderia ser
+
+00:22:41 - 00:23:45
+assim: Eh, olá, eu sou a Ana da equipe CAR Fácil, nossa solução é um assistente digital para ajudar produtores a preencherem o CAR com mais segurança, patati patatá. Então, assim, em uma frase única, pessoal, eu já trago para vocês o meu nome, o nome do meu projeto e um resumo rápido do que que ele faz. Então, o jurado ele já, OK, vamos prestar atenção porque está resolvendo o tal desafio, eu vou ver agora sobre o CAR Fácil. Então isso ajuda muito, tá? Então uma introdução mesmo muito objetiva, mas ela faz toda a diferença,
+
+00:23:13 - 00:24:09
+tá? Depois disso, pessoal, a gente cai pro problema, né? Então aqui vocês precisam responder qual o problema do CAR que vocês identificaram, né? Quem que sofre com esse problema, a persona, né? Como trouxe aqui o Igor. Por que que esse problema ele é relevante? Como que esse problema se conecta, né, ao desafio escolhido? Então no hackathon, pessoal, esse problema ele pode aparecer aí de várias formas, então pode ser um produtor rural que não entende como preencher, né, como alterar ali o cadastro dele. Eh, o
+
+00:23:41 - 00:24:38
+problema pode ser, por exemplo, um técnico que perde muito tempo ali explicando regras ali, eh, pro produtor que tem que preencher. Eh, esse problema pode ser pro órgão ambiental que precisa analisar as informações que tão divergentes ali também. Pode ser pra uma base do CAR que não consegue acompanhar as mudanças. Enfim, né? Então qual é o problema, independente vocês precisam mostrar qual é o problema que vocês estão tentando resolver, tá? Então voltando ali ao exemplo que eu trouxe pra vocês do CAR Fácil, né, se eu
+
+00:24:10 - 00:25:05
+comecei dizendo que eu vou desenvolver um assistente digital pra ajudar os produtores a preencherem o CAR, agora eu eu preciso explicar por que que isso é necessário, né? Então aqui eu trago a dor mesmo. Ah, hoje muitos produtores têm dificuldades de entender o que que precisa ser declarado, quais são as informações que precisam ser preenchidas e corrigidas e isso aumenta o trabalho do analista. Trago a justificativa, trago a justificativa desse problema. Percebem? Entendem? Então aqui eu mostro
+
+00:24:37 - 00:25:33
+o problema, eu mostro quem é afetado pelo problema, qual é a consequência disso. Então nessa parte do pitch, gente, tragam aí os dados que vocês tenham em mãos, as falhas, as dores, né? Eh, as consequências ou as até mesmo as oportunidades, né? Às vezes tem uma oportunidade, algo que não tem ainda, mas é importante que vocês tragam por que que esse problema importa, tá? Porque logo na sequência, depois que vocês falarem aí, ó, o problema é esse, esse e aquele, vocês vão vir "Foi pensando nisso que eu desenvolvi,
+
+00:25:05 - 00:26:00
+pá". Aí você traz a justificativa, então. Foi pensando nesse problema que a gente criou o Car Fácil, um assistente que vai ajudar numa jornada guiada, blá, blá, blá. Então veja como as coisas se conectam, né? Você trouxe ali o problema, daí você já traz a solução de vocês, então isso faz muito sentido. No problema a gente consegue identificar "Hum, OK, isso é um problemão. Opa, eles estão criando isso". Isso realmente faz a diferença, né? Então vocês já começam a explicar ali a solução de vocês, na sequência já traz o
+
+00:25:32 - 00:26:35
+como funciona, né? Então aqui, gente, vocês vão explicar rapidamente como funciona o protótipo de vocês, qual que é a lógica principal, né, da solução e como que o usuário ele interage com ela. Então aqui vocês podem trazer nos slides ali alguns prints do protótipo, né, das telas ali, imagens, que ajudem a banca a visualizar a solução de vocês. Mas, pessoal, muita atenção aqui porque no pitch, o como funciona vocês vão explicar de forma resumida, tá? Vocês não vão precisar entrar em detalhes aqui, detalhes muito técnicos de como
+
+00:26:04 - 00:26:58
+funciona, não precisa falar que ao clicar no botão, em cada tela, em cada funcionalidade, porque isso, o como funciona, vai ter um vídeo específico que vocês vão fazer para entrega de protótipo, tá? Então na entrega de protótipo vocês vão ter dois minutos só para falar como funciona. Você vai começar o teu protótipo já falando: "Olha, aqui no Car Simples funciona assim, ele clica aqui, vai para lá". Vocês vão narrando e vão mostrando como funciona. Então, como funciona, deixem para o protótipo. Mas aqui no pitch você
+
+00:26:31 - 00:27:32
+pode trazer de uma maneira mais macro, né, mostrando aí a lógica da solução, enfim, para ajudar a dar essa orientada aí no jurado, tá? Então trouxe ali como funciona, a gente vem para diferenciais, né? Então aqui vocês vão responder o que que torna a solução de vocês diferente, diferente do que existe hoje, né? O que que ela traz de novo? Por que que ela é mais eficiente? Ela é mais simples? Ela é mais útil do que pode ser usada hoje? Ela é mais rápida? Então esse diferencial é justamente para mostrar,
+
+00:27:02 - 00:28:05
+né, que a solução de vocês não é só mais uma ideia solta ali, mas que existe, de fato, uma proposta ali, é, própria, um jeito diferente de resolver aquele problema. Então esse diferencial, ele já vai se conectar, né, também com o nosso próximo item aqui, que é impacto esperado. Então no impacto vocês vão mostrar quais resultados, né, são esperados a partir da solução que vocês estão desenvolvendo. Então no caso do CAR, né, como eu trouxe ali algumas sugestões de impacto, mas pode ser redução de erros,
+
+00:27:33 - 00:28:35
+pode ser a economia de tempo, pode ser tornar mais fácil para o produtor rural o acesso, menos retrabalho para os órgãos, é, pode ter dados mais atualizados com mais frequências, pode ter mais segurança na tomada de decisão, enfim, um processo mais simples. Aqui vocês vão trazer impactos esperados com a solução de vocês. Então vocês vão pensar, né, o que que vai melhorar para o usuário? Que que vai melhorar para o governo? Que que vai melhorar para o CAR como um todo, né? Então aqui vocês vão trazer o impacto de vocês.
+
+00:28:05 - 00:28:54
+Na sequência vem o item sete, que é apresentação da equipe. Então aqui é o momento de mostrar quem faz parte do time. Algo bem simples, tá, pessoal? Então, ah, nosso projeto é composto pelo fulano, ciclano, beltrano. Você pode colocar ali uma fotinho, né, de cada integrante, o nome, se fizer sentido uma palavra ali sobre o papel de cada pessoa no projeto, mas não invistam muito tempo nessa parte, né? Mas é importante mostrar ali quem tá por trás da solução, porque isso ajuda a banca, né? Ajuda a
+
+00:28:29 - 00:29:26
+banca a perceber ali a capacidade de execução do time, quem são as pessoas, né, que estavam por trás ali pensando, construindo e que podem ter potencial de continuar no desenvolvimento dessa ideia. Então por isso que é legal trazer o time aqui também, tá? Aí a gente vai para o item oito, que é próximos passos e pedidos para viabilizar. Gente, sempre gera dúvida aqui. Que que é o pedido? Que que é o pedido? Então trazendo aqui, quando eu falo pedido, não necessariamente é pedir dinheiro, tá? Então no Hackathon, gente,
+
+00:28:58 - 00:29:56
+o pedido é vocês mostrarem para os jurados o que que vocês precisam para dar o próximo passo para a solução de vocês sair do papel. Então vocês precisam do quê? Vocês precisam testar a solução com produtores rurais? Vocês precisam validar a solução com técnicos que hoje trabalham no CAR? Vocês precisam de dados, de um acesso a um ambiente de teste? Vocês precisam do quê? Que que vocês precisam? Então esse pedido, gente, ele mostra maturidade, tá? Ele mostra aí que vocês não estão só apresentando, eh, uma ideia bonitinha,
+
+00:29:27 - 00:30:23
+mas que é uma ideia que vocês já pensaram aí no caminho para que ela saia do protótipo, que ela possa ser testada no mundo real. Então ao invés de finalizar ali o pitch só falando "É isso, obrigado", vocês podem trazer esse próximo passo aí mais concreto, né? Então pode trazer "Ah, como próximo passo eh, para evoluir esse protótipo, a gente precisa, eh, a gente gostaria de rodar um piloto com uma base de imóveis rurais, blá blá blá blá blá e tal". Então vocês deixem claro, peçam, gente,
+
+00:29:54 - 00:30:48
+peçam e é isso que diferencia um pitch de uma apresentação, porque o pitch sempre tem um pedido. Como eu falei para vocês pitch é a ferramenta do empreendedor. Então se você tá dando o pitch é porque você quer algo em troca. Então por isso que o pedido é super importante. Beleza? E por fim chegamos ao encerramento. Então o encerramento também não precisa ser longo, ele é algo curtinho igual a introdução mas é para dar justamente esse, essa sensação do fechamento, sabe? Para quem tá assistindo. É o momento de reforçar
+
+00:30:22 - 00:31:26
+aí, né? Eh a mensagem principal da tua solução, né? Mostrar que o pitch acabou, então vocês podem, de repente, trazer uma frase de impacto ali. Ah, eh, ah, com o CAR Fácil a gente quer tornar o preenchimento mais simples e seguro para o produtor rural. Né? Vocês vão fazer ali um fechamento bonitinho de vocês, é a última impressão para vocês deixarem aí para a banca, reforçando o valor da solução de vocês, deixando claro porque que a ideia de vocês merece essa atenção, tá? Gente, essa é a sugestão de estrutura
+
+00:30:54 - 00:31:52
+que eu trago para ajudar vocês a organizarem as informações da ideia de um jeito bem claro e objetivo, lembrando que o pitch, ele não vai ser analisado sozinho, tá? Então os jurados, eles vão avaliar três materiais que vocês vão construir ao longo do hackathon. O primeiro vai ser a entrega de ideação, que é a parte escrita, né? Onde vocês vão explicar ali melhor a construção da ideia. Então calma que amanhã, na live às duas da tarde, a gente vai abrir a entrega de ideação e explicar para vocês o que
+
+00:31:23 - 00:32:26
+precisa ser feito, tá? Então a entrega de ideação, os jurados vão receber. Também eles vão assistir o pitch, que é essa apresentação mais objetiva. E por último, eles vão assistir o protótipo de vocês, tá? Que é onde vocês vão mostrar com mais detalhes ali como a solução ela funciona. Então pensem com carinho aí na construção de todo esse material, porque uma entrega vai complementar a outra, tá gente? Então a ideação vai mostrar como vocês chegaram na ideia, o pitch vai apresentar a solução aí, objetivos e
+
+00:31:54 - 00:32:54
+impacto, e o protótipo vai mostrar como funciona na prática. Dúvidas em relação a isso, galerinha? Mandem aí no chat. Esse pedido deve considerar a possibilidade de nascer aqui uma nova empresa ou a proposta a ser implementada pelo governo brasileiro. Sérgio, muito importante pessoal, a gente pode surgir eventualmente algum outro aplicativo, algum outra, algum outra um outro programa? Pode, mas esse não é o foco hoje, a gente quer focar no CAR, melhorias para o CAR, tá pessoal? Então hoje o que pode ser implementado e
+
+00:32:25 - 00:33:24
+aperfeiçoado nas ferramentas que já existem. Então não é só o CAR, tem várias ferramentas complementares que vocês podem sugerir ali que fazem parte do CAR também. A gente disponibilizou todo esse material para vocês, então a gente está está focando em melhorias. Beleza? Tudo certo em relação à estrutura de pitch? Mandem aí no chat se tiver tudo certo, manda joinha, pessoal, quem tá acompanhando. Mandem joinha pra gente saber que vocês estão ligados. Eu vou continuando aqui. E aí, gente, eu queria trazer uma
+
+00:32:54 - 00:33:59
+técnica bem simples pra ajudar vocês a começar na introdução, né? Então, uma dica boa é usar essa receitinha aqui chamada Mad Lib. Então, o Mad Lib, ele é basicamente uma frase ali resumo que ajuda vocês a falarem sobre o projeto de vocês de forma objetiva. Então, funciona muito bem ali pra introdução do pitch, porque é uma frase só que vocês conseguem apresentar o que que é a solução, pra quem que ela existe, né? Qual o problema que ela resolve e qual que é o diferencial dela. Inclusive, nas entregas do Hackathon vai
+
+00:33:27 - 00:34:27
+ter lá uma pergunta que vocês vão precisar escrever um resumo da solução. Então, essa técnica aqui, ela pode ajudar aí tanto no pitch quanto no preenchimento dessa entrega, tá? Então, eu acho que é bem simples, vocês vão pegar aí essa frase modelo, né, e vão substituir os espaços que tão amarelos pelas informações do projeto de vocês. Então, assim, o, daí o nome da solução, é um ou uma, né, o que que é, o tipo da solução, que ajuda, quem ela tá ajudando, a resolver, né? Então, quem que ela ajuda? Produtores rurais,
+
+00:33:57 - 00:34:56
+técnicos, gestores públicos, órgãos, pessoas que precisam declarar, né, retificar o CAR, né? Qual o problema ela resolve, né? E, por fim, como que ela resolve esse problema de um jeito diferente, se é mais simples, se é mais rápido ou mais eficiente, né? Então, aqui você tem um exemplo, né, que eu trouxe pra vocês. Então, ah, o CARFácil, você vai trocar ali o nome do projeto pelo nome do seu projeto, é um assistente digital que ajuda produtores rurais e técnicos a preencher e retificar o CAR com mais segurança por
+
+00:34:27 - 00:35:21
+meio de uma jornada guiada, linguagem simples e alertas de inconsistências antes do envio. Então, percebam que em uma única frase a gente já entende aqui o nome da solução, o que que ela é, quem ela ajuda, qual o problema ela resolve e qual é o diferencial. Então, quando vocês estiverem ali travados na introdução, com dificuldade de começar o pitch, voltem para essa frase, porque ela ajuda muito vocês organizarem o pensamento e a transformar a ideia, né, numa explicação simples, para que você possa ir depois desmembrando ali com os
+
+00:34:54 - 00:35:53
+outros tópicos que a gente traz no pitch, tá? Então, lembrem disso, pessoal, se vocês conseguirem resumir bem a solução em uma frase, vai ficar mais fácil, tá, de vocês construírem o resto do pitch. Gente, a tela é toda escura mesmo? Não entendi. Você tá falando sobre os slides, Ana? Aqui os slides estão aparecendo, tá? Não sei se tá escuro aí para você. Dá uma atualizada na página. Rafael, sim, a live Opa, o Rafael tá respondendo. A Josie tá perguntando se a live fica gravada? Sim, todas as nossas lives
+
+00:35:23 - 00:36:35
+ficam gravadas e todos os slides que a gente traz para vocês estão sendo postados em PDF lá dentro do Discord, na no canal de materiais de apoio, tá? Então, vocês conseguem depois revisitar toda essa estrutura, tudo isso que eu tô trazendo aqui para vocês. Beleza, gente, sobre a estrutura? Então, bora falar aqui sobre comunicação. Vamos falar sobre comunicação, gente. Eh Deixa eu ver. Sim, as inscrições estão abertas? Sim, até hoje, até hoje, gente, as inscrições estão abertas e formação das equipes até amanhã, tá?
+
+00:36:01 - 00:36:58
+Então, vamos falar sobre comunicação, gente. Não adianta, como eu falei, ter uma boa ideia se vocês não conseguirem, né, apresentar essa ideia, se o jurado não conseguir acompanhar o que vocês estão explicando, né? Então, bora ver algumas dicas práticas aí que eu vou trazer para vocês sobre comunicação, tá? Depois eu vou falar sobre slides e como você faz a gravação. Gente, o pitch, ele tem um tempo curto, tá? Então, não tem muito espaço para você improvisar. Então, beleza, montei meus slides, vou começar a gravar meu pitch.
+
+00:36:29 - 00:37:27
+Você vai ter três minutos, tá? Às vezes, se você começar a falar, você pode se perder, você pode ser prolixo, você pode ir apresentar o problema, daí você falou da solução, daí você volta para o problema, daí você volta. Então assim, acaba gerando muita enrolação. O pitch, por ser curto, você não tem muito espaço para improvisação. Por isso a minha primeira dica é: escrevam um roteiro do pitch de vocês. Não precisa escrever palavra por palavra ali, mas importante ter essa linha de raciocínio bem clara,
+
+00:36:58 - 00:37:53
+porque aí você consegue ir seguindo ela sem repetir, sem ficar voltando ali nas mesmas informações que você já falou, tá? Então, eh, tenham tópicos ali, né? Saber como que vocês vão começar, qual que é o problema que vocês vão apresentar, né? Como é que vocês vão apresentar a solução, qual o impacto que vocês querem destacar, como é que vocês vão encerrar. Então tenham aí esses tópicos. Tem gente que prefere escrever realmente o pitch, eh, mas saibam que é importante você ter estudado essa estrutura antes de gravar,
+
+00:37:25 - 00:38:18
+porque o tempo realmente é curto, tá? E aí, ensaiem, né, gente? Depois que vocês fizerem a primeira versão do pitch, gravem e escutem. Na própria plataforma do Hackathon vocês vão poder fazer isso, ficar gravando ali, se ouvindo, né? E se não gostar, pode refazer. Porque quando a gente grava e a gente se escuta, a gente começa a perceber coisas que antes só no texto tinham passado batido, né? Então você consegue ver se você tá falando rápido demais, se você tá falando devagar demais, se você tá
+
+00:37:52 - 00:38:56
+repetindo muito, se a explicação ficou confusa. Então por isso que é super importante que vocês se ouçam, que vocês se escutem, para vocês poderem depois analisar e aí melhorar, aperfeiçoar e daí gravar para valer, tá? Então o time ajuda bastante também. Normalmente em Hackathon, o time faz uma divisão, né? Deixa alguns integrantes aí para eh, gravar o pitch. Então depois que essa pessoa tiver gravado, compartilha aí com os colegas para que eles possam também dar esse feedback, porque é preciso praticar bem, tá? Como eu trouxe
+
+00:38:24 - 00:39:26
+aí um bom pitch no improviso, é clareza, treino e ajuste. Dicas de slides. Então, além de treinar a fala aí, é importante vocês cuidarem dos slides também. Então, slide, pessoal, não precisa ter tudo o que vocês vão falar, tá? Então, nada de testão em slide não, tá? Não é um documento para o jurado ler. Ele é um apoio visual para ajudar quem tá assistindo ali a acompanhar a ideia de vocês. Então, pouco texto, pessoal. Evitem de colocar muito texto, né? Então, se você tem muito texto, o jurado ele começa a ler, ele começa a se
+
+00:38:55 - 00:39:56
+perder, não vai prestar atenção no que vocês estão falando. Então, nananina não. Nada de ler testão no slide, tá? Então, usem aqui frases curtas, usem tópicos, palavras-chaves, eh abusem das imagens, ícones, prints ali, né, do protótipo também. Sejam mais visuais, né? Principalmente ali na parte de como funciona, vale a pena ali, como eu falei, mostrar telas, desenhos ali, a jornada, algo que ajude a explicar a solução. Então, o slide, pessoal, ele precisa ajudar a contar a história, tá? Ele não é para competir com a sua fala
+
+00:39:25 - 00:40:24
+não. Uma outra dica também importante é para vocês manterem uma ordem clara. Então, cada slide, ele deve responder uma pergunta, né? Então, por exemplo, qual que é o problema que está resolvendo? Daí no próximo slide, qual que é a solução? No outro, como que funciona? No outro, qual que é o impacto? Então, deixando isso separadinho também fica mais fácil eh de deixar ele mais organizado, mais fluído, né? Cuidado também na identidade visual, né? Manter aí as mesmas cores, tamanho de fonte. Não precisa seguir as cores do
+
+00:39:54 - 00:40:57
+hackathon, tá? Não precisa usar a logomarca do hackathon. Vocês estão criando aí a solução de vocês, vocês vão precisar criar a identidade visual de vocês, a logomarca do que vocês estão criando, vocês também vão precisar fazer, né? Então, pode ter a cor que vocês quiserem. Então, a a apresentação de vocês também vai ter essa identidade visual que vocês vão criar. Beleza? E por fim, né, gente? Dicas, algumas dicas aqui bem práticas para gravação do pitch, né? Então, primeiro, escolha um ambiente silencioso. Parece detalhe, né,
+
+00:40:26 - 00:41:22
+eu estar falando isso, mas o que eu já vi de pitch com gente conversando no fundo, com televisão ligada, com eco atrapalhando. Então, isso dificulta para a banca, né, analisar a ideia de vocês, fica muito ruído. Então, escolha um ambiente silencioso para gravar esse pitch. Cuidem da qualidade também do áudio que vocês vão gravar, tá? Segundo, testem o microfone. Então, eu sugiro que vocês usem microfone mesmo, porque às vezes gravar sem microfone acaba pegando muito ruído, então o microfone ajuda a direcionar,
+
+00:40:54 - 00:41:47
+né? Não precisa ser nada profissional, gente, um fone de ouvido assim, igual o meu, está ótimo já. Porque é importante que o áudio ele fique bem claro, né? É, a gente precisa entender tudo o que vocês estão falando. Terceiro, falem devagar. Eu sou uma pessoa que eu falo super-rápido, né? Vocês já viram, né? E quando a gente está nervoso, a gente fala mais rápido ainda. E eu sei que muita gente deixa o pitch para a última hora. Então, eu sei que vai A entrega de pitch é domingo, 11:59 da noite. Eu sei que vai ter gente domingo,
+
+00:41:20 - 00:42:25
+11:30 da noite, tentando gravar pitch. E aí vai ser aquele desespero, vai estar nervoso, vai começar a falar rápido, vai Vai ficar horrível. Então, se organizem e não deixem o pitch para a última hora. Se essa é uma dica que eu possa dar para vocês, a dica é essa. Vocês ficam nervosos, vocês não vão conseguir, então não deixem o pitch para o último minuto, se organizem da melhor forma, tá, gente? Então, tem que cuidar com o ritmo na fala, tá? Não pode ser muito rápido, mas também não pode ser muito devagar e sem energia. Imagina que
+
+00:41:52 - 00:42:50
+eu tivesse aqui dando essa oficina de pitch para vocês desse jeito. Ninguém ia estar engajado, né, gente? Vocês iam estar: "Meu Deus, que saco, acaba logo isso". Então, assim, ritmo, emoção na fala, né? É, vocês precisam falar com energia, vocês estão apresentando uma ideia que vocês acreditam, que vocês desenvolveram. Então, é, não gravem como se tivesse lendo ali um texto sem emoção. O pitch é justamente a venda da solução de vocês, então mostrem aí esse entusiasmo, mostrem essa segurança e
+
+00:42:21 - 00:43:21
+essa intenção, tá? Então, escolham quem da equipe tem a melhor comunicação para fazer essa apresentação, tá? E, por fim, cuidem aí também, gente, da gestão do tempo, né? Então, usem bem o tempo disponível. Então, vocês têm 3 minutos. Eu posso fazer um pitch de 1 minuto? Pode, mas você vai estar deixando de falar por mais 2 minutos da sua solução. Então, se você tem 3 minutos, gente, são 3 minutos. A plataforma é uma contagem regressiva, então vocês não vão nem conseguir passar dos 3 minutos. Mas,
+
+00:42:52 - 00:43:51
+falem o mais próximo possível de 3 minutos. Se vocês têm 3 minutos, falem ali 2:50, em 2:45, 2:55, mas aproveitem todo o tempo de vocês para falar, né? Para vocês trazerem as informações que vocês têm. E, antes de enviar, escutem, né? Vocês vão ver que na plataforma, vocês conseguem dar o play para assistir o pitch de vocês e vocês têm que estar se ouvindo e vocês têm que ver os slides de vocês passando sozinhos, porque é desse jeito que a gente vai receber. Se tiver mudo, pessoal, se os slides
+
+00:43:21 - 00:44:23
+estiverem parados, vai ser dessa forma que os jurados vão avaliar. Então, muita atenção em relação a isso. Beleza? Gente, esse era o conteúdo de pitch que eu queria trazer para vocês. É bastante informação, eu sei, mas vocês vão poder revisitar essa live depois. A live está sendo gravada, então, pelo mesmo link, vocês conseguem conferir. Vou colocar esses slides também, essas dicas, lá dentro do Discord, tá? Para que vocês possam verificar também dentro de materiais de apoio. E agora eu quero ouvir as dúvidas de vocês. Quem tem
+
+00:43:52 - 00:44:54
+dúvida? Ficou claro? Comentem aqui no chat, vamos interagir, mandem aí se vocês se se tá claro como montar esse pitch, se tá tranquilo, porque a gente gosta de trazer esse conteúdo antes do hackathon começar, porque daí você já começa a se organizar, vocês sabem os próximos passos, o que precisa ser feito no desenvolvimento, vocês já vão com esse olhar também e toda essa estrutura de pitch que a gente trouxe para vocês é o que tá lá no edital, é o que a gente vai analisar, então por isso que é importante vocês trazerem ali, né?
+
+00:44:23 - 00:45:22
+Problema, solução, impacto, então é fundamental aí que vocês, é, estejam alinhados com o que a gente espera. Dúvida? Então tá tudo certo? O pessoal da Dataprev pode participar? Idemar, dá uma conferida lá no edital, tá? Depois a gente pode conferir para você, mas tem lá as orientações também. As empresas participantes não conseguem, diretamente não conseguem participar, então tem que ver aí exatamente qual que é a sua. Gente, dúvidas em relação a isso? Eu vou mostrar para vocês, então, que eu sei que vocês são curiosos, as dúvidas
+
+00:44:53 - 00:45:57
+sempre surgem depois, né, Sérgio? A gente sabe, mas a nossa equipe tá a todo momento à disposição de vocês, vai ter plantão ali da equipe durante todo o Hackathon para auxiliar vocês, tá? É, e, então, fiquem tranquilos, a gente sabe que as dúvidas vão surgir, a gente tem vários mentores também de comunicação, de design, então vocês vão poder pedir ajuda também ali no pitch, é, então vamos que vamos. Mas agora eu vou mostrar para vocês, aproveitando, como que vai ser a plataforma de gravação de pitch dentro do Hackathon,
+
+00:45:24 - 00:46:23
+tá? Porque o pitch obrigatoriamente, não vai adiantar vocês gravarem um vídeo fora e subir lá, não, vocês vão ter que gravar o pitch usando slides e áudio dentro da plataforma do Hackathon, tá? Eu gravei um videozinho e eu vou rodar para vocês verem como isso funciona, saca só. Olá, vou mostrar para você como gravar o pitch aqui dentro da plataforma do Hackathon. Então aqui nessa etapa, você vai fazer o upload da sua apresentação de slides, ela precisa estar no formato PDF, tá? Então independente de qual
+
+00:45:54 - 00:46:54
+programa você fez, PowerPoint, Canva, você tem que exportar em PDF para subir aqui na plataforma. E por ser PDF, não tem como colocar GIF, não tem como colocar vídeo, tá? É uma apresentação estática. E aí é só aguardar alguns segundinhos que o gravador vai preparar a sua apresentação e o tempo depende da quantidade de slides e foto que você tem, mas é só aguardar que os slides vão carregar, tá? Prontinho, slides carregados e aqui está o nosso gravador. Então, os meus slides estão aqui. Perceba que eu tenho
+
+00:46:24 - 00:47:15
+flechinhas, né, que eu consigo clicar para ir para frente ou para trás. E aqui embaixo a gente tem o gravador. Então, você vai ter três minutos para fazer o teu pitch, tá? Então, você vai clicar em gravar, quando o tempo começar a diminuir, você já pode começar. Olá, tudo bem? Eu sou a Ana, estou mostrando como funciona o gravador e conforme eu estou falando, eu vou clicando nas flechinhas para passar os meus slides e é dessa forma que você vai fazer a sua apresentação como se estivesse ao vivo
+
+00:46:49 - 00:47:48
+mesmo, falando com alguém, tá bom? Acabou a apresentação, vai clicar em parar e aí você pode clicar no play para ver como ficou. E nesse momento que você clicar no play, você tem que prestar atenção se você está ouvindo a sua voz e se você está vendo se o seu vídeo, né, se os seus slides estão passando sozinhos. Então, ó, vou clicar no play. diminuir, você já pode começar. Olá, tudo bem? Eu sou a Ana, estou mostrando como funciona o gravador e conforme eu estou falando, eu vou clicando nas flechinhas para passar os meus slides e
+
+00:47:21 - 00:48:14
+é dessa forma que você vai fazer a sua apresentação como se estivesse ao vivo Então, perceba que a gente tá vendo a apresentação rodar sozinha e eu estou ouvindo meu áudio. Tenham certeza que isso está ocorrendo, porque se você não está ouvindo seu áudio, a gente vai receber mudo também, tá? Então, verifica aí se o teu microfone está certinho, se está tudo certo, que é fundamental que você confira como que a gente vai receber o seu vídeo, tá? Ah, não gostei, quero regravar, sem problemas, clique em
+
+00:47:47 - 00:48:44
+regravar, aquela gravação ali vai ser deletada e você começa uma nova aqui, ó, e aí você pode fazer esse processo quantas vezes você quiser até achar que ficou bom. Beleza? Até aqui algumas sugestões de slides para vocês, né? Como vocês podem apresentar os slides também. Aqui o protótipo, né? O print dos protótipos, vocês podem trazer aqui dessa forma. O time também, né? Aqui uma sugestão, vocês podem apresentar o time com as fotinhos, enfim, um slide aqui de exemplo e inspiração para vocês. Beleza?
+
+00:48:16 - 00:49:15
+E aí, se estiver tudo certo, é só clicar aqui, ó, em concluir e o seu pitch será enviado. Qualquer dúvida que você tenha, fale com a organização dentro do Discord ou no WhatsApp. Boa sorte, tchau, tchau. Ficou claro, gente? Entenderam? Pergunta: precisa ser em inglês a apresentação? Não, gente, a apresentação em português, tá? Apresentação em português. Ficou claro então como que vocês vão gravar o pitch dentro da plataforma do Hackathon? Mas Ana, que plataforma que é essa que eu não tenho acesso? Calma, a gente vai
+
+00:48:48 - 00:49:48
+disponibilizar para vocês somente a partir de amanhã, o nosso Hackathon ainda não começou, estamos nas lives preparatórias. Então amanhã, a partir das duas da tarde, a gente vai fazer a live de abertura e na sequência a plataforma de entregas vai ser aberta e disponibilizada para vocês, tá? Onde vocês vão poder gravar o pitch aí como eu acabei de mostrar. Dúvidas, gente? Qualquer dúvida, mandem aí no chat, senão a gente já vai meio que encerrando por aqui para não tomar muito tempo de vocês. Mandem aí, se não
+
+00:49:18 - 00:50:29
+tem dúvidas, mandem joinha para eu saber também que tá tudo certo, que vocês estão acompanhando. Acho que eu passei aqui sobre todas as dúvidas que estavam escritas em relação ao Edimar, a gente vai verificar e te retorna, Edimar, na sua inscrição também. Vamos lá, vamos lá. Ana, você é a mentora ou é da banca? Nenhum, nem outro, Igor, eu sou da equipe de organização, a gente tá aqui na operação, tá? Então a equipe, a minha equipe da Penik Lobster vai estar aqui nos bastidores ajudando vocês nesses
+
+00:49:53 - 00:50:48
+processos. Dificuldade da plataforma, a gente vai auxiliar vocês conectando com os mentores. Então, qualquer ajuda, a gente não solta a mão de ninguém, a gente está aqui para auxiliar. Então, a gente não se envolve ali a fundo nas soluções que vocês vão estar desenvolvendo, porque a gente é zona neutra, tá? E também a gente não avalia. A gente está aqui só para organizar. Estou tendo problema para colocar meu sócio na equipe do Discord. Júlia, faz o seguinte, é, comenta lá no check-in, que daí a nossa equipe vai
+
+00:50:21 - 00:51:14
+já te auxiliar, tá? Assim que acabar. Tem limite de slides? Não tem limite de slides. O que você tem que saber, Roby, é que tem três minutos. Então, não dá para colocar muito slide, senão você vai ter que falar muito correndo, né? Então, é, normalmente assim, a gente mostra a introdução um slide, problema um ou dois slides, solução um slide, como funciona normalmente uns três slides, impacto um slide. Então, normalmente não passa disso, mas é livre, tá? Não tem limite, não. O que é importante é que vocês
+
+00:50:48 - 00:51:46
+tenham aí esse esse ritmo aí na quantidade de slides, tá? É, para poder para poder dar tempo dentro dos três minutos. A Júlia falou que ela já está com o cadastro feito, mas não está conseguindo. Ah, mandou no Whats, Júlia? Beleza, nossa equipe já vai te responder. Dúvidas, gente, vocês podem mandar no Discord ou no grupo de WhatsApp, tá? Ali no WhatsApp tem Panic Lobster, tá? O admin é Panic Lobster no grupo do WhatsApp. Está com dúvida, não está conseguindo fazer alguma coisa? Manda para a gente que a nossa equipe
+
+00:51:17 - 00:52:11
+está ali para dar atendimento para vocês. Beleza? Fiquem tranquilos, vai dar tudo certo. Se alguém quiser alterar o desafio que se inscreveu, é possível? Evelyn, excelente pergunta. Na inscrição, a gente pediu uma ideia do que vocês imaginavam, do que vocês gostariam de resolver, mas não foi a escolha oficial do desafio. A escolha oficial, ela vai ser feita somente depois que vocês registrarem a equipe de vocês. Então, não tem problema se na inscrição você colocou que é o que é o desafio um, mas agora você quer se
+
+00:51:44 - 00:52:37
+reunir com uma equipe do desafio três, não tem problema. O que vai importar é quando vocês se cadastrarem a equipe de vocês ali no Discord, que vocês vão precisar escolher, né, qual é o desafio que vocês vão resolver, é esse que vai estar valendo, tá bom? Edemar, como hoje é o último dia, vocês me retornam por por qual meio? Edemar, você já se inscreveu? Se não se inscreveu, tem alguém na organização aqui, pessoal? Se tiver alguém aqui do Impact Hub, se tiver alguém aqui e puder me ajudar com essa
+
+00:52:10 - 00:53:05
+dúvida do Edemar aqui em relação a data prévia, se data prévia pode participar do Hackathon ou não, coloque aqui. Mas uma coisa é fato, Edemar, se você não puder participar como participante, você pode participar como mentor, porque eu tenho certeza que você vai contribuir. Mas se você já se inscreveu, a gente entra em contato pelo teu WhatsApp, Edemar. Quem mais? Dúvidas, dúvidas? Acho que respondi tudo aqui, gente. Tem alguma dúvida que eu não respondi? Mande aí de novo, mas qualquer coisa a gente continua no Discord. Gente, quero
+
+00:52:38 - 00:53:36
+agradecer muito todo mundo que participou aí da live de hoje, né? Quero, opa, deixa eu só mudar aqui. Pronto. Né, todo mundo que acompanhou aí as nossas lives, né, preparatórias, todo mundo que mandou perguntas aí, quem está se preparando, né, para viver esse Hackathon com a gente. Essa foi nossa última live preparatória, né, antes da maratona começar. A gente teve aí nos últimos dias outras lives super importantes falando sobre o funcionamento do Hackathon, os desafios, ideação, prototipagem e agora o pitch.
+
+00:53:07 - 00:54:02
+Então, se você perdeu alguma, gente, recomendo fortemente que vocês assistam as gravações, elas estão disponíveis para vocês dentro do Discord, lá tem a pasta de programação, então vale muito a pena vocês revisarem esse conteúdo antes de começar, porque ele pode ajudar bastante vocês aí no desenvolvimento das ideias e nas entregas que vocês vão precisar realizar. Eu vou, inclusive, mandar, logo depois aqui da live, no grupo de WhatsApp, os links de cada uma das lives preparatórias para ficar mais fácil para
+
+00:53:34 - 00:54:33
+vocês acharem, tá E agora, né, gente? Agora chegando mais perto do que nunca, né? O nosso Hackathon começa amanhã. Então, às 2:00 da tarde, horário de Brasília, começa oficialmente o Hackathon. A gente vai ter essa live de abertura aí também um momento, eh, super importante de vocês tirarem dúvidas com os representantes dos desafios ali das organizações. Então, já venham com essas dúvidas prontas, já venham com essas dúvidas preparadas. Revisem aí os desafios, conversem aí com a equipe de vocês e
+
+00:54:03 - 00:54:59
+aproveitem esse espaço para esclarecer, né, o que ainda não ficou claro. Teremos que criar as soluções ou apenas detalhar o projeto. Ah, RCP, não sei se você está perguntando em relação a código, tá? Não sei se é essa a sua pergunta. Vale lembrar que a gente não vai pedir, exigir que vocês desenvolvam códigos ou qualquer sistema aí funcionando durante o Hackathon, tá? A gente quer justamente avaliar a ideia, a solução proposta e a forma, né, como que ela resolve o desafio. Então, é muito mais a
+
+00:54:31 - 00:55:20
+validação, né? Então, a entrega vai ser sim um protótipo, mas esse protótipo ele pode ser, o, eh, o wireframes, ele pode ser fluxograma, ele pode ter desenho de tela. Enfim, qualquer outra forma para você demonstrar como que ela funciona. Tem equipe falando: "Ah, tudo bem, mas eu já vou fazer o código que é mais fácil para mostrar. Posso?" Pode, não tem problema, mas esse código ele não vai ser analisado, tá? É importante que vocês tenham isso claro. O que vai ser analisado, padrão para todo mundo, é um
+
+00:54:55 - 00:56:04
+vídeo do protótipo ali de 2 minutos. A gente vai explicar sobre essa entrega de protótipo para vocês. Combinado? "Não estou nesses grupos. Como faz para entrar?" Ruth, se você se inscreveu, gente, se você se inscreveu, tá? No Hackathon, verifica seu e-mail. Às vezes tem caixa de spam, tá na caixa de promoções. Então, vai lá e digita Hackathon, Hackathon, gente, com H, H A, Hackathon, tá escrito aqui em cima, ó, aqui. Hackathon, tá escrito, digita isso daqui no seu e-mail que daí vão aparecer, a
+
+00:55:30 - 00:56:27
+gente já mandou vários e-mails para vocês, tá? Tem e-mail com todas as informações, com todos os links dos grupos, para tudo, para vocês entrarem. Então, entrem lá, beleza? E o recado super importante, como eu trouxe, se você ainda não tem equipe, vá agora mesmo no Discord, converse com o pessoal, tá gente? Tem outras pessoas lá buscando time, é, então aproveitem esse momento para vocês conversarem, para vocês fecharem as equipes e garantirem a participação de vocês. As inscrições acabam hoje, hoje, mas as equipes ainda
+
+00:55:59 - 00:56:50
+podem ser ser formadas, né? As as equipes podem ser inscritas até amanhã, então não deixe para a última hora. Confiram o e-mail de vocês, tá? Os links estavam dando erro, Adalberto, mas já foram corrigidos, tá? Tá tudo certo, a gente subiu uma atualização, então ficou um pouquinho fora do ar, mas já voltou, já tá tudo certo. Podem fazer check-in, podem fazer inscrição, podem fazer, mandem ver e fiquem atentos às nossas orientações. Gente, muito obrigada mais uma vez pela presença de todo mundo. A gente se
+
+00:56:24 - 00:56:40
+encontra amanhã, às 2:00 da tarde, para começar oficialmente o Hackathon. Até lá, bom um dia para vocês.

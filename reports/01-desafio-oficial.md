@@ -1,17 +1,26 @@
-# Relatório: Desafio Oficial ao qual o Compadre está sendo submetido
+# Relatório: Desafio Oficial — haCARthon (Desafio 02)
 
-**Elaborado em:** 26 de junho de 2026  
+**Elaborado em:** 26 de junho de 2026 · **Atualizado em:** 27 de junho de 2026 (pivô Desafio 01 → 02)  
 **Status:** Confirmado — o evento está em curso nesta data.
+
+> **Pivô (27/06/2026):** o time migrou do **Desafio 01** (produto *Compadre*) para o **Desafio 02**. O produto agora é o **Gabarito** (base de referência viva do CAR). Ver `PIVOT-DESAFIO-02.md`.
 
 ---
 
 ## 1. Conclusão: Qual é o Desafio
 
-O produto **Compadre** (solução de CAR via WhatsApp para pequenos produtores rurais) está sendo submetido ao:
+O time está submetendo o produto **Gabarito** (base de referência viva para o mapeamento de uso e cobertura do solo do CAR) ao:
 
-> **haCARthon – Maratona de Soluções para o Cadastro Ambiental Rural (CAR)**
+> **haCARthon – Maratona de Soluções para o Cadastro Ambiental Rural (CAR)** — **Desafio 02**
 
-Este é o candidato primário e correto. O Show Rural Digital 2026 (Cascavel/PR, fevereiro de 2026) foi descartado como candidato secundário: embora tenha tido um desafio de "Conformidade Regulatória", sua data já passou (fevereiro 2026), é um evento presencial em Cascavel/PR organizado pela Coopavel, e não tem relação institucional com o CAR/SICAR ou com os organizadores identificados.
+Este é o candidato primário e correto.
+
+### Os três desafios do haCARthon
+| # | Desafio | Pergunta-guia (HMW) |
+|---|---|---|
+| **01** | Simplificar o CAR para o usuário | Como simplificar a declaração e retificação do CAR para o produtor rural, aproveitando bases de dados abertas? *(antigo alvo — produto Compadre, arquivado)* |
+| **02** ✅ | **Melhorar o acesso a dados geoespaciais do CAR** | **Como atualizar anualmente, com rapidez e acurácia, o mapeamento de uso e cobertura do solo de todos os estados — melhorando a atualização dos cadastros e a quantidade/qualidade das análises do CAR?** *(alvo atual — produto Gabarito)* |
+| **03** | Aumentar o entendimento das legislações do CAR | Como aumentar o conhecimento da legislação ambiental do CAR entre pequenos e médios proprietários, para promover preservação e recuperação florestal? | O Show Rural Digital 2026 (Cascavel/PR, fevereiro de 2026) foi descartado como candidato secundário: embora tenha tido um desafio de "Conformidade Regulatória", sua data já passou (fevereiro 2026), é um evento presencial em Cascavel/PR organizado pela Coopavel, e não tem relação institucional com o CAR/SICAR ou com os organizadores identificados.
 
 ---
 
@@ -85,10 +94,11 @@ Em maio de 2026, o MGI também lançou nova plataforma de consulta a dados públ
 
 **Tema geral:** Soluções open source para ampliar eficiência e acessibilidade do CAR (SICAR).
 
-**Foco implícito** (alinhado ao produto Compadre):
-- Acessibilidade para pequenos produtores rurais
-- Soluções que possam ser adotadas internacionalmente como DPG
-- Código aberto / open source obrigatório (condição do projeto CAR DPG)
+**Foco do Desafio 02** (alinhado ao produto Gabarito):
+- Atualização rápida e acurada do mapeamento de uso e cobertura do solo (base de referência)
+- Aumento da quantidade e qualidade das análises do CAR (destravar a análise dinamizada)
+- **Open source e agnóstico de plataforma — sem GEE/ArcGIS** (condição do projeto CAR DPG)
+- Reutilizável internacionalmente como DPG
 
 **O que normalmente se exige em hackathons ENAP (baseado em padrões da plataforma):**
 - Protótipo funcional ou MVP demonstrável
@@ -124,11 +134,11 @@ Informações específicas de elegibilidade não foram localizadas em fontes abe
 | Data | Fevereiro 2026 — já encerrado |
 | Local | Cascavel/PR (presencial, arena física) |
 | Organizador | Coopavel |
-| Desafio "Conformidade Regulatória" | Um dos 7 desafios, mas não específico de CAR/WhatsApp |
-| Relevância para Compadre | Baixa — sem conexão com SICAR, DPG ou ENAP |
+| Desafio "Conformidade Regulatória" | Um dos 7 desafios, mas não específico de CAR |
+| Relevância para o projeto | Baixa — sem conexão com SICAR, DPG ou ENAP |
 | Premiação | Missão técnica em Montevidéu (1º) + prêmios em dinheiro (2º e 3º) |
 
-**Conclusão:** Este evento é incompatível com o período e perfil do produto Compadre. A data passou em fevereiro; o foco é produtores cooperados da Coopavel; não há relação com o projeto CAR DPG.
+**Conclusão:** Este evento é incompatível com o período e perfil do projeto. A data passou em fevereiro; o foco é produtores cooperados da Coopavel; não há relação com o projeto CAR DPG.
 
 ---
 
@@ -151,15 +161,17 @@ Informações específicas de elegibilidade não foram localizadas em fontes abe
 
 ---
 
-## 9. Alinhamento Estratégico do Compadre com o haCARthon
+## 9. Alinhamento Estratégico do Gabarito com o Desafio 02
 
-O produto **Compadre** — solução de cadastro no CAR via WhatsApp para pequenos produtores rurais — tem alinhamento direto com o problema central do haCARthon:
+O produto **Gabarito** — base de referência viva do CAR (detecta a mudança, remapeia só o talhão alterado, entrega base + score de confiança) — responde diretamente à pergunta-guia do Desafio 02:
 
-1. **Acessibilidade**: O WhatsApp é o canal mais acessível para o público rural brasileiro, especialmente pequenos produtores com baixa literacia digital.
-2. **Open source**: Condição estrutural do haCARthon (projeto DPG); o Compadre deve ser desenvolvido sob licença aberta.
-3. **Impacto em SICAR**: Aumenta o volume de cadastros válidos no sistema, especialmente de agricultores familiares ainda não registrados.
-4. **Escalabilidade internacional**: A abordagem via WhatsApp pode ser replicada em outros países com contexto similar, alinhando-se ao objetivo DPG.
-5. **Problema real**: Estima-se que há milhões de imóveis rurais ainda sem CAR ativo, concentrados entre pequenos produtores com dificuldade de acesso à plataforma web oficial.
+1. **Atualização rápida e acurada**: ataca a defasagem de 2–2,5 anos da base de referência remapeando só o *delta* (talhões que mudaram), via Sentinel-2 + PRODES/DETER — não o estado inteiro.
+2. **Mais e melhores análises**: o score de confiança por talhão destrava a análise dinamizada em escala onde a base é confiável, e encaminha à revisão humana onde não é.
+3. **Open source e agnóstico**: roda em QGIS/PostGIS e libs abertas, **sem GEE/ArcGIS**; saída em GeoPackage/COG — exatamente os requisitos estruturais do CAR DPG.
+4. **Reutilizável internacionalmente (DPG)**: a abordagem "detecção de mudança + score de confiança sobre imagem aberta" é replicável por qualquer país com base de referência defasada.
+5. **Problema real e datado**: OEMAs operam com filas de dezenas de milhares de cadastros e caem na análise manual (~6 imóveis/dia) por não confiarem em um mapa velho — o gargalo que o Desafio 02 nomeia.
+
+**Persona-alvo (Desafio 02):** Luana — analista ambiental/geógrafa de OEMA. Ver `pm-role.md`.
 
 ---
 

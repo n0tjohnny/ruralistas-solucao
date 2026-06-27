@@ -1,0 +1,221 @@
+00:00:12 - 00:01:32
+Olá, pessoal. Boa tarde a todos e a todas que nos acompanham ao vivo aqui pelo canal da INAP no YouTube. Sejam muito bem-vindos, bem-vindas à live de lançamento do Rartom, a maratona de soluções do CAR, o cadastro ambiental rural. Eu sou o Rulian do Impact Hub e hoje nós estamos dando o pontapé inicial de forma oficial nesta chamada de inovação aberta voltada ao desenvolvimento de soluções. O nosso grande objetivo com essa iniciativa é ampliar a eficiência, a transparência e a acessibilidade do cadastro ambiental
+
+00:00:51 - 00:02:09
+rural, mais conhecido como K, colaborando assim para tornar essa ferramenta um bem público digital. escalável pro Brasil e para o mundo. Esta iniciativa é uma realização conjunta de várias organizações, o Ministério da Gestão e Inovação em Serviços Públicos, o MGI, a Fundação Brasileira para o Desenvolvimento Sustentável, FBDS, o Governo da Noruega, por meio do seu Ministério das Relações Exteriores e a embaixada real da Noruega no Brasil e da Escola de Administração Pública, ANAP. e o Impact Hub Brasil.
+
+00:01:30 - 00:02:41
+Então, hoje a gente vai conhecer um pouquinho sobre essa iniciativa do RCATOM, né? Como o nome diz, é um Racaton voltado para desenvolvimento de soluções do CAR. Então, fique conosco aqui. A gente tem uma previsão estimativa de até às 6 da tarde nessa nessa transmissão, nessa live de hoje. Para começar, eh, eu quero chamar aqui alguns convidados especiais que vão nos ajudar a elucidar, então, essa iniciativa que nós estamos apresentando hoje. E pra gente entender a relevância estratégica e também institucional do
+
+00:02:06 - 00:03:17
+projeto do CAR DPG, do cadastro ambiental Rural, a gente vai ouvir agora eh autoridades representando essas organizações parceiras que eu falei há pouco. Então eu vou passar a palavra inicialmente pro secretário extraordinário para transformação do estado do MGI, o Ministério da Gestão e da Inovação e Serviços Públicos, Francisco Gaetani. Francisco, boa tarde, seja bem-vindo à nossa live. >> Boa tarde, Juliano, um prazer muito grande estar aqui com vocês. Nesse momento eu marco. Aqueles que acompanham a trajetória do
+
+00:02:42 - 00:03:56
+cadastro ambiental rural desde seu início, no durante ainda o primeiro mandato da presidenta Dilma, sabem que, como diz o ex-ministro da Fazenda Joaquim Levi no segundo mandato, dizia que o car foi mais importante que a reforma microeconômica. que o governo da presidente do Dilma tinha empreendido no primeiro mandato. Por quê? Que o cadastro mental rural ele simplesmente encerra essa arolarização artificial de ruralistas e ambientalistas da transparência, da credibilidade, da confiança pro agricultor, para os
+
+00:03:18 - 00:04:39
+movimentos sociais, para todos envolvidos na realidade rural. Nós hoje vivemos uma situação histórica onde o Brasil é uma potência global do agro e ao mesmo tempo é uma potência global do ponto de vista ambiental. O car é chave para rabilidade, é chave para mercado de carbono, é chave para combate desmatamento e é chave paraa concessão do crédito. Então o cadastro mental rural tá no cerne da política agropecuária do país, até hoje nas mais importantes políticas nacionais. Ora é uma oportunidade extraordinária para
+
+00:03:59 - 00:05:12
+inovação, para criação, para transformação. O car é um oceano potencial de inovações e nós achamos que essa forma, esse formato permite que a sociedade brasileira se incorpore a esse esforço de país para que a gente possa botar tanto água quanto o meio ambiente num outro patamar de cooperação, de trabalho conjunto em prol do país. Em inglês tem uma palavra que em português nós não temos uma equivalente que é unlich. Nosso desafio é unlich, o potencial criativo, inovador e empreendedor dos nossos participantes,
+
+00:04:36 - 00:05:43
+os nossos colaboradores. E acho que o nome também diz muito isso, né? O Rartom, né? É uma sacada que tenta transmitir de uma forma simples o que que nós estamos querendo. Queremos um mutirão nacional pela inovação do cadastro ambiental rural. Muito obrigado, pessoal. Bom trabalho para todos e todas. Olha, o áudio tá desligado. >> Muito bem, pessoal. Desculpem, estava falando com o áudio desligado. Eh, agradecendo ao Francisco Gaetani pela participação aqui conosco do MGI. Dando continuidade aos representantes das
+
+00:05:29 - 00:06:34
+organizações promotoras do Racart, eu quero convidar agora o Rafael Loiola, o diretor de desenvolvimento da Fundação Brasileira para o Desenvolvimento Sustentável, para falar um pouquinho sobre a visão da FBDS, sobre essa iniciativa. Rafael, seja bem-vindo. Boa tarde. >> Obrigado, Julian. Boa tarde a todas e todos. É uma alegria enorme representar a FBDS lançamento desse racart. Como Chico Gaetani falou aqui, o cara é um dos instrumentos mais importantes que nós temos hoje na política ambiental
+
+00:06:02 - 00:07:13
+brasileira, que apoia, apoia, obviamente a implementação do Código Florestal, mas também eh fortalece o nosso monitoramento territorial, contribui pro com desmatamento, como ele também disse, apoia nos nossos novos mercados de carbono, de biodiversidade. E como todo grande instrumento, ele passa por uma evolução, né? Ele precisa hoje, dada uma série de de conversas e diagnósticos que já foram feitos, ser um pouco mais simples pro usuário, mais integrado, com outras bases de dados, mais eficiente e mais aberto. E aí é que
+
+00:06:38 - 00:07:40
+entra o Rartom, né? Acho que é um passo importante nessa nossa jornada de evolução do que é o carro. E ele abre a conversa, acho que isso é super importante para que a gente tenha novas ideias, novos talentos, novas soluções de pessoas que tão olhando de fora, né, esse problema do cara e tentando encontrar uma solução que tenha um impacto importante pra gente. Então, a ideia é realmente mobilizar eh pessoas de tecnologia, de meio ambiente, de dados, de inovação, de política pública, pra gente encontrar maneiras de
+
+00:07:09 - 00:08:20
+enfrentar os desafios que hoje são muito concretos em relação ao carro. A FBDS em particular participa desse projeto contribuindo com o que tá no centro da nossa atuação. A fundação existe para conectar ciência, política pública, tecnologia e cooperação institucional para transformar conhecimento em soluções concretas paraa sustentabilidade. É importante lembrar que esse RACarton faz parte de um projeto maior da qual o FBDS participa chamado KDPG, que é um projeto que quer transformar o sistema
+
+00:07:44 - 00:08:53
+do caro digital, uma solução de código aberto, modular, escalável, que é capaz de fortalecer a nossa gestão ambiental no Brasil e também inspirar outros países, especialmente no sul global, que enfrentam desafios eh semelhantes. Então, mais do que melhorar um sistema, a gente tá falando de fortalecer uma infraestrutura que é essencial para que o Brasil tome melhores decisões eh sobre seu território, sobre a sua produção agrícola, sobre a sua conservação e restauração da biodiversidade e de outros elementos da nossa natureza.
+
+00:08:19 - 00:09:32
+Então, em nome da FBDS, eu queria muito agradecer aqui ao MGI, a ENAP, ao Impact Hub Brasil, ao governo da Noruega com a nossa doação, a todos os parceiros envolvidos nesse projeto maior dentro do Rartomon e especialmente a vocês que se interessaram pelo nosso desafio, que estão aqui para produzir uma solução inovadora e que possa trazer impacto pro carno Brasil. Muito obrigado. >> Obrigado, Rafael Loiola da FBDS pela participação aqui conosco. Dando sequência à nossa programação, quero convidar o Marcos Vinícius Alves, eh,
+
+00:08:59 - 00:10:19
+diretor de regularização ambiental do Serviço Florestal Brasileiro, SF SFB. Marcos Vinícius, seja bem-vindo. Boa tarde. >> Boa tarde. Boa tarde a todos vocês. Espero que estejam me ouvindo bem. Eu tô aqui procurando fazer duas coisas ao mesmo tempo e quando isso acontece quase nunca ser é ser bom, né? Eu tô aqui participando de uma defesa de tese de um doutorado e ao mesmo tempo pedi para dar uma saidinha para fazer essa essa aparição aqui muito muito rápida aqui e breve aqui para dar não só as
+
+00:09:42 - 00:11:23
+boas-vindas como para destacar a importância dessa iniciativa onde especialmente MGI e parceiros, né, a exemplo da do governo da Noruega estão estão fazendo aí para que a gente possa dar um salto qualitativo muito importante para o cadastro ambiental rural e para todas as políticas que, de uma forma ou de outra elas fazem uso do cadastro para o sucesso das suas das suas políticas. já exemplo e principalmente a política de regularização ambiental rural. Então, quero aqui dizer o quanto que o Serviço
+
+00:10:33 - 00:12:36
+florestal brasileiro ele é grato, ele enxerga com muita oportunidade essa essa iniciativa. De modo que para a regularização ambiental é muito importante que possamos avançar na qualificação não só das informações que constam da base eh do cadastro ambiental rural, mas principalmente nas ferramentas e nas aplicações dessas informações em processos que são processos de das mais diferentes naturezas, mas que tem uma capacidade de impactar muito forte a nossa a nossa qualidade, né, da gestão ambiental rural
+
+00:11:34 - 00:13:11
+no país. Então, quero aqui mais uma vez parabenizar a todos e dizer que o serviço florestal eh não só interessado direto, né, nos resultados que advirão dessa iniciativa, como também faz questão de ser parte nesse processo de desenvolvimento colaborativo. Então, muito obrigado e que essa iniciativa seja só a primeira de muitas que venham para qualificar todos os processos que se relacionam com cadastro ambiental rural. Muito obrigado. >> Obrigado, Marcos Vinícius pela sua participação. Marcos Vinícius do SFB,
+
+00:12:25 - 00:13:44
+Serviço Florestal Brasileiro. Eh, ouviremos agora o Pedro Marcante Arruda dos Santos, que é o diretor de inovação substituto da ENAP, Escola Nacional de Administração Pública. Pedro, boa tarde, seja bem-vindo. >> Obrigado, Julian. Boa tarde a todos e a todas. Eh, é uma satisfação tá aqui representando a Escola Nacional de Administração Pública, ENAP, no lançamento do Rartom. Eh, uma iniciativa que para nós simboliza muito mais que uma maratona de inovação. Ela representa uma forma de o Estado enfrentar problemas públicos
+
+00:13:04 - 00:14:32
+complexos, né, uma forma alternativa que é por meio de um enfrentamento colaborativo aberto e orientado à construção coletiva de soluções aqui na na ENAP, especialmente na diretoria de inovação, a Genova, a gente acredita e tem como valor internalizado que os desafios contemporâneos da administração pública exigem capacidades que nenhum órgão consegue desenvolver sozinho, né, e de forma isolada enquanto ilha. Eh, questão questões como transformação digital, sustentabilidade ambiental, interoperabilidade de dados, o acesso a
+
+00:13:48 - 00:15:10
+serviços públicos demandam cada vez mais e com os desafios se complexificando cada vez mais, demandam em ecossistemas de cooperação entre governo, sociedade civil, academia, startups e as comunidades técnicas. E é exatamente isso que vemos aqui hoje. Eh, e vemos nesse projeto, né? O Racarton articula diferentes instituições públicas e parceiros, tanto nacionais quanto internacionais, em torno de um objetivo comum, que é ampliar a eficiência, a acessibilidade, a escalabilidade do cadastro por meio de soluções abertas e
+
+00:14:30 - 00:15:53
+inovadoras, né? Isso, isso é particularmente relevante porque o K, como já foi dito, né, nas falas que antecederam, é uma infraestrutura crítica paraa gestão ambiental brasileira, né? Então, portanto, fortalecer sua capacidade tecnológica significa fortalecer o monitoramento ambiental, a transparência, a regularização fundiária, né, o combate ao matamento e e assim vai. eh, mais particularmente aqui pelo lado da ENAP e e especialmente da diretoria, é um outro elemento que eu considero ainda muito importante pra gente estar
+
+00:15:11 - 00:16:27
+de olho eh neste processo, que é o método e a metodologia, né? Ao optar por um modelo de inovação aberta, o projeto reconhece que o conhecimento está distribuído na sociedade, né? não tá internalizada apenas na administração pública. As melhores soluções podem vir de estudantes, pesquisadores, startups, profissionais independentes ou organizações da sociedade civil. E o papel do Estado nesse contexto deixa de ser apenas o executor, o de executor e passa também a ser o de articulador da inteligência coletiva.
+
+00:15:49 - 00:17:00
+A na INAP a gente tem trabalhado muito nessa agenda, inclusive por meio da plataforma desafios, que busca justamente aproximar o governo e sociedade para enfrentar problemas públicos reais a partir de mecanismos de inovação aberta. E o Racarton é um exemplo, é um excelente exemplo, aliás, de como esse paradigma pode produzir valor público concreto. E eu também considero muito potente o fato de que essa iniciativa nasce conectada a uma agenda internacional de clima e transformação ambiental, com
+
+00:16:25 - 00:17:37
+apoio da do governo da Noruega, né? Isso demonstra que a inovação pública e a sustentabilidade não são agendas separadas, né? elas precisam caminhar juntas necessariamente. E por fim, gostaria de destacar que iniciativas como esta também ajudam a desenvolver capacidades dentro do próprio estado. Elas fortalecem culturas institucionais mais abertas à experimentação, ao aprendizado e à colaboração. Então, para finalizar, rapidamente, devolver a palavra, Runian, gostaria de parabenizar todas as instituições envolvidas, né, o
+
+00:17:01 - 00:18:14
+MGI, a Fundação Brasileira para o Desenvolvimento Sustentável, Governo da Noruega, o Impact Hub, o Serviço Florestal Brasileiro, a data prévia e a equipe do Genova, Inovação Aberta, que é a área aqui dentro da diretoria que está responsável pela condução eh do processo, né, pelo lado da ENAP e pela construção dessa iniciativa, né? E deixo um convite para que as pessoas participem, para que as pessoas participantes aproveitem, né, essa oportunidade, não apenas para competir, mas para copiar, aprender e também imaginar novas
+
+00:17:37 - 00:18:54
+possibilidades para gestão pública e ambiental no Brasil. Muito obrigado. E a gente que a gente tenha uma um excelente uma excelente live de lançamento. >> Obrigado, Pedro pela sua fala. O Pedro destacou então a importância da da INAP como organizadora metodológica dessa iniciativa de inovação aberta da qual o Rartom faz parte. Eh, então eu quero convidar agora a outra organização, né, que é o a coorganizadora metodológica deste racatom, dessa iniciativa de inovação aberta, eh, que é o Impact Hub. Então,
+
+00:18:21 - 00:19:32
+eh, Isador Starlin, gerente de projetos do Impact Hub Brasil, tá aqui conosco para complementar a fala do Pedro em relação a isso. Isadora, seja bem-vinda. >> Obrigada, Rúlia. Eu mando saudações a todas as instituições aqui, parceiras, super importantes. Eh, também saúdo todo público que vai estar assistindo ou agora na live ou depois também, que é um público muito importante, que é estamos contando com vocês para trazerem soluções inovadoras para esse desafio do Racaton. Então, eu vou contar um pouquinho eh a história do
+
+00:18:57 - 00:20:06
+Impactway Brasil, que tem atuado com a Escola Nacional de Administração Pública numa estratégia de inovação aberta pro governo federal por meio de um termo de colaboração que vai ter vigência até 2028. E um dos projetos eh muito queridos aqui que a gente tá executando eh apoiando a INAP, apoiando todos os parceiros, é o Racart. E o Racarton é um dos primeiros projetos de inovação dessa parceria, que vai culminar também dois ciclos de inovação aberta, um no segundo semestre desse ano e outro ano que vem.
+
+00:19:31 - 00:20:48
+Então aqui a gente só tá esquentando os motores para um processo mais profundo, eh, no qual a inovação aberta vão trazer vários solucionadores fora do governo, eh, para, eh, soluções, eh, compatíveis com os editais que vamos lançar na plataforma desafios da INAP. Então, já fica a dica aqui para vocês visitarem e ficarem atentos. E também eh um ponto super importante que vale a pena trazer aqui é que o Impact Hub faz parte de uma rede global de fortalecimento de um ecossistema de impacto. Então, o nosso papel aqui vai
+
+00:20:10 - 00:21:22
+ser muito relevante, trazendo esse ecossistema de startups, eh, organizações, eh, tecnológicas, ICTs, eh, pesquisadores, para que eles possam ter aderência às soluções que serão eh foram lançadas e que serão lançadas também, eh, nos próximos desafios, né? E o desafio de ampliar a eficiência, a transparência e a acessibilidade do cadastro ambiental rural, car vai ser através de um processo construído, que é o próprio Racaton e de inovação aberta, que também é uma oportunidade que a gente vai contar com as instituições fora do
+
+00:20:45 - 00:21:51
+governo para trazerem soluções eh para desafios públicos digitais voltados à agenda ambiental e climática, no qual o K faz parte, o que traz uma nova perspectiva mais inovadora e também participativa aos processos de construção de políticas públicas voltadas aos cidadãos. Então, a ideia transformar realmente o cum bem público digital significa também pensar em soluções abertas, escaláveis e também que sejam acessivas, acessíveis e capazes de fortalecer as políticas públicas, apoiar a gestão territorial e
+
+00:21:18 - 00:22:22
+ampliar a confiança nos dados e gerar benefícios concretos pros diferentes públicos dentro e que faz fora do Brasil. Então, a gente acredita muito nas transformações que acontecem quando diferentes setores trabalham juntos somando capacidade, conhecimento e propósito comum. Então, em nome do Impact Brasil, eh, agradeço a confiança nesta parceria e reforço o nosso compromisso em apoiar os processos de inovação e inovação aberta que gerem impactos positivos, fortalecendo as capacidades institucionais e
+
+00:21:50 - 00:23:09
+contribuindo para soluções públicas mais eficientes, inclus inclusivas e sustentáveis. Muito obrigada. Obrigado, Isadora, do Impact Hub Brasil. Para fechar essa primeira etapa com as falas institucionais das organizações que promovem essa iniciativa do RCAOM, eu quero convidar a Maria Cristina Duarte, analista de relacionamento da data prévia, para fechar esse bloco, ah, das falas das organizações participantes. Maria Cristina, seja bem-vinda. >> Obrigada, Júlia. Gente, primeiro eh cumprimentar a todos aqui participante,
+
+00:22:35 - 00:24:13
+né, e dizer que é assim, é uma grande alegria paraa Data Prév acompanhar e apoiar essa iniciativa que é parte de um projeto inspirador como CARDPG, né? Há pouco mais de 2 anos, recepcionamos essa grande base de dados na empresa e nos envolvemos muito além da tecnologia, porque a gente enxergou, né, e acredita muito na grandiosidade e caminhos possíveis para o crescimento dos cenários da rastreabilidade e sustentabilidade do cadastro ambiental rural. Então eu venho aqui agradecer eh com muito carinho, né, a todos os inscritos nesse
+
+00:23:24 - 00:24:48
+racatom, né, nós acreditamos que as melhores ideias nascem da colaboração, da diversidade de pensamentos e da vontade de resolver problemas reais. Então, desejo a todos os participantes muita inspiração, alegria e criatividade. Um bom evento para nós todos. Obrigado, Maria Cristina. Então, fechamos assim a primeira parte da nossa live, onde nós ouvimos eh todos os parceiros, todas as organizações que fazem parte desse verdadeiro e dessa iniciativa. Eh, e agora a gente vai entrar num num momento que é o coração de toda a
+
+00:24:12 - 00:25:21
+maratona de inovação, né? oatom ou rakartom nessa brincadeira que a gente fez com a palavra car dentro da palavra racatom é uma maratona de inovação que se propõe a apresentar soluções para desafios. Então, quando você acessa o material do Rakatom que tá disponível na plataforma desafios e no finalzinho da live a gente vai repetir o serviço para vocês com todas as informações de como eh vocês fazem para participar do do RCartom. Eh, toda maratona de inovação aberta, toda iniciativa de inovação aberta, ela parte de algumas perguntas
+
+00:24:47 - 00:26:05
+que a gente chama de desafios, né? Onde esses promotores, essas organizações promotoras perguntam à sociedade ou pedem à sociedade contribuições para resolver esses desafios que são gerados a partir de problemas reais identificados. Então agora nessa segunda etapa, a gente tem um misto aqui, né, tanto de apresentação oficial desses desafios, quanto já de um material de consulta pros participantes que estiverem conosco eh durante o RCA que vai acontecer eh no final de junho, né, 26, 27 e 28 de junho. A gente tem três desafios dentro
+
+00:25:26 - 00:26:38
+da lógica do RCartomon. Então, eu vou apresentar, eu vou ler esses desafios e vou convidar uma, uma pessoa eh especializada, né, alguém que realmente pode se aprofundar nesse tema para comentar e poder assim dar alguns insumos para as pessoas que vão participar do Racatom, tá? Pro desafio um, que tem o tema de simplificar o car para o usuário, quem vai estar conosco, quem vai ser o nosso comentarista convidado, é o Henrique Dolabela, o diretor do cadastro ambiental rural do Ministério da Gestão
+
+00:26:02 - 00:27:02
+e da Inovação em Serviços Públicos, o MGI. Henrique, seja bem-vindo. >> Obrigado, Julian. Quero agradecer aqui a ENAP, ao Impact Hub, né, claro, ao governo da Noruega que tá apoiando esse trabalho e os nossos irmãos, né, do Serviço forestal brasileiro pra gente tá fazendo esse trabalho junto. >> Deixa eu fazer, deixa eu, deixa eu provocar. Então, eu leio o desafio até para as pessoas já irem se acostumando e aí você já emenda teus comentários sobre ele. Pode ser? >> Beleza. >> Então, vou repetir o tema, né? Esse
+
+00:26:32 - 00:27:47
+desafio ele tem o tema de simplificar o car para o usuário. A pergunta que a gente faz, o desafio que a gente traz é o seguinte: como podemos simplificar a declaração e retificação do cadastro ambiental rural, UCAR, para o produtor rural, aproveitando as informações de base de dados abertas disponíveis para garantir o cumprimento do Código Florestal, gerando benefícios individuais e coletivos. Henrique, >> obrigado, William. Sim, pessoal, eh Código Florestal ele é complexo, esse é um atributo fundamental dele, né? Ele é
+
+00:27:10 - 00:28:11
+fruto de uma negociação política longa, truncada, que entregou o conscienso possível para alavancar o desenvolvimento sustentável usando esse instrumento que é o cadastro ambiental rural. Isso o resultado de uma negociação política longa e truncada nem sempre é o resultado mais simples pro estado que precisa implementar a política, precisa implementar um instrumento e muito menos para o cidadão, né? As pessoas, os produtores, assistentes técnicos, sindicatos de trabalhadores, compradores, por outro lado, gostam de
+
+00:27:40 - 00:29:03
+coisas simples, né? processos, requisitos, regras, formulários. Tudo isso precisa ser o mais simples e o mais exigente, o menos exigente possível para facilitar a adoção, tornar o processo compreensível, né? Não afogar as pessoas num mar de coisas que são incompreensíveis. E uma um elemento chave dessa simplificação também é a comunicação, né? Então esse é o elemento chave desse primeiro desafio, como compatibilizar, como traduzir toda a complexidade das exigências de informação do Código Florestal em requisitos simples paraos
+
+00:28:21 - 00:29:37
+usuários do sistema, né? Na nossa estratégia de transformação digital, a gente tem alguns norteadores. Em primeiro lugar, é facilitar a vida das pessoas, empoderá-las, valorizar o seu tempo e o seu esforço para poder focar no que fazem de melhor. Eh, outra outro princípio é o do apenas uma vez, né? Como que o governo pode aproveitar as informações que o governo já tem sobre as pessoas, sobre o seu imóvel rural, sobre a vegetação nativa, sobre a hidrografia para facilitar esse processo de declaração, de retificação do seu
+
+00:29:00 - 00:30:02
+carro, que é um processo que precisa ser repetido aí algumas vezes, né, conforme a dinâmica do imóvel for for se alterando. Isso é chave, como o secretário colocou, né, para a política de regularização ambiental, para pro crédito rural, cada vez mais pro seguro rural, entre diversas outras dimensões da vida do produtor. Então, nosso objetivo aqui é tornar o cadastro cada vez mais fácil de usar, né? a gente usa como referência a lógica do imposto de renda, o imposto de renda pré-preenchido. A gente começou a
+
+00:29:31 - 00:30:35
+implementar isso, né, no car, mas a gente precisa ir além. a gente precisa tornar as pessoas, né, empoderar as pessoas para serem cada vez mais autônomas para fazer suas próprias declarações, monitorar as informações que elas estão declarando, torná-las mais seguras acerca das informações sobre seus imóveis e compreender plenamente as implicações disso sobre todas essas políticas. Como a Isadora colocou aqui mais cedo, eh, o governo tem todas as respostas e graças a essa tecnologia, né, de inovação aberta,
+
+00:30:03 - 00:31:11
+graças a essa parceria com todo com as organizações aqui presentes, a gente consegue usar o cérebro de vocês, né, dos participantes, inovadores, da das startups, pra gente aproveitar todas as boas ideias, para facilitar essa vida das pessoas, para aumentar a consistência das informações e dessa forma ter entregas cada vez melhores, tanto pro estado quanto para todo setor privado que precisa dessas informações. Então, contamos com vocês, com sua criatividade, com suas boas ideias, pra gente conseguir superar esse desafio e
+
+00:30:36 - 00:31:52
+acelerar o desenvolvimento sustentável. Maravilha, Henrique. Obrigado. Eh, então essa é esse é o contexto do desafio um, né, que a gente tá chamando o desafio de simplificar o car pro usuário. Agora vamos falar do segundo desafio que tem o tema de melhorar o acesso a dados geoespaciais do cadastro ambiental rural. Para eh comentar esse desafio, eu vou convidar a Geovana Aguiar, que é a coordenadora geral de gestão de de sistemas do CAR do MGI, Ministério da Gestão e da Inovação em Serviços Públicos. Giovana, seja bem-vinda.
+
+00:31:20 - 00:32:20
+>> Obrigada, Rulião. >> Bom, >> então eu vou ler o desafio, assim como eu fiz com o Henrique. Pode ser? [limpando a garganta] eu leio o desafio porque daí já vai ficando na cabeça das pessoas e aí você já pode emendar suas considerações assim que eu terminar. Então, esse desafio do com o tema melhorar o acesso a dados geoespaciais do CAR, ele tem a seguinte pergunta: como podemos atualizar anualmente, com rapidez e acurácia, o mapeamento de uso e cobertura do solo de todos os estados
+
+00:31:49 - 00:33:08
+brasileiros, melhorando a atualização dos cadastros e propiciando o aumento na quantidade e na qualidade das análises do cadastro ambiental rural. Giovana. >> Bom, William, eh, o cara é um cadastro autodeclaratório, significa que todas as informações inseridas ali pelos eh proprietários possuidores de imóveis rurais são autodeclaratórias também, incluindo os limites dos imóveis, as camadas ambientais que eles declaram. Eh, e por isso, por essa lógica de como a política foi concebida, após a
+
+00:32:29 - 00:33:39
+declaração, tem um próximo passo, que é a análise dessa declaração para verificar tanto se ela foi feita corretamente, se as informações ambientais eh foram declaradas corretamente, como também se aquele imóvel está cumprindo o código florestal, ele pode precisar recuperar áreas para regularizar o seu imóvel ou ele pode atar isso. Então, é muito importante ver se a declaração tá feita corretamente. Para fazer isso a gente precisa de um gabarito. Então, por por dentro do SICAR, a gente carrega esse gabarito que
+
+00:33:07 - 00:34:21
+é um mapa produzido a partir das imagens de satélite. Esses mapas são confrontados com as declarações do K, que a gente chama de base de referência, né? Eh, então essas bases de referência, algumas delas eh não mudam muito. por exemplo, a base de referência de hidrografia, né, que contém os rios, as nascentes, teoricamente ela é relativamente estável, mas nós temos também as bases de referência de uso do solo, que vão dizer aonde tá a vegetação nativa, aonde ela foi suprimida, né, onde é uma área
+
+00:33:44 - 00:35:03
+consolidada em 2008, dentre outras informações. Isso significa que esses mapas eh geoespaciais precisam ser eh atualizados com frequência. Só que hoje a gente tem um processo de atualização dessas bases que é muito custosa financeiramente e que também demora um tempo. Então hoje a gente tem um tempo entre 2 anos, 2 anos e meio de quando uma base de referência começa a ser elaborada com uma imagem de satélite daquele ano até que essa base entre no sistema para ser utilizada. Esse desafio diz muito sobre como
+
+00:34:24 - 00:35:36
+atualizar essas bases com mais rapidez. mantendo a qualidade, mantendo a precisão, mantendo a referência legal que é necessária, porque essas análises vão gerar eh subsídios que futuramente podem ser, né, objeto de um processo, etc. Só que de uma forma menos custosa, né, de uma forma mais ágil pros estados. Eh, esse desafio visa realmente atender um gargalo que a gente tem para acelerar essas análises, que é ter dados atualizados. para serem utilizados pelos estados são os responsáveis por fazerem
+
+00:35:00 - 00:36:20
+essas análises. A gente espera colher boas ideias, né, e boas soluções aí para trazer uma inovação relevante nesse aspecto pro carro. >> Obrigado, Geovana. Então, nós ouvimos aí a Giovana Aguiar, que é a coordenadora geral de gestão dos sistemas do carno no MGI. Desafio três, eh, que tem o tema de aumentar o entendimento das legislações do car. Gostaria só de lembrar para quem tá acompanhando ao vivo que ali nos comentários do vídeo do YouTube você já tem o link para entrar na plataforma desafios, eh, na página específica do
+
+00:35:43 - 00:36:59
+RCART, onde você tem todas as informações, tem acesso à ficha de inscrição, tem acesso aos documentos complementares, eh, que vão então dar toda a informação completa sobre eh esse evento. O desafio três, ele tem o tema de aumentar o entendimento das legislações do cadastro ambiental rural. Para comentar esse desafio, eu vou convidar a Gabriela Berbigier Gonçalves, que é a coordenadora geral de gestão do SICAR no Serviço Florestal Brasileiro SFB. Gabriela, seja bem-vinda. Boa tarde. >> Boa tarde,
+
+00:36:21 - 00:37:31
+>> eu vou ler o desafio, então, tá? E aí você já emenda o seu os seus comentários. Então, eh, o tema dele é aumentar o entendimento das legislações do CA. E a pergunta balizadora é: Como podemos aumentar o conhecimento e o entendimento da legislação ambiental associada ao cadastro ambiental rural pelos pequenos e médios proprietários rurais para promover a preservação e recuperação florestal? Gabriel. >> Bom, primeiro a gente tem que entender que o CAR é parte de um processo de regularização ambiental, né? E o que que
+
+00:36:55 - 00:38:01
+é essa essa essa agenda da regularização ambiental? O que que o que que é esse processo, certo? São conjuntos de ações implementadas em um imóvel rural, em um assentamento da reforma agrária ou em território tradicional para assegurar a manutenção, a recuperação e quando possível a compensação de áreas ambientalmente protegidas que foram estabelecidas pelo Código Florestal Brasileiro, né, de 2012. Essas áreas a gente chama de área de preservação permanente, reservas legais e áreas de uso restrito. Então são um conjunto de
+
+00:37:29 - 00:38:37
+ações implementadas dentro de um móvel rural, né, para manutenção, recuperação ou compensação dessas áreas. E esse processo de regularização ambiental, ele envolve o Código Florestal e legislações estaduais também aplicadas. ele tem início, né, com o processo de inscrição do imóvel do território tradicional ou do assentamento da reforma agrária no cadastro ambiental rural, né, que é o é o principal instrumento, né, dentro do Código Florestal de gestão de áreas protegidas em imóveis rurais. Ele é
+
+00:38:03 - 00:39:07
+regulamentado também por um decreto que é o 7830 de 2012. Então, a gente tem várias legislações aplicadas, né? tem o Código Florestal, decretos, a gente tem instruções normativas, é todo um arcabolso jurídico para reger todo esse processo. E como a gente já falou anteriormente aqui, o cara é uma base de dados geor referenciado, né? Ela é autodeclaratória e obrigatória. Então ela é parte de um processo obrigatório para esse público, mas ele também traz benefícios e ações eh eh importantes paraa gestão ambiental e produtiva do
+
+00:38:35 - 00:39:44
+imóvel rural. Bom, ele é um objeto, né, de planejamento e gestão ambiental do território nacional a nível de propriedade rural, a nível de assentamento e a nível de território tradicional. Então, quando a gente falar de ampliar, né, os conhecimentos sobre esse processo, a gente precisa disseminar e simplificar o conhecimento sobre os marcos legais e conceitos básicos do processo de regularização ambiental e do cadastro ambiental rural. a gente precisa transmitir de forma eh qualificada e simplificada o passo a
+
+00:39:09 - 00:40:11
+passo desse processo. Então, eu tenho a minha inscrição, meu cadastro vai passar por uma análise, eu vou ter algumas opções após essa análise, né, para eu tomar decisões a respeito disso, a nível de propriedade rural, né? Eh, e os proprietários e possuidores rurais também vão passar por um processo depois de monitoramento desses cadastros, né, tanto para recuperação das de áreas protegidas quanto para conservação dessas áreas. Então, é importante que os beneficiários dessa agenda, dessa política pública, eles consigam entender
+
+00:39:40 - 00:40:50
+de forma qualificada e ao mesmo tempo simplificada o passo a passo desse processo, né, que é um processo longo e contínuo. Além disso, a gente precisa informar e treinar um pouco os beneficiários da política sobre essas ferramentas todas, né, que impactam no carro, né, sobre a ferramenta de inscrição, as ferramentas de análise, o processo de monitoramento, as documentações que ele vai ter que apresentar, né, ou que ele vai receber da dos órgãos competentes. Talvez a principal e desafio dentro, né,
+
+00:40:14 - 00:41:15
+desse desafio número três é o público entender, o público dessa agenda, né, dessa política é pública, a importância de se regularizar. Por que me regularizar? Por que fazer a inscrição? Por que que é importante que a minha inscrição passe por um processo de de análise e depois de monitoramento? Então, a partir do momento que ele entende a legislação ambiental aplicada à regularização, ele vai entender tanto as obrigações que ele tem como proprietário rural, né, como assentamento, como território
+
+00:40:45 - 00:41:55
+tradicional, mas também como os benefícios que ele tem em regularizar, tanto do ponto de vista produtivo e legal, quanto do ponto de vista ambiental e como um pacto do governo federal e do governo estadual. É isso. >> Muito legal, Gabriela. Obrigado pelas suas eh considerações sobre esse desafio. Eh lembrando, falei antes que a gente tem o o link, o caminho que tá nos comentários do vídeo do YouTube para quem tá acompanhando ao vivo, para quem tá acompanhando esse vídeo gravado. Esse link vai ficar disponível na descrição
+
+00:41:20 - 00:42:37
+do vídeo também para você ter acesso a essas informações, né? Então gente, desafios postos e lançados. Agora, eh, a gente espera aí as mentes inovadoras de todo o Brasil que já podem começar a pensar e se articular em formas de colaborar com essa política pública tão impactante. Vocês ouviram um pouco aqui e já deu para perceber o impacto que isso tem eh em diversas agendas do país. Então, participar do RCKarton também é eh colaborar com o o futuro eh e o desenvolvimento sustentável do Brasil. Então agora a
+
+00:41:59 - 00:43:09
+gente fecha essa live com aquele servição final para você que ainda não se inscreveu. Vou passar as informações do evento. Eh, mas lembrando sempre que tudo isso tá disponível lá na plataforma desafios e os links estão disponíveis aí tanto ao vivo para quem tá acompanhando nos comentários quanto na descrição do vídeo para quem tá acompanhando gravado. O Rartom vai acontecer nos dias 26, 27 e 28 de junho de 2026. é um evento virtual 100% online. Eh, então pessoas de qualquer parte do Brasil podem
+
+00:42:33 - 00:43:44
+participar. Eh, durante esses dias eh os participantes vão receber um suporte da nossa organização eh em desenvolvimento de soluções, né? Então vocês vão ter oficinas de inovação rápida, vão ter mentorias com especialistas e vão ter toda a estrutura necessária para desenvolver a sua solução. Podem participar eh eh pessoas, qualquer pessoa com mais de 18 anos, brasileiros e estrangeiros. As inscrições são gratuitas e abertas a todos. Eh, a inscrição, como a gente tem falado, pela plataforma Desafios, é uma
+
+00:43:09 - 00:44:13
+inscrição muito simples de ser feita. A gente recomenda sempre nesses eventos de Racatom que você já tente vir com uma equipe. Então, se você é estudante universitário ou se você eh eh é um empreendedor inquieto, eh tente convocar pessoas, amigos, o seu time para que vocês venham juntos. É muito mais fácil um racatom quando você já tem uma equipe participante. Mas para aquelas pessoas que não têm equipe, eh, isso não é uma obrigação, né? A gente vai ter também durante o período de inscrição dinâmicas
+
+00:43:42 - 00:44:39
+para que você possa achar uma equipe e desenvolver a sua solução durante os dias do Rakatum. Então, tanto para quem tem equipe quanto para quem não tem. Mas lembrando que se você já vier com uma equipe, ganha tempo, né? Porque o Rakatom eh ou Rakartom é uma competição onde você tem que lutar contra o relógio. Vocês vão ter horários, né, durante o período, vocês vão ter tarefas para cumprir durante um período horário. Então, quanto mais tempo livre você tiver para isso, melhor. Eh, e não gastar esse tempo
+
+00:44:10 - 00:45:25
+buscando uma equipe durante o evento, facilita para que você tenha mais tempo para desenvolver a sua solução, tá? as equipes elas podem ter de dois a seis participantes. Eh, e a parte super bacana disso é que além de contribuir com todos esses impactos que a gente eh ouviu aqui na nos depoimentos dos nossos convidados, vai haver também uma premiação de R$ 15.000 R$ 1.000 para cinco soluções. Então, as cinco melhores soluções do Racaton, avaliadas aí por uma banca de especialistas, vão ganhar cada uma delas R$ 15.000
+
+00:44:48 - 00:45:49
+para, quem sabe poder colocar essa solução, desenvolver essa solução de forma real, OK? Então, todas essas informações disponíveis na plataforma desafios, tudo que eu falei aqui, lá também você vai acompanhar toda a atualização de de cronograma, de desenvolvimento de ideias. Lembrando que essa é a primeira live, a gente vai ter mais três lives até o Racaton, essas aí voltadas mais para a competição, onde a gente vai contar o funcionamento da competição, vai trazer já algumas ferramentas de inovação para você. Então
+
+00:45:18 - 00:46:25
+fique ligado aí nos nossos canais, também na plataforma de desafios, onde a gente vai divulgar as datas dessas próximas lives. E nós agradecemos eh e finalizamos aqui essa live de lançamento do RCAON. Quero eh dizer obrigado a todas as pessoas, as autoridades que puderam estar aqui conosco, representando as organizações promotoras e, acima de tudo, você que tá interessado em desenvolver soluções para essa iniciativa. Então, não perca tempo, monte a sua equipe, acesse a plataforma desafios, faça a sua inscrição. Vamos
+
+00:45:51 - 00:46:22
+juntos transformar o CAR, o cadastro ambiental rural, em um marco global de inovação digital. Uma excelente noite a todos. E nos vemos a partir do dia 26 de junho no Racarton. Ciao

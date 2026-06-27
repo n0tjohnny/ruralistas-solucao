@@ -1,0 +1,42 @@
+**LINKS ÚTEIS SOBRE O HACARTHON: **
+▫️[Site do haCARthon](https://appdesafios.enap.gov.br/desafio/view/hacarthon-maratona-de-solucoes-para-o-car-(cadastro-ambiental-rural))
+▫️[Edital do Hacarthon](https://repositorio.enap.gov.br/bitstream/1/9909/1/Edital%20haCARthon%20-%20Assinado%20-%20SEI_0993344_Edital_158.pdf)
+▫️[Guia do participante](https://repositorio.enap.gov.br/bitstream/1/9909/3/haCARthon%20-%20Guia%20do%20Participante.pdf)
+▫️[Briefing dos desafios](https://repositorio.enap.gov.br/bitstream/1/9909/5/haCARthon%20-%20Briefing%20dos%20desafios%20-%20versão%202.pdf)
+
+**Sistemas, Plataformas e Repositórios do CAR**
+Abaixo estão links dos sistemas, plataformas e repositórios já existentes relacionados ao Cadastro Ambiental Rural (CAR) de forma que seja possível se familiarizar com o ecossistema de soluções disponíveis, e que a participação no haCARthon seja mais proveitosa e com uma melhor compreensão do contexto e das oportunidades de inovação.
+
+Bases de Dados e referências sugeridas para pesquisa:
+▫️[Site do CAR](https://car.gov.br/#/)
+▫️[Código Florestal Brasileiro LEI No 12.651, DE 25 DE MAIO DE 2012](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm)
+▫️[Decreto no 7.830/2012, que regulamenta o CAR](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7830.htm)
+▫️[Manuais do Cadastro Ambiental Rural](https://car.gov.br/#/centralConteudo/manuaisUsuario)
+▫️[Novo Consulta Pública de dados do CAR  ](https://consulta.car.gov.br/)
+▫️[Painel da Regularização Ambiental](https://app.powerbi.com/view?r=eyJrIjoiZmRiM2QwZDQtYjUxZi00YWI0LWFjNGEtZTIxNjg1YWFkNmZlIiwidCI6ImViMjJjMjU4LWQ0ZWQtNGZmMC04Y2Y2LTI4NmQ2Mjc3OTQ5ZSJ9)
+▫️[Onde Estamos na Implementação do Código Florestal?](https://www.climatepolicyinitiative.org/pt-br/publication/onde-estamos-na-implementacao-do-codigo-florestal-radiografia-do-car-e-do-pra-nos-estados-brasileiros-edicao-2025/)
+▫️[Meu imóvel rural](https://meuimovelrural.sistema.gov.br/#/)
+▫️[Painel de dados do CAR](https://painel.car.gov.br)
+▫️[Rural Environmental Registry - RER](http://rer.dataprev.gov.br/)
+▫️[Github do RER](https://github.com/Rural-Environmental-Registry/core)
+▫️[Conjunto de Bases de Referência do Sistema Nacional de Informações Florestais - SNIF](https://snif.florestal.gov.br/pt-br/conjuntos-de-dados?tema=regularizacao-ambiental)
+
+
+**AMBIENTE DE TESTE DO CAR**
+Para navegar no CAR e conhecer a plataforma, siga as orientações descritas no documento abaixo!
+
+[CLIQUE AQUI E CONFIRA UM VÍDEO TUTORIAL MOSTRANDO O PASSO A PASSO](https://www.youtube.com/watch?v=D0lF7nKlCr0&feature=youtu.be)
+
+***Atenção**: É imprescindível que os participantes realizem o envio exclusivamente pelo ambiente de testes informado no documento, utilizando o cpf de teste indicado. Solicitamos atenção redobrada a esse procedimento para evitar o envio de cadastros no ambiente de produção do Sicar, o que poderá gerar registros indevidos no sistema oficial.*
+
+
+
+**AMBIENTE DE TESTE DO CAR**
+Para navegar no CAR e conhecer a plataforma, siga as orientações descritas no documento abaixo!
+
+CLIQUE AQUI E CONFIRA UM VÍDEO TUTORIAL MOSTRANDO O PASSO A PASSO[https://www.youtube.com/watch?v=D0lF7nKlCr0&feature=youtu.be]. 
+
+Atenção: É imprescindível que os participantes realizem o envio exclusivamente pelo ambiente de testes informado no documento, utilizando o cpf de teste indicado. Solicitamos atenção redobrada a esse procedimento para evitar o envio de cadastros no ambiente de produção do Sicar, o que poderá gerar registros indevidos no sistema oficial.
+
+
+v

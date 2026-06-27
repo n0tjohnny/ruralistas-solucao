@@ -1,0 +1,323 @@
+00:00:00 - 00:01:07
+Olá, [música] [música] [música] [música] pessoal. Bom dia, tudo bem com vocês? Começando mais uma live preparatória do Rartom, uma maratona de soluções do cadastro ambiental rural UCAR. E quero saber quem é que tá aqui online. Então comenta aí no chat, gente. Já tá com a equipe formada, já tem número de equipe. Comenta aqui também o número da equipe pra gente ver quem tá ligadinho por aqui. Pessoal, já são 50, já são 50 equipes formadas e ainda tem muita gente aí em busca de um time, né? em busca de
+
+00:00:57 - 00:02:01
+uma equipe para chamar de sua. Então bora se conectar. Bom dia, Natália, Rodrigo, Carolina, Michael, Sérgio, quem mais daqui? Dinaldo, bom dia. Deixem aí seu comentário, o número da sua equipe, gente. Sejam todos bem-vindos e bem-vindas ao Rartom, uma realização do Ministério da Gestão e da Inovação em Serviços Públicos, UMGI, da Fundação Brasileira Pro Desenvolvimento Sustentável, o FBDS, do governo da Noruega, por meio do seu ministério aí, né, das relações exteriores e Baixada Real da Noruega do Brasil, da Escola
+
+00:01:29 - 00:02:37
+Nacional de Administração Pública, a ENAP e do Impact Hub Brasil. Eu sou a Ana da Peni Lobster, né? E vou conduzir a operação dessa jornada junto com vocês. Que gente, falta pouco, tá faltando super pouco, né? Pro Rartom começar. Vai rolar nesse final de semana, sexta, sábado e domingo. Três dias aí para vocês mandarem ver. E como diz aqui o Rodrigo, né, pra gente agilizar a vida do povo do campo. É isso que a gente quer, né? E a gente tem feito aí, gente, essas lives preparatórias para justamente inspirar
+
+00:02:03 - 00:03:08
+vocês, né, para trazer uma metodologia de inovação, de gestão de projetos, para que vocês possam estar mais preparados, para que vocês possam de alguma forma ter esse auxílio aí no desenvolvimento das ideias, tá? O objetivo do RCA, pessoal, é desenvolver soluções que possam trazer impacto mesmo pro cadastro ambiental rural no Brasil. a gente quer tornar essa ferramenta aí eh mais simples pro usuário, mais integrada, né, com bancos de dados, ainda mais eficiente e ajudar a tornar ela também um bem público digital escalável, né,
+
+00:02:35 - 00:03:33
+pro Brasil e também pro mundo. Então, lembrando que as inscrições ainda estão abertas até quinta-feira, então, chama aí os amigos para participar, ainda dá tempo de se inscrever. E se você se inscreveu, gente, você já tá dentro do Discord, já recebeu o nosso acesso, confere aí no spam, viu? A gente tá mandando no grupo de WhatsApp também, então é no Discord que a nossa maratona vai acontecer. Então você precisa formar sua equipe lá dentro, tá? Ah, mas eu já me inscrevi, eh, meus colegas não se inscreveram. Gente, todo mundo tem que
+
+00:03:04 - 00:04:04
+se inscrever de forma individual e tem que abrir a equipe dentro do Discord, porque daí você vai receber um número paraa sua equipe, né? Como eu falei, a gente já tem 50 equipes formadas, mas ainda tem bastante gente aí incrível ainda que tá sem time. Então entra lá no Discord, tem lá o Tô sem time, né? Conversa com o pessoal, tem a apresentação ali de várias pessoas, conversa, troca a figurinha aí para garantir a sua equipe e garantir também a sua participação no RCartom. Lembrando que as equipes podem ter de dois a seis
+
+00:03:35 - 00:04:41
+integrantes. Então você pode abrir tua equipe com duas pessoas e depois ali, ó, recrutar mais pessoas para participar. Beleza? Então, ontem a gente também compartilhou com vocês um documento, né, com vários, eh, links ali de ambientes e sistemas do CAR e também um acesso, gente, de teste na plataforma do CAR para que vocês possam navegar, né? E hoje, logo após a live, a gente vai enviar para vocês um tutorial, pessoal, passo a passo do acesso a esse ambiente de teste que a Super Talita Navarro do
+
+00:04:07 - 00:05:10
+MGI gravou pra gente, né, mostrando, né, como que vocês vão logar ali, porque a gente passou para vocês eh dados de um usuário fake ali para vocês navegarem. Então é fundamental que vocês assistam esse vídeo que a gente vai passar e sigam as orientações ali para que vocês possam, né, conhecer de fato a ferramenta do Car, que vocês possam navegar da melhor forma. Então a gente vai compartilhar esse tutorial para vocês logo depois da live de hoje, combinado? Último aviso, então, gente, antes da começarmos aqui, ó, ó, não tem,
+
+00:04:39 - 00:05:31
+não tem equipe 25 tá aqui também. Equipe, quem mais? equipe tá aqui. Comenta aqui o número da equipe, gente. Comenta aqui que eu quero ver as equipes presentes. Só tô vendo a equipe 25 que tá por aqui. Comenta aí no chat o número da equipe de vocês. E pessoal, último aviso, então, antes da gente começar nosso conteúdo, eu quero lembrar que todas as lives que a gente faz são gravadas, então você pode conferir por esse mesmo link que vocês estão vendo agora. Então, a gente fez a semana passada uma live onde a gente trouxe
+
+00:05:05 - 00:06:07
+como que vai funcionar a dinâmica, né, do RCKartom e também um conteúdo de como que vocês conseguem identificar oportunidades ali dentro do CAR. E hoje a gente vai trazer, né, o conteúdo de ideação e prototipação, combinado? Recados dados, gente. Vamos que vamos. Pode mandando aí as suas dúvidas no chat, né, sobre o conteúdo que a gente vai respondendo aqui ao longo da nossa live. E caso vocês tenham dúvidas específicas, né, sobre a dinâmica, sobre a maratona, eu volto para responder no final, combinado?
+
+00:05:36 - 00:06:38
+Equipe agora tá aparecendo as equipes aqui, equipe 29, equipe 19 tá aqui também. Quem mais tá aí? Quem mais tá aí? Comenta aí no chat, gente. Então, bora lá. Quero trazer para cá Brenda. Brenda do time da Penic Lobster para trazer esse conteúdo para vocês, porque Brenda, falta muito pouco pro Racart começar, não é mesmo? tá contigo. >> Nossa, eu não sei vocês, pessoal, mas a ansiedade aqui do meu lado é sempre muito grande quando a gente começa a entrar nessa fase de falar sobre como funciona a mão na massa. Então, antes da
+
+00:06:07 - 00:07:09
+gente começar esse papo aqui, muito obrigada, Ana, pela chamada, pessoal. Bom dia. Como que vocês estão? Acordaram com a energia toda? Eu vou puxar minha apresentação aqui paraa tela pra gente começar a falar um pouquinho. Antes da gente começar a nossa apresentação, só queria me apresentar para vocês. Então, eu sou a Brenda, sou engenheira de dados lá no Itaú, sou professora também na Póstec da FIAP e tenho duas comunidades onde a gente fala ali sobre tecnologias Google e AWS. Fiquem à vontade para se
+
+00:06:38 - 00:07:44
+comunicar pós evento, tirar as dúvidas de vocês, porque a intenção daqui é justamente vocês aproveitarem a jornada, mas mais do que isso, fazer conexões onde a gente tem um objetivo de crescer cada vez mais. Então, iniciando aqui o nosso conteúdo, a primeira coisa que eu quero saber de vocês aqui no chat e ver se vocês estão prestando atenção e estão com a gente é como vocês estão se sentindo hoje. Então, pode colocar aqui no chat qual quadradinho mais te representa. Deixa eu ver se tem alguém aí que ainda tá com sono, tá acordando,
+
+00:07:11 - 00:08:12
+se já temos mentes criativas pensando. Então eu sempre gosto de trazer esse essas opções aqui de sentimentos para entender como vocês estão e como que a gente pode conversar da melhor forma. A Tai já falou aqui que ela tá com ansiedade lá em cima também, então energia é o que não falta. Legal. Ó, o Neto falando aqui tá no nove. [risadas] Muito bom que o Neto já tá totalmente na sede de ansiedade para fazer acontecer. Vocês estão perfeitos aqui acompanhando todo o conteúdo com a gente. Agora nós
+
+00:07:42 - 00:08:50
+vamos começar a falar sobre um recap do que fizemos na primeira live. Aproveita o chat também e me fala quem é que viu a primeira live que a gente apresentou sobre como você conseguir identificar oportunidades para atuar. Caso vocês não tenham assistido a primeira live, é só voltar a assistir ela novamente depois que a gente terminar essa daqui. Mas nós vamos dar um recap por cima para colocar as informações na mesma linha. Perfeito. Então aqui trazendo o nosso recap, nós falamos: "Conheça o que o governo já construiu".
+
+00:08:16 - 00:09:27
+Então conheça todo o material e todas as ferramentas já disponíveis. Prenda, por que que eu tenho que conhecer o que já existe? Porque a intenção aqui não é vocês recriarem o que já existe. A intenção é trazer oportunidades de melhoria ou coisas novas. Então, é justamente essa visão. Não quero criar o que já tem. Para você não criar o que já existe, você precisa conhecer. E para conhecer os pontos de melhoria, você precisa explorar essas ferramentas. Então, explore ali todo o material disponível. A gente disponibilizou um
+
+00:08:52 - 00:09:59
+material com vocês, onde vai tá ali o link com usuário e senha para vocês acessarem cada plataforma e entender como que funciona o cadastro ali dentro, o que você consegue trazer de informação. Então, é muito importante vocês terem essa imersão na visão do usuário para conseguir identificar essas dores e trabalhar elas da melhor forma possível. Leia a documentação. Eu sei que documentação ela é chata quando a gente precisa ler, principalmente quando é um material extenso, mas o material que foi disponibilizado, ele tá muito
+
+00:09:25 - 00:10:36
+rico. Tem muita coisa, geralmente em um racatom, que quando a gente vai fazer precisa ser muito bem refinado, muito bem pesquisado. E a equipe já trouxe aqui várias oportunidades de atuação com um certo refinamento dentro. Então, leia toda a documentação disponível, pense em código aberto. Brenda, eu tenho que desenvolver código? Não necessariamente. Aqui a gente tá falando sobre a prototipação do que vocês identificarem como uma solução para ser feita. Mas desde o pensamento da solução, vocês precisam pensar ela como uma ferramenta
+
+00:10:01 - 00:11:09
+a ser construída na visão de código aberto. Por que código aberto? justamente por conta da requisição que tá sendo feita aqui dentro da nossa entrega. Então vocês vão entregar um protótipo, mas se esse protótipo vocês decidirem continuar a utilizar, é importante que você já tenha ele ali numa visão de desenvolvimento aberto para próximas utilizações. Perfeito. Até aqui alguém ficou com alguma dúvida? Tá tudo claro para vocês nesse momento de recap. No vídeo que a gente falou anteriormente, a gente mostra algumas formas de
+
+00:10:35 - 00:11:45
+metodologias de como vocês conseguem identificar ali essas oportunidades, o que que já existe, as documentações que vocês vão encontrar. Fica tudo focado aqui nesse primeiro passo. Show de bola. Perfeito. Vi aqui que vocês colocaram mais algumas informaçãozinhas de como estavam se sentindo. Bom dia, Mari. Vamos continuar então iniciando o nosso conteúdo, saindo da nossa visão de recap. O que que eu venho trazendo a primeiro momento? Eu gosto muito de falar que quando a gente participa de racatom, nós precisamos
+
+00:11:10 - 00:12:16
+começar pela pessoa e não pela tecnologia. E por que isso? Pensa que você desenvolveu um site maravilhoso, um aplicativo muito muito legal, só que o meu usuário final ele não tem acesso à internet, por exemplo. Adiantou do quê? a solução que tu desenvolveu, quem é que vai usar ela? Então, quando a gente fala nessa visão de perspectiva de usuário, você precisa entender muito bem o perfil da sua persona para conseguir atender as necessidades dela. Então, tenha sempre em mente, comece pela pessoa e não pela
+
+00:11:43 - 00:12:55
+tecnologia. Vocês precisam ter muito claro na cabeça que tecnologia ela é utilizada como uma ferramenta. Você pode inovar de de várias formas possíveis, inclusive formas que não utilizem tecnologia. É super normal acontecer esses processos voltado à inovação. Então, tenha muita essa visão aqui que, ah, preciso resolver o problema. Antes de eu resolver esse problema, deixa eu entender a minha persona e se esse problema realmente precisa ser resolvido dessa forma com tecnologia. É isso mesmo. Tal qual a IAL, né? Tu
+
+00:12:20 - 00:13:25
+colocou aqui que a IA é ferramenta, é a mesma coisa. É, é uma forma de ferramenta que a gente tem para utilizar para uma resolução eh na documentação de vocês e na plataforma disponível ali da Penic junto com a documentação, já tem duas personas pré-definidas para vocês trabalharem. Brenda, posso trazer mais personas que eu identifiquei? Pode, não tem problema nenhum, mas a equipe ela já teve todo um trabalho de pré-moldar uma persona para vocês trabalharem. Então é bacana dar essa atenção paraa persona já
+
+00:12:53 - 00:14:00
+pré-montada, porque ali já pode ter um refinamento que vocês já podem trabalhar com base nisso. Então a nossa primeira persona é o seu Raimundo, que ele pode ser ali um pequeno ou um médio produtor rural. E aí a gente traz a informação que ele depende diretamente da sua propriedade para conseguir garantir a renda do sustento de estabilidade para sua família. E aí, olha que interessante, o próprio time já trouxe aqui a visão dos ganhos que ele espera. E aí de ganhos a gente tem aqui regularização sem advogado, acesso a
+
+00:13:26 - 00:14:32
+crédito rural verde, resolver pelo celular. aqui foi o próprio time aqui é na visão do que eu trouxe, pensando se eu tivesse eh fazendo a definição de entender problemas que afetam o seu Raimundo. Então aqui é só um exemplo para vocês, mas a informação anterior do perfil do seu Raimundo é o que já conta de documentação. E aqui foram as dores que eu pensei em levantar para ele. Internet estável, ele depende do filho para conseguir fazer o preenchimento. a a linguagem técnica, né, quando ele vai usar o aplicativo, é uma linguagem
+
+00:13:59 - 00:14:58
+técnica muito forte. Ele tem medo de errar e perder o cadastro, porque o cadastro é muito importante para ele. Então, veja que aqui só com as informações anteriores foi possível a gente conseguir identificar o que que o seu Raimundo espera quando ele precisa utilizar essas ferramentas e quais são os medos dele ali no momento de utilização. Deixa eu ver aqui. O Rafa falou que ele não consegue mais encontrar os vídeos um e dois do Harcaton. Rafa, eu vou ver com a organização aonde que foram parar os
+
+00:14:29 - 00:15:38
+links, se precisou sair do ar por algum motivo, mas aí a gente traz de volta essa informação para colocar aqui, tá? Fica tranquilo. Então essa daqui é a nossa primeira persona, o seu Raimundo. Recapitulando, é importante a gente saber o perfil da nossa persona e quais são as dores que percorrem a vida dela para conseguir construir uma solução que agregue valor. OK? Nossa segunda persona é a Luana. é uma analista ambiental do órgão estadual. E aí a gente trouxe aqui que ela é geógrafa, cuida da fila de
+
+00:15:02 - 00:16:11
+validação do cadastro inteiro, ganhos esperados, pré-validação automatizada, dados entregados num só painel, templates inteligentes de aparecer e as dores que ela enfrenta ali no dia a dia. É uma fila, por exemplo, com mais de 12.000 1 análises pendentes para ela conseguir deixar disponível sobre posições difíceis de detectar, visto naquela parte de dashboard que nós temos os mapas e a troca de aba entre quatro sistemas. Então aqui ela tá falando que ela não tem um lugar centralizado para fazer as atuações dela. Vocês
+
+00:15:38 - 00:16:43
+conseguiram entender que trazendo o perfil da nossa persona, fica muito claro aonde que a gente consegue atuar nesse dia a dia para conseguir gerar um impacto que faça sentido. Com o nosso perfil feito e vocês já conhecendo nossas personas, vou dar um refresh aqui só nos desafios que a gente já tem disponível, que são três desafios. vocês vão escolher um deles para est trabalhando. Então, nós temos o desafio um, como podemos aumentar o conhecimento e o entendimento da legislação ambiental associada ao CAR
+
+00:16:10 - 00:17:37
+pelos pequenos e médios produt proprietários, opa, proprietários rurais para promover a preservação e recuperação florestal. Desafio dois, como podemos simplificar a declaração e retificação do CAR para o produtor rural, aproveitando as informações de base de dados aberta disponíveis para garantir o cumprimento do Código Florestal, garantindo benefícios individuais e coletivos. Desafio três, como podemos atualizar anualmente, com rapidez e acurácia, o mapeamento de uso e cobertura de solos de todos os estados brasileiros,
+
+00:16:53 - 00:17:58
+melhorando a atualização do CAR em relação ao aumento da quantidade e qualidade das análises disponíveis. Então, esses são os três desafios que a gente tem aqui. Percebam que as personas que a gente falou anteriormente se encaixa muito bem nesses desafios. Então, as coisas já estão pré-definidas no sentido de já veio com um refinamento. Brenda, eu posso explorar mais para entender o que que eu consigo extrair de melhor da minha persona, posso colocar mais informações em cima dela. Pode, sem problema nenhum. Não só
+
+00:17:26 - 00:18:35
+pode como deve, né? a gente tem um tempo aqui para conseguir extrair mais informações e enriquecer ainda mais com o que vamos trabalhar. E aí, falando no que vamos trabalhar, eu trouxe aqui uma metodologia que ela é bem conhecida quando a gente vai falar de resolução das questões dentro de um racatom, que é o duplo diamante. E aí eu queria saber de vocês aqui para colocar no chat, quem conhece essa metodologia do duplo diamante, já ouviu falar alguma vez, escutou por cima? O, é, acho que é gross o nome que tá
+
+00:18:03 - 00:19:18
+aqui do usuário. Ele falou que cada estado em tese disponibiliza o site de geerviço com as camadas de referência onde o estado deixa o RTS usarem com base na referência. Bacana. Boa dica. O Max falou que se cada equipe pode apresentar uma solução por desafio ou escolher um único desafio. Max, deixa eu trazer para você uma visão. Não tem problema nenhum vocês trabalharem em mais de um desafio, mas pensa que o tempo de vocês é limitado. Então, às vezes tentar abraçar o mundo, tu não consegue. É mais fácil tu focar em um
+
+00:18:41 - 00:19:46
+desafio só, desenvolver ele muito bem e entregar como uns próximos passos, por exemplo, que a solução que você fez para um pode afetar, afetar de forma positiva, né, para conseguir trabalhar em outras vertentes. Mas eu sempre recomendo que a própria equipe tenha essa visão de que o tempo é limitado e precisa ter um refinamento muito bom dessas soluções, OK? Não conhece. Ah, beleza. O Pedro falou aqui que não conhece. A Carol puxou aqui que os desafios estão trocados. Carol, você consegue mandar aqui pra gente o
+
+00:19:17 - 00:20:14
+que você viu? Porque na parte da documentação a gente puxou dessa forma, mas eu consigo modificar aqui sem problema nenhum. >> Oi, Brenda. Desculpa, desculpa só interromper aí, mas só realmente aqui tá invertido, tá? No site também tá invertido, pessoal. Peço desculpas para vocês. No site também tá invertido, por isso que tá rolando essa confusão. Mas no site ali vocês têm o briefing do desafio, que tá certinho ali, tá? O nome do desafio com a descrição, a gente mandou para vocês e também tá no
+
+00:19:50 - 00:20:50
+Discord. Então, considerem o que tá no documento briefing do desafio, beleza? E depois a gente vai ajustar aqui na apresentação também, tá? >> Perfeito. Show de bola. Então, show de bola, pessoal. Dada essa informação aqui, a gente troca ela na apresentação para vocês e manda novamente. Então, vamos voltar aqui pra visão do duplo diamante. Que que a gente tem aqui nessa visão do duplo diamante? Ele é um mapa visual que vai fazer toda a organização do nosso processo de inovação. A gente traz aqui quatro fases
+
+00:20:21 - 00:21:31
+para trabalhar aqui dentro, que é descobrir, definir, desenvolver e fazer a entrega como fato, né? integrar. Olha os diamantes aqui na nossa lateral. A gente consegue ver eles perfeitamente separado em dois. Por que que duplo diamante? Um diamante, ele vai falar da perspectiva do problema e o outro diamante, ele vai falar da perspectiva da solução. Então no primeiro diamante, onde nós vamos falar sobre o problema, nós temos aqui dividido a parte de pesquisa, análise. Para ir pro segundo diamante da solução, eu preciso ter o
+
+00:20:56 - 00:22:02
+problema já definido, porque com o problema já definido, eu consigo entender qual a parte que a gente vai atuar de resolução, qual que é essa solução. E aí nós entramos na parte de ideação e possíveis testes. Então vocês conseguem ver eh perfeitinho aqui nessa visão do gráfico a questão de temos um gatilho, que é identificar o que nós vamos trabalhar, descobrir. Então nós vamos refinar aqui para fazer uma pesquisa aprofundada, fazer uma imersão e tentar entender o que que tá acontecendo. É um problema mais geral
+
+00:21:29 - 00:22:36
+nesse primeiro momento. Quando chegamos na parte da análise, esse problema geral, ele já foi definido, ele já foi refinado. Então aqui a definição já está pronta. Temos um problema definido. Vamos para o segundo diamante, onde nós falamos sobre a ideação. Então aqui nós falamos da parte de prototipação, desenvolver aqui é o protótipo mesmo. E a parte final da entrega, onde, se possível nós realizamos alguns testes ali dentro e no final, na outra ponta, nós temos o resultado, que é a solução definida. e entregue. Show de bola. Deu
+
+00:22:03 - 00:23:02
+para entender o duplo diamante, qual que é a função dele aqui. É muito fácil da gente conseguir identificar cada ponto e como trabalhar com eles nesse sentido, tá bom? Passando aqui. Lembrando que vocês podem utilizar o chat, tá pessoal? Caso vocês tenham a necessidade de tipo, putz, ó, agora que eu me toquei que eu não consegui entender muito bem o que você falou anteriormente ou ficou uma palavra muito difícil, não consegui entender o que que é essa palavra. coloca aqui no chat e a gente fala de novo sobre ela,
+
+00:22:32 - 00:23:45
+tá? A intenção é vocês não saírem com dúvidas em relação de como conseguir utilizar essas metodologias. Bora lá, então, na parte de descobrir, lembra que a gente dividiu o nosso diamante em algumas etapas? Então, na fase de descobrir, a gente quer conhecer o usuário, a dor, o contexto, o que já existe. Então, é literalmente uma fase de exploração. Dentro de uma fase de exploração, a gente consegue utilizar diversas metodologias. Então, eu trouxe aqui metodologias que se complementam. Brenda, eu tenho que utilizar tudo isso?
+
+00:23:09 - 00:24:16
+Não, você pode ver a que mais faz sentido para vocês e aplicar. ou se quiser você pode trazer toda essa parte de refinamento. Vai muito de como a equipe quer se planejar para fazer esse mapeamento. Mas nessa etapa de descobrir, eu trouxe aqui algumas formas do que a gente consegue fazer. Então tem o brainstorm, que é o que a gente chama de chuva de ideias, que é quando todos os participantes vão colocar o que eles querem trabalhar dentro do que foi levantado. Então aqui no brainstorm tem uma coisa chamada eh oito praise, que é
+
+00:23:42 - 00:24:50
+você coloca quatro quadradinhos e dentro de cada quadradinho você vai colocar uma forma de solução e aí vocês vão conversar em cima deles. Então o brainstorm ele é muito importante para você conseguir levar ali e ativar seu lado criativo de possíveis soluções a serem trabalhadas. A matriz de CSD, que é quando a gente coloca certeza, suposições e dúvidas alinhada com o que sabemos e o que falta validar. Então, a matriz de CSS, de CSS, é justamente quando você puxa essa informação do brainstorm e começa a
+
+00:24:16 - 00:25:21
+entender qual que é a fonte mais próxima de você conseguir trabalhar com ela, o que tá fazendo mais sentido para vocês atacarem. Lembra que a gente falou que o tempo é limitado? Então, se o tempo é limitado, nós precisamos trazer essa informação mais próxima para conseguir trabalhar com assertividade. A pesquisa que é o discarche, que que a gente traz aqui nessa visão? É você pesquisar as ferramentas de forma a visão do usuário. Então aqui nós falamos: "Ah, olha o reclama aqui, olha os fóruns, olha os repositórios, olha os
+
+00:24:48 - 00:26:02
+dados publicados. faça uma pesquisa de forma mais aprofundada com os dados existentes. Olha a persona aparecendo. Então, a persona é justamente você definir com qual persona você vai trabalhar para conseguir identificar quais são as oportunidades de melhoria dentro do cenário enfrentado dessa persona. um dia na vida é você usar as ferramentas como se fosse a persona, para ver também se o cenário do que tá acontecendo não é só um cenário isolado. Você precisa trabalhar com uma solução que ela tenha um impacto ali em cima dos
+
+00:25:25 - 00:26:32
+usuários. Então vai lá, acessa o car, tenta fazer um cadastro. Conforme você tá fazendo esse cadastro, vai anotando as partes que você ficou com dificuldade, o que que não deu certo e em cima disso você consegue fazer a análise do ecossistema, a análise completa, porque nesse ponto aqui vocês já levantaram possibilidades de atuações, você já tem sua persona definida, você já escutou o que outras pessoas estão falando, vocês já têm dados e aí vocês conseguem ter uma definição pronta em cima de tudo que
+
+00:25:59 - 00:27:08
+vocês eles querem trabalhar. E o mapa de empatia é trazer de forma próxima o que que a nossa persona está sentindo. Brenda, não entendi como que isso funciona. Como assim entender o que minha persona está sentindo? O mapa de empatia, ele traz essa visão justamente de você se colocar no lugar do seu usuário. Então, a intenção aqui é a gente colocar o que ela pensa e sente. Então, quais são as preocupações, as frustrações, o que que ela tá vendo? Então ali em relação ao ambiente, o comportamento ao redor, o que que ela
+
+00:26:33 - 00:27:42
+fala e faz, os discursos e as ações, o que que ela ouve, então a questão de influência de amigos a agências, as mídias quando está sendo consumido o produto, as dores e os ganhos. Tudo isso faz com que você entenda muito melhor a sua persona e as formas de conseguir entregar algo que gere valor ali dentro. Tudo OK até essa primeira fase sobre o mapa de empatia. E o que a gente colocou anteriormente das possibilidades de metodologia para trabalhar nesse primeiro pilar? Vou vou ir olhando aqui conforme vocês
+
+00:27:07 - 00:28:15
+forem colocando no chat, tá bom? Passando aqui, a gente entra no pilar de definir. Então aqui a síntese da descoberta em um briefing é justamente trazer o desafio, o usuário, a dor e a proposta de valor. A gente precisa definir com o que vai trabalhar. No pilar anterior, a gente levantou muitas ideias, fez o refinamento delas e agora nós precisamos definir aonde que vai ser atacada, com o que que nós vamos trabalhar. Eu tô adorando aqui que o Neto e o Pedro eles vão colocando cada momentinho que eu vou perguntando se tá
+
+00:27:42 - 00:28:47
+claro, vocês vão colocando aqui. Então, muito bom que vocês estão acompanhando e me dando o retorno para saber se tá legal o material que tá sendo passado. Então, na etapa de definir, nós vamos à jornada do usuário. Então, a jornada do usuário é justamente mapear o passo a passo. que eu coloquei o seu Raimundo como exemplo, mas é mapear o passo a passo do seu usuário na sua solução, expondo ali os pontos de atrito até o momento para gerar esse valor. Na primeira live, segunda live que a gente conversou de falando de identificar
+
+00:28:14 - 00:29:23
+oportunidades de melhorias, nós colocamos uma forma ali que é justamente como você conseguir segmentar cada etapa do usuário. Então, primeiro ele vai fazer o login. Depois que ele fizer o login, ele precisa colocar um documento para ser analisado. Depois disso, ele precisa esperar uma resposta. Ali foi só um exemplo de uma possível atuação quando o usuário tá utilizando a aplicação. Então, vocês mapeiam cada etapa quando tá sendo utilizado, pinta ali de verde e vermelho. O que que vai ser verde? Tudo que deu certo. Quando
+
+00:28:49 - 00:29:47
+você vê que seu usuário ou até mesmo você usando a ferramenta foi super tranquilo, não precisou parar, não precisou entender de forma muito aprofundada o que tava acontecendo, deu certo quando precisou fazer o pilot de alguma informação, isso é verde. Ficou vermelho quando você não entende alguma informação que tá ali ou quando você precisou fazer alguma coisa, não funcionou, inclusive quando você sentir falta de algo. Então você tá lá preenchendo as informações e pode pensar: "Putz, isso daqui eu acho que
+
+00:29:18 - 00:30:27
+poderia já vir pré-preenchido de alguma informação ou putz, tô preenchendo esse formulário aqui, mas eu acho que ele poderia ser enriquecido com outras informações, porque vai impactar nisso daqui." Tudo isso é forma de aproveitar e conseguir identificar um bom cenário de definição. diagrama de afinidade, que é justamente você agrupar ali os postist ou as ideias que vocês pensaram e aí o grupo com maior centralização de postit de informação, costuma ser um grupo mais interessante de se trabalhar. Brenda,
+
+00:29:53 - 00:30:58
+por que que você tá falando desse diagrama de afinidade se a gente já fez todo o trabalho de levantar um monte de ideias ali no momento do brainstorm? É justamente por isso. Vocês levantaram muitas ideias nesse primeiro momento para identificar com que trabalhar. Já que vocês identificaram muitas ideias, agora a gente vai tentar aproximar elas para ver o que que consegue se aproveitar. Então nós fazemos um agrupamento dessas informações para trazer a melhora ali para ser trabalhada, OK? É Job Stub John, que é justamente o por
+
+00:30:25 - 00:31:24
+o usuário contrata uma solução. A intenção aqui é deixar muito claro que nem sempre o usuário tá ali voltada a questão de ferramenta, né? Principalmente nessa situação que a gente fala, ele não quer saber qual tecnologia você tá usando, ele quer resolver um problema. E para resolver esse problema, a gente precisa ter uma definição muito clara dessa tarefa funcional que a gente vai estar trazendo. Então essa daqui também é mais uma metodologia que vocês conseguem aplicar para trazer um refinamento dessa
+
+00:30:55 - 00:32:05
+etapa de definição. e as oportunidades em cima de gaps. Então, é justamente vocês olharem o que já existe hoje, como funciona em cima do que vocês levantaram, o que que a gente pode atuar de melhoria em cima de um gap. OK? Alguém com alguma dúvida nesse primeiro momento? Já nem é mais primeiro momento, né? A gente já passou por alguns momentos aqui dentro, [risadas] mas se alguém ficou com dúvida nessa etapa anterior, é só colocar aqui. Nós entramos na etapa de desenvolver. Para problemas enquadrados, nós queremos
+
+00:31:30 - 00:32:35
+saber aqui quantas soluções diferentes existem. Pensa que vocês identificaram justamente a dor do usuário e como resolver ela, mas não é só uma forma que você tem de resolver um problema. Lembra que a gente falou lá atrás que até mesmo na questão de utilizar tecnologia é uma ferramenta, você pode ter mais de uma ferramenta que resolva o mesmo problema. Então o que que a gente tá trazendo aqui? Uma metodologia onde ela reformula a questão do que você tá vendo. Então ela reformul a dor em pergunta aberta no
+
+00:32:03 - 00:33:11
+sentido de como poderíamos. Eu vou trazer um exemplo mais claro para você dessa primeira, para vocês dessa primeira metodologia que eu gosto bastante. Depois que a gente definiu como poderíamos arrumar aquilo, nós entramos numa etapa de benchmark, olhar o mercado e ver quem já faz isso e como que faz, se essa é uma dor que ela já tá sendo resolvida ou se alguém em primeiro momento nunca nem sequer cogitou em arrumar dessa forma. Então, benchmark é vocês entenderem o mercado em cima do problema que foi levantado. Analogia e
+
+00:32:37 - 00:33:55
+referência, então, é vocês darem uma uma olhada e uma pesquisada maior no benchmark. Benchmark a gente faz a visão de concorrentes ali diretos, né, diretos e indiretos. Mas aqui na analogia e referência é você olhar um mercado que seja de outro segmento que também tenha esse problema e como que ele resolve. Assim você consegue ter uma visão, não só do que o próprio mercado direto está fazendo. E o scamper que é você pegar cada uma das ideias colocadas e responder elas dessa forma, no sentido de substituir, combinar, adaptar,
+
+00:33:15 - 00:34:21
+modificar, propor outro uso, eliminar e reverter. Assim vocês conseguem ter bem claro com o que vocês vão atuar. Falei que eu ia trazer de uma forma mais clara para vocês a primeira metodologia. Então aqui a intenção é justamente fazer com que a dor que a gente mapeou de cada persona vire uma pergunta para saber como atuar com ela. Então eu coloquei aqui um exemplo, ó. O seu Raimundo tem medo de errar no cadastro. E aí embaixo eu coloquei como poderíamos guiar o seu Raimundo passo a passo em linguagem
+
+00:33:49 - 00:35:05
+rural, no sentido de como que a gente consegue resolver essa dor anterior dele numa pergunta. E aí a gente responde essa pergunta e vai desenvolvendo ao decorrer do nosso processo de desenvolvimento. Aqui a Luana, ela tem 12.000 1000 análises pendentes. Como poderíamos priorizar a fila da da Luana por risco ambiental real? Então aqui são só exemplos para vocês conseguirem entender um pouquinho melhor como que funciona esta metodologia. Mais uma forma de colocar ela sobreposições passam despercebidas. Como poderíamos
+
+00:34:27 - 00:35:40
+sinalizar conflitos geométricos no momento do cadastro? Então tudo isso são parte a parte que vocês conseguem aplicar nessa metodologia. Trazendo essa visão de transformar a dor mapeada em uma pergunta. Perfeito. Até aqui vamos passando. Entramos no momento da visão da de entrega do que nós vamos entregar. Então, triar, priorizar, testar com o usuário. Que que a gente espera de saída? O protótipo validado e pronto para o PIT. Então, nessa fase de entrega, você precisa realmente priorizar o que vai ser entregue. E aí
+
+00:35:03 - 00:36:14
+aqui a gente consegue trazer duas formas de metodologia para começar a falar um pouquinho do protótipo. Primeiro, a gente fala dessa matriz do do R e aí ela tem aqui alguns pontos a serem respondidos. Quantos usuários são afetados? Qual o impacto por usuário? Qual é a sua confiança nos dados? e quantas semanas de trabalho. Priorize quais solução você vai ter para fazer esse primeiro teste. Por que que é bom responder essa matriz quando você já tem ali pré-definido a vertente que você quer atacar? Tá vendo que eu tô pedindo
+
+00:35:39 - 00:36:46
+ali? Quantos usuários estão afetados aqui na hora de você montar o PIT? É uma informação muito boa que você consegue entregar a importância do valor. Pô, 40% da população que utiliza esse aplicativo tá sofrendo com isso. 40% é um número muito expressivo. Então, se você entregar essa melhoria, vai afetar a pessoa de uma forma bem clara ali para ser utilizada. Qual o impacto por usuário? Então, o que que vai melhorar na vida do usuário com esta entrega que vocês estão fazendo, com essa descoberta
+
+00:36:12 - 00:37:18
+mais do que tá sendo colocado, qual a sua confiança dos dados, pessoal? Aqui a gente tá falando de uma questão de ter dado para embasar a decisão de vocês. Então, não é bacana chegar numa apresentação e colocar ali que vocês decidiram trabalhar com isso por vozes da sua cabeça. Não é bacana? A gente tá falando aqui de algo que afeta pessoas no dia a dia real do contexto. Então é bacana trazer ali com toda a propriedade, falando, ó, esses daqui são os dados que comprova isso daqui. E é por isso que é interessante nós
+
+00:36:45 - 00:37:57
+trabalharmos dessa forma. Quantas semanas de trabalho é um tópico que a gente pode deixar ele em off a primeiro momento, porque quantas semanas de trabalho vai depender muito de cada equipe, vai depender muito do que vocês pretendem propor, mas é bacana que o a equipe tenha ali uma visão de se eu for colocar isso na vida real, quanto tempo eu gastaria, tá bom? protótipo de baixa e de alta fidelidade. Aqui a gente consegue trabalhar com duas formas de prototipação. Comece em papel, valide a ideia e só suba a fidelidade
+
+00:37:21 - 00:38:38
+depois que a hipótese passou. Então aqui o protótipo de baixa fidelidade, ele tende a ser algo que você consegue rascunhar muito fácil para ver se faz sentido e você investir um valor de tempo ali para criar um protótipo de alta fidelidade ou mais aproximado da realidade. Vamos passar aqui para trazer para vocês umas visões de como funciona essas ferramentas de priorização antes de entrar de fato no desenvolvimento do que a gente tá falando aqui. Deixa eu só ver aqui a pergunta do Ren Pera aí. Precisa usar o R ou podemos criar tipo
+
+00:38:01 - 00:39:16
+um? Ah, deixa eu te falar aqui. É Raniele, isso? Ah, deixa eu te falar aqui. Eh, no começo da live a gente falou justamente que a intenção não é vocês recriarem o que já existe, é respeitar o que já existe e identificar pontos de melhorias a serem aplicados ou até modificações ali dentro, mas não recriar de ponta a ponta o que já tem existente, tá bom? matriz de impacto e esforço. Então aqui nossas ferramentas de priorização. Quando vocês colocarem ali a ideia de a pensei tudo isso daqui do que eu posso
+
+00:38:39 - 00:39:41
+desenvolver, pô, protótipo ele fala muito da questão de como você vai entregar o valor com o menor esforço possível, porque você não tem tempo suficiente para colocar isso mão na massa. Então, como que a gente consegue? Aí aqui eu trouxe duas perguntinhas para vocês responderem, né, na hora que vocês estiverem chegando nessa etapa. Eh, o impacto que é resolver a dor real do seu Raimundo ou da Luana. Então, qual que é o impacto que a gente vai ter dentro daqui e qual que é o esforço? Cabem 48 horas com o seu time, por exemplo. Aqui
+
+00:39:10 - 00:40:20
+eu trouxe só um exemplo de noção de ai 48 horas é o tempo que a gente tá planejando para colocar isso de pé. E aí na matriz ela tem a visão de impacto e esforço. E aí vocês vão separar cada funcionalidade do que vocês pensaram nesses quadradinhos. Quando você encontrar o que tá ali em maior impacto, em menor esforço, é o que é mais interessante de você tá trabalhando, porque ele vai gerar um valor muito grande pro seu usuário e o esforço é pequeno para ser implementado, tá bom? E implementado aqui, gente, não é
+
+00:39:45 - 00:40:53
+implementado código, tá? é implementado na nossa visão de fazer o nosso protótipo, tá certo? Só para não confundir vocês, principalmente quem é desenvolvedor pode se confundir nessa questão. A escala de fidelidade, lembra que a gente falou que você pode começar com uma baixa fidelidade e ir aperfeiçoando ela? Você pode fazer dessa forma, mas nada impede também que você já vá direto num MVP. Mas para vocês terem conhecimento, nós temos aqui o sket, que é literalmente o rabisco em papel. E é ali um momento que você tem a
+
+00:40:19 - 00:41:31
+a ideia faz sentido, pô, a ideia fez sentido. Então vamos aperfeiçoar isso e ir para um Warframe, que é justamente você começar a criar as caixinhas e as labels. Vamos pensar aqui numa visão de um aplicativo. Então o fluxo funciona? Funcionou. Vamos pro mocap. O mocap é uma tela visual estática, então ela só vai ter ali de forma estática, sem integração, sem ter nenhuma interação com a pessoa que está eh testando. Então, o visual comunica, tá fácil da pessoa identificarem os pontos que eu coloquei, a informação tá clara, tá mais
+
+00:40:55 - 00:41:58
+fácil de chegar em determinada etapa. Então o Mocap ele tem essa função, o protótipo interativo, que é justamente aqui eu coloquei o Figman como ferramenta, mas é quando você consegue fazer interação com esse protótipo. A navegação ela tá funcionando, é por isso que a gente usa o protótipo interativo e o MVP, que é o mínimo viável do produto que você quer entregar, funcional. Aqui eu coloquei código real, mas código real é na visão de você ter o produto fiel mais possível aplicando dentro de um
+
+00:41:27 - 00:42:39
+desenvolvimento sem envolver código. Brenda, posso envolver código? Vai da equipe. A gente não tá exigindo código nesse momento, ok? E aí aqui a gente traz a hipótese. Ela é viável? Então, cada etapa dessa daqui consegue deixar um nível de profundidade maior no que vocês querem propor como solução. Perfeito. Tudo OK até aqui? Todo mundo entendeu essa escala de fidelidade? Tá tudo certo? Dito isso, a gente pode entrar aqui numa visão de storyboard. Eu gosto muito do storyboard para justificar as escolhas
+
+00:42:04 - 00:43:15
+que foram tomadas até o momento. Então, conte a história antes de construir a solução. O storyboard ele vai mostrar quem usa, em qual contexto, qual que era o antes e o que que aconteceu depois que você colocou. Então, vamos olhar cada quadradinho aqui, tá? Antes aqui o que eu tô trazendo como informação é o Raimundo, mas mais uma vez é só um exemplo para ficar claro para vocês, tá bom? Antes Raimundo recebe uma carta de órgão ambiental que precisa regularizar o car sem saber por onde começar. Descoberta. vizinho mostra
+
+00:42:40 - 00:43:53
+que há Qcode de comunicado que leva direto ao fluxo simplificado, sempre precisar de um técnico ali com ele ou ajuda de alguma outra pessoa mais experiente com tecnologia. No campo, Ramundo vai escanear o QR code no celular. Sem o login, ele entra pela informação do CPF. O mapa aparece pré-preenchido com os dados que ele já tem ali disponível. Entendimento. Checklist mostra o que falta em linguagem simples, sem jargão legal, e ele entende o que precisa fazer. A etapa do envio, confirma o envio e recebe o
+
+00:43:17 - 00:44:23
+WhatsApp com o protocolo e o prazo estimado, sem acessar o portal. E aí, o que que a gente tem de resolução? 30 dias depois, notificado sem o celular, seu carro foi aprovado sem precisar o ligar, né, ao escritório. Deu para entender muito fácil aqui o que a gente trouxe de antes, qual que foi a nossa descoberta nesse momento, o que que a gente pensou do contexto que pode ser aplicado e qual que é a resolução que vem. Brenda, isso daqui que você tá falando é realmente o fluxo como acontece? Não, isso daqui é só um
+
+00:43:50 - 00:44:56
+exemplo para vocês saberem se o fluxo funciona dessa forma. se o Raimundo ele tem essas dificuldades, se isso daqui faz sentido, cada equipe vai ir de forma separada e fazer toda a sua parte de desenvolvimento em cima dessas etapas que a gente tá colocando aqui. Perfeito. Wframes, que é uma visão da gente trazer aqui eh ferramentas do que vocês podem utilizar no momento de deixar esse protótipo com uma fidalidade maior. Quem tem o escaladril que ele tem a estética ali de quadros brancos, perfeito pra
+
+00:44:23 - 00:45:34
+gente deixar um fluxo mais definido. O Figma, eu estou suspeito em falar sobre o Figma. Acho ele uma ferramenta muito completa, desde fazer o protótipo de baixa até a alta fidelidade. Então você consegue deixar ali os componentes clicáveis, trazer cor, trazer animação. Eu acho uma ferramenta bem completa. E o TDL aqui que a gente traz, que é um diagrama numa visão mais mão livre. E aí ele pensa nele como um sket bem estruturado para ser utilizado. Passando aqui, a gente entra de fato no MVP, que é o que eu gosto de deixar de
+
+00:44:58 - 00:46:07
+inspiração para vocês entenderem o que que é entregar valor. O que que é entregar valor numa visão pequena? Então, qual que é o mínimo do produto que ele é viável de ser entregue? Deixa eu ver. O Ranch perguntou aqui se vai disponibilizar a apresentação no grupo. Todas as apresentações vão ficar disponível, tá? Tanto o material que a gente tá falando quanto a gravação dela. Jeito errado de se pensar no MVP. Ó, vamos pensar que a gente precisa fazer a entrega de algo que locomova as pessoas de um ponto pro outro. Beleza? Essa
+
+00:45:33 - 00:46:39
+daqui é o que a gente precisa resolver. O jeito errado de você pensar num MVP é você entregar primeiro um parafuso, depois você vai entregar um outro tipo de parafuso, aí depois você pensa num carro e aí só depois você pensa na visão final do que precisa ser entregue. Então eu coloquei aqui, ó, roda, eixo, ci vai usar isso daqui se você entregar uma roda, por exemplo, uma roda não vai me locomover de um lado pro outro. Então essa daqui não é a ideia do MVP que a gente quer que vocês tenham em mente. O
+
+00:46:06 - 00:47:00
+MVP é justamente a forma de entregar valor na menor forma possível, no sentido de agilidade. Então eu preciso deslocar uma pessoa de um local pro outro. Um skate faz isso. Ah, perfeito. Eu coloquei a pessoa para andar no skate. Ela me falou: "Putz, tô andando aqui no skate. Eu senti falta de ter algo para segurar, para ter mais segurança." Então eu fui lá e coloquei algo que a pessoa possa se segurar. Um patinete. Continuo entregando valor pro meu usuário. Mas aqui ele falou: "Nossa,
+
+00:46:33 - 00:47:27
+um patinete eu ainda sinto que eu não tô tão bem seguro. Sinto que eu preciso de alguma coisa para sentar. Ficar em pé muito tempo me cansa". Então a gente vai lá e faz uma bike com a bike o o usuário vai lá, usa novamente, ele fala: "Nossa, ó, bacana a bike", mas eu acho que ela não tá entregando a velocidade que eu preciso para me deslocar. Então a gente vai lá e pensa numa moto e chega na visão final de utilizar um carro. Tá vendo que cada interação que a gente foi foi fazendo com o nosso usuário, a gente
+
+00:46:59 - 00:48:03
+conseguiu captar um feedback e melhorar essa ideia? é justamente o que o MVP ele traz de valor ali. A gente precisa entregar algo que faça sentido e que esteja num curto período de tempo. E aí, se ainda não ficou claro essa visão de MVP, então a gente trabalha aqui num protótipo que é justamente o rabisco dessa informação. Eu gosto muito dessa imagem que a Ana me passou. A gente tem aqui o MVP, que olha que ele tá parecido com o nosso protótipo, mas ele ainda tem muitas coisas para melhorar. Mas aqui no MVP ele já me
+
+00:47:32 - 00:48:37
+passa a ideia do que que é o nosso donut. Eu posso dar o donut pro cliente experimentar porque eu já vou ter o feedback se a massa tá boa. Ele já tá entregando o valor porque eu vou saber se o meu cliente gostou disso daqui ou se eu preciso mudar algo. E o produto final é o Danut com o recheio, que foi o que a gente desenhou no protótipo. Veja como é clara a evolução de cada momento. Tudo bem para vocês? Tá clara essa informação em relação ao protótipo e VP? Vamos passar aqui. Pera aí. Show de bola. Em cima dessa informação
+
+00:48:08 - 00:49:14
+de de protótipo e MVP, ficou claro, pessoal, só para identificar com vocês se ficou todo mundo no mesmo pé. Sim, tranquilo. Show de bola. Muito que bom. Então aqui trazendo essas visões finais, quando você tem todo o agrupamento dessas informações, a gente consegue entregar de forma clara tanto que o usuário precisa, o que foi levantado de informação e todo esse apanhado de informações vocês vão utilizar na nossa visão final, que é a criação do pit. Mas isso daqui é um spoiler que eu não vou dar para vocês. Vocês vão ter que
+
+00:48:41 - 00:49:38
+esperar até o final para saber o que que acontece dentro de um pit e as etapas que a gente tem aqui dentro. Vou chamar a Ana para voltar com a gente e aí se tiver pergunta é o momento da gente responder todas elas. Ana, por favor. Ah, já tá até aqui. [risadas] Já tô por aqui. Maravilha, Brenda. Muitíssimo obrigada, pessoal. E aí, curtiram? Quem curtiu, curte aqui a live também. a gente traz esse conteúdo aqui eh com essa metodologia justamente para ajudar vocês, né, no desenvolvimento aí das soluções. Mas quero lembrar,
+
+00:49:09 - 00:50:11
+pessoal, muito importante, tá, reforçar isso com vocês. A gente não vai exigir de vocês códigos, tá? Vocês não vão precisar apresentar códigos, desenvolver de fato um sistema funcionando durante o RCKartomon, tá? O que a gente quer justamente avaliar a ideia, a solução proposta, né? a forma como ela resolve o desafio. Por isso que a Brenda trouxe bastante esse conteúdo da validação da ideia, de vocês entenderem a necessidade, né? Pontos de melhoria. É isso que a gente busca, gente, o olhar de vocês para algo que já existe, né?
+
+00:49:41 - 00:50:35
+Como a gente deixa isso melhor, como a gente aperfeiçoa isso. Então, essa é a missão de vocês, tá? Então, a entrega ali do protótipo, ela vai ser eh esse esse protótipo mesmo não funcionando muito bem, mas mostrando exatamente, né, como ele funcionaria, né? Então você vai poder apresentar esse protótipo aí eh com o fluxograma, com desenho de telas, com simulação. Tem gente que às vezes programa porque fica muito mais fácil para mostrar, não tem problema. Mas a entrega de protótipo, como a gente já
+
+00:50:07 - 00:51:03
+desenhou lá, já tá tudo publicado, né, no na orientação do participante, vocês vão entregar ela como um vídeo, tá? Então a gente vai explicar sobre essa entrega de protótipo também durante o racart, mas aqui dicas para vocês, gente. Dúvidas? Muito bom. Rosana tá falando, Pedro também, o Neto aprendiz tá aqui curtindo tudo, tá aqui desde o comecinho da live também. Eh, Nicola tá perguntando: "O mentor que tem na inscrição é mentor de uma equipe ou mentor da equipes em geral?" Nicolas, a
+
+00:50:35 - 00:51:38
+gente vai ter vários mentores e diferentes áreas do conhecimento, não vai ter mentor específico para cada equipe, tá? os mentores, eles vão atuar pontualmente eh nas dúvidas das equipes. Então, quem tiver dúvida vai pedir ajuda e a gente vai conectar vocês com o mentor, com o perfil que você esteja buscando, tá? Então são mentores aí do Brasil todo que estão participando com a gente. Sem contar o pessoal, né, das das empresas organizadoras aí do Rckarton, que também vão estar disponíveis para ajudar vocês. Dúvidas, gente, dúvidas aí
+
+00:51:07 - 00:52:10
+paraa Brenda. mandem aí sobre o conteúdo. Sim, iremos compartilhar com vocês essa apresentação. A gente vai colocar lá dentro do Discord em materiais de apoio. Então tem aí as etapas, né? A gente trouxe o caminho das pedras para vocês. Aproveitem aí eh para poder eh seguir essas dicas e se preparar pro nosso RCartomon. Como faço para falar com o responsável pelo projeto? Eh, fale um pouco mais sobre isso, Gross. O que você precisa exatamente? Na sexta-feira a gente vai ter uma live, tá? de abertura de start
+
+00:51:38 - 00:52:41
+aí do Hckertomon, vai ser às 2as da tarde. Aí a gente vai ter ali os representantes das empresas organizadoras para justamente eh tirarem dúvidas de vocês sobre o desafio, sobre a plataforma. Então, sexta-feira, 2as da tarde, live de abertura já com tira dúvidas para vocês. Os desafios mudaram de numeração? Não, Cecília, a gente tava ali com uma confusãozinha no site que a gente já tirou inclusive do ar, a gente já alterou ali também, mas considerem sempre, pessoal, o que está publicado no briefing dos desafios. Então, lá no site
+
+00:52:09 - 00:53:11
+tem briefing dos Desafios V2, versão 2. Baixem lá, lá tá certinho. O número dos desafios é sempre o mesmo. Isso não mudou. O que mudou é a descrição que estavam invertidas as descrições, tá? Então a gente só reinverteu de novo, tá tudo certo. Então não se confundam, verifiquem ali certinho. Eu vou até eu até vou compartilhar minha tela aqui para vocês para mostrar. Vamos lá. Dúvidas? Brenda, algum outro ponto aí que o pessoal que o pessoal >> Não, não, por enquanto que eu vi aqui, Ana, foi o que o John acabou de mandar
+
+00:52:41 - 00:53:36
+aqui de mensagem para quem já tem o sistema criado e quer apresentar aqui junto com a equipe. Acredito que aqui a o que o John trouxe de informação e aí John pode me corrigir se eu tiver errada, tá? Com entendimento da sua pergunta. Eh, eu já tenho um sistema criado, por exemplo, eu já tenho algo funcional e eu acho que esse algo funcional ele atende os critérios do que a gente tá colocando aqui do desafio. Posso trazer? Acho que nada impede, mas com o que a gente colocou aqui das informações e
+
+00:53:08 - 00:54:07
+prototipações e como que a gente espera essa entrega, precisa ter tudo muito bem alinhado. Então, não vai excluir que você passe por todas essas jornadas. Não é porque você já tem um aplicativo que já funciona ou que já resolve algo que quando você parar para ver os usuários que foram colocados aqui na visão da nossa persona, vai atender perfeitamente. E principalmente no momento que a gente for falar do PIT. Se o Pit não tiver informações que embasem todos os pontos que a gente levantou durante as lives e o que tá no edital,
+
+00:53:38 - 00:54:28
+aí não faz sentido deixar claro. É por isso que a gente traz essa necessidade de conseguir trazer esses dados que provem essas informações e as ideias que vocês escolheram, tá bom? Vê se é isso, tá, John? Se não for, você manda de novo aqui. >> Perfeito. E mostrando aqui no site, então, para vocês, pessoal, aqui embaixo, ó, o que tava invertido, já mostrando para vocês que que o pessoal tava com dúvida, era o que tava nesses quadradinhos aqui, ó, nesses campos aqui que tava invertido, tá? Então, a gente
+
+00:54:03 - 00:55:03
+tirou aqui justamente para não ter mais confusão. Mas aqui, pessoal, ó, briefe dos desafios, versão dois, tá? Ao clicar aqui, gente, tá tudo explicadinho. Então, a gente tem esses três desafios. Desafio um, simplificar o car pro usuário. Aqui tá a descrição certinha. Desafio dois, melhorar o acesso a dados geoespaciais do CAR. Tá aqui a descrição. E desafio três, aumentar o entendimento das legislações do CAR. Também está aqui, tá? E nesse documento, pessoal, isso aqui é ouro na mão de vocês, porque tem dicas, tem aqui o que
+
+00:54:32 - 00:55:33
+a gente espera das soluções, né? Tem as personas, a gente tem aqui, ó, né, a descrição do desafio, contexto com mais informações sobre cada um dos desafios, né? Eh, aqui, ó, bases de dados para vocês navegarem, o que a gente espera, né? Então assim, material preparadíssimo para vocês, tá? Aqui no site também, aqui embaixo, a gente tem os tipos de soluções que a gente espera para cada um dos desafios, né? Então pro desafio um, ferramenta, soluções. Então, explorem bastante o site, explorem esse conteúdo
+
+00:55:02 - 00:56:08
+que tá aqui preparado para vocês. >> É, né? Falar que todo esse material que tá sendo disponibilizado aqui para eles, geralmente faz parte de alguns racatons a pessoa ir atrás e desenvolver esses pontos. Então a equipe aqui ela foi muito muito legal de já dar esse refinamento pros participantes já conseguirem trabalhar com um direcionamento aqui dentro, né? >> Perfeito. E dentro do Discord, gente, tem uma sala chamada Materiais de Apoio. Tá tudo lá. A gente tá reunindo tudo lá, todos os links, tem informação dos
+
+00:55:35 - 00:56:37
+desafios, todos os detalhes. Então, como tem as informações separadas, a gente compilou tudo, tá dentro do Discord para vocês. E já vai cair no e-mail de vocês. A gente também vai mandar pelo WhatsApp, publicar dentro do Discord o vídeo tutorial de como vocês acessam ali a plataforma do Car, né, usando o login de teste que eles disponibilizaram para vocês, certo? Aqui, ó, há mentores com o perfil parecido com o do seu Raimundo ou da Luana para podermos entender as dores específicas de cada um. Rafa, eu não sei
+
+00:56:07 - 00:56:57
+se temos, mas a gente vai ter mentores que vai conseguir talvez conectar vocês com essas personas, né? Então, aproveitem, podem perguntar eh para eles, né? A gente vai ter aí eh os mentores específicos, né, do das empresas organizadoras. Então, dá para perguntar para eles que às vezes a gente consegue em contato para vocês conseguirem validar essa solução, né? Entender mais de pertinho a dor. A gente tem alguns mentores que eu sei que são analistas técnicos ambientais também, então eu acho que vocês vão conseguir
+
+00:56:31 - 00:57:34
+chegar até essa persona, tá bom? Eu acho que desse ponto vale só falar também que, por exemplo, pô, é muito legal quando você consegue falar com a pessoa que tá diretamente naquele dia a dia, naquele problema, mas caso você não consiga achar um perfil para falar sobre ele, não se limite a só conversar com as pessoas. Essas informações de dos problemas que acontecem, como acontece, certeza que já tem reportagem, certeza que tem algum artigo. Então tem várias formas também de vocês conseguirem levantar essas informações, tá? Não se
+
+00:57:03 - 00:58:00
+prendam só a uma forma de conseguir validar o que vocês pensaram. >> Exatamente, Brenda. Então, recado final aí pro pessoal chegando ao fim da nossa live agora que eles já tão, ó, chegando lá, já tem, já tem bastante trabalho pela frente, ainda nem começou o Rartomon, mas que dica que você dá para eles a partir de agora? Não, eles já estão super aquecidos, né, com tanto de informação. Acho que esse é o primeiro momento que para quem já tem um grupo, sentar com um grupo, processar tudo isso
+
+00:57:31 - 00:58:35
+de informação que já tem, ler toda a documentação disponível e conseguir planejar os próximos passos para quem ainda não tem um grupo, ir lá pro Discord, conseguir identificar o seu grupo justamente para formar esse desenvolvimento. E igual a Ana falou no comecinho, é até seis pessoas. Então, tá tudo bem. Se você começar com uma dupla e ir aumentando e desenvolvendo. O importante é vocês não perderem tempo, porque cada tempo, cada minutinho aqui é crucial para conseguir fazer um bom desenvolvimento. E mais do que isso, no
+
+00:58:03 - 00:59:09
+final, como eu sempre falo, aproveitem a jornada, gente. É muito importante vocês conseguirem aproveitar cada momento aqui com os mentores que vocês vão falar, que tem uma qualidade didática incrível. Então é muito material que vocês vão conseguir absorver nesse meio tempo, participando aqui de toda essa maratona. E eu tenho certeza que no final da maratona vocês vão sair com aquela sensação de entreguei. Então é justamente isso que vocês eh conseguem, né, aprender e colocar no final do dia. >> Maravilha. Perfeito. Ó, quero até
+
+00:58:36 - 00:59:31
+aproveitar que o Rancho dos Linhares aqui é mentor e tá aqui participando também. Então, dentro do Discord vocês vão ter lá mini bio mentores, vocês vão ter o menu dos mentores, vão poder conferir todos os mentores e pedir ajuda. Então vocês vão poder se conectar com o rancho dos Linhares que tá lá também para ajudar vocês. Pessoal, é isso. Esperamos que vocês tenham curtido aí, né, esse conteúdo. A gente vai compartilhar com vocês. Então, quem gostou, manda ver, curte aqui a live. Na quinta-feira a gente vai ter mais uma
+
+00:59:04 - 00:59:56
+live, a última live preparatória, a gente vai falar sobre PIT, né, que é uma apresentação aí da sua solução. Então, a gente vai trazer dicas para vocês de estrutura, para vocês arrasarem aí na apresentação pros jurados. Tem alguma dúvida? Chama a gente no grupo de WhatsApp que a gente tá aqui para dar todo o suporte para vocês. Vamos que vamos que falta pouco. Obrigada, Brenda. Obrigada a todo mundo que acompanhou. A gente se encontra na quinta. Até lá, gente. Bom dia para vocês.

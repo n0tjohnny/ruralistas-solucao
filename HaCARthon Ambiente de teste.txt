@@ -1,0 +1,95 @@
+00:00:01 - 00:01:08
+Olá, pessoal. Muito bom dia. Eh, meu nome é Talita Navarro. Eu sou chefe de projetos aqui na diretoria do Cadastro Ambiental Rural no Ministério da Gestão e da Inovação. E hoje eu queria passar com vocês uma breve demonstração de como criar cadastros no módulo de cadastro pré-preenchido. Nesse documento vocês vão achar algumas instruções, algumas recomendações para que vocês sigam e consigam criar cadastros dentro do módulo, né? A primeira observação que eu chamo a atenção aqui são que todos os dados que
+
+00:00:35 - 00:01:43
+nós vamos trabalhar são dados fictícios, né? Eles não existem. Eles são dados de teste, são CPFs falsos, são senhas genéricas. Então eu deixo esse ponto de atenção aqui de que vocês não se não precisam se preocupar com os dados que foram disponibilizados aqui. Eu sei que os nomes que talvez vocês verão aqui dentro do módulo podem parecer um pouco incomuns, mas esses usuários eles são utilizados pela nossa equipe técnica para fazer teste de novas versões do SICAR. Então, nós acabamos adaptando eh
+
+00:01:09 - 00:02:15
+o nome de cada teste de acordo com a demanda que a gente tá homologando naquela naquela versão. E por isso os nomes podem parecer um pouco incomuns, mas não se preocupem. Nesse link vocês têm acesso diretamente ao módulo de cadastro pré-preenchido do ambiente de testes. Ao abrir ele, você vai ser redirecionado para essa página, onde você tem que escolher o estado onde tá o seu imóvel rural. Hoje em dia nós temos estados que possuem sistema próprio de cadastro ambiental rural e nós temos também os
+
+00:01:42 - 00:02:54
+estados que aderem a plataforma do SICAR Federal. Aqui paraa criação do nosso cadastro nós vamos precisar escolher estados que aderem à plataforma do SICAR Federal. na opção que eu escolhi aqui para vocês, eh, vocês vão poder criar cadastros no estado de Alagoas e no estado do Rio de Janeiro. Quando eu escolho aqui, né, uma das nossas opções, ou Alagoas ou Rio de Janeiro, eu tenho acesso a esse botão, que é justamente o botão de acessar o módulo de cadastro pré-preenchido. Aqui a gente se depara com o loging
+
+00:02:18 - 00:03:38
+golvbr e mais uma vez vocês vão utilizar aqui o CPF que vocês escolheram. e a senha que foi estabelecida para que vocês façam o login aqui dentro, né? Vocês podem dar contrtrl C, conttrl V para não errar nenhum caracter e vocês vão conseguir acessar o módulo de cadastro pré-preenchido. Nessa tela eu tenho acesso a duas opções, que é primeiro a minha central do proprietório possuidor, que é por onde eu posso verificar mensagens que o órgão ambiental possa ter enviado. Eu posso enviar retificações, eu posso gerenciar
+
+00:02:58 - 00:04:06
+vínculos, né? Retirar um cadastrante, adicionar um cadastrante e tenho a opção aqui do módulo de cadastro pré-preenchido, que é o que nós vamos demonstrar aqui hoje. Quando eu entro aqui, eu tenho opção de listar os imóveis que eu já criei, continuar possíveis cadastros que eu possa ter interrompido no meio, sair do sistema. Ele fica gravado aqui para vocês continuarem os cadastros. E eu tenho a opção de cadastrar um novo imóvel. E aí, mais uma vez, eu peço que vocês se atentem aos dados que foram
+
+00:03:32 - 00:04:44
+disponibilizados aqui no documento, porque eles precisam bater exatamente no momento do preenchimento, senão o cadastro de vocês não vai dar certo. Se vocês descerem aqui embaixo, vocês vão ver que cada CPF que foi disponibilizado, ele possui também uma data de nascimento associada. Então aqui logo na minha primeira etapa, que é a etapa identificação, que é onde eu vou declarar os proprietários e os possuidores, eu preciso mais uma vez copiar o meu CPF e preciso adicionar a data de nascimento, que no caso aqui é
+
+00:04:07 - 00:05:23
+1/01 de 1980. Aqui ele já vai fazer o reconhecimento do nome fictício, nome fictício do proprietário, nome fictício da mãe do proprietário e eu vou conseguir adicionar eh essa pessoa como dona do cadastro. É muito importante que vocês lembrem aqui de salvar no finalzinho da tela, senão vocês não vão conseguir passar pra próxima etapa, né? Então eu posso dar aqui um salvar e a próxima etapa já vai ficar disponível. Eu posso passar aqui nesse botão disponível de próximo. A próxima etapa é a etapa imóvel, né?
+
+00:04:46 - 00:05:57
+Aqui nós vamos realizar a associação do CAR que você tá criando com o cadastro SNCR, que é o cadastro nacional de imóveis rurais lá do INCRA. Então, a gente pode escolher aqui, vocês podem ficar livres para escolher qualquer um cadastro, eh, com exceção desses dois cadastros que possuem CGEF. O CGF também é um cadastro associado ao INCRA, mas eh a gente tem uma limitação de que quando é criado um cadastro com CGF associado, ele fica ele acaba ficando inutilizado. Você não vai conseguir criar outro
+
+00:05:22 - 00:06:36
+cadastro nesse daqui. Então, por enquanto, a gente vai eh preferir as opções que não possuem CGF. Aqui eu vou fazer a escolha dessa fazenda São José 2 e vou associar, né, confirmar aqui a associação do meu cadastro com o cadastro do SNCR. Quando eu associo, eh, algumas informações já vêm pré-preenchidas, né? Por isso, o nome do módulo, módulo de cadastro pré-preenchido, já me traz aqui o nome do imóvel, ele me traz a UEF que tá localizada e também o município. Aqui na descrição de acesso vocês podem ficar
+
+00:05:59 - 00:07:08
+livres, mas eu vou colocar só aqui teste. A zona de localização é zona rural. Aqui no endereço de correspondência vocês também vão precisar preencher, né? podem ficar livres para colocar qualquer número aqui que ele vai redirecionar pra mesma localização, porque a nossa localização aqui de testes mesmo. E sempre lembrando mais uma vez de salvar a etapa para que habilite a próxima etapa disponível, que é a etapa documentação. Eh, passando pra próxima etapa, vocês vão perceber que aqui na documentação,
+
+00:06:33 - 00:08:01
+como nós como nós vinculamos a informação com o SMCR, ele também puxou informações lá do do sistema do Incra vinculados à aquele número do SNCR. e ele não me permite eh adicionar uma documentação. Ele já foi feito para trazer a documentação que também estava cadastrada lá no Incre, né, para manter essa esses dados o mais fiéis possíveis dentro do sistema, os mais coerentes possíveis. Então aqui eu tenho opções de marcar, né, a reserva legal, se ela foi averbada, se ela foi aprovada ou não averbada. Então também posso, mas esse
+
+00:07:17 - 00:08:47
+item não é um item obrigatório, né? Vocês vão ficar atentos que todos os itens obrigatórios vão ter aqui um asterisco na frente. Então, como esse item aqui não é obrigatório, fica a critério de vocês eh declarar ou não. Aqui eh nesse campo da legislação ao qual o seu imóvel tá submetido, você também tem a opção de deixar desabilitado ou deixar habilitado, né? Você pode preencher aqui de acordo com a lei 12651, se essa for, se esse for o seu caso de estudo, que é o Código Florestal. Então, a gente pode salvar aqui, marcando que o
+
+00:08:02 - 00:09:15
+nosso cadastro ele está submetido à legislação do Código Florestal. Aqui também tem outras legislações de outros períodos. Então, se o seu cadastro, né, no seu no seu estudo de caso, o seu cadastro for um cadastro mais antigo, então vale a pena adequar a cada legislação aqui dentro do sistema. Mais uma vez, a gente vai salvar e passar pra próxima etapa, que é a etapa do representante. Aqui no meu cadastro eu não quero adicionar ninguém como representante, mas facilmente eu poderia fazer isso como, né, adicionando o CPF, adicionando
+
+00:08:39 - 00:09:48
+a data de nascimento, ele já ia fazer também a conexão com a nossa Receita Federal de Testes. Aqui vocês podem, se quiserem testar, usar a outra opção de CPF que nós disponibilizamos para vocês para testar. e conhecer essa etapa. Eh, mas aqui não não é do meu interesse colocar nenhum representante, então eu posso apenas salvar e passar paraa próxima etapa. Um ponto que eu queria aqui chamar a atenção de vocês é de sempre lembrar, de salvar a cada etapa que vocês forem passar. Mesmo que nenhum representante
+
+00:09:13 - 00:10:21
+tenha sido adicionado, nós precisamos salvar a etapa para passar pra próxima etapa. Então, como que eu sei que a minha etapa ela foi salva de forma correta, né? Aqui, se vocês verificarem o circulozinho que tá indicando o andamento das etapas, ele tá de uma cor, uma coloração mais escura. Ele tá uma cor, um azul um pouco mais escuro do que os outros, né? do que o outro aqui, por exemplo, do representante, do que as etapas gel, alerta e resumo, que ainda não foram preenchidas e estão em branco. Então, significa que aqui todas as
+
+00:09:48 - 00:10:56
+etapas que eu estou passando, eu tô salvando, então ele vai me dar essa coloração um pouco mais escura. Mesmo lembrando de novo, não adicionamos nenhum representante, mas precisamos salvar essa etapa e passar pra próxima etapa, que é a etapa gel, que é a etapa onde você vai desenhar o seu cadastro, eh, as informações geoespaciais do seu cadastro. Vocês vão perceber aqui que duas são obrigatórias, né, como o limite do imóvel e a sede do imóvel. Para desenhar, nós precisamos ter a referência do que nós declaramos lá
+
+00:10:21 - 00:11:41
+atrás no SNCR. Vocês lembram que nós associamos a um SNCR no município de Marechal Deodoro em Alagoas e que ele tinha 133 ha, né, de área total ali dentro do cadastro. Então são esses 133 ha que nós vamos desenhar aqui nessa etapa. Eu preciso habilitar aqui o meu limite do imóvel. E aqui nesse menu lateral eu tenho a opção de desenhar polígonos. Eu também tenho a opção de importar essa geometria feita em alguns software, né, de geoprocessamento, um ARGIS, um Qegis, mas eu tenho a opção aqui de desenhar à mão os meus
+
+00:11:01 - 00:12:13
+cadastros. Outra opção muito importante, né, que de visualização que a gente tem aqui nessa nesse menu lateral à esquerda é que vocês conseguem ver terras indígenas, né, vocês conseguem eh ativar terras indígenas que estão aqui por perto, vocês conseguem ativar unidade de conservação que estão aqui por perto. E vocês conseguem também, é, ativar bases de móveis do car, né, pr você não desenhar em cima de outro cadastro que já esteja ali por perto. Então, são bem úteis essas questões porque evitam algo
+
+00:11:37 - 00:12:50
+que é muito problemático hoje dentro do cadastro ambiental rural, que são as sobreposições entre móveis, né, as sobreposições com terras indígenas que hoje dependendo da fase não são aceitas dentro do SICAR. Então são ferramentas importantes aqui para você poder desenhar o seu cadastro. Aqui eu já consigo ver que eu tenho uma unidade de conservação aqui por perto. Eu tenho, se eu der o zoom aqui, eu consigo achar mais unidades de conservação ao redor. Se tivesse alguma terra indígena, ele apareceria em uma cor próxima aqui do
+
+00:12:14 - 00:13:42
+vermelho. Então é sempre bom ficar atento a essas funcionalidades, porque aí vocês conseguem desenhar de uma forma melhor o cadastro de vocês. Aqui eu vou manter ativa somente a de a base de móveis do car para eu evitar desenhar aqui em cima de alguns polígonos que já tem aqui dentro do sistema. Eu posso simplesmente habilitar essa camada, né? E aqui eu faço o meu trabalho mesmo à mão para ver se eu consigo chegar aqui nos 133. Eu preciso adicionar o meu polígono e preciso adicionar a sede do meu imóvel.
+
+00:12:57 - 00:14:15
+Então eu posso habilitar aqui a sede do imóvel e eu tenho a opção também de importar uma um ponto, né? Importar essa camada para servir de sede da do meu imóvel. E tem a opção de desenhar aqui a mão também. Eu posso só trazer o pontinho e quando eu clico em cima ele já fica ali no lugar. Então é muito importante que após o desenho, né, eu confirme essa etapa imóvel. Eu terminei de desenhar tudo. Então agora eu vou confirmar que eu terminei tudo que tavam me pedindo aqui nessa etapa. Então eu posso dar um confirmar. E aqui ele faz
+
+00:13:36 - 00:14:58
+uns cálculos, né? O sistema ele trabalha para ver a diferença de quanto você desenhou paraa diferença daquilo que foi eh vinculado lá atrás com a SNCe. Aí você vai me falar assim: "Ah, mas tá diferente, como que eu faço para corrigir agora, né? Você tem essa possibilidade, ele já te dá aqui que você desenhou 459 e que você precisava de 133. Então você pode vir aqui embaixo e aqui a gente tem essa opção desse lápis. Quando eu ativo esse lápis, ele vai me informar que eu tô eh editando o meu polígono e eu posso fazer as
+
+00:14:17 - 00:15:35
+mudanças necessárias aqui, né? posso diminuir bastante porque eh eu desenhei um imóvel bem acima daquilo que era permitido. Aí eu volto de novo, confirmo a finalização do meu desenho e confirmo novamente a etapa. Ele vai recalcular para ver se agora eu cheguei perto daquilo que foi declarado. Ainda não cheguei. Então eu posso diminuir mais um pouco. Isso vocês vão ficar livres para fazer, né? Vocês podem editar quantas vezes for necessário para que chegue o mais perto possível, né, do que foi declarado. Ou também vocês podem fazer
+
+00:14:56 - 00:16:10
+isso diretamente, né, se tiverem conhecimento de algum software, vocês podem fazer isso através do QGIS, já com uma margem certinha. Aqui quase cheguei perto. Vou diminuir só mais um pouquinho para ver se a gente consegue já passar para pras próximas etapas. Pronto, ele já me reconheceu aqui eh um limite de tolerância aceitável para o meu desenho, né? Nós temos essa possibilidade dentro do sistema. A gente consegue hoje no SIC criar algumas regras de tolerância, né, de acordo com o tamanho dos imóveis. E aqui eu tenho
+
+00:15:44 - 00:16:58
+informações da área que eu declarei e da quantidade de módulos fiscais correspondente, né? Aqui nós temos outras etapas também que não são obrigatórias, mas caso vocês queiram desenhar, vocês podem ficar à vontade, né? Nós temos etapa de cobertura do solo, nós temos etapa de eh poligonais de servidão administrativa, nós temos eh feições de área de preservação permanente, de área de uso restrito e também de reservas legais, né? Nós temos aqui diferentes tipos de reservas legais, sempre lembrando que é necessário
+
+00:16:21 - 00:17:35
+confirmar a etapa, né, para ele poder calcular ali quanto que você desenhou. E lembrando de novo de salvar a etapa, porque senão você não vai conseguir ter um resultado lá no final. Ele vai te redirecionar para aquela etapa que você esqueceu de salvar. Então, salvamos aqui e passamos pra próxima etapa. na etapa de alertas e pendências, né? A gente tem aqui um histórico daquilo que você porventura tenha esquecido de de preencher, mas que não são informações obrigatórias, por isso que estão em amarelo, né? Se elas fossem alertas
+
+00:16:58 - 00:18:10
+impeditivos, se eles fossem alertas impeditivos, estariam de vermelho, você não conseguiria finalizar o seu cadastro. é um ponto de atenção. Você precisa voltar naquela etapa que tá indicando aqui e corrigir o seu cadastro para que seja possível que ele seja enviado dentro do SICAR. Aqui não temos uma etapa de salvamento de dados, é só passar pro próximo e nós temos um resumo. O que é que é essa aba resumo, né? aqui, se nós tivéssemos sobrepondo eh com alguma terra indígena, com outros cadastros, com unidades de conservação,
+
+00:17:34 - 00:18:54
+o sistema já ia me dar um quadro montado, né, já me indicando a porcentagem, o nome daquela TI, o nome daquela UC. Mas aqui, como a gente não tem nenhum tipo de sobreposição, aqui, a gente pode salvar o imóvel e finalizar a o envio desse imóvel. Ao finalizar o envio desse imóvel, a gente vai obter o documento, que é um dos documentos principais do cadastro, que é o recibo de inscrição do K. Por esse botão aqui, vocês vão conseguir baixar o recibo e analisar tudo aquilo que vocês declararam. E aqui vocês têm algo muito
+
+00:18:15 - 00:19:35
+importante que é o registro de inscrição. É por ele que vocês vão achar o seu cadastro depois lá na central do proprietário e também aqui na aba de listar imóveis, né? Se eu fechar aqui eh essa aba e copiar o número que eu recebi ali na finalização, eu já vou ver aqui o card relacionado ao imóvel que eu acabei de criar. Vou ver o código do recibo, vou ver a UEF onde ele foi declarado ou o município, a condição que ele se encontra, né, que nós acabamos de enviar. Então ele está aguardando a análise do órgão ambiental estadual e a
+
+00:18:55 - 00:20:10
+situação que ele está, que ele está ativo no sistema. Aqui a gente tem também o botão de retificar, que é quando eu quero alterar alguma coisa no meu cadastro. Então ele fica disponível em determinadas situações, ele vai ficar disponível aqui para vocês clicarem e retificarem o cadastro de vocês, né? Importante que vocês vão seguir o mesmo fluxo, é bem parecido. Se precisar retificar alguma coisa, vocês podem retificar e podem finalizar o cadastro tranquilamente. Então é isso, gente. Eu espero que tenha
+
+00:19:32 - 00:19:53
+ficado claro para vocês. A gente tá disponível para tirar as dúvidas, para ajudar vocês a navegarem no sistema. Qualquer coisa é só entrar em contato.
