@@ -54,6 +54,19 @@
     #ga-navbar [style*="white-space: nowrap"] { white-space: nowrap !important; }
   }
 </style>
+<style id="ga-nav-mobile">
+  /* ponytail: Android-first nav — touch targets, momentum scroll, active-into-view, scroll affordance */
+  #ga-navbar .ga-tabs { scrollbar-width: none; scroll-behavior: smooth; }
+  #ga-navbar .ga-tabs::-webkit-scrollbar { height: 0; }
+  #ga-navbar button[data-nav] { min-height: 44px; transition: background .15s, color .15s; }
+  #ga-navbar button[data-nav]:active { transform: scale(0.96); }
+  #ga-navbar::after { content:""; position:absolute; top:0; right:0; bottom:0; width:36px; pointer-events:none; background:linear-gradient(90deg, rgba(37,56,42,0), #25382A); }
+  @media (max-width: 600px) {
+    #ga-navbar > div { gap: 10px !important; padding: 9px 12px !important; }
+    #ga-navbar .ga-brand-word { display: none; }
+    #ga-navbar button[data-nav] { padding: 10px 13px !important; font-size: 13px !important; }
+  }
+</style>
 </head>
 <body>
 <div id="ga-root" style="font-family: 'Hanken Grotesk', sans-serif; color: #2E2519; background: #F6EFE0; width: 100%; overflow-x: hidden;">
@@ -66,16 +79,16 @@
         <div style="width: 34px; height: 34px; border-radius: 9px; background: var(--ga-accent, #D6A23E); display: flex; align-items: center; justify-content: center;">
           <svg width="19" height="19" viewBox="0 0 32 32" fill="none"><rect x="5" y="5" width="22" height="22" rx="3" stroke="#25382A" stroke-width="2.4"/><path d="M5 12H27" stroke="#25382A" stroke-width="2.4"/><path d="M12 12V27" stroke="#25382A" stroke-width="2.4"/><circle cx="19.5" cy="19" r="3" fill="#25382A"/></svg>
         </div>
-        <span style="font-family: 'Spectral', serif; font-size: 18px; font-weight: 700; color: #F3ECDC; white-space: nowrap;">Gabarito</span>
+        <span class="ga-brand-word" style="font-family: 'Spectral', serif; font-size: 18px; font-weight: 700; color: #F3ECDC; white-space: nowrap;">Gabarito</span>
       </div>
-      <div style="display: flex; gap: 5px; overflow-x: auto; margin-left: auto; padding: 2px;">
-        <button data-nav="resumo" onClick="{{ goResumo }}" style="flex: none; cursor: pointer; border: none; background: var(--ga-accent, #D6A23E); color: #25382A; font-family: 'Hanken Grotesk', sans-serif; font-weight: 700; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">01</span>Resumo</button>
-        <button data-nav="glossario" onClick="{{ goGlossario }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">02</span>Glossário</button>
-        <button data-nav="problema" onClick="{{ goProblema }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">03</span>O problema</button>
-        <button data-nav="solucao" onClick="{{ goSolucao }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">04</span>A solução</button>
-        <button data-nav="defender" onClick="{{ goDefender }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">05</span>O que defender</button>
-        <button data-nav="perguntas" onClick="{{ goPerguntas }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">06</span>Perguntas dos mentores</button>
-        <button data-nav="plano" onClick="{{ goPlano }}" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">07</span>Plano &amp; chamada</button>
+      <div class="ga-tabs" style="display: flex; gap: 5px; overflow-x: auto; margin-left: auto; padding: 2px; -webkit-overflow-scrolling: touch;">
+        <button data-nav="resumo" style="flex: none; cursor: pointer; border: none; background: var(--ga-accent, #D6A23E); color: #25382A; font-family: 'Hanken Grotesk', sans-serif; font-weight: 700; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">01</span>Resumo</button>
+        <button data-nav="glossario" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">02</span>Glossário</button>
+        <button data-nav="problema" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">03</span>O problema</button>
+        <button data-nav="solucao" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">04</span>A solução</button>
+        <button data-nav="defender" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">05</span>O que defender</button>
+        <button data-nav="perguntas" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">06</span>Perguntas dos mentores</button>
+        <button data-nav="plano" style="flex: none; cursor: pointer; border: none; background: transparent; color: #9FB191; font-family: 'Hanken Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; padding: 9px 14px; border-radius: 9px; white-space: nowrap;"><span style="opacity: 0.65; font-size: 11px; margin-right: 5px;">07</span>Plano &amp; chamada</button>
       </div>
     </div>
   </div>
@@ -792,5 +805,27 @@
   </div>
 
 </div>
+<script>
+(function(){
+  var nav=document.getElementById('ga-navbar'); if(!nav) return;
+  var btns=nav.querySelectorAll('button[data-nav]');
+  var tabs=document.querySelectorAll('[data-tab]');
+  function show(name){
+    for(var i=0;i<tabs.length;i++){ tabs[i].style.display = tabs[i].getAttribute('data-tab')===name?'block':'none'; }
+    for(var j=0;j<btns.length;j++){
+      var on=btns[j].getAttribute('data-nav')===name;
+      btns[j].style.background = on?'var(--ga-accent,#D6A23E)':'transparent';
+      btns[j].style.color = on?'#25382A':'#9FB191';
+      btns[j].style.fontWeight = on?'700':'600';
+      btns[j].setAttribute('aria-current', on?'true':'false');
+      if(on && btns[j].scrollIntoView){ try{ btns[j].scrollIntoView({inline:'center',block:'nearest'}); }catch(e){} }
+    }
+    if(window.scrollTo) window.scrollTo(0,0);
+  }
+  for(var k=0;k<btns.length;k++){ btns[k].removeAttribute('onclick'); btns[k].style.cursor='pointer';
+    (function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-nav')); }); })(btns[k]); }
+  show('resumo');
+})();
+</script>
 </body>
 </html>
