@@ -1,5 +1,3 @@
-name = "compadre-apresentacao"
+name = "gabarito"
 compatibility_date = "2026-06-26"
-
-[assets]
-directory = "./public"
+pages_build_output_dir = "./public"
