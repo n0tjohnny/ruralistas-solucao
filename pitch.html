@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabarito — Pitch · haCARthon 2026 · Desafio 02</title>
+<meta name="description" content="Pitch do Gabarito (haCARthon Desafio 02): o roteador auditável da análise do CAR. Ninguém precisa de um mapa mais novo — precisa de uma decisão que dê pra assinar. Deck 16:9, navegável e exportável para PDF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ga-accent: #D6A23E; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #11160F; }
+  ::selection { background: #C0573B; color: #FCF8EF; }
+
+  /* ===== deck stage (replicates deck-stage.js: 1920×1080 canvas, scaled to fit, letterboxed) ===== */
+  .deck { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #11160F; }
+  section.stage { width: 1920px; height: 1080px; flex: none; overflow: hidden; transform-origin: center center; }
+
+  /* ===== chrome ===== */
+  .chrome { position: fixed; z-index: 50; font-family: 'Hanken Grotesk', sans-serif; pointer-events: none; }
+  .ga-counter { right: 26px; bottom: 22px; color: #C7CFB9; font-size: 15px; letter-spacing: 1px; background: rgba(17,22,15,0.7); border: 1px solid rgba(243,236,220,0.16); padding: 7px 14px; border-radius: 999px; backdrop-filter: blur(4px); }
+  .ga-hint { left: 26px; bottom: 22px; color: #8FA383; font-size: 13px; letter-spacing: 0.4px; background: rgba(17,22,15,0.7); border: 1px solid rgba(243,236,220,0.12); padding: 7px 14px; border-radius: 999px; transition: opacity .5s; }
+  .ga-dots { left: 50%; transform: translateX(-50%); bottom: 22px; display: flex; gap: 9px; pointer-events: auto; }
+  .ga-dot { width: 9px; height: 9px; border-radius: 50%; border: none; padding: 0; background: rgba(243,236,220,0.25); cursor: pointer; transition: background .2s, transform .2s; }
+  .ga-dot.on { background: var(--ga-accent); transform: scale(1.35); }
+  .ga-prog { position: fixed; top: 0; left: 0; height: 3px; background: var(--ga-accent); z-index: 60; transition: width .3s ease; }
+
+  /* ===== speaker-notes overlay (press N) — this IS the audio narration script ===== */
+  .ga-notes { position: fixed; z-index: 70; left: 0; right: 0; bottom: 0; max-height: 42vh; overflow-y: auto;
+    background: rgba(17,22,15,0.96); border-top: 2px solid var(--ga-accent); color: #E7DFCB;
+    font-family: 'Hanken Grotesk', sans-serif; padding: 22px 30px 26px; transform: translateY(101%); transition: transform .28s ease; }
+  .ga-notes.show { transform: translateY(0); }
+  .ga-notes .lbl { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--ga-accent); font-weight: 700; margin: 0 0 8px; }
+  .ga-notes p { font-size: 19px; line-height: 1.55; margin: 0; max-width: 1400px; }
+
+  @media (max-width: 700px) { .ga-hint { display: none; } .ga-notes p { font-size: 16px; } }
+
+  /* ===== print → 16:9 PDF, one slide per page (the actual haCARthon submission artifact) ===== */
+  @media print {
+    @page { size: 1920px 1080px; margin: 0; }
+    html, body { background: #fff; }
+    .deck { position: static; display: block; overflow: visible; }
+    section.stage { display: flex !important; transform: none !important; width: 1920px; height: 1080px; break-after: page; page-break-after: always; }
+    .chrome, .ga-notes, .ga-prog { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="ga-prog" id="prog"></div>
+<div class="deck" id="deck">
+
+  <!-- ================= 1 · CAPA ================= -->
+  <section class="stage" data-label="Capa" data-screen-label="Capa" data-speaker-notes="Gabarito: o roteador auditável da análise do CAR. Nossa resposta ao Desafio 02 do haCARthon — melhorar o acesso e a atualização dos dados geoespaciais do CAR." style="background:#25382A; color:#F3ECDC; padding:110px 120px; display:flex; flex-direction:column; justify-content:space-between; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 14% 22%, rgba(214,162,62,0.14), transparent 42%), radial-gradient(circle at 88% 84%, rgba(94,140,168,0.16), transparent 48%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(243,236,220,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(243,236,220,0.045) 1px, transparent 1px); background-size:64px 64px; pointer-events:none;"></div>
+    <div style="position:relative; display:flex; align-items:center; gap:18px;">
+      <div style="width:60px; height:60px; border-radius:16px; background:var(--ga-accent,#D6A23E); display:flex; align-items:center; justify-content:center; flex:none;">
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none"><rect x="5" y="5" width="22" height="22" rx="3" stroke="#25382A" stroke-width="2.4"/><path d="M5 12H27" stroke="#25382A" stroke-width="2.4"/><path d="M12 12V27" stroke="#25382A" stroke-width="2.4"/><circle cx="19.5" cy="19" r="3.2" fill="#25382A"/></svg>
+      </div>
+      <span style="font-family:'Spectral',serif; font-size:34px; font-weight:600; letter-spacing:0.3px;">Gabarito</span>
+      <span style="margin-left:auto; font-size:19px; letter-spacing:3px; text-transform:uppercase; color:#9FB191;">haCARthon 2026 · Desafio 02</span>
+    </div>
+    <div style="position:relative;">
+      <p style="font-size:24px; letter-spacing:5px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 34px;">Maratona de Soluções para o CAR</p>
+      <h1 style="font-family:'Spectral',serif; font-weight:700; font-size:104px; line-height:1.02; margin:0 0 36px; letter-spacing:-2px; max-width:1500px;">O roteador auditável da <span style="color:var(--ga-accent,#D6A23E); font-style:italic;">análise do CAR</span></h1>
+      <p style="font-size:38px; line-height:1.45; max-width:1280px; margin:0; color:#DCD3BE;">Ninguém precisa de um mapa mais novo. Precisa de uma decisão <strong style="color:#F3ECDC;">que dê pra assinar.</strong></p>
+    </div>
+    <div style="position:relative; display:flex; gap:14px; flex-wrap:wrap;">
+      <span style="background:rgba(243,236,220,0.08); border:1px solid rgba(243,236,220,0.22); padding:13px 24px; border-radius:12px; font-size:21px;">Bem Público Digital · open source</span>
+      <span style="background:rgba(243,236,220,0.08); border:1px solid rgba(243,236,220,0.22); padding:13px 24px; border-radius:12px; font-size:21px;">Sentinel-2 + PRODES/DETER</span>
+      <span style="background:rgba(243,236,220,0.08); border:1px solid rgba(243,236,220,0.22); padding:13px 24px; border-radius:12px; font-size:21px;">Persona: Luana, analista de OEMA</span>
+    </div>
+  </section>
+
+  <!-- ================= 2 · A HEROÍNA ================= -->
+  <section class="stage" data-label="Quem assina" data-screen-label="Quem assina" data-speaker-notes="A heroína da nossa história é a Luana, analista ambiental de um órgão estadual. Validar ou notificar um CAR é um ato administrativo: leva o nome e a responsabilidade jurídica dela. O produto não é o herói — ela é." style="background:#F6EFE0; color:#2E2519; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="display:grid; grid-template-columns:0.92fr 1.08fr; gap:72px; align-items:center; max-width:1680px; margin:0 auto; width:100%;">
+      <div style="background:#25382A; color:#F3ECDC; border-radius:28px; padding:64px 58px;">
+        <div style="width:120px; height:120px; border-radius:50%; background:var(--ga-accent,#D6A23E); display:flex; align-items:center; justify-content:center; font-family:'Spectral',serif; font-size:58px; font-weight:700; color:#25382A; margin-bottom:36px;">L</div>
+        <h3 style="font-family:'Spectral',serif; font-size:46px; font-weight:700; margin:0 0 10px;">Luana</h3>
+        <p style="font-size:23px; color:#9FB191; margin:0 0 32px;">Analista ambiental · geógrafa · órgão estadual de meio ambiente (OEMA)</p>
+        <p style="font-size:27px; line-height:1.55; margin:0; color:#DCD3BE;">Cuida da fila de validação do cadastro inteiro. No fim, é o nome dela na liberação ou na notificação. O que ela quer não é um número novo — é <strong style="color:#F3ECDC;">uma fila que para de crescer</strong> e um parecer que ela aceita assinar.</p>
+      </div>
+      <div>
+        <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#C0573B; font-weight:700; margin:0 0 26px;">Quem assina, responde</p>
+        <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:74px; line-height:1.06; margin:0 0 34px; letter-spacing:-1.2px;">Por trás de cada CAR validado, há uma assinatura.</h2>
+        <p style="font-size:32px; line-height:1.5; margin:0 0 36px; color:#5A4F3D;">Um “validado” errado tem peso jurídico. Sem um lastro defensável, a analista recua da automação e abre cada imóvel à mão. É aí que a fila trava.</p>
+        <div style="display:flex; gap:18px;">
+          <div style="flex:1; background:#FCF8EF; border:1px solid #E4D8BD; border-radius:18px; padding:28px 30px;">
+            <p style="font-size:19px; letter-spacing:1.5px; text-transform:uppercase; color:#99694E; font-weight:700; margin:0 0 10px;">Confia em</p>
+            <p style="font-size:23px; line-height:1.45; margin:0; color:#4A4133;">Imagem datada, alerta oficial (PRODES/DETER) e o Código Florestal.</p>
+          </div>
+          <div style="flex:1; background:#FCF8EF; border:1px solid #E4D8BD; border-radius:18px; padding:28px 30px;">
+            <p style="font-size:19px; letter-spacing:1.5px; text-transform:uppercase; color:#9A4A33; font-weight:700; margin:0 0 10px;">Não confia em</p>
+            <p style="font-size:23px; line-height:1.45; margin:0; color:#4A4133;">Um score sem prova atrás — e em ferramenta presa a licença cara.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3 · O PARADOXO (STATS) ================= -->
+  <section class="stage" data-label="O paradoxo" data-screen-label="O paradoxo" data-speaker-notes="A máquina já vê tudo: a Análise Dinamizada do SICAR tria até sessenta e seis mil cadastros por dia. Mesmo assim, a conclusão nacional foi de dois vírgula três para cinco vírgula nove por cento em um ano — noventa e quatro por cento dos oito milhões de cadastros seguem sem conclusão. Detectar não é o gargalo." style="background:#C0573B; color:#FBF3E6; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 90% 6%, rgba(0,0,0,0.20), transparent 46%); pointer-events:none;"></div>
+    <div style="position:relative; max-width:1680px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 24px;">Os números do próprio CAR</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:72px; line-height:1.05; margin:0 0 56px; letter-spacing:-1.2px; max-width:1400px;">A máquina já vê tudo. A conclusão é que não anda.</h2>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-bottom:40px;">
+        <div style="background:rgba(0,0,0,0.17); border-radius:22px; padding:44px 40px;">
+          <div style="font-family:'Spectral',serif; font-size:118px; font-weight:700; color:#F4D9A8; line-height:0.95; margin-bottom:18px;">66<span style="font-size:46px;"> mil/dia</span></div>
+          <p style="font-size:25px; line-height:1.45; margin:0; color:#FBE6CE;">capacidade de triagem da Análise Dinamizada do SICAR. <strong style="color:#fff;">Detecção sobra.</strong></p>
+        </div>
+        <div style="background:rgba(0,0,0,0.17); border-radius:22px; padding:44px 40px;">
+          <div style="font-family:'Spectral',serif; font-size:118px; font-weight:700; color:#F4D9A8; line-height:0.95; margin-bottom:18px;">5,9<span style="font-size:46px;">%</span></div>
+          <p style="font-size:25px; line-height:1.45; margin:0; color:#FBE6CE;">conclusão nacional em 2025 — era 2,3% em 2024. <strong style="color:#fff;">A vazão sobe; a conclusão, não.</strong></p>
+        </div>
+        <div style="background:rgba(0,0,0,0.17); border-radius:22px; padding:44px 40px;">
+          <div style="font-family:'Spectral',serif; font-size:118px; font-weight:700; color:#F4D9A8; line-height:0.95; margin-bottom:18px;">94<span style="font-size:46px;">%</span></div>
+          <p style="font-size:25px; line-height:1.45; margin:0; color:#FBE6CE;">dos 8,1 milhões de cadastros seguem <strong style="color:#fff;">sem conclusão.</strong> A fila não trava por falta de imagem.</p>
+        </div>
+      </div>
+      <p style="font-size:23px; color:#FBE6CE; margin:0; opacity:0.8;">Fontes: SFB / balanço SICAR 2025 · Canal Rural, jun/2026.</p>
+    </div>
+  </section>
+
+  <!-- ================= 4 · A VIRADA ================= -->
+  <section class="stage" data-label="A virada" data-screen-label="A virada" data-speaker-notes="Aqui está a virada. Base velha é o sintoma. A raiz é que ninguém quer assinar a decisão. Sem lastro defensável, o servidor recua para o manual. Por isso o Gabarito não é dado mais novo — é um roteador de atenção com uma trilha de auditoria que protege quem assina." style="background:#2F4A33; color:#F3ECDC; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 82% 12%, rgba(214,162,62,0.12), transparent 44%); pointer-events:none;"></div>
+    <div style="position:relative; max-width:1620px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 30px;">A virada</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:92px; line-height:1.04; margin:0 0 44px; letter-spacing:-1.6px;">“Base velha” é o sintoma.<br>A raiz: <span style="font-style:italic; color:var(--ga-accent,#D6A23E);">ninguém quer assinar.</span></h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:stretch;">
+        <p style="font-size:33px; line-height:1.55; margin:0; color:#DCD3BE;">Validar ou notificar um CAR é ato administrativo — tem peso jurídico e leva a assinatura de um servidor. A defasagem da base não é a doença: é o que tira o lastro pra decidir.</p>
+        <div style="background:#25382A; border-radius:22px; padding:44px 46px; display:flex; align-items:center; gap:24px;">
+          <div style="width:48px; height:48px; border-radius:12px; background:var(--ga-accent,#D6A23E); color:#25382A; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:28px; flex:none;">→</div>
+          <p style="font-size:28px; line-height:1.5; margin:0; color:#E7DFCB;">Se a máquina vê 66 mil/dia mas o país conclui 5,9%, o limitante <strong style="color:#fff;">não é detecção — é uma decisão que alguém aceite assinar.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5 · O PRODUTO / COCKPIT ================= -->
+  <section class="stage" data-label="O produto" data-screen-label="O produto" data-speaker-notes="O Gabarito tem duas telas e uma regra. Na fila, o score é invisível: só ordena por risco, pra ela gastar o olho no que importa. No caso, ela abre a evidência datada — recorte Sentinel, alerta DETER, base de origem e versão do score — e essa trilha torna a liberação assinável." style="background:#1F2D22; color:#F3ECDC; padding:80px 110px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="max-width:1700px; margin:0 auto; width:100%;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px; margin-bottom:40px;">
+        <div>
+          <p style="font-size:21px; letter-spacing:4px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 18px;">O produto, de verdade</p>
+          <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:64px; line-height:1.04; margin:0; letter-spacing:-1px;">Duas telas, uma regra: roteia por risco, prova pra assinar.</h2>
+        </div>
+        <p style="font-size:24px; line-height:1.5; margin:0; color:#9FB191; max-width:430px; flex:none;">Score <strong style="color:#C7CFB9;">invisível</strong> na fila · evidência <strong style="color:#C7CFB9;">assinável</strong> sob demanda.</p>
+      </div>
+      <div style="background:#14110C; border-radius:22px; padding:14px; box-shadow:0 40px 90px rgba(0,0,0,0.5);">
+        <div style="border-radius:15px; overflow:hidden; background:#EDE6D5;">
+          <div style="background:#25382A; color:#F3ECDC; padding:16px 22px; display:flex; align-items:center; gap:14px;">
+            <div style="display:flex; gap:8px;"><span style="width:14px; height:14px; border-radius:50%; background:#C0573B;"></span><span style="width:14px; height:14px; border-radius:50%; background:var(--ga-accent,#D6A23E);"></span><span style="width:14px; height:14px; border-radius:50%; background:#7FB07A;"></span></div>
+            <span style="font-family:'Spectral',serif; font-size:21px; font-weight:600; margin-left:8px;">Gabarito · Painel do analista</span>
+            <span style="margin-left:auto; font-size:16px; color:#9FB191; letter-spacing:0.5px;">OEMA · análise do CAR</span>
+          </div>
+          <div style="display:grid; grid-template-columns:300px 1fr; background:#EDE6D5;">
+            <!-- fila -->
+            <div style="background:#E3D9C2; border-right:1px solid #D2C4A4; padding:22px 20px;">
+              <p style="font-size:15px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 6px;">Fila · ordenada por risco</p>
+              <p style="font-family:'Spectral',serif; font-size:46px; font-weight:700; color:#2E2519; margin:0 0 2px; line-height:1;">12.480</p>
+              <p style="font-size:15px; color:#8A7B63; margin:0 0 22px;">cadastros · sem score à vista</p>
+              <p style="font-size:14px; letter-spacing:0.5px; text-transform:uppercase; color:#9A4A33; font-weight:700; margin:0 0 10px;">Revisar primeiro</p>
+              <div style="background:#FCF8EF; border-radius:11px; padding:14px 15px; margin-bottom:10px; outline:3px solid var(--ga-accent,#D6A23E);"><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">Rio Verde · gleba 7</p><span style="display:inline-block; margin-top:8px; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:#9A4A33; background:rgba(192,87,59,0.18); padding:4px 11px; border-radius:999px;">mudança + base 2023</span></div>
+              <div style="background:#FCF8EF; border-radius:11px; padding:14px 15px; margin-bottom:18px;"><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">Jataí · t4</p><span style="display:inline-block; margin-top:8px; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:#9A4A33; background:rgba(192,87,59,0.18); padding:4px 11px; border-radius:999px;">borda · nuvem</span></div>
+              <p style="font-size:14px; letter-spacing:0.5px; text-transform:uppercase; color:#3E6B45; font-weight:700; margin:0 0 10px;">Liberável c/ trilha</p>
+              <div style="background:#FCF8EF; border-radius:11px; padding:14px 15px;"><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">Anápolis · s1</p><span style="display:inline-block; margin-top:8px; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:#3E6B45; background:rgba(127,176,122,0.28); padding:4px 11px; border-radius:999px;">sem mudança</span></div>
+            </div>
+            <!-- painel -->
+            <div style="display:flex; flex-direction:column;">
+              <div style="position:relative; height:300px; overflow:hidden; background:#bcd3ae;">
+                <div style="position:absolute; left:-4%; top:-6%; width:62%; height:74%; background:#5f8a55; border-radius:48% 52% 60% 40% / 55% 45% 60% 40%; transform:rotate(-8deg);"></div>
+                <div style="position:absolute; right:-6%; top:34%; width:54%; height:70%; background:#c9a86a; border-radius:52% 48% 42% 58% / 45% 60% 40% 55%; transform:rotate(6deg);"></div>
+                <div style="position:absolute; left:-10%; top:48%; width:130%; height:13%; background:linear-gradient(90deg,#5E8CA8,#7AA6BE); transform:rotate(-7deg); opacity:0.92;"></div>
+                <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(20,17,12,0.16) 1px, transparent 1px), linear-gradient(90deg, rgba(20,17,12,0.16) 1px, transparent 1px); background-size:60px 60px;"></div>
+                <div style="position:absolute; left:210px; top:96px; width:58px; height:58px; background:rgba(192,87,59,0.34); outline:3px solid #C0573B;"></div>
+                <div style="position:absolute; left:268px; top:96px; width:58px; height:58px; background:rgba(192,87,59,0.34); outline:3px solid #C0573B;"></div>
+                <div style="position:absolute; left:268px; top:154px; width:58px; height:58px; background:rgba(192,87,59,0.22); outline:3px solid #C0573B;"></div>
+                <div style="position:absolute; left:150px; top:56px; display:flex; align-items:center; gap:7px; background:#25382A; color:#F3ECDC; padding:6px 13px; border-radius:999px; font-size:14px; font-weight:700; white-space:nowrap; box-shadow:0 6px 14px rgba(0,0,0,0.3);"><span style="width:9px; height:9px; border-radius:50%; background:#C0573B;"></span>supressão · alerta DETER mar/26</div>
+                <div style="position:absolute; left:18px; bottom:18px; display:flex; align-items:center; gap:9px; background:rgba(37,56,42,0.94); color:#F3ECDC; padding:9px 16px; border-radius:10px; font-size:15px; white-space:nowrap;"><span style="width:10px; height:10px; border-radius:50%; background:var(--ga-accent,#D6A23E);"></span>Rio Verde · gleba 7 — <strong style="color:var(--ga-accent,#D6A23E);">caso aberto</strong></div>
+              </div>
+              <div style="display:flex; flex-wrap:wrap; gap:14px 22px; padding:14px 20px; background:#25382A; color:#DCD3BE;">
+                <span style="display:flex; align-items:center; gap:8px; font-size:15px;"><span style="width:15px; height:15px; border-radius:4px; background:#5f8a55;"></span>Vegetação nativa</span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:15px;"><span style="width:15px; height:15px; border-radius:4px; background:#c9a86a;"></span>Área consolidada</span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:15px;"><span style="width:15px; height:15px; border-radius:4px; background:#5E8CA8;"></span>Hidrografia</span>
+                <span style="display:flex; align-items:center; gap:8px; font-size:15px;"><span style="width:15px; height:15px; border-radius:4px; background:#C0573B;"></span>Mudança recente</span>
+              </div>
+              <div style="background:#FCF8EF; padding:20px 22px;">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;">
+                  <p style="font-size:15px; letter-spacing:0.5px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0;">Trilha de auditoria · imóvel CAR-GO-0421</p>
+                  <span style="font-size:14px; font-weight:700; color:#9A4A33; background:rgba(192,87,59,0.15); padding:4px 13px; border-radius:999px; letter-spacing:0.5px; text-transform:uppercase;">confiança baixa</span>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px;">
+                  <div style="background:#F1E9D6; border-radius:10px; padding:13px 15px;"><p style="font-size:13px; color:#8A7B63; margin:0 0 4px; text-transform:uppercase; letter-spacing:0.5px;">Imagem</p><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">Sentinel-2 · 14/03/26</p></div>
+                  <div style="background:#F1E9D6; border-radius:10px; padding:13px 15px;"><p style="font-size:13px; color:#8A7B63; margin:0 0 4px; text-transform:uppercase; letter-spacing:0.5px;">Alerta</p><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">DETER · março</p></div>
+                  <div style="background:#F1E9D6; border-radius:10px; padding:13px 15px;"><p style="font-size:13px; color:#8A7B63; margin:0 0 4px; text-transform:uppercase; letter-spacing:0.5px;">Base t0</p><p style="font-size:18px; font-weight:700; color:#2E2519; margin:0;">estadual · 2023</p></div>
+                  <div style="background:#F1E9D6; border-radius:10px; padding:13px 15px;"><p style="font-size:13px; color:#8A7B63; margin:0 0 4px; text-transform:uppercase; letter-spacing:0.5px;">Score · v2.1</p><p style="font-size:18px; font-weight:700; color:#C0573B; margin:0;">abaixo do limiar</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6 · COMO FUNCIONA ================= -->
+  <section class="stage" data-label="Como funciona" data-screen-label="Como funciona" data-speaker-notes="O plano cabe em três passos. Um: detecta a mudança, cruzando a base de origem com Sentinel-2 e alertas oficiais. Dois: remapeia só o que mudou, com revisão humana. Três: entrega a base fresca em formato aberto, com score que roteia a fila e trilha que torna a liberação assinável." style="background:#F6EFE0; color:#2E2519; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="max-width:1680px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#C0573B; font-weight:700; margin:0 0 22px;">Como funciona</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:68px; line-height:1.05; margin:0 0 56px; letter-spacing:-1.2px;">Detecta. Remapeia só o delta. Entrega base + trilha.</h2>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:30px; margin-bottom:34px;">
+        <div style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:24px; padding:48px 44px;">
+          <div style="font-family:'Spectral',serif; font-size:80px; font-weight:700; color:var(--ga-accent,#D6A23E); line-height:1; margin-bottom:26px;">1</div>
+          <h3 style="font-family:'Spectral',serif; font-size:34px; font-weight:700; margin:0 0 16px;">Detecta a mudança</h3>
+          <p style="font-size:24px; line-height:1.5; margin:0; color:#5A4F3D;">Cruza um t0 aberto (base estadual ou MapBiomas Col.10) com Sentinel-2 gratuita e alertas PRODES/DETER. Aponta onde a base envelheceu de verdade.</p>
+        </div>
+        <div style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:24px; padding:48px 44px;">
+          <div style="font-family:'Spectral',serif; font-size:80px; font-weight:700; color:var(--ga-accent,#D6A23E); line-height:1; margin-bottom:26px;">2</div>
+          <h3 style="font-family:'Spectral',serif; font-size:34px; font-weight:700; margin:0 0 16px;">Remapeia só o que mudou</h3>
+          <p style="font-size:24px; line-height:1.5; margin:0; color:#5A4F3D;">A classificação roda só nos talhões sinalizados; o técnico revisa ali mesmo. A ida-e-volta de meses entre estado e empresa vira um fluxo só.</p>
+        </div>
+        <div style="background:#25382A; border-radius:24px; padding:48px 44px; color:#F3ECDC;">
+          <div style="font-family:'Spectral',serif; font-size:80px; font-weight:700; color:var(--ga-accent,#D6A23E); line-height:1; margin-bottom:26px;">3</div>
+          <h3 style="font-family:'Spectral',serif; font-size:34px; font-weight:700; margin:0 0 16px;">Entrega base + trilha</h3>
+          <p style="font-size:24px; line-height:1.5; margin:0; color:#DCD3BE;">Saída em formato aberto, com score por talhão que roteia a fila e evidência datada que torna a liberação assinável. Automático onde a confiança é alta; humano onde é baixa.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:14px;">
+        <span style="background:#FCF8EF; border:1px solid #E4D8BD; padding:13px 24px; border-radius:999px; font-size:21px; color:#5A4F3D;"><strong style="color:#2F4A33;">Não substitui</strong> o SICAR nem a análise dinamizada</span>
+        <span style="background:#FCF8EF; border:1px solid #E4D8BD; padding:13px 24px; border-radius:999px; font-size:21px; color:#5A4F3D;"><strong style="color:#2F4A33;">Não tira</strong> a decisão legal do analista</span>
+        <span style="background:#FCF8EF; border:1px solid #E4D8BD; padding:13px 24px; border-radius:999px; font-size:21px; color:#5A4F3D;">Roda em <strong style="color:#2F4A33;">QGIS/PostGIS</strong> · exporta p/ o SICAR em SIRGAS 2000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7 · FRASE ÂNCORA ================= -->
+  <section class="stage" data-label="Frase âncora" data-screen-label="Frase âncora" data-speaker-notes="Resumindo o posicionamento numa frase: o MapBiomas pinta o Brasil; o Gabarito mostra à analista o que ela pode assinar primeiro — e por quê. Nunca dizemos que o algoritmo decide. Quem decide é ela." style="background:#2F4A33; color:#F3ECDC; padding:120px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 50% 120%, rgba(214,162,62,0.14), transparent 55%); pointer-events:none;"></div>
+    <p style="position:relative; font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#9FB191; font-weight:700; margin:0 0 48px;">A frase âncora</p>
+    <p style="position:relative; font-family:'Spectral',serif; font-style:italic; font-weight:500; font-size:62px; line-height:1.32; margin:0; max-width:1500px; letter-spacing:-0.6px;">“O MapBiomas pinta o Brasil; o Gabarito mostra à analista <span style="color:var(--ga-accent,#D6A23E);">o que ela pode assinar primeiro</span> — e por quê.”</p>
+  </section>
+
+  <!-- ================= 8 · POSICIONAMENTO ================= -->
+  <section class="stage" data-label="Posicionamento" data-screen-label="Posicionamento" data-speaker-notes="Sejamos honestos sobre o que já existe. Priorizar a análise não é o nosso ineditismo — o MapBiomas Alerta já cruza alerta com CAR e prioriza por imóvel. O fosso que ninguém ocupa é confiança por talhão, com trilha auditável e assinável, e nas classes do Código Florestal. É aí que a decisão fica defensável." style="background:#ECE2CB; color:#2E2519; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="max-width:1680px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#C0573B; font-weight:700; margin:0 0 22px;">Por que vamos ganhar</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:66px; line-height:1.05; margin:0 0 50px; letter-spacing:-1.2px; max-width:1400px;">Priorizar já existe. A fusão por talhão, assinável, não.</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
+        <div style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:24px; padding:48px 44px;">
+          <p style="font-size:19px; letter-spacing:2px; text-transform:uppercase; color:#99694E; font-weight:700; margin:0 0 26px;">O que o estado já tem</p>
+          <div style="display:flex; flex-direction:column; gap:22px;">
+            <div><p style="font-size:26px; font-weight:700; margin:0 0 4px; color:#2E2519;">MapBiomas Alerta</p><p style="font-size:22px; line-height:1.4; margin:0; color:#5A4F3D;">Cruza alerta × CAR e prioriza <strong>por imóvel</strong> (laudo automático). Já faz triagem.</p></div>
+            <div><p style="font-size:26px; font-weight:700; margin:0 0 4px; color:#2E2519;">Análise Dinamizada</p><p style="font-size:22px; line-height:1.4; margin:0; color:#5A4F3D;">Triagem <strong>por imóvel</strong> (passa/não passa). Sem rastro assinável.</p></div>
+            <div><p style="font-size:26px; font-weight:700; margin:0 0 4px; color:#2E2519;">MapBiomas Col.10</p><p style="font-size:22px; line-height:1.4; margin:0; color:#5A4F3D;">Base <strong>anual</strong>, 30 m, classes genéricas. Insumo, não decisão.</p></div>
+          </div>
+        </div>
+        <div style="background:#25382A; border-radius:24px; padding:48px 44px; color:#F3ECDC;">
+          <p style="font-size:19px; letter-spacing:2px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 26px;">O fosso que só nós ocupamos</p>
+          <div style="display:flex; flex-direction:column; gap:22px;">
+            <div style="display:flex; gap:18px; align-items:flex-start;"><span style="color:var(--ga-accent,#D6A23E); font-size:30px; line-height:1; flex:none;">✓</span><p style="font-size:25px; line-height:1.4; margin:0; color:#E7DFCB;">Confiança <strong style="color:#fff;">por talhão</strong> que roteia — não por imóvel.</p></div>
+            <div style="display:flex; gap:18px; align-items:flex-start;"><span style="color:var(--ga-accent,#D6A23E); font-size:30px; line-height:1; flex:none;">✓</span><p style="font-size:25px; line-height:1.4; margin:0; color:#E7DFCB;">Trilha de auditoria que torna a decisão <strong style="color:#fff;">assinável.</strong></p></div>
+            <div style="display:flex; gap:18px; align-items:flex-start;"><span style="color:var(--ga-accent,#D6A23E); font-size:30px; line-height:1; flex:none;">✓</span><p style="font-size:25px; line-height:1.4; margin:0; color:#E7DFCB;">Delta <strong style="color:#fff;">sub-anual</strong> + classes do Código Florestal (roadmap).</p></div>
+            <div style="display:flex; gap:18px; align-items:flex-start;"><span style="color:var(--ga-accent,#D6A23E); font-size:30px; line-height:1; flex:none;">✓</span><p style="font-size:25px; line-height:1.4; margin:0; color:#E7DFCB;">Aberto, em QGIS/PostGIS — <strong style="color:#fff;">revisão humana embutida.</strong></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9 · NÃO-CIRCULARIDADE ================= -->
+  <section class="stage" data-label="Honestidade" data-screen-label="Honestidade" data-speaker-notes="E a honestidade que sustenta tudo: um score só vale se não medir a própria ignorância. Nunca calibramos contra a base velha — só contra verdade independente: PRODES, DETER e amostra de campo. Metas pré-registradas: recall do delta acima de noventa por cento, kappa acima de zero vírgula sete, e falso-negativo visível igual a zero." style="background:#25382A; color:#F3ECDC; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="max-width:1680px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 22px;">A honestidade que sustenta tudo</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:66px; line-height:1.05; margin:0 0 48px; letter-spacing:-1.2px; max-width:1400px;">Um score só vale se não medir a própria ignorância.</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-bottom:38px;">
+        <div style="background:rgba(192,87,59,0.12); border:1px solid rgba(192,87,59,0.4); border-radius:20px; padding:38px 40px;">
+          <p style="font-size:19px; letter-spacing:1.5px; text-transform:uppercase; color:#E59C84; font-weight:700; margin:0 0 16px;">✕ Nunca calibramos contra</p>
+          <p style="font-size:27px; line-height:1.5; margin:0; color:#E7DFCB;">A própria base t0 defasada. Comparar o score com o mapa que ele deveria corrigir mede concordância com o erro — não acerto.</p>
+        </div>
+        <div style="background:rgba(127,176,122,0.10); border:1px solid rgba(127,176,122,0.4); border-radius:20px; padding:38px 40px;">
+          <p style="font-size:19px; letter-spacing:1.5px; text-transform:uppercase; color:#9FD194; font-weight:700; margin:0 0 16px;">✓ Calibramos contra</p>
+          <p style="font-size:27px; line-height:1.5; margin:0; color:#E7DFCB;">PRODES consolidado + DETER + amostra de campo fotointerpretada nos casos difíceis. Verdade externa, limiares pré-registrados.</p>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:26px;">
+        <div style="border-top:4px solid var(--ga-accent,#D6A23E); padding-top:26px;"><p style="font-family:'Spectral',serif; font-size:46px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">≥ 0,90</p><p style="font-size:22px; line-height:1.45; margin:0; color:#C7CFB9;">recall do delta vs DETER — pega o que mudou.</p></div>
+        <div style="border-top:4px solid var(--ga-accent,#D6A23E); padding-top:26px;"><p style="font-family:'Spectral',serif; font-size:46px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">≥ 0,70</p><p style="font-size:22px; line-height:1.45; margin:0; color:#C7CFB9;">kappa nas classes operacionais — métrica que os estados já usam.</p></div>
+        <div style="border-top:4px solid #C0573B; padding-top:26px;"><p style="font-family:'Spectral',serif; font-size:46px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">= 0</p><p style="font-size:22px; line-height:1.45; margin:0; color:#C7CFB9;">falso-negativo visível. Critério de morte: na dúvida, vai pro humano.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10 · A PROVA ================= -->
+  <section class="stage" data-label="A prova" data-screen-label="A prova" data-speaker-notes="Não pedimos pra acreditar — pedimos pra medir. O protótipo do haCARthon é um backtest de antecipação em cerca de vinte talhões de Goiás: provamos que o Gabarito sinaliza a mudança antes do PRODES e do DETER, com antecipação mediana de pelo menos dois meses e precisão acima de oitenta por cento." style="background:#F6EFE0; color:#2E2519; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
+    <div style="max-width:1680px; margin:0 auto; width:100%;">
+      <div style="display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center;">
+        <div>
+          <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#C0573B; font-weight:700; margin:0 0 22px;">A prova — protótipo do haCARthon</p>
+          <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:66px; line-height:1.05; margin:0 0 32px; letter-spacing:-1.2px;">Não pedimos pra acreditar. Pedimos pra medir.</h2>
+          <p style="font-size:30px; line-height:1.5; margin:0 0 36px; color:#5A4F3D;">Backtest de antecipação em ~20 talhões de <strong style="color:#2E2519;">Goiás</strong> (Cerrado, céu limpo, base qualificada): mostramos que o Gabarito sinaliza a mudança <strong style="color:#2E2519;">antes</strong> do alerta oficial — verdade independente, nunca o t0.</p>
+          <div style="display:flex; gap:18px; flex-wrap:wrap;">
+            <div style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:18px; padding:26px 30px;"><p style="font-family:'Spectral',serif; font-size:44px; font-weight:700; color:var(--ga-accent,#D6A23E); margin:0; line-height:1; white-space:nowrap;">≥ 2 meses</p><p style="font-size:20px; margin:10px 0 0; color:#5A4F3D;">antecipação mediana</p></div>
+            <div style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:18px; padding:26px 30px;"><p style="font-family:'Spectral',serif; font-size:44px; font-weight:700; color:var(--ga-accent,#D6A23E); margin:0; line-height:1;">≥ 80%</p><p style="font-size:20px; margin:8px 0 0; color:#5A4F3D;">precisão da fila</p></div>
+          </div>
+        </div>
+        <div style="background:#25382A; border-radius:26px; padding:52px 50px; color:#F3ECDC;">
+          <p style="font-size:18px; letter-spacing:1.5px; text-transform:uppercase; color:#9FB191; font-weight:700; margin:0 0 30px;">Dias de antecipação · por talhão</p>
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <div style="display:flex; align-items:center; gap:18px;"><span style="width:140px; font-size:19px; color:#C7CFB9; flex:none;">Rio Verde · g7</span><div style="flex:1; height:26px; border-radius:6px; background:rgba(243,236,220,0.08); overflow:hidden;"><div style="width:88%; height:100%; background:var(--ga-accent,#D6A23E);"></div></div><span style="width:62px; text-align:right; font-size:20px; font-weight:700; color:#F4D9A8; flex:none;">78 d</span></div>
+            <div style="display:flex; align-items:center; gap:18px;"><span style="width:140px; font-size:19px; color:#C7CFB9; flex:none;">Jataí · t4</span><div style="flex:1; height:26px; border-radius:6px; background:rgba(243,236,220,0.08); overflow:hidden;"><div style="width:71%; height:100%; background:var(--ga-accent,#D6A23E);"></div></div><span style="width:62px; text-align:right; font-size:20px; font-weight:700; color:#F4D9A8; flex:none;">63 d</span></div>
+            <div style="display:flex; align-items:center; gap:18px;"><span style="width:140px; font-size:19px; color:#C7CFB9; flex:none;">Mineiros · b2</span><div style="flex:1; height:26px; border-radius:6px; background:rgba(243,236,220,0.08); overflow:hidden;"><div style="width:64%; height:100%; background:var(--ga-accent,#D6A23E);"></div></div><span style="width:62px; text-align:right; font-size:20px; font-weight:700; color:#F4D9A8; flex:none;">55 d</span></div>
+            <div style="display:flex; align-items:center; gap:18px;"><span style="width:140px; font-size:19px; color:#C7CFB9; flex:none;">Anápolis · s1</span><div style="flex:1; height:26px; border-radius:6px; background:rgba(243,236,220,0.08); overflow:hidden;"><div style="width:52%; height:100%; background:#7FB07A;"></div></div><span style="width:62px; text-align:right; font-size:20px; font-weight:700; color:#9FD194; flex:none;">44 d</span></div>
+            <div style="display:flex; align-items:center; gap:18px;"><span style="width:140px; font-size:19px; color:#C7CFB9; flex:none;">Catalão · q3</span><div style="flex:1; height:26px; border-radius:6px; background:rgba(243,236,220,0.08); overflow:hidden;"><div style="width:41%; height:100%; background:#7FB07A;"></div></div><span style="width:62px; text-align:right; font-size:20px; font-weight:700; color:#9FD194; flex:none;">35 d</span></div>
+          </div>
+          <p style="font-size:17px; line-height:1.5; margin:30px 0 0; color:#9FB191;">Ilustrativo · valores a confirmar no backtest H1 (matriz de confusão publicada).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11 · A CHAMADA ================= -->
+  <section class="stage" data-label="A chamada" data-screen-label="A chamada" data-speaker-notes="Por isso a nossa submissão é dupla: o artefato técnico que prova o método, e um modelo de governança que nomeia quem opera o processo contínuo. Repare no custo: um remapeamento estadual é CAPEX alto e nasce velho; o nosso piloto custa quase zero e mede a antecipação em duas semanas. O caminho de adoção é a OEMA early-adopter e o requisito de licitação estadual. Próximos passos: acesso ao t0 da SEMAD-GO, validação com analista real, e o arranjo de custeio. Sem dono, a base viva morre no fim do piloto." style="background:#C0573B; color:#FBF3E6; padding:84px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 88% 10%, rgba(0,0,0,0.18), transparent 46%); pointer-events:none;"></div>
+    <div style="position:relative; max-width:1680px; margin:0 auto; width:100%;">
+      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 20px;">A chamada</p>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:64px; line-height:1.04; margin:0 0 26px; letter-spacing:-1.4px; max-width:1400px;">Sem dono, a base viva morre no fim do piloto.</h2>
+      <!-- anchor / contrast: torna o pedido trivialmente aceitável (anchoring + contrast effect) -->
+      <div style="display:flex; gap:18px; margin:0 0 30px; flex-wrap:wrap; align-items:stretch;">
+        <div style="flex:1; min-width:360px; background:rgba(0,0,0,0.14); border:1px solid rgba(0,0,0,0.2); border-radius:18px; padding:24px 30px;">
+          <p style="font-size:17px; letter-spacing:1.5px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 8px;">Hoje · remapeamento estadual</p>
+          <p style="font-size:24px; line-height:1.4; margin:0; color:#FBE6CE;">Licitação de CAPEX alto, por estado — e a base <strong style="color:#fff;">nasce velha.</strong></p>
+        </div>
+        <div style="flex:none; display:flex; align-items:center; font-family:'Spectral',serif; font-size:42px; color:#F4D9A8;">→</div>
+        <div style="flex:1; min-width:360px; background:#25382A; border-radius:18px; padding:24px 30px;">
+          <p style="font-size:17px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 8px;">Piloto Gabarito</p>
+          <p style="font-size:24px; line-height:1.4; margin:0; color:#E7DFCB;"><strong style="color:#fff;">~R$ 0 · ≤ 2 semanas</strong> — mede a antecipação contra verdade independente.</p>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px;">
+        <div style="background:rgba(0,0,0,0.16); border-radius:20px; padding:30px 34px;">
+          <p style="font-size:18px; letter-spacing:1.5px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 12px;">Entrega 1 · Artefato</p>
+          <p style="font-size:23px; line-height:1.42; margin:0; color:#FBE6CE;">Motor de delta + score por talhão + trilha de auditoria, num município de Goiás. Backtest H1 como prova.</p>
+        </div>
+        <div style="background:rgba(0,0,0,0.16); border-radius:20px; padding:30px 34px;">
+          <p style="font-size:18px; letter-spacing:1.5px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 12px;">Entrega 2 · Governança</p>
+          <p style="font-size:23px; line-height:1.42; margin:0; color:#FBE6CE;">Minuta de nota técnica que reparte a responsabilidade: <strong style="color:#fff;">score ≥ limiar → liberação automática registrada; abaixo → fila humana.</strong> Nomeia o operador do OPEX.</p>
+        </div>
+        <div style="background:rgba(0,0,0,0.16); border-radius:20px; padding:30px 34px;">
+          <p style="font-size:18px; letter-spacing:1.5px; text-transform:uppercase; color:#F4D9A8; font-weight:700; margin:0 0 12px;">Próximos passos</p>
+          <p style="font-size:23px; line-height:1.42; margin:0; color:#FBE6CE;">Acesso ao t0 da SEMAD-GO · validação com analista de OEMA · arranjo SFB-serviço + ABEMA + Fundo Amazônia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 12 · FECHO ================= -->
+  <section class="stage" data-label="Fecho" data-screen-label="Fecho" data-speaker-notes="Gabarito: o roteador auditável da análise do CAR. A máquina já vê tudo — o que falta é alguém que aceite assinar embaixo. Obrigado." style="background:#25382A; color:#F3ECDC; padding:120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:radial-gradient(circle at 16% 22%, rgba(214,162,62,0.12), transparent 42%), radial-gradient(circle at 86% 84%, rgba(94,140,168,0.14), transparent 48%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(243,236,220,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(243,236,220,0.04) 1px, transparent 1px); background-size:64px 64px; pointer-events:none;"></div>
+    <div style="position:relative; max-width:1500px;">
+      <div style="display:flex; align-items:center; gap:18px; margin-bottom:48px;">
+        <div style="width:66px; height:66px; border-radius:17px; background:var(--ga-accent,#D6A23E); display:flex; align-items:center; justify-content:center; flex:none;">
+          <svg width="36" height="36" viewBox="0 0 32 32" fill="none"><rect x="5" y="5" width="22" height="22" rx="3" stroke="#25382A" stroke-width="2.4"/><path d="M5 12H27" stroke="#25382A" stroke-width="2.4"/><path d="M12 12V27" stroke="#25382A" stroke-width="2.4"/><circle cx="19.5" cy="19" r="3.2" fill="#25382A"/></svg>
+        </div>
+        <span style="font-family:'Spectral',serif; font-size:38px; font-weight:600;">Gabarito</span>
+      </div>
+      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:82px; line-height:1.1; margin:0 0 30px; letter-spacing:-1.4px;">“A máquina já vê tudo. O que falta é alguém que aceite <span style="color:var(--ga-accent,#D6A23E); font-style:italic;">assinar embaixo.</span>”</h2>
+      <p style="font-size:30px; line-height:1.5; margin:0; color:#DCD3BE;">O roteador auditável da análise do CAR — bem público digital, aberto. <span style="color:#9FB191;">haCARthon 2026 · Desafio 02.</span></p>
+    </div>
+  </section>
+
+</div>
+
+<!-- chrome -->
+<div class="chrome ga-counter" id="counter">1 / 12</div>
+<div class="chrome ga-hint" id="hint">← → navega · N notas · F tela cheia · ⌘/Ctrl+P → PDF</div>
+<div class="chrome ga-dots" id="dots"></div>
+
+<!-- speaker-notes overlay (the audio narration script) -->
+<div class="ga-notes" id="notes"><p class="lbl">Narração · roteiro do áudio</p><p id="notesText"></p></div>
+
+<script>
+(function () {
+  var deck = document.getElementById('deck');
+  var slides = Array.prototype.slice.call(deck.querySelectorAll('section.stage'));
+  var counter = document.getElementById('counter');
+  var dotsWrap = document.getElementById('dots');
+  var prog = document.getElementById('prog');
+  var notes = document.getElementById('notes');
+  var notesText = document.getElementById('notesText');
+  var hint = document.getElementById('hint');
+  var cur = 0;
+
+  // build dot nav
+  slides.forEach(function (s, i) {
+    var d = document.createElement('button');
+    d.className = 'ga-dot';
+    d.title = s.getAttribute('data-label') || ('Slide ' + (i + 1));
+    d.addEventListener('click', function (e) { e.stopPropagation(); go(i); });
+    dotsWrap.appendChild(d);
+  });
+  var dots = Array.prototype.slice.call(dotsWrap.children);
+
+  function layout() {
+    var s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    slides.forEach(function (el, i) {
+      el.style.display = (i === cur) ? 'flex' : 'none';
+      el.style.transform = 'scale(' + s + ')';
+    });
+    counter.textContent = (cur + 1) + ' / ' + slides.length;
+    prog.style.width = ((cur + 1) / slides.length * 100) + '%';
+    dots.forEach(function (d, i) { d.className = 'ga-dot' + (i === cur ? ' on' : ''); });
+    notesText.textContent = slides[cur].getAttribute('data-speaker-notes') || '';
+  }
+  function go(n) {
+    cur = Math.max(0, Math.min(slides.length - 1, n));
+    layout();
+    if (location.hash !== '#' + (cur + 1)) history.replaceState(null, '', '#' + (cur + 1));
+  }
+
+  document.addEventListener('keydown', function (e) {
+    var k = e.key;
+    if (k === 'ArrowRight' || k === 'PageDown' || k === ' ') { go(cur + 1); e.preventDefault(); }
+    else if (k === 'ArrowLeft' || k === 'PageUp') { go(cur - 1); e.preventDefault(); }
+    else if (k === 'Home') { go(0); }
+    else if (k === 'End') { go(slides.length - 1); }
+    else if (k === 'n' || k === 'N') { notes.classList.toggle('show'); }
+    else if (k === 'f' || k === 'F') { if (!document.fullscreenElement) { document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); } else { document.exitFullscreen && document.exitFullscreen(); } }
+    else if (/^[1-9]$/.test(k)) { go(parseInt(k, 10) - 1); }
+  });
+
+  // tap/click left or right half to navigate (ignore interactive chrome)
+  deck.addEventListener('click', function (e) {
+    if (e.target.closest('.chrome') || e.target.closest('.ga-notes') || e.target.closest('a,button')) return;
+    if (e.clientX < window.innerWidth / 2) go(cur - 1); else go(cur + 1);
+  });
+
+  window.addEventListener('resize', layout);
+
+  // idle-fade the hint
+  var idle;
+  function poke() { hint.style.opacity = '1'; clearTimeout(idle); idle = setTimeout(function () { hint.style.opacity = '0'; }, 3500); }
+  document.addEventListener('mousemove', poke);
+  document.addEventListener('keydown', poke);
+
+  // deep-link to #N
+  var start = parseInt((location.hash || '').replace('#', ''), 10);
+  if (start >= 1 && start <= slides.length) cur = start - 1;
+  layout();
+  poke();
+})();
+</script>
+</body>
+</html>
