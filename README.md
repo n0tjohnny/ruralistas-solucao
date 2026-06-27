@@ -10,15 +10,17 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 
 ## Por onde começar (ordem de leitura)
 
-1. **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)** — o pivô + status de cada artefato (atual / válido / superado).
-2. **[`pm-role.md`](pm-role.md)** — **fonte canônica** da estratégia e persona de produto.
-3. **[`prd-outputs/`](prd-outputs/)** — o PRD mais recente é o **`prd_gabarito_2606280400.md` (v4.0)**.
-4. **[`reports/09-verificacao-dados-2026.md`](reports/09-verificacao-dados-2026.md)** — verificação adversarial dos dados; **prevalece** em caso de conflito.
+1. **[`APRESENTACAO-INTERNA-DESAFIO-02.md`](APRESENTACAO-INTERNA-DESAFIO-02.md)** — 👈 **comece aqui.** Apresentação do time: problema, gargalos de todas as pesquisas/debates, jornada até a solução e **conformidade 100% com o edital**.
+2. **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)** — o pivô + status de cada artefato (atual / válido / superado).
+3. **[`pm-role.md`](pm-role.md)** — **fonte canônica** da estratégia e persona de produto.
+4. **[`prd-outputs/`](prd-outputs/)** — o PRD mais recente é o **`prd_gabarito_2606280400.md` (v4.0)**.
+5. **[`reports/09-verificacao-dados-2026.md`](reports/09-verificacao-dados-2026.md)** — verificação adversarial dos dados; **prevalece** em caso de conflito.
 
 ## Mapa do repositório
 
 | Pasta / arquivo | O que é |
 |---|---|
+| `APRESENTACAO-INTERNA-DESAFIO-02.md` | **Apresentação do time:** problema, gargalos, jornada e conformidade com o edital. Comece por aqui. |
 | `index.html` · `public/index.html` | Página de visão do Gabarito (entregável; cópias idênticas — editar as duas). Deploy via Cloudflare Wrangler. |
 | `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade**. |
 | `PIVOT-DESAFIO-02.md` | Índice do pivô Compadre→Gabarito e status dos artefatos. |
