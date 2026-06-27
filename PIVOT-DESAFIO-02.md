@@ -60,7 +60,7 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 - `reports/04-concorrentes-solucoes.md`, `05-viabilidade-tecnica.md` — concorrência/viabilidade do Compadre (a viabilidade do Gabarito está em `pm-role.md` e `index.html`).
 - `reports/exploration/01,03,04,05,06,07,08,09-*.md` — explorações orientadas ao Compadre (crédito, WhatsApp API, IA conversacional, canal cooperativa, monetização produtor).
 - `debate-materials/compadre-visao-do-produto.md`, `memory/ideas/compadre/*`, `prd-outputs/prd_compadre_*.md` — artefatos do produto Compadre.
-- Áudios `public/*.mp3` (compadre-1, raimundo-1, raimundo-2) — narração do Compadre; **órfãos** (a página do Gabarito não usa áudio). Manter para histórico ou remover do deploy.
+- Áudios `public/*.mp3` (compadre-1, raimundo-1, raimundo-2) — narração clonada do Compadre; **REMOVIDOS do deploy (27/06)** via `git rm`. Eram órfãos (a página do Gabarito não usa áudio) e a Live 7 pede locução por integrante do time → voz clonada é risco. (Permanecem no histórico git; rescrita de histórico não foi feita por ser desproporcional.)
 
 ---
 

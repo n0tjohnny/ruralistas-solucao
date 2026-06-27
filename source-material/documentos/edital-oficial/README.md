@@ -21,7 +21,7 @@ Baixados de **repositório institucional da ENAP** — `https://repositorio.enap
 | # | Afirmação que usamos | Veredito | Citação primária (doc · linha) |
 |---|---|---|---|
 | 1 | Protótipo = vídeo **≤ 2 min** (acima desclassifica) | ✅ Confirmado | Guia 110: *"A entrega do protótipo deverá ser um vídeo de até 2 minutos."* · Guia 118: *"Os vídeos com mais de 2 minutos não serão aceitos e causarão a [desclassificação]."* |
-| 2 | Pitch/apresentação = vídeo **≤ 3 min** | ✅ Confirmado | Edital 9.4: *"O vídeo de apresentação/demonstração da solução deverá ter, no máximo, 3 (três) minutos."* |
+| 2 | Pitch/apresentação = vídeo **≤ 3 min** | ✅ Confirmado (formato esclarecido na Live 7) | Edital 9.4: *"O vídeo de apresentação/demonstração da solução deverá ter, no máximo, 3 (três) minutos."* · **Live 7 (`reports/10`):** o pitch **deixou de ser gravado na plataforma**; entregar como **slides PDF estático (sem vídeo/animação) + áudio narrado**, subido no YouTube (público/não-listado). |
 | 3 | **Código funcional não é obrigatório** | ✅ Confirmado | Briefing v2 209: *"Não é obrigatório apresentar software funcional ou código-fonte."* |
 | 4 | Open source = modelo da solução | ⚠️ Confirmado **com nuance** | Briefing **v1** 202/269/332: *"Todas as soluções **devem** ser desenvolvidas em código aberto."* → Briefing **v2** 206: *"em modelo de código aberto"* + 209 (item 3). **v2 (vigente) suaviza de "devem" para "modelo".** Tratamos como **forte expectativa**; o Gabarito é aberto por design, então passamos nos dois textos. |
 | 5 | Premiação **R$75.000 = 5 × R$15.000** | ✅ Confirmado | Edital 10.4: *"R$ 75.000,00 ... distribuídos igualmente aos 5 primeiros colocados ... cada equipe vencedora receba R$ 15.000,00."* |

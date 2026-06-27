@@ -172,7 +172,8 @@ Auth: institucional (OEMA). Erros: 422 (cena sem observação válida/nuvem), 40
 
 ## 13. Release Strategy
 
-- **MVP / haCARthon (agora, 26–28/06):** FR-001..006 num recorte de Goiás + **backtest de antecipação filmado (≤2min)** + pitch de 5 beats + **minuta de governança anexada**. Submissão dupla.
+- **MVP / haCARthon (agora, 26–28/06; deadline domingo 23:59 BRT, sem prorrogação):** FR-001..006 num recorte de Goiás + **backtest de antecipação filmado** + pitch + **minuta de governança anexada**. Submissão dupla.
+  - **Regras de entrega (Live 7 — `reports/10`):** **Protótipo** = vídeo **≤2 min** (>2 min desclassifica), no YouTube **público/não-listado** (privado desclassifica), **narração por integrante do time** (voz humana real — não usar `*.mp3` clonado; IA pode auxiliar o vídeo). **Pitch** = **slides PDF ESTÁTICO (sem vídeo/animação) + áudio narrado**, ≤3 min, no YouTube — os 5 beats continuam, o meio é PDF+voz. **Ideação:** nome (Gabarito) + logo (qualidade não avaliada) + **resumo ≤300 caracteres** + **"próximos passos"** (nomear: t0 SEMAD-GO, validação com analista, arranjo SFB/ABEMA/Fundo Amazônia). **Mentoria ≥1 obrigatória.** Material complementar navegável = opcional e **não avaliado** (só o vídeo de 2 min conta). **Contexto competitivo: +200 equipes / 5 prêmios** → calibre-finalista, sem cravar %.
 - **Fase 2 (pós-prêmio):** FR-008 (classes CF) + FR-009 (SAR/Amazônia) + integração SICAR em produção; piloto operacional com a SEMAD-GO.
 - **Fase 3:** generalização por bioma (motor + calibração por bioma); serviço hospedado (SFB) + consórcio ABEMA.
 - **Rollout:** Goiás como prova de conceito; Amazônia como mercado financiável (Fundo Amazônia).

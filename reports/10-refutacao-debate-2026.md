@@ -49,3 +49,19 @@ O debate **não se apoiou em ar**. As fragilidades são de **precisão**, não d
 - Refutação Rafael: MapBiomas Alerta FAQ + RAD-2024 (alerta.mapbiomas.org), CAR Pré-Preenchido (gov.br/gestao nov/2025).
 - Refutação Cláudia: Edital nº 158/2026 + Briefing v2 + Guia (repositório ENAP handle/1/9909).
 - Refutação Heitor: EUDR Reg. UE 2025/2650 (EC Access2Markets dez/2025), Fundo Amazônia (BNDES 2025), CAR-DPG (gov.br/governodigital COP30), ABEMA (abema.org.br).
+
+---
+
+## Atualização — Live 7 (27/06/2026): orientações de entrega do protótipo
+
+Fonte: `source-material/transcricoes-lives/Live 7 haCARthon - orientações entrega prototipo.txt` (transcrição auto). Confirma e **refina** regras de entrega — onde a Live conflitar com o edital, o **edital prevalece**; estes pontos são guia prático do organizador.
+
+**Fatos novos que mudam tática (não o produto):**
+- **Escala da competição:** **+200 equipes** inscritas no total ("esgotaram as salas"), para **5 prêmios** (R$15k cada). → A estimativa de "20–30 submissões" e a "chance ~55% top 5" do debate estão **definitivamente sem lastro**. Base-rate bruta é baixa; o framing honesto é **"submissão de calibre finalista"**, e a alavanca é **execução focada + evidência de cliente real**, não probabilidade.
+- **Prazo final:** **domingo, 23:59 (horário de Brasília), sem prorrogação.** Evento 26–28/06.
+- **Pitch MUDOU (ponto de atenção do organizador):** não é mais gravado na plataforma do hackathon. Formato obrigatório = **slides em PDF ESTÁTICO (sem vídeo, sem animação) + áudio narrado por cima**, ≤3 min, subido no YouTube (público ou **não-listado**). Tutorial de gravação no Canva disponibilizado.
+- **Protótipo:** vídeo **≤2 min** (>2 min **desclassifica**); forma livre (Figma/Canva/Miro/slides/vídeo/até Minecraft); **YouTube público ou não-listado — privado DESCLASSIFICA** (testar o link antes). **A locução/narração deve ser de um integrante da equipe** (pedido, para guiar os jurados); **o vídeo pode ser produzido com auxílio de IA**. → confirma `reports/09`: narração humana é **pedida/recomendada**, não regra de desclassificação; reforça abandonar voz clonada.
+- **Mentoria:** **≥1 obrigatória** — registrar nome do mentor + resumo do feedback na entrega.
+- **Ideação:** nome curto da solução (Gabarito ✓), **logo** ("qualidade não é critério de avaliação"), **resumo ≤300 caracteres**, e a pergunta **"próximos passos"** (o que falta para continuar: especialistas, usuários para testar, parceiros, **acesso a dados**).
+- **Ponte de adoção (relevante p/ Classe B):** a organização declarou que **quer que as soluções saiam do papel e pode fazer a ponte** para desenvolvimento. → "submeter ao haCARthon" é, ele próprio, um teste de adoção datado; os "próximos passos" devem nomear: acesso ao t0 da SEMAD-GO, validação com analista de OEMA, e o arranjo SFB-serviço + ABEMA + Fundo Amazônia.
+- **Material complementar (link navegável):** **opcional e NÃO avaliado** — só o vídeo de 2 min conta; código não é analisado.
