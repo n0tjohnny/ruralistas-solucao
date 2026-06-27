@@ -12,7 +12,22 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+
+      # Skip gracefully (green, no-op) until the CLOUDFLARE_API_TOKEN secret is added,
+      # instead of failing red on every push.
+      - id: check
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::CLOUDFLARE_API_TOKEN secret not set — skipping deploy. Add it in Settings → Secrets and variables → Actions."
+          fi
+
       - name: Deploy ./public to Cloudflare Pages (project: gabarito)
+        if: steps.check.outputs.ready == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
