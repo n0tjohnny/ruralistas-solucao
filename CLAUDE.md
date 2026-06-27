@@ -44,7 +44,7 @@ This workspace carries **two** instruction sets. Know which one applies to the r
 
 ## Research & evidence
 
-`reports/` holds numbered research (`01`–`08`, plus `reports/exploration/`) on the CAR domain, competitors, and the haCARthon. Per `PIVOT-DESAFIO-02.md`, the CAR-domain reports (e.g. `02-dominio-car.md`, `06-edital-completo.md`) remain valid; product-framing reports written for Compadre are superseded. Raw source material (haCARthon Live transcripts, PDFs, the official Luana persona) sits at the repo root.
+`reports/` holds numbered research (`01`–`08`, plus `reports/exploration/`) on the CAR domain, competitors, and the haCARthon. Per `PIVOT-DESAFIO-02.md`, the CAR-domain reports (e.g. `02-dominio-car.md`, `06-edital-completo.md`) remain valid; product-framing reports written for Compadre are superseded. Raw source material (haCARthon Live transcripts, PDFs, official docs) lives in `source-material/` (`transcricoes-lives/` + `documentos/`).
 
 ## haCARthon delivery constraints (when producing a submission)
 

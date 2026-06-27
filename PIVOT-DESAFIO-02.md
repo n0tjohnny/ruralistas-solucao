@@ -24,12 +24,13 @@ O time trocou de desafio no haCARthon. Este documento é o índice da virada: o 
 
 - **One-liner:** O Gabarito mantém viva a base de referência do CAR — detectando o que mudou e remapeando só isso, em formato aberto — pra que a analista volte a confiar na automação e nenhum cadastro espere anos por um mapa.
 - **Dor-raiz (debates + verificação `reports/09`):** fosso **técnico-operacional** — falta **frescor sub-anual + classes do Código Florestal + confiança por talhão como decisão**. (A tese "econômica/só-CAPEX" foi **refutada**: MapBiomas + INPE já dão camadas contínuas gratuitas.) Auto-declaração = gargalo **secundário**; pré-preenchido depende da base só em **entrega futura**.
-- **Problema em 3 camadas:** externo (a base envelhece sozinha, 2–2,5 anos) · interno (insegurança de julgar no escuro → análise manual ~6/dia) · filosófico (um mapa de 2 anos atrás não pode julgar um território que mudou mês passado).
+- **Reposicionamento pós-council (28/06/2026, `debate_output_council-dor-real-desafio02_2606280330.md`, consenso 5/5):** a dor declarada "base velha" é **sintoma**; a **dor-raiz é "ninguém quer assinar a decisão"** (insegurança jurídica do ato + ausência de dono do processo contínuo). Evidência: Análise Dinamizada a ~66 mil/dia, mas conclusão nacional só 2,3%→5,9% (2024→2025) e ~94% dos 8,1 mi de CARs sem conclusão (SFB jun/2026) → o limitante é **decisão defensável, não detecção**. O produto se reposiciona como **roteador de atenção + trilha de auditoria que protege quem assina** (não "dado mais novo"); score com **hierarquia de informação** (invisível na fila, visível/assinável sob demanda); **circularidade do score = dealbreaker** (ground truth independente, nunca o t0); **adoção = requisito de licitação estadual / OEMA early-adopter** (não incorporação federal — RER sem precedente de hackathon), com **submissão dupla: artefato técnico + modelo de governança**.
+- **Problema em 3 camadas:** externo (a base é um **snapshot pontual**, sem atualização sub-anual) · interno (insegurança de julgar no escuro → recuo para análise manual: oficial ~3% da base em ~12 anos) · filosófico (um mapa de anos atrás não pode julgar um território que mudou mês passado).
 - **Plano (3 passos):** 1) Detecta a mudança (Sentinel-2 + PRODES/DETER sobre t0) · 2) Remapeia só o que mudou (classificação dirigida + revisão humana) · 3) Entrega base + confiança auditável (GeoPackage/COG aberto + score versionado por talhão com evidência; dinamizada onde a confiança é alta, humano onde é baixa).
 - **Um artefato, 3 públicos:** analista (libera/roteia a fila) · análise dinamizada/SICAR (automatiza com rastro) · produtor/RT (corrige antes da notificação, com evidência legível). É o que faz dele **produto, não feature**.
 - **O que NÃO fazemos:** não substitui SICAR nem a análise dinamizada; não tira a decisão legal da analista.
 - **Diferenciais:** frescor sub-anual · confiança **por talhão como decisão** (vs triagem por imóvel da Análise Dinamizada; vs confiança-do-alerta do MapBiomas Alerta) · classes do Código Florestal (roadmap) · score auditável · revisão humana embutida.
-- **Ask:** piloto com uma OEMA de alta pressão (Amazônia/Cerrado), recorte de município — **com dono institucional + custeio plurianual (OPEX)**, senão a base viva morre no fim do piloto.
+- **Ask:** piloto com uma OEMA de alta pressão (Amazônia/Cerrado), recorte de município — **com dono institucional nomeado** (caminho realista pós-council: **requisito de licitação estadual / OEMA early-adopter**, não incorporação federal direta), senão a base viva morre no fim do piloto.
 - **Métricas:** 6→18 análises/dia sem subir erro · recall do delta vs DETER · aprovação do ruralista na 1ª/2ª tentativa · custo/cadastro cai.
 
 Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
@@ -42,8 +43,8 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 - `index.html` / `public/index.html` — **página de visão do produto Gabarito** (compilada a partir de `Gabarito - Visao do Produto.dc.html` do projeto Claude Design). É o entregável.
 - `pm-role.md` — persona de PM reescrita para o Gabarito/Luana.
 - `reports/01-desafio-oficial.md` — desafio, três HMWs e alinhamento atualizados para o 02 (inclui dor-raiz dupla + 3 públicos).
-- `debate-outputs/` — 5 debates do Gabarito/Desafio 02; o mais profundo na dor é `debate_output_a-dor-desafio02_*` (dor-raiz dupla, 3 públicos) e `debate_output_gabarito-final-stress_*` (Red Team/Pre-mortem/Reversibility).
-- `prd-outputs/prd_gabarito_*` — PRD do Gabarito (o mais recente reflete os acordos dos debates).
+- `debate-outputs/` — 8 debates do Gabarito/Desafio 02; o mais recente e decisivo é o **`debate_output_council-dor-real-desafio02_2606280330.md`** (Council of High Intelligence, consenso 5/5: reposiciona como roteador auditável; dor-raiz = "quem assina"); a tese do fosso está em `debate_output_tese-tecnico-operacional_*` e o protocolo científico (RAT/H1) em `debate_output_metodo-cientifico-incorporacao_*`.
+- `prd-outputs/prd_gabarito_*` — PRD do Gabarito; o mais recente (**v4.0**) incorpora o reposicionamento do council.
 - Este `PIVOT-DESAFIO-02.md`.
 
 ### ♻️ Continuam válidos (pesquisa de domínio CAR, independem do produto)
@@ -51,7 +52,7 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 - `reports/06-edital-completo.md` — regras do haCARthon (open source, DPG). **Reaproveitar.**
 - `reports/07-pesquisa-aprofundada-2026.md` — contexto regulatório/2026 (parcial; filtrar o que é de crédito/produtor).
 - `reports/exploration/02-car-prepreenchido-apis.md`, `10-dpg-casos-internacionais.md`, `00-INDICE-consolidado.md` — referências de ecossistema/APIs/DPG.
-- `links-uteis.txt`, `Material de Apoio.txt`, transcrições das Lives — material-fonte do haCARthon.
+- `source-material/` — material-fonte do haCARthon (transcrições das Lives, `links-uteis.txt`, `Material de Apoio.txt`, PDFs oficiais).
 
 ### ⚠️ Superados (eram do Compadre/Desafio 01 — não usar como verdade atual)
 - `reports/03-publico-produtor-rural.md` — persona Seu Raimundo (Desafio 01).
