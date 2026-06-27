@@ -67,6 +67,14 @@
     #ga-navbar button[data-nav] { padding: 10px 13px !important; font-size: 13px !important; }
   }
 </style>
+<style id="ga-gloss">
+  .ga-term { border-bottom: 1.5px dotted rgba(214,162,62,0.9); cursor: help; }
+  .ga-term:hover { border-bottom-style: solid; }
+  #ga-gtip { position: fixed; z-index: 300; left: 0; top: 0; max-width: 300px; background: #1F2D22; color: #F3ECDC; border: 1px solid rgba(214,162,62,0.45); border-radius: 12px; padding: 11px 14px; font-family: 'Hanken Grotesk', sans-serif; font-size: 13.5px; line-height: 1.5; box-shadow: 0 12px 32px rgba(0,0,0,0.4); opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s; pointer-events: none; }
+  #ga-gtip.on { opacity: 1; transform: none; }
+  #ga-gtip b { color: var(--ga-accent,#D6A23E); font-family: 'Spectral', serif; font-weight: 700; }
+  @media (max-width: 600px) { #ga-gtip { max-width: calc(100vw - 24px); } }
+</style>
 </head>
 <body>
 <div id="ga-root" style="font-family: 'Hanken Grotesk', sans-serif; color: #2E2519; background: #F6EFE0; width: 100%; overflow-x: hidden;">
@@ -805,6 +813,49 @@
   </div>
 
 </div>
+<script>
+/* glossario auto-linker: sublinha a 1a ocorrencia por aba de cada termo do glossario, com tooltip (hover/toque) */
+(function(){
+  var GT={"sicar": {"t": "SICAR", "d": "Sistema federal (car.gov.br) onde o CAR é feito e analisado. A plataforma que a gente alimenta, não substitui."}, "oema": {"t": "OEMA", "d": "Órgão Estadual de Meio Ambiente — quem analisa e valida o CAR no estado. Onde a Luana trabalha."}, "sfb": {"t": "SFB", "d": "Serviço Florestal Brasileiro — órgão federal dono do SICAR."}, "dpg": {"t": "DPG", "d": "Bem Público Digital — software/dado aberto e reutilizável. O CAR virou o 1º do Brasil; por isso espera-se open source."}, "análise dinamizada": {"t": "Análise Dinamizada", "d": "Módulo do SICAR que cruza a declaração com satélite e tria imóveis em lote, automático. Já roda em 9 estados, ~66 mil/dia."}, "código florestal": {"t": "Código Florestal", "d": "Lei 12.651/2012 — define o que cada imóvel precisa preservar. A régua contra a qual o CAR é avaliado."}, "app": {"t": "APP", "d": "Área de Preservação Permanente — faixa protegida pela localização (margem de rio, nascente, topo de morro), tenha mata ou não."}, "reserva legal": {"t": "Reserva Legal", "d": "Percentual do imóvel que deve manter mata nativa — 20% na maior parte do país, até 80% na Amazônia."}, "área consolidada": {"t": "Área consolidada", "d": "Área já usada antes de 22/07/2008. Regras mais brandas — a data de corte separa regular de desmatamento novo."}, "módulo fiscal": {"t": "Módulo fiscal", "d": "Unidade de tamanho (5–110 ha, varia por município) que define se o imóvel é pequeno, médio ou grande."}, "supressão": {"t": "Supressão", "d": "Desmatamento — corte de mata nativa. Depois de 2008 sem autorização, é irregular."}, "uso e cobertura": {"t": "Uso e cobertura", "d": "O mapa do que há em cada pedaço de terra (mata, pasto, água, plantio). É o que o Desafio 02 pede pra atualizar."}, "talhão": {"t": "Talhão", "d": "Pedaço homogêneo de uso dentro do imóvel (um lote). Trabalhar por talhão é mais fino que por imóvel — nosso diferencial."}, "talhões": {"t": "Talhões", "d": "Pedaços homogêneos de uso dentro do imóvel. Trabalhar por talhão é mais fino que por imóvel — nosso diferencial."}, "base de referência": {"t": "Base de referência", "d": "O mapa-resposta oficial usado pra conferir cada declaração. Quando está velho, vira o problema — e dá nome ao produto."}, "t0": {"t": "t0", "d": "A base de partida — o mapa de antes, o ponto zero da comparação."}, "delta": {"t": "Delta", "d": "A diferença entre antes e agora — só os talhões que mudaram. Remapeamos só o delta, não o estado inteiro."}, "sentinel-2": {"t": "Sentinel-2", "d": "Satélite europeu gratuito, imagem a cada ~5 dias, resolução 10 m. Nossa fonte de imagem fresca."}, "landsat": {"t": "Landsat", "d": "Satélite americano gratuito, 30 m (mais grosso). É a base do MapBiomas."}, "prodes": {"t": "PRODES", "d": "Sistema do INPE que mede o desmatamento consolidado (1x/ano) na Amazônia. Uma das nossas verdades de referência."}, "deter": {"t": "DETER", "d": "Sistema do INPE de alertas rápidos de desmatamento, quase em tempo real. Diz: mudou aqui, agora."}, "mapbiomas": {"t": "MapBiomas", "d": "Mapa anual gratuito de uso e cobertura do Brasil (Landsat, 30 m). Ótimo insumo, mas anual e em classes genéricas."}, "terrabrasilis": {"t": "TerraBrasilis", "d": "Portal do INPE onde se baixam PRODES e DETER, de graça."}, "ndvi": {"t": "NDVI", "d": "Índice de quão verde está cada pedaço, tirado da imagem. Queda de NDVI = sinal de perda de vegetação."}, "mmu": {"t": "MMU", "d": "Área mínima que o PRODES enxerga (6,25 ha). Talhão menor fica invisível pra ele — assumimos essa cegueira abertamente."}, "co-registro": {"t": "Co-registro", "d": "Alinhar duas imagens de datas diferentes pra comparar sem erro de deslocamento."}, "máscara de nuvem": {"t": "Máscara de nuvem", "d": "Tirar a nuvem da conta pra não confundir nuvem com mudança real."}, "shapefile": {"t": "Shapefile", "d": "Formato de arquivo de mapa (polígonos com coordenadas) que o SICAR já aceita."}, "kml": {"t": "KML", "d": "Formato de mapa que o SICAR aceita — entregamos nele, em SIRGAS 2000."}, "sirgas 2000": {"t": "SIRGAS 2000", "d": "O sistema oficial de coordenadas do Brasil. Nossa saída precisa estar nele pra encaixar no SICAR."}, "qgis": {"t": "QGIS", "d": "Programa livre de mapa — a casa do analista, sem licença paga."}, "postgis": {"t": "PostGIS", "d": "Banco de dados geográfico livre, par do QGIS."}, "gee": {"t": "GEE", "d": "Google Earth Engine — plataforma potente que prende o usuário à nuvem do Google. Evitamos por portabilidade."}, "arcgis": {"t": "ArcGIS", "d": "Plataforma GIS de licença cara que prende o usuário. Evitamos por portabilidade."}, "geopackage": {"t": "GeoPackage", "d": "Formato geoespacial aberto e moderno — mas pro SICAR entregamos shapefile/KML."}, "open source": {"t": "Open source", "d": "Código aberto que roda em qualquer lugar, sem depender de um fornecedor. Exigência do CAR como Bem Público Digital."}, "jtbd": {"t": "JTBD", "d": "Jobs-to-be-Done — o trabalho que o usuário contrata o produto pra fazer. O da Luana: decidir e poder assinar sem medo."}, "storybrand": {"t": "StoryBrand", "d": "Roteiro de marca (Donald Miller): herói, problema, guia, plano, chamada. A Luana é o herói; nós, o guia."}, "eudr": {"t": "EUDR", "d": "Lei da UE (2023) que barra importação ligada a desmatamento pós-2020 — exige prova georreferenciada por lote."}, "fundo amazônia": {"t": "Fundo Amazônia", "d": "Fundo (BNDES/MMA) que banca regularização. Possível caixa pra custear o dono do processo após o piloto."}, "rt": {"t": "RT", "d": "Responsável Técnico — quem o produtor contrata pra fazer o mapa/CAR. Um dos três públicos que a nossa saída atende."}, "score": {"t": "Score", "d": "Número interno (por talhão) que diz o quanto dá pra confiar no mapa ali. Ordena a fila — não decide sozinho."}, "roteador de atenção": {"t": "Roteador de atenção", "d": "A função real do produto: manda o olho da analista pro que importa e deixa o trivial passar no automático."}, "trilha de auditoria": {"t": "Trilha de auditoria", "d": "As provas datadas (imagem, alerta, base, versão do score) anexadas a cada caso. É o que torna a liberação assinável."}, "circularidade": {"t": "Circularidade", "d": "Calibrar o score contra a própria base velha — aí ele concorda com o erro e mente. Proibido: nunca medimos contra o t0."}, "ground truth": {"t": "Ground truth", "d": "A verdade de fora (PRODES, DETER, amostra de campo) contra a qual medimos se o score acerta. Nunca a base velha."}, "kappa": {"t": "Kappa", "d": "Métrica (0–1) de quanto a classificação concorda com a verdade, descontando a sorte. Nossa meta: ≥ 0,70."}, "recall": {"t": "Recall", "d": "Dos casos que realmente mudaram, quantos o sistema pegou. Meta: ≥ 0,90."}, "falso-negativo": {"t": "Falso-negativo", "d": "O sistema diz ok mas havia desmatamento. Meta: zero falso-negativo visível — nosso critério de morte."}};
+  var keys=Object.keys(GT).sort(function(a,b){return b.length-a.length;});
+  var alt=keys.map(function(k){return k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}).join('|');
+  var RE;
+  try{ RE=new RegExp('(^|[^\\p{L}\\p{N}])('+alt+')(?=[^\\p{L}\\p{N}]|$)','giu'); }
+  catch(e){ try{ RE=new RegExp('(^|[^0-9A-Za-z\u00C0-\u00FF])('+alt+')(?=[^0-9A-Za-z\u00C0-\u00FF]|$)','gi'); }catch(e2){ return; } }
+  var tip=document.createElement('div'); tip.id='ga-gtip'; document.body.appendChild(tip);
+  var active=null, touchT=0;
+  function near(){ return Date.now()-touchT<700; }
+  function place(el){ var r=el.getBoundingClientRect(), tw=tip.offsetWidth, th=tip.offsetHeight, vw=window.innerWidth||document.documentElement.clientWidth;
+    var left=Math.max(8, Math.min(r.left+r.width/2-tw/2, vw-tw-8)), top=r.top-th-8; if(top<8) top=r.bottom+8;
+    tip.style.left=left+'px'; tip.style.top=top+'px'; }
+  function open(el){ tip.innerHTML='<b>'+el.getAttribute('data-term')+'</b> — '+el.getAttribute('data-tip'); tip.classList.add('on'); place(el); active=el; }
+  function close(){ if(active){ tip.classList.remove('on'); active=null; } }
+  document.addEventListener('touchstart',function(){ touchT=Date.now(); },{passive:true});
+  document.addEventListener('mouseover',function(e){ if(near())return; var t=e.target.closest&&e.target.closest('.ga-term'); if(t&&t!==active) open(t); });
+  document.addEventListener('mouseout',function(e){ if(near())return; var t=e.target.closest&&e.target.closest('.ga-term'); if(t) close(); });
+  document.addEventListener('click',function(e){ var t=e.target.closest&&e.target.closest('.ga-term'); if(t){ e.stopPropagation(); if(active===t) close(); else open(t); } else { close(); } });
+  window.addEventListener('scroll',close,{passive:true}); window.addEventListener('resize',close);
+  function linkPanel(panel){ var seen={};
+    var w=document.createTreeWalker(panel,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      if(!n.nodeValue||!/\S/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT;
+      var p=n.parentNode; if(!p) return NodeFilter.FILTER_REJECT; var tag=p.nodeName;
+      if(tag==='SCRIPT'||tag==='STYLE'||tag==='SUMMARY'||tag==='A'||tag==='BUTTON') return NodeFilter.FILTER_REJECT;
+      if(p.classList&&p.classList.contains('ga-term')) return NodeFilter.FILTER_REJECT;
+      if(p.closest&&p.closest('#ga-navbar')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT; }});
+    var nodes=[],cn; while((cn=w.nextNode())) nodes.push(cn);
+    nodes.forEach(function(node){ var text=node.nodeValue; RE.lastIndex=0; var m,last=0,parts=[];
+      while((m=RE.exec(text))){ var key=m[2].toLowerCase(); if(seen[key]||!GT[key]) continue;
+        var start=m.index+m[1].length; seen[key]=1;
+        parts.push(document.createTextNode(text.slice(last,start)));
+        var s=document.createElement('span'); s.className='ga-term'; s.setAttribute('data-term',GT[key].t); s.setAttribute('data-tip',GT[key].d); s.textContent=m[2];
+        parts.push(s); last=start+m[2].length; }
+      if(parts.length){ parts.push(document.createTextNode(text.slice(last)));
+        var frag=document.createDocumentFragment(); parts.forEach(function(x){frag.appendChild(x);}); node.parentNode.replaceChild(frag,node); } }); }
+  var panels=document.querySelectorAll('[data-tab]');
+  for(var i=0;i<panels.length;i++){ if(panels[i].getAttribute('data-tab')!=='glossario') linkPanel(panels[i]); }
+})();
+</script>
 <script>
 (function(){
   var nav=document.getElementById('ga-navbar'); if(!nav) return;
