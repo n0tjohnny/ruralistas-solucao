@@ -44,7 +44,7 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 - `pm-role.md` — persona de PM reescrita para o Gabarito/Luana.
 - `reports/01-desafio-oficial.md` — desafio, três HMWs e alinhamento atualizados para o 02 (inclui dor-raiz dupla + 3 públicos).
 - `debate-outputs/` — 8 debates do Gabarito/Desafio 02; o mais recente e decisivo é o **`debate_output_council-dor-real-desafio02_2606280330.md`** (Council of High Intelligence, consenso 5/5: reposiciona como roteador auditável; dor-raiz = "quem assina"); a tese do fosso está em `debate_output_tese-tecnico-operacional_*` e o protocolo científico (RAT/H1) em `debate_output_metodo-cientifico-incorporacao_*`.
-- `prd-outputs/prd_gabarito_*` — PRD do Gabarito; o mais recente (**v4.0**) incorpora o reposicionamento do council.
+- `prd-outputs/prd_gabarito_*` — PRD do Gabarito; o mais recente (**v5.0**, `prd_gabarito_2606280600.md`) trava as **decisões de direção** do PM (posicionamento = confiança auditável por talhão, NÃO priorização — o MapBiomas Alerta já prioriza por imóvel; piloto Goiás; protótipo = backtest de antecipação; pitch de 5 beats; submissão dupla) e as **correções da verificação web** (Sentinel-2 vê <6,25 ha; DETER Não Floresta set/2025; EUDR 30/12/2026 vigente). Ver a seção **DIREÇÃO DECIDIDA** em `pm-role.md` (canônico) e os debates `viabilidade-edital-chance_2606271700` + `refutacao-oradores_2606271830`.
 - Este `PIVOT-DESAFIO-02.md`.
 
 ### ♻️ Continuam válidos (pesquisa de domínio CAR, independem do produto)
