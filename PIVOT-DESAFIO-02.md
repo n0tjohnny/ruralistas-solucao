@@ -64,5 +64,7 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 
 ---
 
-## Pendência para a próxima sessão
-- O skill global **`pm-role-compadre`** (em `~/.claude/`, fora deste repositório) ainda injeta a persona antiga. Re-sincronizar a partir do novo `pm-role.md` (agora `pm-role-gabarito`) para que sessões futuras não voltem ao Compadre.
+## Estado das skills (auditado 28/06/2026)
+- **Skills do projeto** (`skills/`, `.claude/skills/`, `workflows/`) são **toolchain genérico e reutilizável** (idea-scoring, debate, gen-prd, competitor-mapper etc.) — por design **não** carregam o produto. Não citam Compadre/Desafio; o único hit "WhatsApp" em `competitor-mapper` é exemplo genérico de concorrente-substituto. **Nada a atualizar.**
+- **Persona do produto** vive em `pm-role.md` (raiz) — já no Gabarito/Desafio 02. O skill global de persona foi **re-sincronizado para `pm-role-gabarito`** e reflete o reposicionamento do council; a antiga `pm-role-compadre` não está mais em uso. **Pendência resolvida.**
+- O Gabarito-específico de scoring vive em `memory/ideas/gabarito/scores.json` (73/test, atual) — não nas skills.
