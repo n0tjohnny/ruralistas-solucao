@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "marketing-ideas": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-ideas/SKILL.md",
+      "computedHash": "c2a310c97126a0c493bae2b4b0e9fa767598bb2d139a747217fa1d8d7615e85d"
+    },
+    "marketing-psychology": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-psychology/SKILL.md",
+      "computedHash": "50d735eb0f5c36f379ed2200f21aeacc9b9ad85667b5d33ec6111857352a1340"
+    },
+    "startup-pitch": {
+      "source": "ferdinandobons/startup-skill",
+      "sourceType": "github",
+      "skillPath": "startup-pitch/SKILL.md",
+      "computedHash": "f47e9612678d262190d642f49fe47cf1092e37f411ad3f9c1f2125b6e5883993"
+    }
+  }
+}
