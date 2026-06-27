@@ -1,0 +1,71 @@
+{
+  "premise_correction": "Usuário corrigiu (sessão 2606): NÃO haverá monetização — o modelo de sucesso é incorporação por governo/estados. A dimensão consumer 'monetization' (LTV:CAC/WTP) é N/A e foi SUBSTITUÍDA por 'institutional_incorporation' (o SFB/estado adota e mantém?). Esta é a aplicação da regra 'respeite a categoria' do CLAUDE.md. Versão anterior (monetization=42 capando o teto) era erro de rubrica para um bem público. Histórico no git.",
+  "dimension_scores": {
+    "demand": 80,
+    "competition": 60,
+    "institutional_incorporation": 75,
+    "distribution": 72,
+    "retention": 78,
+    "founder_market_fit": 63
+  },
+  "weights_applied": {
+    "demand": 0.20,
+    "competition": 0.10,
+    "institutional_incorporation": 0.20,
+    "distribution": 0.20,
+    "retention": 0.15,
+    "founder_market_fit": 0.15
+  },
+  "floor_penalty": 1.0,
+  "base_score": 72.55,
+  "missing_discount": 1.0,
+  "final_score": 73,
+  "verdict": "test",
+  "score_confidence": "medium",
+  "framing_caveat": "Bem público / DPG de incorporação institucional, B2G de comprador único (SFB/estados), SEM receita por design. Eixos reinterpretados: institutional_incorporation substitui monetization (viabilidade = SFB/estado incorporar e manter, não WTP); distribution = canal institucional (pipe federal do SFB a 9+ estados), não viral; retention = uso operacional recorrente pela analista (estruturalmente sticky), com colapso de confiança como churn. NÃO penalizar 'sem receita'.",
+  "missing_inputs": [
+    "Nenhum experimento RODADO — final_score 73 é estimativa pré-evidência (plausibilidade ancorada em fontes jun/2026, não piloto).",
+    "memory/user_profile.md ausente → founder_market_fit estimado em 63 (eo-learn open source baixa a barra técnica de time pequeno; mas profundidade geoespacial DESTE time não evidenciada).",
+    "Sub-scores sintetizados de pm-role.md + reports/09 + PRD + 5 debates (esp. debate_output_metodo-cientifico-incorporacao_2606271520.md), não do pipeline de JSONs estruturados."
+  ],
+  "top_strengths": [
+    { "dimension": "demand", "score": 80, "reason": "Job validado por ação de governo: análise dinamizada em 9 estados, +1mi CARs, até 66 mil/dia (gov.br/florestal jun/2026); CAR como gargalo nacional documentado. Reforçado pela premissa corrigida (apetite institucional, não consumer)." },
+    { "dimension": "retention", "score": 78, "reason": "Uso operacional recorrente (fila perpétua, base precisa refrescar todo ciclo) — estruturalmente sticky. Churn = colapso de confiança (um falso-negativo visível)." }
+  ],
+  "top_weaknesses": [
+    { "dimension": "competition", "score": 60, "reason": "Insumos são commodity (USGS/NASA, dataset global 3,17bi polígonos, DETER diário); a fusão regulatória por talhão é nicho vazio mas estreito, com risco de plataforma (SICAR/CAR Pré-Preenchido pode reconstruir). Sobe a ~80 só se a incorporação pelo SFB neutralizar a ameaça." },
+    { "dimension": "founder_market_fit", "score": 63, "reason": "Barra técnica geoespacial/ML acima do stack anterior; eo-learn reduz a barra mas a profundidade do time é não-evidenciada." }
+  ],
+  "killer_dimensions": [],
+  "conditional_path_to_90": {
+    "honest_today": 73,
+    "method_verdict": "Pedir 90 não cria 90; rodar o experimento cria. O debate produziu PROTOCOLO, não pontos. 90 só é honesto como '90 no bioma X, com sinal real de incorporação' — nunca '90 nacional'.",
+    "ladder": [
+      "SE backtest H1 passar (recall delta vs DETER ≥0,90; kappa ≥0,7; falso-negativo visível = ZERO) NUM bioma maduro (Amazônia/Cerrado): fit_técnico 63→85, retenção 78→85, demanda 80→88 → ~86-89 NO BIOMA.",
+      "SE também houver sinal datado de incorporação (avançar no haCARthon / conversa formal SFB / inclusão no roadmap RER): institutional_incorporation 75→~88, distribution 72→~90, competition 60→~80 (risco de plataforma neutralizado) → ~90 NO BIOMA.",
+      "Generalização nacional NÃO é extrapolável: é motor + calibração por bioma, cada bioma um custo pequeno repetido."
+    ],
+    "downside": "SE H1 reprovar no caso difícil (falso-negativo visível > 0), fit_técnico desaba (~40) e o teto cai ABAIXO de 73 (~60). Por isso roda-se o barato/offline primeiro."
+  },
+  "riskiest_assumption_test": {
+    "assumption": "O score de confiança por talhão é NÃO-CIRCULAR — prediz mudança verificada por fonte INDEPENDENTE do t0, não apenas reproduz a base estadual defasada. (Cheapest-first e ISCA: rodar H1 destrava o maior bloco de pontos E gera o artefato que habilita o teste de adoção/incorporação.)",
+    "category": "competition",
+    "criticality": 5,
+    "uncertainty": 4,
+    "rat_score": 20,
+    "experiment": {
+      "type": "Backtest offline anti-circularidade (1 município, bioma maduro)",
+      "description": "t0 = base estadual + MapBiomas Col.10; verdade EXTERNA = PRODES consolidado + DETER trimestral + amostra fotointerpretada estratificada nos casos difíceis (borda, nuvem, mosaico pasto-capoeira). NUNCA calibrar contra a base defasada. Foco no caso DIFÍCIL (transição), mostrando o sistema RECUSAR liberar onde a confiança é baixa. Filmar = vira o protótipo do haCARthon.",
+      "duration": "≤2 semanas",
+      "estimated_cost": "~R$0 (dado aberto + compute pessoal/CDSE)",
+      "pass_threshold": "recall do delta vs DETER ≥0,90 E kappa ≥0,7 nas classes operacionais E falso-negativo visível = ZERO na amostra de auditoria. Binário, pré-registrado antes de rodar.",
+      "fail_action": "pivot"
+    },
+    "all_assumptions_ranked": [
+      { "assumption": "H1 — score não-circular (calibração vs verdade externa). Cheapest + enabling: roda primeiro.", "criticality": 5, "uncertainty": 4, "rat_score": 20 },
+      { "assumption": "H2a — o SFB/estado INCORPORA (vs reconstrói internamente via CAR Pré-Preenchido). Mitigação: open source + acoplável + entrar pelo canal que o SFB já usa (RER/DPG, WebAmbiente, Fundo Amazônia); submeter ao haCARthon é o teste datado.", "criticality": 5, "uncertainty": 4, "rat_score": 20 },
+      { "assumption": "H2b — a analista CONFIA na fatia automática a ponto de assinar sem re-checar (uso ≠ adoção do gestor). Teste: 500 talhões a 3 analistas, medir concordância + re-checagem.", "criticality": 5, "uncertainty": 3, "rat_score": 15 },
+      { "assumption": "Generalização entre biomas sem recalibrar (cross-bioma não degrada falso-negativo visível).", "criticality": 3, "uncertainty": 4, "rat_score": 12 }
+    ]
+  }
+}

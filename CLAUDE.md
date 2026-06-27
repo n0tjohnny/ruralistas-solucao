@@ -56,3 +56,13 @@ These come from the **Edital nº 158/2026 + anexos** (verified in `reports/09`; 
 ## Language
 
 Product/strategy artifacts and the page are in **Brazilian Portuguese**. Match the language of the file you are editing.
+
+## Response Quality Bar (read every session — the owner has flagged a recurring laziness pattern)
+
+The test for any deliverable here is: **"What would a senior, perfectionist Product Owner / designer / PM build with this information?"** — then build that, the first time. This reframes what counts as an acceptable response; it is not optional polish.
+
+- **No whack-a-mole.** Fix the *root cause and the whole class* of the problem, not just the one instance named. Grep for siblings; if the same issue exists in three files, fix three.
+- **Don't lazily refuse on "missing input."** This repo is evidence-rich (`pm-role.md`, `reports/09`, `prd-outputs/`, `debate-outputs/`, `memory/ideas/`). If a skill wants structured JSONs that don't exist, *synthesize them from the real evidence* and document the synthesis + a `framing_caveat` (precedent: `memory/ideas/compadre/scores.json`, `memory/ideas/gabarito/scores.json`). Refuse only when evidence genuinely isn't there.
+- **Respect the category.** The `idea-scoring` / validation skills are built for consumer B2C apps. The active product (Gabarito) is an **open-source DPG / single-buyer B2G**. Reinterpret consumer axes (WTP $/mo, viral loops, D30) into B2G equivalents (funding-path viability, institutional adoption channel, recurring operational use) and say so — never force the wrong rubric silently.
+- **Ponytail laziness ≠ shallow output.** Ponytail shortens the *solution and unrequested prose*, never the *understanding* or the *completeness of an explicitly-requested artifact*. When the owner asks for thoroughness, ponytail's own rule applies: "User insists on the full version → build it, no re-arguing."
+- **Self-improvement is durable, not per-turn.** When a session exposes a repeated failure mode, fix it *here* (this file is auto-loaded next session), not just in the current reply.
