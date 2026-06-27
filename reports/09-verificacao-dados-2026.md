@@ -55,6 +55,10 @@ O edital nº 158/2026 (assinado, no repositório ENAP) **não** exige narração
 
 ---
 
+## Atualização 28/06/2026 — documentos primários agora no repo
+
+A verificação original deste relatório leu o edital **via web** (repositório ENAP), mas os **PDFs oficiais não estavam versionados** — o repo só tinha os decks das Lives. Isso foi corrigido: os **5 documentos oficiais** (Edital nº 158/2026, Briefing V1, Briefing V2, Guia do Participante, Cronograma) foram baixados de `repositorio.enap.gov.br/handle/1/9909` para **`source-material/documentos/edital-oficial/`**, e a conformidade foi **re-checada contra o texto primário** (ver `edital-oficial/README.md`). Todos os 9 pontos confirmaram. Citações‑chave: protótipo "vídeo de até 2 minutos" (Guia), pitch "no máximo 3 (três) minutos" (Edital 9.4), "Não é obrigatório apresentar software funcional ou código-fonte" (Briefing v2), "R$ 75.000,00 ... 5 primeiros colocados ... R$ 15.000,00" (Edital 10.4). Ressalva: Briefing **v1** dizia soluções "**devem** ser desenvolvidas em código aberto"; **v2** suaviza para "modelo de código aberto" — sem impacto (o Gabarito é aberto por design).
+
 ## Impacto nos artefatos do repo (corrigidos nesta sessão)
 - `pm-role.md` — raiz reescrita (técnico-operacional), MapBiomas 30 m, formatos (Shapefile/WFS; SICAR≠GeoPackage), métrica qualificada, concorrentes nomeados, pipeline cloud-assistido, regras do edital corrigidas.
 - `reports/01-desafio-oficial.md` — organizadores (sem Norad), evento remoto, entregáveis/regras corrigidos.

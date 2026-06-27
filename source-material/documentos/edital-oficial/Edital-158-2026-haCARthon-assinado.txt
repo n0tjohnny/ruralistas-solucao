@@ -1,0 +1,316 @@
+Edital Nº 158/2026
+
+
+
+PROCESSO Nº 04600.001282/2026-00
+
+
+                            EDITAL ENAP Nº 158, DE 15 DE MAIO DE 2026
+
+
+         Torna pública a realização do haCARthon – Maratona de Soluções para o Cadastro Ambiental Rural (CAR) .
+
+
+
+
+ A PRESIDENTA DA FUNDAÇÃO ESCOLA NACIONAL DE ADMINISTRAÇÃO PÚBLICA – ENAP,
+ no uso das atribuições que lhe confere o Estatuto aprovado pelo Decreto nº 10.369, de 22 de maio de 2020,
+ e suas alterações, torna público o Desafio de Inovação Aberta CAR DPG (Cadastro Ambiental Rural do
+ Brasil como Bem Público Digital), modalidade Hackathon, doravante denominado haCARthon –
+ Maratona de Soluções para o CAR, de acordo com os critérios estabelecidos no presente edital.
+
+
+
+
+ 1. DISPOSIÇÕES PRELIMINARES
+ 1.1. O haCARthon tem como finalidade o desenvolvimento de soluções inovadoras que contribuam
+ para para o fortalecimento do Sistema do Cadastro Ambiental Rural (SICAR) e para a consolidação do
+ Cadastro Ambiental Rural (CAR) como um Bem Público Digital.
+ 1.2. O projeto é coordenado pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI), tendo
+ em vista seu papel na gestão do Cadastro Ambiental Rural (CAR) em âmbito federal, e executado pela
+ Fundação Brasileira para o Desenvolvimento Sustentável (FBDS), na condição de organização recebedora
+ e responsável pela implementação do projeto, a partir de financiamento do Governo da Noruega, por meio
+ do Ministério das Relações Exteriores da Noruega, representado pela Embaixada Real da Noruega no
+ Brasil. Além disso, a iniciativa tem como desenvolvedores, do eixo voltado à Inovação Aberta, a Escola
+ Nacional de Administração Pública e o Impact Hub Brasil, com recursos aportados pela FBDS ao Termo
+ de Colaboração conjunta entre Enap e I.H.
+
+
+ 2. OBJETO
+ 2.1. Regulamentar a realização do haCARthon, uma maratona para o desenvolvimento de inovação e
+ tecnologia, mesclando conhecimentos do meio acadêmico, setor público e setor privado, para estimular a
+ criação de soluções para os desafios de inovação.
+ 2.2. Todas as referências e orientações complementares, como cronograma e o(s) desafio(s) proposto(s),
+ encontram-se disponíveis na Plataforma Desafios (www.gov.br/desafios).
+ 2.3. As atividades do cronograma poderão ser ajustadas ou alteradas, mediante ampla comunicação aos
+
+                          Edital 158 (0993344)     SEI 04600.001282/2026-00 / pg. 1
+participantes.
+
+
+3. PÚBLICO-ALVO
+3.1. O presente evento é aberto ao público em geral, pessoas físicas e jurídicas, brasileiras e estrangeiras, a
+partir de 18 anos de idade, que se interessam em contribuir com a resolução dos desafios propostos, sendo
+bem-vinda a participação de pessoas com diferentes expertises.
+3.2. É vedada a participação de pessoas membros da Comissão Julgadora e dos responsáveis pela
+execução do haCARthon, bem como de seus familiares até terceiro grau.
+3.3. As equipes deverão atentar-se às regras informadas pela organização do evento e pautar suas ações de
+acordo com as informações constantes deste regulamento, mantendo um comportamento ético, sem causar
+danos patrimoniais ou morais, seja a outros participantes ou a terceiros.
+
+
+4. DO PROGRAMA
+4.1. O haCARthon será composto pelas seguintes fases:
+Fase 1: Inscrição das pessoas participantes;
+Fase 2: Abertura e Dinâmica de Formação de Equipes;
+Fase 3: Desenvolvimento da solução;
+Fase 4: Submissão da solução;
+Fase 5: Pitches e Julgamento das Soluções; e
+Fase 6: Premiação e Cerimônia de Encerramento.
+
+
+5. DAS INSCRIÇÕES DOS PARTICIPANTES
+5.1. Para se inscrever no programa, a pessoa participante deverá preencher o formulário eletrônico de
+inscrição disponível na Plataforma Desafios.
+5.2. As Equipes deverão ser constituídas por no mínimo 2 e no máximo 6 integrantes. As pessoas
+integrantes deverão ser inscritas separadamente e, em seguida, formar as equipes, observando as instruções
+determinadas pela organização do haCARthon.
+5.3. Apenas uma pessoa integrante de cada equipe deverá ser apontada como líder do projeto. Ela será
+responsável por submeter o projeto final e pelo recebimento do prêmio, caso couber.
+5.4. Este desafio educacional é aberto a todas as pessoas, incentivando a diversidade, a equidade e a
+inclusão, com atenção especial à ampliação da participação das mulheres e de outros grupos
+historicamente sub-representados.
+5.5. Não serão admitidas inscrições realizadas fora do prazo ou submetidas por terceiros ou em outro meio
+que não o informado na Plataforma Desafios.
+5.6. A Enap não se responsabilizará por inscrições que deixarem de ser concretizadas por motivos de
+ordem técnica dos computadores, por falhas de comunicação, por congestionamento das linhas de
+comunicação ou por outros fatores que impossibilitem a transferência de dados.
+5.7. A organização se reserva ao direito de adiar ou cancelar as etapas subsequentes caso não haja a
+formação de ao menos 15 (quinze) equipes no desafio, conforme discricionariedade da organização.
+5.8. As inscrições serão gratuitas e eventuais despesas com o desenvolvimento da solução, licenças de
+software, passagens, locomoção, acomodação e refeições serão de responsabilidade exclusiva das equipes
+participantes.
+
+
+6. DA ABERTURA E DINÂMICA DE FORMAÇÃO DE EQUIPES
+6.1. Após as inscrições, as pessoas inscritas poderão se organizar em equipes, nomear um líder e registrar
+                          Edital 158 (0993344)     SEI 04600.001282/2026-00 / pg. 2
+a equipe e o líder, conforme instruções que serão repassadas pela organização no ambiente de realização
+do haCARthon.
+6.2. As equipes contarão com o auxílio de mentores para orientação quanto ao desenvolvimento dos
+trabalhos, utilização de ferramentas e do ambiente de acesso aos dados.
+6.3. Para o desenvolvimento das soluções e efetiva participação no evento, as equipes deverão dispor de
+computadores pessoais com acesso à internet, e qualquer licença ou ferramenta necessárias para o
+desenvolvimento e demonstração das soluções, sendo de sua inteira responsabilidade as providências
+nesse sentido.
+
+
+7. DO DESENVOLVIMENTO DAS SOLUÇÕES
+7.1. As equipes realizarão o desenvolvimento das soluções de modo remoto, no período definido na
+programação disponibilizada na Plataforma Desafios.
+7.2. Durante o evento ocorrerão ações de mentoria para suporte ao desenvolvimento das soluções e
+esclarecimento de dúvidas em torno dos temas propostos.
+7.3. É vedado o uso de dados eventualmente disponibilizados durante o evento para qualquer outro fim
+que não o estritamente definido neste Regulamento, acarretando a imediata desclassificação da equipe que
+descumprir essa regra.
+
+
+8. DA SUBMISSÃO DE SOLUÇÕES
+8.1. As equipes deverão entregar as soluções, no ambiente que será disponibilizado pela organização do
+haCARthon, na data definida na programação, de acordo com as demais instruções constantes na
+Plataforma Desafios.
+
+
+9. DOS PITCHES E JULGAMENTO DAS SOLUÇÕES
+9.1. Os participantes devem garantir que as propostas de soluções apresentadas não infrinjam direito
+autoral, segredo comercial ou quaisquer outros direitos patrimoniais de terceiros.
+9.2. O pitch final, a apresentação em slides contendo o problema e a descrição da solução, deverão ser
+submetidos à Comissão Julgadora na data definida na programação, de acordo com as demais instruções
+constantes na Plataforma Desafios.
+9.3. Qualquer dificuldade de gravação e acesso ao vídeo, imposta pela utilização de plataforma ou recurso
+diverso, que implique a impossibilidade de acesso pela organização e Comissão Julgadora resultará na
+desclassificação da equipe.
+9.4. O vídeo de apresentação/demonstração da solução deverá ter, no máximo, 3 (três) minutos de
+duração.
+9.5. Será automaticamente eliminada a equipe que:
+                 a) Entregar a solução de forma incompleta, em inobservância aos entregáveis descritos;
+                 b) Não entregar a solução; ou
+                 c) Entregar a solução fora do prazo.
+9.6. Serão submetidas ao julgamento final as soluções que tenham atendido todas as entregas previstas.
+9.7. A avaliação das soluções pela Comissão Julgadora ocorrerá no período definido na programação, que
+será disponibilizada na Plataforma Desafios.
+9.8. As soluções serão avaliadas pela Comissão Julgadora, adotando escala numérica de 1 (um) a 10 (dez),
+conforme critérios a serem divulgados em material complementar na Plataforma Desafios.
+9.9. A Comissão Julgadora será composta por, no mínimo, 3 (três) membros especialistas em inovação ou
+nos temas abordados pelo haCARthon.
+9.10. A Comissão Julgadora deliberará com a presença de seu presidente e da maioria de seus membros.
+                        Edital 158 (0993344)     SEI 04600.001282/2026-00 / pg. 3
+9.11. O presidente da Comissão Julgadora terá, além do seu voto, o voto de desempate.
+9.12. Os nomes dos componentes do Comitê Técnico e da Comissão Julgadora serão divulgados quando
+da publicação dos resultados do prêmio.
+9.13. Caso a comissão julgadora considere insatisfatórios os trabalhos apresentados, não será atribuído
+prêmio a nenhuma equipe.
+9.14. As equipes vencedoras serão aquelas que apresentarem a solução que obtiverem os maiores
+somatórios gerais das notas atribuídas por todos os componentes da Comissão Julgadora.
+9.15. Comunicado, contendo decisão da Comissão Julgadora (Resultado Preliminar), será publicado na
+Plataforma Desafios pela Coordenação-Geral de Inovação Aberta (GNova Inovação Aberta) da Diretoria
+de Inovação (GNova) da Enap.
+9.16. Recursos poderão ser interpostos ao Comunicado da GNova Inovação Aberta nos termos do
+disposto na Lei nº 9.784/99, no prazo estipulado no cronograma do haCARthon, contados de suas
+publicações, que deverão ser dirigidos à Diretoria de Inovação da Enap, exclusivamente por meio do
+endereço desafios.car@enap.gov.br
+9.17. Os recursos ao Comunicado da GNova Inovação Aberta serão apreciados, em caráter definitivo, pela
+Diretoria de Inovação da Enap, ouvida a Comissão Julgadora.
+9.18. Comunicado, com análise dos recursos contra o Comunicado da GNova Inovação Aberta, será
+publicado na Plataforma Desafios pela Diretoria de Inovação (GNova) da Enap.
+9.19. O recurso não será conhecido se interposto fora do prazo, por quem não seja legitimado e caso não
+siga as instruções deste edital.
+
+
+10. DA PREMIAÇÃO E CERIMÔNIA DE ENCERRAMENTO
+10.1. Os vencedores serão anunciados em data e horário a ser definido de acordo com a programação, com
+as demais instruções constantes na Plataforma Desafios.
+10.2. A partir da avaliação da Comissão Julgadora serão classificados os projetos em 1º (primeiro), 2º
+(segundo), 3º (terceiro), 4º (quarto) e 5º (quinto) lugares.
+10.3. Os prêmios serão pagos pela Impact Hub em até 90 (noventa) dias após a divulgação do resultado
+final.
+10.4. O valor total bruto de premiação (sem tributos) é de R$ 75.000,00 (setenta e cinco mil reais),
+distribuídos igualmente aos 5 primeiros colocados, de modo que cada equipe vencedora receba R$
+15.000,00 (quinze mil reais).
+10.5. Os prêmios de que trata este artigo estão em valores brutos, sujeitos à tributação na forma da lei.
+10.6. Cada solução poderá ser premiada apenas uma vez.
+10.7. O pagamento dos prêmios será mediante depósito em instituição bancária brasileira para a conta
+corrente de titularidade do representante da equipe ou para alguém por ele indicado.
+
+
+11. DOS DADOS E DA CONFIDENCIALIDADE
+11.1. Os idealizadores e realizadores do haCARthon irão atuar em conformidade com a legislação vigente
+sobre a Proteção de Dados Pessoais e as determinações de órgãos reguladores/fiscalizadores sobre a
+matéria, em especial, a Lei nº 13.709/2018 – Lei Geral de Proteção de Dados Pessoais (LGPD).
+11.2. Os dados pessoais informados no formulário de inscrição têm o objetivo de identificação e contato
+com as participantes e poderão ser utilizados para comunicação de outras iniciativas da Enap, Impact Hub,
+MGI, e demais parceiros.
+11.3. Os dados coletados, bem como as informações levantadas nas avaliações de desempenho e
+acompanhamento, poderão ser utilizados em estudos e publicações pelos idealizadores e realizadores do
+haCArthon, hipótese na qual as informações serão disponibilizadas em forma agregada e/ou anonimizada.
+
+
+                         Edital 158 (0993344)      SEI 04600.001282/2026-00 / pg. 4
+11.4. Nenhum dado será publicado de forma individual sem a autorização de cada participante.
+11.5. A pessoa participante poderá solicitar a exclusão dos seus dados pessoais fornecidos no formulário
+de inscrição, assim como de seus dados pessoais cadastrados na plataforma, após a data de encerramento
+do Hackathon CAR DPG
+
+
+12. DA PROPRIEDADE INTELECTUAL
+12.1. As instituições idealizadoras e realizadoras do haCARthon não irão requerer titularidade das
+tecnologias e também não reivindicarão a participação em eventuais proveitos econômicos decorrentes dos
+direitos de propriedade intelectual oriundos dos resultados deste edital.
+12.2. Ao realizar a inscrição, a pessoa participante consente que os dados pessoais informados no
+formulário de inscrição têm o objetivo de identificação e contato com as participantes e poderão ser
+utilizados para comunicação de outras iniciativas da Enap, Impact Hub, MGI, e demais parceiros.
+12.3. Novos processos de propriedade intelectual abertos durante ou após a participação dos times no
+haCARthon deverão ser comunicados à Enap, por meio do e-mail desafios.car@enap.gov.br.
+12.4. Cabe aos proponentes a adição das medidas cabíveis para resguardar seus direitos, isentando os
+idealizadores, organizadores e as demais instituições parceiras que colaboram com este haCARthon quanto
+à eventual prejuízo que resultar das suas omissões.
+12.5. Demais questões relativas à propriedade intelectual serão regidas pela legislação vigente no país,
+dentre elas, a Lei de Inovação n. 10.974, de 02 de dezembro de 2004, a Lei de Propriedade Industrial n.
+9.270 de 14 de maio de 1996, a Lei de Direitos Autorais n. 9.610 e a Lei de Programa de Computador n.
+9.609, ambas de 19 de fevereiro de 1998, e suas respectivas alterações, assim como as políticas e
+normativas das empresas envolvidas no desenvolvimento das iniciativas atendidas.
+
+
+13. DOS DIREITOS DE IMAGEM
+13.1. Os times selecionados concordam em se fazerem representar, quando convidados a comparecer a
+eventos promovidos pelas instituições idealizadoras e realizadoras do Hackathon CAR DPG.
+13.2. As pessoas integrantes dos times selecionados concordam igualmente em estar disponíveis para o
+relacionamento com a mídia e canais de comunicação – inclusive assessorias de imprensa dos
+idealizadores e realizadores do haCARthon e em ceder entrevistas e a participar de reportagens que
+eventualmente sejam requisitadas, com o objetivo de divulgar o programa e a sua participação.
+13.3. As pessoas integrantes dos times selecionados concordam em ceder o uso de sua imagem para o
+haCARthon . A cessão de que este item inclui, mas não se limita a: nome comercial, nome fantasia,
+imagem da logomarca, nome dos titulares, descrição da empresa, vídeos e fotos submetidos no processo de
+inscrição, bem como vídeos que contenham imagens do time, a apresentação do projeto de negócio
+inovador, endereço de website, Facebook, Youtube, LinkedIn, Twitter e outras redes sociais utilizadas,
+depoimentos e qualquer material de mídia produzido durante as atividades, ou fornecido pelas
+participantes.
+13.4. As imagens licenciadas podem ser vinculadas e divulgadas nos seguintes tipos de mídia: impressa,
+televisionada, vídeo, virtual e telefônica.
+13.5. Os participantes se responsabilizam pela originalidade de todo conteúdo por eles produzido no
+âmbito do presente regulamento, respondendo integral e exclusivamente por eventuais danos ou ônus a
+terceiros, excluindo e indenizando os organizadores, realizadores, patrocinadores e apoiadores em caso de
+demanda judicial ou extrajudicial intentada por terceiros, sob alegação de violação de direitos de
+propriedade intelectual, imagem, voz e nome.
+13.6. Demais questões relativas à propriedade intelectual serão regidas pela legislação vigente no país,
+dentre elas, a Lei de Inovação nº 10.974, de 02 de dezembro de 2004, a Lei de Propriedade Industrial nº
+9.270 de 14 de maio de 1996, a Lei de Direitos Autorais nº 9.610 e a Lei de Programa de Computador nº
+9.609, ambas de 19 de fevereiro de 1998, e suas respectivas alterações, assim como as políticas e
+normativas das empresas envolvidas no desenvolvimento das iniciativas atendidas.
+
+                        Edital 158 (0993344)    SEI 04600.001282/2026-00 / pg. 5
+14. DO CRONOGRAMA
+14.1. O cronograma completo com os prazos de submissão de iniciativas e de publicação dos resultados
+será disponibilizado na Plataforma Desafios.
+
+
+15. DISPOSIÇÕES FINAIS
+15.1. Os participantes poderão utilizar ferramentas e recursos pagos, desde que adquiridos legalmente e
+cujas licenças permitam a publicação pelos organizadores, sem ônus a estes.
+15.2. Não haverá qualquer tipo de compromisso de a Administração Pública celebrar contrato para a
+aquisição, em escala ou não, das propostas de soluções inovadoras selecionadas ou de serviços a elas
+relacionados.
+15.3. O recebimento do prêmio implica a autorização da publicação dos documentos relativos à proposta
+de solução inovadora finalista e vencedora em repositório institucional da Enap.
+15.4. Ao concordar com os termos do edital, os proponentes se comprometem a manter o sigilo e a não
+tomar, sem autorização, qualquer medida com vistas a obter para si ou para terceiros, os direitos de
+propriedade intelectual relativos a quaisquer informações sigilosas às quais tenham acesso ao longo do
+desafio.
+15.5. Nenhum participante terá direito ao recebimento de quaisquer valores, seja a que tempo e/ou título
+for, em virtude de qualquer forma de utilização, divulgação e reprodução de sua imagem.
+15.6. Os autores de soluções premiadas devem fazer menção expressa e visível de que ela foi vencedora
+do haCARthon, em toda e qualquer divulgação ou utilização pública do trabalho premiado.
+15.7. Suspeitas de conduta antiética, além do desrespeito ao presente Edital, serão analisadas e julgadas
+pela Diretoria de Inovação da Enap, ouvido o Ministério da Gestão e Inovação dos Serviços Públicos,
+podendo resultar na desclassificação da proposta e cancelamento da inscrição, respeitando o contraditório
+e a ampla defesa, e seguindo rito similar à apresentação dos recursos contra o Resultado Preliminar.
+15.8. Os Desafios poderão ser interrompidos ou suspensos, por motivos de força maior, não sendo devida
+qualquer indenização ou compensação aos inscritos e/ou a terceiros.
+15.9. Os casos omissos serão resolvidos pela Diretoria de Inovação da Enap, ouvido o Ministério da
+Gestão e Inovação dos Serviços Públicos.
+15.10. Este Edital está disponível na Plataforma Desafios.
+15.11. Aplica-se subsidiariamente ao presente Edital a legislação brasileira, em especial a Lei nº 14.133,
+de 2021; a Lei nº 9.784, de 29 de janeiro de 1999, e a Lei nº 7.713, de 22 de dezembro de 1988.
+15.12. O foro competente para dirimir eventuais questões relacionadas à realização deste certame é o da
+cidade de Brasília/DF.
+15.13. É de responsabilidade exclusiva dos participantes conhecer integralmente o conteúdo deste Edital e
+acompanhar as comunicações oficiais relacionadas ao haCARthon, divulgadas no endereço eletrônico da
+Enap e na Plataforma Desafios (www.gov.br/desafios).
+
+
+
+                                           BETÂNIA LEMOS
+                                                Presidenta
+
+
+
+
+                         Edital 158 (0993344)    SEI 04600.001282/2026-00 / pg. 6
+                 Documento assinado eletronicamente por Betânia Peixoto Lemos, Presidenta, em 15/05/2026, às
+                 11:26, conforme horário oficial de Brasília e Resolução nº 9, de 04 de agosto de 2015.
+
+
+
+                A autenticidade deste documento pode ser conferida no site http://sei.enap.gov.br/autenticidade,
+                informando o código verificador 0993344 e o código CRC 62938F2C.
+
+
+
+
+Referência: Processo nº 04600.001282/2026-00                                                                SEI nº 0993344
+
+
+
+
+                               Edital 158 (0993344)     SEI 04600.001282/2026-00 / pg. 7
+
