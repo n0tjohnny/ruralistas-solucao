@@ -158,9 +158,25 @@ O produto sobreviveu a 8 debates e a uma verificação adversarial de 10 agentes
 
 ---
 
-## 8. A chamada (o que pedimos)
+## 8. A maré externa — por que isto é maior que uma fila
 
-Um **piloto com uma OEMA de alta pressão** (Amazônia/Cerrado), recorte de município, classe‑alvo única (área consolidada × supressão nova de nativa), **com um dono institucional nomeado**. Submissão **dupla**: o **artefato técnico** que prova o método (backtest H1) + o **modelo de governança** que nomeia quem opera o OPEX e recalibra. Sem dono, a base viva morre no fim do piloto.
+A dor da Luana é real, mas não está sozinha. Três marés externas **verificáveis** transformam uma base de referência viva e auditável de "melhoria operacional" em **infraestrutura estratégica** — e é esse o argumento que tira o Gabarito da caixa de "protótipo" e o coloca na de política pública.
+
+| Maré | O número | Por que importa pra nós |
+|---|---|---|
+| **Prazo · EUDR** | grandes/médios a partir de **30/dez/2026** | A regulação UE 2023/1115 (antidesmatamento) exige geolocalização por lote + prova livre‑de‑desmatamento (pós‑31/12/2020) em 7 commodities. ~1/3 das exportações BR→UE (**US$ 46,3 bi**) expostas, **~US$ 17,5 bi/ano** de custo. O CAR é a base georreferenciada natural — **só se fresca e auditável por talhão.** Não distingue legal/ilegal: corte pós‑2020 barra mesmo com ASV. |
+| **Política · desmatamento zero / COP30** | desmate Amazônia **−50% vs 2022** | Meta nacional 2030, vitrine da COP30 (Belém, 2025). Meta climática se mede no território = **análise do CAR em escala**. Cada estado precisa provar conformidade com dado defensável — Gabarito é o lastro dessa prova. |
+| **Dinheiro · Fundo Amazônia** | **R$ 2 bi aprovados em 2025** (R$ 3,7 bi em 2023–25) | BNDES/MMA, com projetos estaduais de regularização (ex.: Pará, R$ 81,2 mi). O OPEX do "dono do processo contínuo" tem **caixa existente e politicamente alinhado** — não é hipótese. Some Norad + editais climáticos. |
+
+**Para a banca:** o Gabarito não disputa um ponto de acurácia — encaixa numa agenda com **prazo legal (EUDR), meta política (desmatamento zero) e custeio (Fundo Amazônia) já na mesa.** É esse encaixe que transforma protótipo em política pública.
+
+> **Honestidade (mesmo padrão da página):** as marés são contexto verificável (fontes em `index.html` / `reports/09`); o *encaixe* do Gabarito a elas é **via de adoção a perseguir** — não financiamento já garantido nem exigência formal de que o CAR use a nossa base.
+
+---
+
+## 9. A chamada (o que pedimos)
+
+Um **piloto com uma OEMA de alta pressão** (Amazônia/Cerrado), recorte de município, classe‑alvo única (área consolidada × supressão nova de nativa), **com um dono institucional nomeado** — o OPEX custeável via **Fundo Amazônia/BNDES ou edital climático**. Submissão **dupla**: o **artefato técnico** que prova o método (backtest H1) + o **modelo de governança** que nomeia quem opera o OPEX e recalibra. Sem dono, a base viva morre no fim do piloto.
 
 **Métricas de sucesso do piloto:** vazão **6 → 18/dia sem subir o erro** · recall do delta vs DETER · aprovação do ruralista na 1ª/2ª tentativa · custo por cadastro atualizado cai.
 
