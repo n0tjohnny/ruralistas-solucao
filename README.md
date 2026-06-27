@@ -24,7 +24,8 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 | `index.html` · `public/index.html` | Página de visão do Gabarito (entregável; cópias idênticas — editar as duas). Deploy via Cloudflare Wrangler. |
 | `apresentacao.html` · `public/apresentacao.html` | Deck interno do time (espelho do `APRESENTACAO-INTERNA-DESAFIO-02.md`; cópias idênticas — editar as duas). |
 | `apresentacao-mentores.html` · `public/apresentacao-mentores.html` | Deck para os **mentores** do haCARthon (compilado do bundle Claude Design via DesignSync MCP; 100% responsivo). Cópias idênticas — editar as duas. |
-| `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade**. |
+| `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade** (produto). |
+| `design.md` | **Fonte da verdade do design** — tipografia, paleta, componentes, regras mobile e workflow de compilação. Seguir antes de mexer em UI. |
 | `PIVOT-DESAFIO-02.md` | Índice do pivô Compadre→Gabarito e status dos artefatos. |
 | `prd-outputs/` | PRDs versionados (mais recente = v4.0). |
 | `debate-outputs/` | Transcrições de debates multi-agente (o decisivo é o `council-dor-real-*`). |

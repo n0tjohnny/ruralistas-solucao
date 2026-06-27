@@ -32,6 +32,18 @@ npx wrangler pages deploy ./public  # deploy (project: compadre-apresentacao)
 
 `index.html` is **compiled from a Claude Design bundle**, not hand-written from scratch. Source bundles live in the user's Claude Design project (`Gabarito - Visao do Produto.dc.html`), accessed via the `DesignSync` MCP tool. "Compiling" = strip the bundle wrapper (`<x-dc>`, `<helmet>`, `support.js`, thumbnail template), merge `<helmet>` into `<head>`, and bake the bundle's CSS vars (`--ga-accent`, `--ga-anno`) into `:root`. When editing the page, prefer regenerating from the bundle over diverging hand-edits, then re-sync root ↔ `public/`.
 
+## Design system & recurring-defect guardrails (read before any UI work)
+
+**`design.md` is the design source of truth.** Fonts (Spectral + Hanken only), the type-size ramp, the cor-da-terra palette, components, and mobile rules live there. Consult it before adding ANY CSS; new/compiled pages must conform and be reconciled against it.
+
+Hard lessons already paid for (do NOT repeat them):
+- **Compiling a bundle leaves dead `onClick="{{ handler }}"` template placeholders** — `support.js` would have wired them; in the static page they are inert (nav/buttons do nothing). After every compile, grep for `{{` and `on[Cc]lick="{{` and re-bind with your own vanilla JS (or remove). Verify zero `{{` remain.
+- **Glossary/term auto-linking must derive terms AND definitions from the glossary itself** (cards carry `data-terms="form|form2"`; the linker reads them). NEVER hand-curate a term subset — it silently leaves things out (the "CAR wasn't underlined" bug). Completeness must be enforced by a runtime self-check (`console.warn` on any card missing `data-terms`), not by hope.
+- **Never decorate/underline inside display headings (H1–H4).** The term-linker and similar passes must skip headings, or the typography looks broken.
+- **Both copies must stay byte-identical:** after any edit, `diff -q index.html public/index.html` (and the `apresentacao*.html` pairs) must report identical. Mirror every change.
+
+When a session exposes a sloppiness pattern, fix the **whole class** (grep for siblings across all pages), then record the lesson HERE so the next session starts ahead.
+
 ## Two coexisting agent frameworks
 
 This workspace carries **two** instruction sets. Know which one applies to the request.
