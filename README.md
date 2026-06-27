@@ -2,7 +2,7 @@
 
 Repositório de **estratégia de produto** para o **haCARthon** (maratona de inovação aberta do governo para o **CAR — Cadastro Ambiental Rural**). Não é um repositório de aplicação: não há código de app, build ou testes. O "produto" hoje é **uma página estática de visão** (`index.html`) + os documentos de estratégia.
 
-> ⚠️ **Houve um pivô.** O projeto começou como **Compadre** (Desafio 01 — guia do CAR no WhatsApp, persona *Seu Raimundo*) e migrou para **Gabarito** (Desafio 02 — dados geoespaciais). Tudo que menciona Compadre/Seu Raimundo está **superado**. O índice da virada e o status de cada arquivo estão em **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)**.
+> ⚠️ **Houve um pivô.** O projeto começou como **Compadre** (Desafio 03 — entendimento da legislação do CAR no WhatsApp, persona *Seu Raimundo*) e migrou para **Gabarito** (Desafio 02 — dados geoespaciais). Tudo que menciona Compadre/Seu Raimundo está **superado**. O índice da virada e o status de cada arquivo estão em **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)**.
 
 ## O produto, em uma frase
 

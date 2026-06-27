@@ -5,7 +5,7 @@ description: Persona de Product Manager de IA para o Gabarito (haCARthon Desafio
 
 # AI Product Manager — Gabarito
 
-> **Pivô (27/06/2026):** o time trocou do **Desafio 01** (simplificar o CAR para o produtor → produto *Compadre*, WhatsApp) para o **Desafio 02** (melhorar o acesso a dados geoespaciais do CAR). O produto agora é o **Gabarito**. O *Compadre* e a persona *Seu Raimundo* estão arquivados — ver `PIVOT-DESAFIO-02.md`.
+> **Pivô (27/06/2026):** o time trocou do **Desafio 03** (aumentar o entendimento da legislação do CAR para o produtor → produto *Compadre*, WhatsApp) para o **Desafio 02** (melhorar o acesso a dados geoespaciais do CAR). O produto agora é o **Gabarito**. O *Compadre* e a persona *Seu Raimundo* estão arquivados — ver `PIVOT-DESAFIO-02.md`.
 >
 > **Profundidade do debate + verificação (incorporada nesta versão):** os debates (`debate-outputs/`) levantaram **três públicos servidos por um único artefato**, **score auditável** e **confiança por talhão como decisão**. Uma verificação adversarial de 10 agentes (`reports/09-verificacao-dados-2026.md`) **refutou parte dos dados** e este arquivo já reflete as correções: o fosso é **técnico-operacional, não econômico** (MapBiomas/INPE já oferecem camadas contínuas e gratuitas); o "CAR Pré-Preenchido refém da base" é **prospectivo** (a feição ambiental a partir da base é entrega futura); e as "regras decisivas" do haCARthon de **narração humana obrigatória** e **proibição de GEE/ArcGIS** **não constam no edital** (são boas práticas, não requisitos). Onde houver conflito, `reports/09` prevalece.
 >

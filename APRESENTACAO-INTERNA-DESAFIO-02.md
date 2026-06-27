@@ -75,7 +75,7 @@ Cada linha é um gargalo real que uma rodada de pesquisa/debate cravou. A leitur
 ## 4. Como chegamos à solução atual (a jornada)
 
 ```
-Compadre (Desafio 01)            →   Gabarito (Desafio 02)
+Compadre (Desafio 03)            →   Gabarito (Desafio 02)
 WhatsApp p/ o produtor               base de referência viva p/ a analista
   │ pivô 27/06 (PIVOT-DESAFIO-02.md)
   ▼

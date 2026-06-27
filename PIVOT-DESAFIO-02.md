@@ -1,4 +1,4 @@
-# PIVÔ — Desafio 01 (Compadre) → Desafio 02 (Gabarito)
+# PIVÔ — Desafio 03 (Compadre) → Desafio 02 (Gabarito)
 
 **Data:** 27 de junho de 2026
 
@@ -10,7 +10,7 @@ O time trocou de desafio no haCARthon. Este documento é o índice da virada: o 
 
 | | Antes (arquivado) | Agora (alvo) |
 |---|---|---|
-| **Desafio** | 01 — Simplificar o CAR para o usuário | **02 — Melhorar o acesso a dados geoespaciais do CAR** |
+| **Desafio** | 03 — Aumentar o entendimento das legislações do CAR | **02 — Melhorar o acesso a dados geoespaciais do CAR** |
 | **Produto** | Compadre (guia do CAR no WhatsApp) | **Gabarito** (base de referência viva do CAR) |
 | **Herói** | Seu Raimundo (pequeno produtor) | **Luana** (analista ambiental/geógrafa de OEMA) |
 | **Dor central** | Não entender a lei e perder a terra | Falta **frescor sub-anual + classes do Código Florestal + confiança por talhão como decisão** sobre a base de referência → análise manual, fila travada e vai-e-volta ruralista↔estado. *(A tese "só-CAPEX/sem-OPEX" foi refutada — `reports/09`.)* |
@@ -54,8 +54,8 @@ Fonte canônica detalhada: **`pm-role.md`** e a página **`index.html`**.
 - `reports/exploration/02-car-prepreenchido-apis.md`, `10-dpg-casos-internacionais.md`, `00-INDICE-consolidado.md` — referências de ecossistema/APIs/DPG.
 - `source-material/` — material-fonte do haCARthon (transcrições das Lives, `links-uteis.txt`, `Material de Apoio.txt`, PDFs oficiais).
 
-### ⚠️ Superados (eram do Compadre/Desafio 01 — não usar como verdade atual)
-- `reports/03-publico-produtor-rural.md` — persona Seu Raimundo (Desafio 01).
+### ⚠️ Superados (eram do Compadre/Desafio 03 — não usar como verdade atual)
+- `reports/03-publico-produtor-rural.md` — persona Seu Raimundo (Desafio 03).
 - `reports/08-pfd-review-comunicacao.md` — review de comunicação do Compadre.
 - `reports/04-concorrentes-solucoes.md`, `05-viabilidade-tecnica.md` — concorrência/viabilidade do Compadre (a viabilidade do Gabarito está em `pm-role.md` e `index.html`).
 - `reports/exploration/01,03,04,05,06,07,08,09-*.md` — explorações orientadas ao Compadre (crédito, WhatsApp API, IA conversacional, canal cooperativa, monetização produtor).

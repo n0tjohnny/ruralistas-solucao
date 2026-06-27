@@ -1,9 +1,9 @@
 # Relatório: Desafio Oficial — haCARthon (Desafio 02)
 
-**Elaborado em:** 26 de junho de 2026 · **Atualizado em:** 27 de junho de 2026 (pivô Desafio 01 → 02)  
+**Elaborado em:** 26 de junho de 2026 · **Atualizado em:** 27 de junho de 2026 (pivô Desafio 03 → 02)  
 **Status:** Confirmado — o evento está em curso nesta data.
 
-> **Pivô (27/06/2026):** o time migrou do **Desafio 01** (produto *Compadre*) para o **Desafio 02**. O produto agora é o **Gabarito** (base de referência viva do CAR). Ver `PIVOT-DESAFIO-02.md`.
+> **Pivô (27/06/2026):** o time migrou do **Desafio 03** (produto *Compadre*) para o **Desafio 02**. O produto agora é o **Gabarito** (base de referência viva do CAR). Ver `PIVOT-DESAFIO-02.md`.
 
 ---
 
@@ -18,9 +18,9 @@ Este é o candidato primário e correto.
 ### Os três desafios do haCARthon
 | # | Desafio | Pergunta-guia (HMW) |
 |---|---|---|
-| **01** | Simplificar o CAR para o usuário | Como simplificar a declaração e retificação do CAR para o produtor rural, aproveitando bases de dados abertas? *(antigo alvo — produto Compadre, arquivado)* |
+| **01** | Simplificar o CAR para o usuário | Como simplificar a declaração e retificação do CAR para o produtor rural, aproveitando bases de dados abertas? |
 | **02** ✅ | **Melhorar o acesso a dados geoespaciais do CAR** | **Como atualizar anualmente, com rapidez e acurácia, o mapeamento de uso e cobertura do solo de todos os estados — melhorando a atualização dos cadastros e a quantidade/qualidade das análises do CAR?** *(alvo atual — produto Gabarito)* |
-| **03** | Aumentar o entendimento das legislações do CAR | Como aumentar o conhecimento da legislação ambiental do CAR entre pequenos e médios proprietários, para promover preservação e recuperação florestal? | O Show Rural Digital 2026 (Cascavel/PR, fevereiro de 2026) foi descartado como candidato secundário: embora tenha tido um desafio de "Conformidade Regulatória", sua data já passou (fevereiro 2026), é um evento presencial em Cascavel/PR organizado pela Coopavel, e não tem relação institucional com o CAR/SICAR ou com os organizadores identificados.
+| **03** | Aumentar o entendimento das legislações do CAR | Como aumentar o conhecimento da legislação ambiental do CAR entre pequenos e médios proprietários, para promover preservação e recuperação florestal? *(primeiro alvo do time — produto Compadre, arquivado)* | O Show Rural Digital 2026 (Cascavel/PR, fevereiro de 2026) foi descartado como candidato secundário: embora tenha tido um desafio de "Conformidade Regulatória", sua data já passou (fevereiro 2026), é um evento presencial em Cascavel/PR organizado pela Coopavel, e não tem relação institucional com o CAR/SICAR ou com os organizadores identificados.
 
 ---
 
