@@ -38,7 +38,7 @@ Este é o candidato primário e correto.
 | **Fundação Brasileira para o Desenvolvimento Sustentável (FBDS)** | Co-organizadora |
 | **Escola Nacional de Administração Pública (ENAP)** | Co-organizadora / plataforma |
 | **Impact Hub Brasil** | Co-organizadora / execução |
-| **Governo da Noruega (Norad / OpenEPI)** | Patrocinador / parceiro técnico internacional |
+| **Governo da Noruega** (via Ministério das Relações Exteriores / Embaixada Real da Noruega no Brasil) | **Financiador** (não co-organizador). *Correção `reports/09`: não é "Norad/OpenEPI" — isso não consta no edital.* |
 
 ### 2.3 Datas e Prazos
 
@@ -46,9 +46,11 @@ Este é o candidato primário e correto.
 |---|---|
 | Abertura das inscrições | 15 de maio de 2026 |
 | Encerramento das inscrições | 25 de junho de 2026 |
-| Evento presencial (maratona) | **26, 27 e 28 de junho de 2026** |
+| Maratona (desenvolvimento) — **REMOTO/online** | **26, 27 e 28 de junho de 2026** |
+| Submissão | 28/06/2026 |
+| Julgamento | 29/06/2026 · resultado final até 17/07/2026 |
 
-> **Nota:** O evento está acontecendo **agora** (hoje, 26/06/2026, é o primeiro dia).
+> **Correção (`reports/09`):** o evento é **remoto/online** (Edital nº 158/2026, item 7.1 — desenvolvimento "de modo remoto"; mentorias/lives no Discord/WhatsApp/Meet), **não presencial**. Premiação: **R$ 75.000 = 5 × R$ 15.000** (item 10.4).
 
 ### 2.4 Plataforma Oficial de Inscrição
 
@@ -88,31 +90,22 @@ Em maio de 2026, o MGI também lançou nova plataforma de consulta a dados públ
 
 ## 5. Critérios de Julgamento e Entregáveis
 
-> **Limitação da pesquisa:** O regulamento detalhado com critérios de avaliação, rubrica de julgamento, entregáveis exatos (pitch, protótipo, documentação) e composição de equipes está hospedado na plataforma **appdesafios.enap.gov.br**, que exige JavaScript para renderizar seu conteúdo — não foi possível recuperar o texto completo via crawl/search. Os dados abaixo refletem o que foi apurado em fontes indexadas.
+> **Atualização (`reports/09`):** o **Edital nº 158/2026 + anexos** (Briefing v2, Guia do Participante, Cronograma) foram **recuperados no repositório da ENAP**. Os dados abaixo agora vêm da fonte primária — e corrigem suposições anteriores.
 
-### O que se sabe:
+### Confirmado pelo edital (fonte primária):
+- **Entregáveis:** **Ideação** (formulário) + **Protótipo** (vídeo **≤ 2 min** — acima disso desclassifica) + **Pitch** (slides + áudio, vídeo **≤ 3 min**).
+- **Código funcional NÃO é obrigatório** ("Não é obrigatório apresentar software funcional ou código-fonte").
+- **Open source é o modelo esperado** (CAR como Bem Público Digital), mas como orientação, não como entrega obrigatória de código.
+- **Premiação:** R$ 75.000 = **5 × R$ 15.000** (item 10.4).
+- **Desafio 02 (verbatim):** "Melhorar o acesso a dados geoespaciais do CAR — Como podemos atualizar anualmente com rapidez e acurácia o mapeamento de uso e cobertura do solo de todos os estados brasileiros, melhorando a atualização dos cadastros e propiciando o aumento na quantidade e qualidade das análises do CAR?"
 
-**Tema geral:** Soluções open source para ampliar eficiência e acessibilidade do CAR (SICAR).
+### ❌ "Regras" que NÃO constam no edital (eram suposição/fala de live — não usar como restrição decisiva):
+- **Proibição de Google Earth Engine / ArcGIS** — não está no edital/briefing/guia. (Evitar GEE segue sendo boa prática de portabilidade, não regra.)
+- **Narração humana obrigatória / "voz de IA desclassifica"** — não existe. A narração é apenas **recomendada**. (Abandonar voz clonada é prudente, mas não é exigência.)
+- **Evento presencial** — é **remoto** (item 7.1).
 
-**Foco do Desafio 02** (alinhado ao produto Gabarito):
-- Atualização rápida e acurada do mapeamento de uso e cobertura do solo (base de referência)
-- Aumento da quantidade e qualidade das análises do CAR (destravar a análise dinamizada)
-- **Open source e agnóstico de plataforma — sem GEE/ArcGIS** (condição do projeto CAR DPG)
-- Reutilizável internacionalmente como DPG
-
-**O que normalmente se exige em hackathons ENAP (baseado em padrões da plataforma):**
-- Protótipo funcional ou MVP demonstrável
-- Apresentação em pitch
-- Código-fonte aberto (open source) — neste caso é requisito estrutural do projeto
-- Potencial de impacto e escalabilidade
-
-### O que ainda precisa ser confirmado no regulamento oficial:
-- Tamanho mínimo/máximo da equipe
-- Elegibilidade (pessoa física, empresa, startup, servidor público)
-- Formato exato do pitch (duração, slides)
-- Distribuição da premiação por colocação
-- Rubrica de avaliação (pesos por critério)
-- Modalidades ou trilhas temáticas (sub-desafios específicos)
+### Ainda não confirmado:
+- Rubrica de avaliação (pesos por critério) e composição/limite de equipe (na plataforma appdesafios, SPA em JS).
 
 ---
 
@@ -165,11 +158,18 @@ Informações específicas de elegibilidade não foram localizadas em fontes abe
 
 O produto **Gabarito** — base de referência viva do CAR (detecta a mudança, remapeia só o talhão alterado, entrega base + score de confiança) — responde diretamente à pergunta-guia do Desafio 02:
 
-1. **Atualização rápida e acurada**: ataca a defasagem de 2–2,5 anos da base de referência remapeando só o *delta* (talhões que mudaram), via Sentinel-2 + PRODES/DETER — não o estado inteiro.
-2. **Mais e melhores análises**: o score de confiança por talhão destrava a análise dinamizada em escala onde a base é confiável, e encaminha à revisão humana onde não é.
+1. **Atualização rápida e acurada**: ataca a defasagem de 2–2,5 anos da base de referência remapeando só o *delta* (talhões que mudaram), via Sentinel-2 + PRODES/DETER sobre um t0 (base estadual ou MapBiomas Col.10) — não o estado inteiro.
+2. **Mais e melhores análises**: o score de confiança **auditável** por talhão destrava a análise dinamizada em escala onde a base é confiável, e encaminha à revisão humana onde não é.
 3. **Open source e agnóstico**: roda em QGIS/PostGIS e libs abertas, **sem GEE/ArcGIS**; saída em GeoPackage/COG — exatamente os requisitos estruturais do CAR DPG.
 4. **Reutilizável internacionalmente (DPG)**: a abordagem "detecção de mudança + score de confiança sobre imagem aberta" é replicável por qualquer país com base de referência defasada.
 5. **Problema real e datado**: OEMAs operam com filas de dezenas de milhares de cadastros e caem na análise manual (~6 imóveis/dia) por não confiarem em um mapa velho — o gargalo que o Desafio 02 nomeia.
+
+### Dor-raiz e alcance (debates + verificação — ver `debate-outputs/` e `reports/09`)
+- **O fosso é técnico-operacional, não econômico** (correção `reports/09`): a tese "só-CAPEX/sem-OPEX" foi **refutada** — MapBiomas (base anual, gratuita) + INPE PRODES/DETER (mudança contínua, gratuita) já são camadas custeadas por terceiros. O que falta, e o Gabarito ocupa: **frescor sub-anual** + **classes do Código Florestal** + **confiança por talhão como decisão** (liberar×humano).
+- **Concorrentes adjacentes:** **MapBiomas Alerta** (confiança do *alerta*, cruza CAR) e **Análise Dinamizada** (triagem por *imóvel*) — nenhum dá confiança *por talhão da base*. "Não há concorrente" é forte demais.
+- **Pré-preenchido depende da base (prospectivo):** o CAR Pré-Preenchido só passará a propor feições ambientais a partir da base de referência numa **entrega futura** (Live 06); hoje pré-preenche dados fundiários (SNCR/Sigef). A auto-declaração é gargalo **secundário**.
+- **Um artefato, três públicos:** o mesmo delta+score serve a analista (libera/roteia a fila), à análise dinamizada (automatiza com rastro) e ao produtor/RT (corrige antes da notificação, com evidência legível).
+- **Sustentação:** as camadas-base são gratuitas, mas o delta sub-anual + classes CF + validação precisam de **dono institucional** (OEMA/SFB/consórcio) e custeio — condição para o piloto virar operação.
 
 **Persona-alvo (Desafio 02):** Luana — analista ambiental/geógrafa de OEMA. Ver `pm-role.md`.
 

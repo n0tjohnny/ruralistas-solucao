@@ -1,55 +1,58 @@
----
-description: App Idea Validation Agent — root configuration for Claude Code
----
+# CLAUDE.md
 
-# App Idea Validation Agent
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-You are a structured decision-making system for indie B2C app developers. You are NOT a chatbot — you are a venture analyst and idea generator.
+## What this repo is
 
-## Intent Router
+A **product-strategy workspace for the haCARthon** (a Brazilian government open-innovation marathon for the CAR — Cadastro Ambiental Rural). It holds research, an AI Product-Manager toolchain, debate transcripts, a PRD, and one deployable **product-vision web page**. There is no application source code, build step, or test suite — the "product" is currently a single static HTML page plus strategy documents.
 
-Read the user's message and route to the appropriate workflow in `workflows/`. **Always output the workflow's Startup Announcement in bold before doing anything else.**
+**Active product: `Gabarito`** — a "living reference base" for the CAR that detects land-cover change (Sentinel-2 + PRODES/DETER over a t0 = state base or MapBiomas Col.10), remaps only changed parcels (talhões), and emits an **auditable** per-talhão confidence score. It targets **Desafio 02** (geospatial data) of the haCARthon. Persona **Luana** (state OEMA analyst), but the same delta+score artifact serves **three publics** (analyst routes the queue · SICAR/análise-dinamizada automates with an audit trail · producer/RT fixes the declaration before the notification). The moat is **technical-operational, not economic**: MapBiomas (annual, free) + INPE PRODES/DETER (continuous, free) already provide continuously-funded base/change layers — so the "only-CAPEX/no-OPEX" economic thesis was **refuted** (see `reports/09-verificacao-dados-2026.md`). What's missing, and what Gabarito adds: **sub-annual freshness + Código Florestal classes + per-talhão confidence as an operational decision** (adjacent competitors: MapBiomas Alerta, SICAR's per-imóvel triagem). Deep rationale: `pm-role.md`, `debate-outputs/`, and the data-verification log `reports/09`.
 
-| User Intent | Workflow | Exit Output |
-|---|---|---|
-| No idea / "what should I build?" | `workflows/idea-generation.md` | Ranked idea candidates with scores |
-| Has a specific idea / "validate this" | `workflows/idea-validation.md` | `decision_memo.md` with scored verdict + RAT experiment |
-| Idea scored poorly / "should I pivot?" | `workflows/pivot-optimization.md` | Pivot options with projected score improvements |
-| Market research / "tell me about X market" | `workflows/market-deep-dive.md` | Trend analysis + competitive landscape + market size |
+**Read these first — there was a hard pivot:** the project began as **Compadre** (Desafio 01: a WhatsApp guide for small farmers / persona Seu Raimundo) and pivoted to **Gabarito** (Desafio 02). Anything mentioning Compadre/Seu Raimundo is superseded.
+- `PIVOT-DESAFIO-02.md` — the pivot index + status of every artifact (current / still-valid / superseded).
+- `pm-role.md` — canonical product persona & strategy (source of truth for the product).
 
-## Workflow Behavior
+## Commands
 
-- **Every workflow begins with a Startup Announcement** (defined in each workflow file). Output it in bold before any skill runs.
-- **Idea Generation always starts with `user-background-interviewer`**, even if a profile exists. The skill will offer to reuse, update, or replace the existing profile.
-- The interview has four modes: `full` (10 questions), `fast` (4 questions), `browse` (topic picker — user selects 2–3 interest domains from batches of 5), `skipped` (minimal profile, generic recommendations). Technical ability is mandatory across all modes.
-- Skills do not call each other. The orchestrator reads each skill's output from `memory/` and provides relevant context when invoking the next skill.
+No build/lint/test. The deliverable is static and deployed with Cloudflare Wrangler.
 
-## Skills
+```bash
+npx wrangler pages dev ./public     # serve the page locally
+npx wrangler pages deploy ./public  # deploy (project: compadre-apresentacao)
+./claude-pm.sh                      # launch the AI Product Manager (loads pm-role.md as system prompt)
+```
 
-Skill adapters live in `.claude/skills/<name>/SKILL.md`. Canonical (full) definitions are in `skills/<name>/SKILL.md`. **Always refer to the canonical definition** for full instructions and output schema — adapters are summaries only.
+`wrangler.toml` serves `./public`. **`index.html` (repo root) and `public/index.html` are kept identical** — edit/regenerate both together. The page is self-contained (inline CSS/SVG, Google Fonts; no JS, no external assets).
 
-### Key skill behaviors to know
+## How `index.html` is produced (non-obvious)
 
-- **idea-scoring**: Uses a multiplicative-floor algorithm — one catastrophic weak dimension crushes the final score. Includes a Riskiest Assumption Test (RAT) that designs a ≤2-week, ≤$100 experiment to test the single most dangerous assumption before building.
-- **decision-memo**: Outputs a decision brief with verdict, score, top 3 strengths/risks with evidence, RAT experiment, pre-mortem (3 most likely causes of failure), kill criteria, and tier-appropriate next action.
-- **distribution-analysis**: Includes viral coefficient estimation (k-factor), ASO scoring rubric, creator fit assessment, and tier-adjusted verdicts.
-- **competitor-mapper**: Includes systematic App Store search methodology, 1-star/3-star review mining for positioning gaps, and market saturation scoring rubric.
-- **tam-sam-som-builder**: Uses triangulated bottom-up methodology (search volume + community size proxy + competitor revenue proxy) with growth-rate adjustments from market_insights trend velocity.
-- **pivot-engine**: Generates evidence-backed pivot options with scoring simulations, effort estimates, and indie buildability filtering.
-- **market_insights usage**: `distribution-analysis`, `cac-modeler`, `competitor-mapper`, `tam-sam-som-builder`, `pivot-engine`, and `pricing-and-wtp` all read from `memory/market_insights/` to calibrate their outputs. Always check for existing market_insights files before running trend-analysis.
+`index.html` is **compiled from a Claude Design bundle**, not hand-written from scratch. Source bundles live in the user's Claude Design project (`Gabarito - Visao do Produto.dc.html`), accessed via the `DesignSync` MCP tool. "Compiling" = strip the bundle wrapper (`<x-dc>`, `<helmet>`, `support.js`, thumbnail template), merge `<helmet>` into `<head>`, and bake the bundle's CSS vars (`--ga-accent`, `--ga-anno`) into `:root`. When editing the page, prefer regenerating from the bundle over diverging hand-edits, then re-sync root ↔ `public/`.
 
-## Memory
+## Two coexisting agent frameworks
 
-- `memory/user_profile.md` — user background, ICP tier (beginner/builder/growth), technical level, strengths, constraints, interview mode, and optionally `selected_interest_domains` (browse mode)
-- `memory/market_insights/<niche>-<platform>-<YYYY>-<MM>.md` — per-niche trend intelligence (one file per niche + platform + period). Used as a calibration input by most skills.
-- `memory/ideas/<idea-slug>/` — per-idea state directory with all skill outputs (idea.md, competitors.json, pricing.json, distribution.json, retention.json, cac.json, market_size.json, desire_scores.json, scores.json, weaknesses.json, pivot_options.json, decision_memo.md)
+This workspace carries **two** instruction sets. Know which one applies to the request.
 
-Write all skill outputs to `memory/` as structured JSON or Markdown. See `memory/README.md` for naming conventions. Never delete idea directories — set `status: dropped` in `idea.md` instead.
+1. **AI Product Manager (active).** Drives the actual product work.
+   - `pm-role.md` — the PM persona (currently Gabarito/Desafio 02). Canonical product context.
+   - Project-local skills: `.claude/skills/debate/` and `.claude/skills/gen-prd/` (invoked as `/debate`, `/gen-prd`). `init-pm` (a global skill) scaffolds this layer.
+   - Outputs: `debate-outputs/` (one `debate_output_<theme>_<YYMMDDhhmm>.md` per debate), `prd-outputs/` (`prd_<product>_<YYMMDDhhmm>.md`), `debate-materials/` (debate inputs).
+   - `/debate` is specified to run a live multi-agent team; in practice the background mailbox relay has been unreliable here — synchronous foreground `Agent` calls (each agent returns one turn) are the dependable fallback for producing real, saved turns.
 
-## Principles
+2. **App Idea Validation Agent (legacy).** Documented in `AGENTS.md` (Codex) and historically in this file. An intent router → `workflows/*.md` → narrow `skills/*` → `memory/`.
+   - **Skills are defined twice:** canonical full definitions in `skills/<name>/SKILL.md`; thin adapters in `.claude/skills/<name>/` and `.codex/skills/`. **Always edit/read the canonical `skills/` version.**
+   - State lives in `memory/` (`user_profile.md`, `market_insights/`, `ideas/<slug>/`); skills communicate via files in `memory/`, never via conversation history. Idea dirs are never deleted — mark `status: dropped`.
 
-1. **Skills are narrow** — one job per invocation. Do not combine multiple skill responsibilities into a single step.
-2. **Outputs are structured** — every skill writes JSON or structured Markdown to memory. Downstream skills read from memory, not from conversation history.
-3. **Challenge the user** — surface hard data, not comfortable answers. A good analysis should make the user slightly uncomfortable.
-4. **Real signals over opinions** — anchor every assessment to market_insights data, competitor evidence, or category benchmarks. Never speculate without flagging it.
-5. **Announce before acting** — always output the workflow's Startup Announcement in bold before executing any skill.
+## Research & evidence
+
+`reports/` holds numbered research (`01`–`08`, plus `reports/exploration/`) on the CAR domain, competitors, and the haCARthon. Per `PIVOT-DESAFIO-02.md`, the CAR-domain reports (e.g. `02-dominio-car.md`, `06-edital-completo.md`) remain valid; product-framing reports written for Compadre are superseded. Raw source material (haCARthon Live transcripts, PDFs, the official Luana persona) sits at the repo root.
+
+## haCARthon delivery constraints (when producing a submission)
+
+These come from the **Edital nº 158/2026 + anexos** (verified in `reports/09`; supersedes earlier transcript-based assumptions):
+- Deliverables = **ideação** (form) + **protótipo** (video ≤2 min) + **pitch** (slides + audio, video ≤3 min). **Functional code is NOT required.** Event is **remote/online**. Prize R$75k = 5×R$15k.
+- **Open source is the *expected model* (CAR as a DPG), not a mandatory deliverable.** ⚠️ Two rules previously treated as decisive are **NOT in the edital**: (a) "narration must be human / AI voice disqualifies" — narration is only *recommended*; (b) "no Google Earth Engine / ArcGIS" — not written anywhere. Both are prudent **best practices**, not requirements. (Dropping the repo's cloned-voice `public/*.mp3` is still sensible hygiene; avoiding GEE still aids portability — but neither is an edital gate.)
+- Allowed/useful open data: MapBiomas (Col.10 = **Landsat 30 m**; the 10 m product is GEE-bound), PRODES/DETER via TerraBrasilis (**Shapefile/WFS**, not GeoPackage). SICAR ingests **shapefile/KML/GPX in SIRGAS 2000** (not GeoPackage/COG).
+
+## Language
+
+Product/strategy artifacts and the page are in **Brazilian Portuguese**. Match the language of the file you are editing.
