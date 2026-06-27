@@ -76,7 +76,7 @@ O que o estado faz hoje, sem o Gabarito:
 - Cai na análise manual, ~6 imóveis/dia.
 - Ou monta um pipeline preso a GEE/ArcGIS.
 
-**Concorrentes adjacentes (nomear, não ignorar):** **MapBiomas Alerta** valida alertas de perda e cruza com o CAR/UC/TI (mas é confiança do *alerta*, não da *base*, e não diz "libere este talhão"); a **Análise Dinamizada do SICAR** faz triagem **por imóvel** (passível/não-passível), não por talhão. "Não existe concorrente" é forte demais — evitar.
+**Concorrentes adjacentes (nomear, não ignorar):** **MapBiomas Alerta** valida alertas de perda, cruza com o CAR/UC/TI **e já emite laudo automático por imóvel, priorizando** (irregularidade em <4% dos imóveis, RAD-2024 — verificado, `reports/10`) — ou seja, **priorização já existe**; mas é confiança do *alerta*, não da *base*, e não dá decisão **por talhão** com trilha assinável; a **Análise Dinamizada do SICAR** faz triagem **por imóvel** (passível/não-passível), não por talhão. "Não existe concorrente" é forte demais — evitar. **Corolário (DIREÇÃO DECIDIDA):** o fosso **não** é priorizar a análise (já existe) — é **confiança auditável por talhão + trilha assinável + classes CF sub-anual**.
 
 **Diferenciais (o delta sobre os adjacentes):** **frescor sub-anual**; **confiança por talhão como decisão** (liberar automático × humano), não triagem por imóvel; **tradução para classes do Código Florestal** (roadmap); **score auditável**; **revisão humana embutida**; **um artefato que serve analista, SICAR e produtor**, em formato aberto rodando em QGIS/PostGIS.
 

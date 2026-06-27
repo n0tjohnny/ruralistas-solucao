@@ -4,6 +4,8 @@
 **Método:** 10 agentes de pesquisa com postura de **refutação** (tentar falsificar cada dado, não confirmá-lo), pesquisa web 2026 + fontes primárias.
 **Motivo:** desconfiança declarada nos números que sustentam a tese do Gabarito. Este relatório é a **nova referência de dados** do repo — onde ele conflitar com `pm-role.md`, PRD ou debates antigos, **este prevalece**.
 
+> **Extensão (27/06/2026):** `reports/10-refutacao-debate-2026.md` estende este relatório com a verificação web da rodada de debates de viabilidade/edital/chance. Correções novas mais importantes: **Sentinel-2 (10 m) detecta <6,25 ha** (6,25 ha é limiar do PRODES, não do sensor); **DETER já mapeia degradação** (DETER Não Floresta, set/2025); **MapBiomas Alerta já prioriza por imóvel** (logo o fosso é confiança por talhão + trilha assinável, não priorização); **EUDR 30/12/2026 vigente** (Reg. UE 2025/2650). Onde 10 conflitar com 09, o 10 (mais recente) prevalece.
+
 > **TL;DR:** a *direção* do produto sobrevive, mas vários **números e "regras" estavam errados ou sem fonte**. As duas correções mais graves: (1) a **tese econômica "só-CAPEX / sem OPEX" está parcialmente refutada** — MapBiomas + INPE já oferecem camadas contínuas e gratuitas; o fosso é **técnico-operacional**, não de financiamento. (2) Duas "regras decisivas" do haCARthon (**narração humana obrigatória** e **proibição de GEE/ArcGIS**) **não existem no edital**.
 
 ---

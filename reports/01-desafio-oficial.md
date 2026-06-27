@@ -158,11 +158,11 @@ Informações específicas de elegibilidade não foram localizadas em fontes abe
 
 O produto **Gabarito** — base de referência viva do CAR (detecta a mudança, remapeia só o talhão alterado, entrega base + score de confiança) — responde diretamente à pergunta-guia do Desafio 02:
 
-1. **Atualização rápida e acurada**: ataca a defasagem de 2–2,5 anos da base de referência remapeando só o *delta* (talhões que mudaram), via Sentinel-2 + PRODES/DETER sobre um t0 (base estadual ou MapBiomas Col.10) — não o estado inteiro.
+1. **Atualização rápida e acurada**: ataca a defasagem da base de referência — um *snapshot* pontual, sem atualização sub-anual (o "2–2,5 anos" não tem fonte primária — `reports/09`) — remapeando só o *delta* (talhões que mudaram), via Sentinel-2 + PRODES/DETER sobre um t0 (base estadual ou MapBiomas Col.10) — não o estado inteiro.
 2. **Mais e melhores análises**: o score de confiança **auditável** por talhão destrava a análise dinamizada em escala onde a base é confiável, e encaminha à revisão humana onde não é.
-3. **Open source e agnóstico**: roda em QGIS/PostGIS e libs abertas, **sem GEE/ArcGIS**; saída em GeoPackage/COG — exatamente os requisitos estruturais do CAR DPG.
+3. **Open source e agnóstico**: roda em QGIS/PostGIS e libs abertas, **evitando GEE/ArcGIS por portabilidade** (boa prática, **não** requisito do edital — `reports/09`); trabalho interno em GeoPackage/COG, mas a saída **para o SICAR** é **shapefile/KML em SIRGAS 2000** (o SICAR não ingere GeoPackage).
 4. **Reutilizável internacionalmente (DPG)**: a abordagem "detecção de mudança + score de confiança sobre imagem aberta" é replicável por qualquer país com base de referência defasada.
-5. **Problema real e datado**: OEMAs operam com filas de dezenas de milhares de cadastros e caem na análise manual (~6 imóveis/dia) por não confiarem em um mapa velho — o gargalo que o Desafio 02 nomeia.
+5. **Problema real e datado**: OEMAs operam com filas de dezenas de milhares de cadastros e caem na análise manual (lenta — historicamente ~0,4% da base com análise total / ~5,9% acumulado, SFB 2026; o "~6/dia" é anedótico — `reports/10`) por não confiarem em um mapa velho — o gargalo que o Desafio 02 nomeia.
 
 ### Dor-raiz e alcance (debates + verificação — ver `debate-outputs/` e `reports/09`)
 - **O fosso é técnico-operacional, não econômico** (correção `reports/09`): a tese "só-CAPEX/sem-OPEX" foi **refutada** — MapBiomas (base anual, gratuita) + INPE PRODES/DETER (mudança contínua, gratuita) já são camadas custeadas por terceiros. O que falta, e o Gabarito ocupa: **frescor sub-anual** + **classes do Código Florestal** + **confiança por talhão como decisão** (liberar×humano).

@@ -71,10 +71,9 @@ As seções abaixo não puderam ser confirmadas por fontes acessíveis em busca 
 - Horário e local exato do pitch final
 - Data e meio de divulgação dos vencedores
 
-### 2.2 Formato (NÃO CONFIRMADO)
-- Presencial / Online / Híbrido
-- Local físico (se presencial — possivelmente Brasília/DF dado ser ENAP)
-- Plataforma digital (se online/híbrido)
+### 2.2 Formato (CONFIRMADO — `reports/09`/`reports/10`)
+- **Remoto/online** (Edital nº 158/2026, item 7.1 — desenvolvimento "de modo remoto"). Evento **26–28/06/2026**.
+- Sem local físico; mentorias/lives via Discord/WhatsApp/Meet.
 
 ### 2.3 Regras de Equipe (NÃO CONFIRMADO)
 - Tamanho mínimo e máximo de integrantes

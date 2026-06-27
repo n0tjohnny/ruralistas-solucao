@@ -12,9 +12,10 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 
 1. **[`APRESENTACAO-INTERNA-DESAFIO-02.md`](APRESENTACAO-INTERNA-DESAFIO-02.md)** — 👈 **comece aqui.** Apresentação do time: problema, gargalos de todas as pesquisas/debates, jornada até a solução e **conformidade 100% com o edital**.
 2. **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)** — o pivô + status de cada artefato (atual / válido / superado).
-3. **[`pm-role.md`](pm-role.md)** — **fonte canônica** da estratégia e persona de produto.
-4. **[`prd-outputs/`](prd-outputs/)** — o PRD mais recente é o **`prd_gabarito_2606280400.md` (v4.0)**.
-5. **[`reports/09-verificacao-dados-2026.md`](reports/09-verificacao-dados-2026.md)** — verificação adversarial dos dados; **prevalece** em caso de conflito.
+3. **[`pm-role.md`](pm-role.md)** — **fonte canônica** da estratégia e persona de produto. Ver a seção **DIREÇÃO DECIDIDA (27/06/2026)** no topo: decisões travadas pelo PM (posicionamento, piloto, protótipo, pitch, submissão).
+4. **[`prd-outputs/`](prd-outputs/)** — o PRD mais recente é o **`prd_gabarito_2606280600.md` (v5.0)**.
+5. **[`reports/09-verificacao-dados-2026.md`](reports/09-verificacao-dados-2026.md)** + **[`reports/10-refutacao-debate-2026.md`](reports/10-refutacao-debate-2026.md)** — verificações adversariais dos dados (com pesquisa web 2025-2026); **prevalecem** em caso de conflito.
+6. **Debates decisivos:** [`debate-outputs/debate_output_viabilidade-edital-chance_2606271700.md`](debate-outputs/) (10 rounds: é viável? respeita o edital? chance de ganhar?) + [`debate_output_refutacao-oradores_2606271830.md`](debate-outputs/) (refutação web de cada orador).
 
 ## Mapa do repositório
 
@@ -27,10 +28,10 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 | `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade** (produto). |
 | `design.md` | **Fonte da verdade do design** — tipografia, paleta, componentes, regras mobile e workflow de compilação. Seguir antes de mexer em UI. |
 | `PIVOT-DESAFIO-02.md` | Índice do pivô Compadre→Gabarito e status dos artefatos. |
-| `prd-outputs/` | PRDs versionados (mais recente = v4.0). |
-| `debate-outputs/` | Transcrições de debates multi-agente (o decisivo é o `council-dor-real-*`). |
+| `prd-outputs/` | PRDs versionados (mais recente = **v5.0**, `prd_gabarito_2606280600.md`). |
+| `debate-outputs/` | Transcrições de debates multi-agente (`council-dor-real-*`; `viabilidade-edital-chance-*`; `refutacao-oradores-*`). |
 | `debate-materials/` | Insumos de debate. |
-| `reports/` | Pesquisa numerada (`01`–`09`) + `reports/exploration/`. `09` prevalece sobre dados. |
+| `reports/` | Pesquisa numerada (`01`–`10`) + `reports/exploration/`. `09` e `10` (verificações com pesquisa web) prevalecem sobre dados. |
 | `memory/ideas/gabarito/` | `idea.md` + `scores.json` (score atual **73/100 — "test"**). |
 | `source-material/` | Material-fonte bruto do haCARthon: `transcricoes-lives/` (Lives) + `documentos/` (PDFs, links, edital). |
 | `CLAUDE.md` / `AGENTS.md` | Instruções para os agentes de IA (PM ativo / framework legado). |
