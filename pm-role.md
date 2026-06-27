@@ -74,6 +74,14 @@ O que o estado faz hoje, sem o Gabarito:
 
 **Categoria escolhida:** não competimos como "mais uma plataforma de geoprocessamento". Competimos como **a base de referência viva do CAR** — uma categoria onde a confiança calibrada (e auditável) decide, não o volume de features.
 
+### Por que agora — a maré externa (EUDR · COP30 · Fundo Amazônia)
+A dor-raiz (quem assina) é interna ao estado, mas três forças externas **verificáveis** elevam a aposta de "melhoria operacional" para **infraestrutura estratégica** — e são o argumento comercial/político que tira o Gabarito da caixa de "protótipo". É a camada de stakes adicionada à visão **v5** (`index.html` + `apresentacao.html`).
+- **Prazo · EUDR (Regulamento UE 2023/1115):** a partir de **30/dez/2026** (grandes/médios; micro/pequenos jun/2027) a UE exige **geolocalização por lote** + prova de produção livre de desmatamento (pós-31/12/2020) em 7 commodities (soja, boi, café, cacau, madeira, borracha, palma). ~1/3 das exportações BR→UE (**US$ 46,3 bi em 2023**) expostas; custo estimado **~US$ 17,5 bi/ano** (BIP). O CAR é a base georreferenciada natural — **mas só serve se for fresca e auditável por talhão.** A EUDR **não distingue legal × ilegal**: corte pós-2020 barra mesmo com ASV/conformidade ao Código Florestal.
+- **Política · desmatamento zero / COP30:** meta nacional 2030, vitrine da COP30 (Belém, 2025); desmate na Amazônia **−50% vs 2022**. A meta se mede no território = análise do CAR em escala; o Gabarito é o lastro defensável dessa prova de conformidade.
+- **Dinheiro · Fundo Amazônia (BNDES/MMA):** **>R$ 2 bi aprovados em 2025** (R$ 3,7 bi em 2023–25), com projetos estaduais de regularização ambiental/fundiária (ex.: Pará, R$ 81,2 mi). É a **fonte concreta de OPEX** para o "dono do processo contínuo" — soma a Norad e editais climáticos.
+
+**Honestidade (mesma barra do `reports/09`):** essas marés são **contexto verificável**, mas o *encaixe* do Gabarito a elas é **via de adoção a perseguir** — não financiamento já garantido nem exigência formal de que o CAR/EUDR use a nossa base. Em pitch, usar como elevação de stakes ("por que agora"), nunca como fato consumado.
+
 ### Viabilidade técnica (defensável na banca)
 - **Onde muda:** alertas oficiais PRODES/DETER (Shapefile/WFS) + *change detection* em bibliotecas abertas (GDAL/rasterio/scikit-image, eo-learn, openEO/STAC). Sem GEE — por escolha de design (não é regra do edital).
 - **Imagem:** Sentinel-2 gratuita (B4/B8 a 10 m, NDVI antes/depois) para detecção de mudança; **exige co-registro + máscara de nuvem (SCL)**, senão gera falso-positivo de borda.
@@ -85,7 +93,7 @@ O que o estado faz hoje, sem o Gabarito:
 ### Lacunas conhecidas
 - **Calibração do score** precisa ser real, auditável e versionada (kappa por classe/bioma); score superestimado libera automação onde não devia — risco jurídico para a analista.
 - **Handoff score → análise dinamizada:** validar com uma OEMA o ponto de corte (alta = automático; baixa = humano).
-- **Sustentação / dono institucional:** as camadas-base contínuas (MapBiomas anual, PRODES/DETER) são gratuitas, mas o **trabalho do delta sub-anual + classes CF + validação** precisa de um **dono do processo** (OEMA, SFB ou consórcio) e custeio. Não é "a raiz econômica" (essa tese foi refutada — ver `reports/09`), mas segue sendo a condição para o piloto virar operação contínua.
+- **Sustentação / dono institucional:** as camadas-base contínuas (MapBiomas anual, PRODES/DETER) são gratuitas, mas o **trabalho do delta sub-anual + classes CF + validação** precisa de um **dono do processo** (OEMA, SFB ou consórcio) e custeio. Não é "a raiz econômica" (essa tese foi refutada — ver `reports/09`), mas segue sendo a condição para o piloto virar operação contínua. **Fonte de OPEX concreta e alinhada:** Fundo Amazônia/BNDES (>R$ 2 bi aprovados em 2025), Norad e editais climáticos — ver "Por que agora — a maré externa".
 - **Monetização:** produto é DPG/open source; pagador provável é o ente público (OEMA/estado) ou edital (Fundo Amazônia/BNDES/Norad). A analista e o produtor nunca pagam. Validar no piloto.
 - **Generalização entre biomas:** change detection e classes variam por bioma — começar por um recorte, não pelo país.
 - **Acesso ao t0 estadual real:** a base qualificada do estado-piloto pode não estar acessível a tempo → plano B = MapBiomas Coleção 10 + consulta.car.
@@ -164,7 +172,7 @@ Decisões que firam o tom de voz, escondam a evidência por trás de um score, o
 ## O ask (haCARthon)
 Um **piloto com uma OEMA de alta pressão (Amazônia ou Cerrado)**, num recorte de município. Open source, agnóstico de plataforma, alinhado ao CAR como bem público digital. **O pedido concreto, em duas partes:**
 1. **Técnico:** um recorte de base de referência (t0) + acesso à interface da análise dinamizada para validar o *handoff* do score de confiança.
-2. **Sustentação:** definição de um **dono institucional do processo contínuo** (OEMA / SFB / consórcio) com **custeio plurianual (OPEX)** — sem isso, o protótipo não vira política pública.
+2. **Sustentação:** definição de um **dono institucional do processo contínuo** (OEMA / SFB / consórcio) com **custeio plurianual (OPEX)** — candidato concreto: **Fundo Amazônia/BNDES** (>R$ 2 bi/2025) ou edital climático, ancorado no prazo da EUDR (30/dez/2026). Sem isso, o protótipo não vira política pública.
 
 **Métricas de sucesso do piloto:** vazão da análise **6 → 18/dia sem aumentar o erro**; **recall do delta vs DETER** (ex.: ≥80%); taxa de aprovação do ruralista na **1ª/2ª tentativa** (sobe); **custo por cadastro atualizado** (delta vs remapeamento total) cai.
 

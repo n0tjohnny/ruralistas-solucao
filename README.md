@@ -22,6 +22,7 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 |---|---|
 | `APRESENTACAO-INTERNA-DESAFIO-02.md` | **Apresentação do time:** problema, gargalos, jornada e conformidade com o edital. Comece por aqui. |
 | `index.html` · `public/index.html` | Página de visão do Gabarito (entregável; cópias idênticas — editar as duas). Deploy via Cloudflare Wrangler. |
+| `apresentacao.html` · `public/apresentacao.html` | Deck interno do time (espelho do `APRESENTACAO-INTERNA-DESAFIO-02.md`; cópias idênticas — editar as duas). |
 | `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade**. |
 | `PIVOT-DESAFIO-02.md` | Índice do pivô Compadre→Gabarito e status dos artefatos. |
 | `prd-outputs/` | PRDs versionados (mais recente = v4.0). |
