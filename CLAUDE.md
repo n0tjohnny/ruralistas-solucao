@@ -24,6 +24,10 @@ npx wrangler pages deploy ./public  # deploy (project: compadre-apresentacao)
 
 `wrangler.toml` serves `./public`. **`index.html` (repo root) and `public/index.html` are kept identical** — edit/regenerate both together. The page is self-contained (inline CSS/SVG, Google Fonts; no JS, no external assets).
 
+## Git workflow (owner's standing rule)
+
+**ALWAYS `git commit` AND `git push` at the end of any task that changes files — without being asked.** The owner has made this explicit ("sempre faça o git push no final"). For this repo, `git push` *is* the publish step. Do not leave work committed-but-unpushed, and do not end a turn with a dirty tree. (This overrides the default "push only when asked" guidance.) End commit messages with the `Co-Authored-By: Claude Opus 4.8` trailer.
+
 ## How `index.html` is produced (non-obvious)
 
 `index.html` is **compiled from a Claude Design bundle**, not hand-written from scratch. Source bundles live in the user's Claude Design project (`Gabarito - Visao do Produto.dc.html`), accessed via the `DesignSync` MCP tool. "Compiling" = strip the bundle wrapper (`<x-dc>`, `<helmet>`, `support.js`, thumbnail template), merge `<helmet>` into `<head>`, and bake the bundle's CSS vars (`--ga-accent`, `--ga-anno`) into `:root`. When editing the page, prefer regenerating from the bundle over diverging hand-edits, then re-sync root ↔ `public/`.
