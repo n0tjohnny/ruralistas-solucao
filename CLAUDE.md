@@ -95,3 +95,13 @@ A new debate / verification / decision is **not propagated** until it lives in *
 5. **Close the loop:** after edits, re-run the same grep to prove no live artifact still asserts the stale claim; `diff -q` every HTML pair. Report the file list you touched **and** the ones you deliberately left (with reason) — never imply "done" without that ledger.
 
 If you find yourself writing "I updated X and Y" with no repo-wide grep behind it, STOP — that is the whack-a-mole pattern this section exists to kill.
+
+### Anti-fabrication guardrail — NEVER present unmeasured numbers as achieved results (added after the "Testamos em ~20 áreas de Goiás" miss, 28/06/2026)
+
+There is **no prototype run, no backtest executed, no measured result**. Every performance number (days-of-anticipation per município, "≥2 meses mediana", "≥80% acerto", recall/kappa) is a **target/projection to be measured in the pilot** — never a past-tense fact.
+
+- **Forbidden framing:** "Testamos…", "O resultado:…", "resultado publicado", any past tense asserting we ran a test, or a chart that reads as measured data without an unmistakable "projeção ilustrativa — não medido" label. The fine print does not cancel a headline that says "Testamos".
+- **Required framing:** future/conditional — "o protótipo **é um backtest** que **vai medir**…", "**meta** de…", "**avisaria** · projeção (não medido)". This matches `pm-role.md` ("metas a medir no piloto, não resultados já cravados") and the deck's own "Honestidade" slide.
+- **Geographic consistency:** pilot = **Goiás/SEMAD-GO**. Município examples MUST be Goiás (Rio Verde, Jataí, Mineiros, Anápolis, Catalão, Cristalina, Luziânia). The Claude Design bundle ships **Alagoas** placeholders (Penedo, Igreja Nova, Coruripe, Marechal Deodoro, `CAR-AL-*`) — they are wrong and must be swapped to GO.
+- **When recompiling `pitch.html` from a DesignSync bundle, AUDIT the bundle text — do not trust it.** The designer's bundle is the source of *visuals*, not of *truthful claims*. `tools/build-pitch.cjs` carries a **sanitize map + a forbidden-string trap** (`Testamos`, `resultado publicado`, `Penedo`, `Coruripe`, `Igreja N`, `Marechal Deodoro`, `CAR-AL`, …): the build **throws** if any survive. If a new bundle reintroduces fabrications with new wording, the trap won't catch the new phrasing — re-audit the "A prova" and "O produto" slides on every bundle change and extend the map. The build is idempotent (same bundle+args → identical bytes; verify with a double-run `md5sum`).
+- **Idempotency rule (owner, standing):** every deck fix lives in the build script as a literal transform, never as a one-off hand-edit to `pitch.html` that the next recompile silently reverts.
