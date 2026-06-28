@@ -277,10 +277,20 @@
             </div>
           </div>
 
-          <!-- recomendação -->
-          <div style="margin:16px 20px 0; padding:14px 16px; background:{{ recoBg }}; border-left:3px solid {{ recoBd }}; border-radius:0 10px 10px 0;">
+          <!-- o que mudou (linguagem simples) -->
+          <div style="padding:16px 20px 0;">
+            <p style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 6px;">O que mudou neste talhão</p>
+            <p style="font-size:14.5px; line-height:1.5; margin:0; color:#2E2519; font-weight:600;">{{ selected.mudou }}</p>
+          </div>
+
+          <!-- por que entrou na fila / o que pode estar errado + o que você assina -->
+          <div style="margin:14px 20px 0; padding:14px 16px; background:{{ recoBg }}; border-left:3px solid {{ recoBd }}; border-radius:0 10px 10px 0;">
             <p style="font-size:10px; letter-spacing:0.8px; text-transform:uppercase; color:{{ recoBd }}; font-weight:800; margin:0 0 7px;">{{ recoTag }}</p>
-            <p style="font-size:14px; line-height:1.5; margin:0; color:#3A3122;">{{ selected.reco }}</p>
+            <p style="font-size:13.5px; line-height:1.5; margin:0; color:#3A3122;">{{ selected.reco }}</p>
+            <div style="margin-top:11px; padding-top:11px; border-top:1px dashed rgba(138,123,99,0.4); display:flex; gap:8px; align-items:flex-start;">
+              <span style="flex:none; width:16px; height:16px; border-radius:5px; background:#D6A23E; color:#2A2008; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">&#9998;</span>
+              <p style="font-size:12px; line-height:1.45; margin:0; color:#5A4F3D;"><strong style="color:#2E2519;">Você assina:</strong> {{ selSign }}</p>
+            </div>
           </div>
 
           <!-- evidência datada -->
@@ -406,7 +416,7 @@ class Component extends DCLogic {
   constructor(props){
     super(props);
     this.cases = [
-      { id:'rv7', municipio:'Rio Verde', gleba:'gleba 7', car:'CAR‑GO‑52218‑7', group:'revisar', conf:'média', area:'182 ha', coord:'17°47′S · 50°55′W',
+      { id:'rv7', municipio:'Rio Verde', gleba:'gleba 7', car:'CAR‑GO‑52218‑7', mudou:'Era vegetação nativa na base de 2023. A imagem de 14/03/26 mostra solo exposto: houve supressão de nativa recente, sem autorização registrada no CAR.', group:'revisar', conf:'média', area:'182 ha', coord:'17°47′S · 50°55′W',
         tagsText:'delta · t0 2023', change:true, changeKind:'supressão', alert:'DETER · mar/26',
         img:'Sentinel‑2 · 14/03/26', imgShort:'14/03/26', base:'estadual · 2023', score:'supressão de nativa', scoreVer:'v2.1',
         recoType:'warn', antecip:23,
@@ -415,7 +425,7 @@ class Component extends DCLogic {
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
 
-      { id:'cris4', municipio:'Cristalina', gleba:'talhão 4', car:'CAR‑GO‑48091‑4', group:'revisar', conf:'baixa', area:'94 ha', coord:'16°46′S · 47°36′W',
+      { id:'cris4', municipio:'Cristalina', gleba:'talhão 4', car:'CAR‑GO‑48091‑4', mudou:'Há um sinal de mudança na borda do talhão, mas a imagem de 11/03 está com 38% de nuvem e a classe está fora da calibração. Não dá para afirmar com segurança.', group:'revisar', conf:'baixa', area:'94 ha', coord:'16°46′S · 47°36′W',
         tagsText:'borda · nuvem 38%', change:true, changeKind:'mudança incerta', alert:'DETER · mar/26',
         img:'Sentinel‑2 · 11/03 · 38% nuvem', imgShort:'11/03/26', base:'estadual · 2023', score:'abaixo do limiar', scoreVer:'v2.1',
         recoType:'danger', antecip:null, nuvem:true,
@@ -424,7 +434,7 @@ class Component extends DCLogic {
         primary:{label:'Enviar p/ revisão manual', action:'revisar'},
         secondary:[{label:'Reagendar imagem', action:'reagendar'}] },
 
-      { id:'jat12', municipio:'Jataí', gleba:'talhão 12', car:'CAR‑GO‑51120‑12', group:'revisar', conf:'média', area:'267 ha', coord:'17°52′S · 51°43′W',
+      { id:'jat12', municipio:'Jataí', gleba:'talhão 12', car:'CAR‑GO‑51120‑12', mudou:'Era vegetação nativa na base de 2022; a imagem de 09/03/26 mostra pastagem. Conversão de nativa para pasto, confirmada pelo PRODES 2025.', group:'revisar', conf:'média', area:'267 ha', coord:'17°52′S · 51°43′W',
         tagsText:'delta · t0 2022', change:true, changeKind:'conversão', alert:'PRODES · 2025',
         img:'Sentinel‑2 · 09/03/26', imgShort:'09/03/26', base:'estadual · 2022', score:'conversão p/ pasto', scoreVer:'v2.1',
         recoType:'warn', antecip:41,
@@ -433,7 +443,7 @@ class Component extends DCLogic {
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Revisão', action:'revisar'}] },
 
-      { id:'min8', municipio:'Mineiros', gleba:'talhão 8', car:'CAR‑GO‑49370‑8', group:'revisar', conf:'média', area:'53 ha', coord:'17°34′S · 52°33′W',
+      { id:'min8', municipio:'Mineiros', gleba:'talhão 8', car:'CAR‑GO‑49370‑8', mudou:'Houve supressão dentro da faixa de 30 m da margem do rio, que é Área de Preservação Permanente (APP). A base de 2023 ainda mostra vegetação nessa faixa.', group:'revisar', conf:'média', area:'53 ha', coord:'17°34′S · 52°33′W',
         tagsText:'APP · faixa 30 m', change:true, changeKind:'intervenção em APP', alert:'DETER · fev/26',
         img:'Sentinel‑2 · 22/02/26', imgShort:'22/02/26', base:'estadual · 2023', score:'intervenção em APP', scoreVer:'v2.1',
         recoType:'warn', antecip:18,
@@ -442,7 +452,7 @@ class Component extends DCLogic {
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
 
-      { id:'ari3', municipio:'Aragarças', gleba:'talhão 3', car:'CAR‑GO‑50442‑3', group:'revisar', conf:'baixa', area:'120 ha', coord:'15°53′S · 52°15′W',
+      { id:'ari3', municipio:'Aragarças', gleba:'talhão 3', car:'CAR‑GO‑50442‑3', mudou:'Não dá para saber ainda: as três últimas passagens do Sentinel-2 vieram totalmente encobertas por nuvem. Sem imagem válida, não há delta para medir.', group:'revisar', conf:'baixa', area:'120 ha', coord:'15°53′S · 52°15′W',
         tagsText:'nuvem 100%', change:false, changeKind:null, alert:null,
         img:'Sentinel‑2 · 05/03 · nuvem 100%', imgShort:'05/03/26', base:'estadual · 2023', score:'imagem insuficiente', scoreVer:'v2.1',
         recoType:'danger', antecip:null, nuvem:true,
@@ -451,28 +461,28 @@ class Component extends DCLogic {
         primary:{label:'Reagendar imagem (céu limpo)', action:'reagendar'},
         secondary:[{label:'Revisão', action:'revisar'}] },
 
-      { id:'luz2', municipio:'Luziânia', gleba:'gleba 2', car:'CAR‑GO‑53310‑2', group:'liberavel', conf:'alta', area:'210 ha', coord:'16°15′S · 47°56′W',
+      { id:'luz2', municipio:'Luziânia', gleba:'gleba 2', car:'CAR‑GO‑53310‑2', mudou:'Nada mudou desde a base de 2023. A cobertura está estável, sem sinal de supressão ou conversão.', group:'liberavel', conf:'alta', area:'210 ha', coord:'16°15′S · 47°56′W',
         tagsText:'sem delta', change:false, changeKind:null, alert:null,
         img:'Sentinel‑2 · 16/03/26', imgShort:'16/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
         reco:'Delta nulo no período e confiança acima do limiar. Apta à liberação automática com trilha; recibo anexado ao fluxo da análise dinamizada.',
         cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'cat5', municipio:'Catalão', gleba:'gleba 5', car:'CAR‑GO‑47815‑5', group:'liberavel', conf:'alta', area:'178 ha', coord:'18°10′S · 47°56′W',
+      { id:'cat5', municipio:'Catalão', gleba:'gleba 5', car:'CAR‑GO‑47815‑5', mudou:'Área consolidada estável desde o t0. Nenhuma mudança relevante no período.', group:'liberavel', conf:'alta', area:'178 ha', coord:'18°10′S · 47°56′W',
         tagsText:'sem delta', change:false, changeKind:null, alert:null,
         img:'Sentinel‑2 · 13/03/26', imgShort:'13/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
         reco:'Área consolidada estável desde o t0, sem delta significativo. Confiança alta: liberação automática com trilha.',
         cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'ita1', municipio:'Itaberaí', gleba:'talhão 1', car:'CAR‑GO‑46002‑1', group:'liberavel', conf:'alta', area:'96 ha', coord:'16°01′S · 49°48′W',
+      { id:'ita1', municipio:'Itaberaí', gleba:'talhão 1', car:'CAR‑GO‑46002‑1', mudou:'Sem mudança desde a base de 2022. Cobertura estável no período.', group:'liberavel', conf:'alta', area:'96 ha', coord:'16°01′S · 49°48′W',
         tagsText:'sem delta', change:false, changeKind:null, alert:null,
         img:'Sentinel‑2 · 15/03/26', imgShort:'15/03/26', base:'estadual · 2022', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
         reco:'Sem delta detectado e confiança acima do limiar. Liberação automática com trilha; recorte datado arquivado como evidência.',
         cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'for9', municipio:'Formosa', gleba:'talhão 9', car:'CAR‑GO‑54127‑9', group:'liberavel', conf:'alta', area:'143 ha', coord:'15°32′S · 47°20′W',
+      { id:'for9', municipio:'Formosa', gleba:'talhão 9', car:'CAR‑GO‑54127‑9', mudou:'Nada mudou no período e a confiança está alta. Apta a liberar com trilha.', group:'liberavel', conf:'alta', area:'143 ha', coord:'15°32′S · 47°20′W',
         tagsText:'sem delta', change:false, changeKind:null, alert:null,
         img:'Sentinel‑2 · 17/03/26', imgShort:'17/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
@@ -573,7 +583,7 @@ class Component extends DCLogic {
     ];
     const groups = defs.map(g=>{
       const items = active.filter(c=>c.group===g.key).map(c=>({
-        id:c.id, municipio:c.municipio, gleba:c.gleba, tagsText:c.tagsText,
+        id:c.id, municipio:c.municipio, gleba:c.gleba, tagsText:(c.changeKind||c.tagsText),
         tagFg: g.key==='revisar' ? '#E0926E' : '#7FB07A',
         tagBg: g.key==='revisar' ? 'rgba(192,87,59,0.16)' : 'rgba(127,176,122,0.18)',
         cardBg: c.id===S.selectedId ? '#2E3E2B' : '#202E22',
@@ -650,6 +660,7 @@ class Component extends DCLogic {
         selAntecip:!!sel.antecip, selAntecipWidth: sel.antecip ? Math.min(94, sel.antecip*1.7+18)+'%' : '0%',
         selAlertPill: sel.alert ? (sel.changeKind || 'mudança')+' · '+sel.alert : null,
         selCoord: sel.coord, selBasemap: 'Sentinel‑2 · RGB B4/B3/B2 · '+sel.imgShort,
+        selSign: ({notificar:'o auto de notificação ao produtor, com a trilha datada (imagem + alerta + base) anexada como prova. É o seu nome no ato.',liberar:'que o talhão está regular e pode seguir, com recibo auditável anexado à análise dinamizada. É o seu nome no ato.',revisar:'nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',reagendar:'nada ainda: o sistema aguarda a próxima imagem de céu limpo para reavaliar.'})[sel.primary.action] || '',
         decideP: ()=>this.decide(sel.primary.action),
         selSecondary: (sel.secondary||[]).map(s=>({ label:s.label, onClick: ()=>this.decide(s.action) })),
       });
