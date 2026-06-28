@@ -568,8 +568,9 @@ class Component extends DCLogic {
     var fi=Math.min(Math.floor(r()*Rr),Rr-1),fj=sel.change?Math.max(0,frontier-1):Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),fc=cen(fi,fj);
     return {bg:'linear-gradient('+Math.floor(jit(135,30))+'deg,#3a4a2c,#445331)',nativa:nativa,fields:fields,pivots:pivots,river:river,parcels:parcels,focusD:quad(fi,fj),fcx:fc.x,fcy:fc.y};}
   _mapDims(e){var r=e.currentTarget.getBoundingClientRect();this._mw=r.width;this._mh=r.height;this._ml=r.left;this._mt=r.top;}
-  _clampPan(px,py,z){var W=this._mw||800,H=this._mh||600;return {x:Math.max(W-z*W,Math.min(0,px)),y:Math.max(H-z*H,Math.min(0,py))};}
-  _zoomBtn(d){var z=this.state.zoom,nz=Math.max(1,Math.min(5,d>0?z*1.4:z/1.4)),W=this._mw||800,H=this._mh||600,cx=W/2,cy=H/2,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:true});}
+  _dims(){var el=document.querySelector('[data-tour="map"]');if(!el)return false;var r=el.getBoundingClientRect();if(!r.width||!r.height)return false;this._mw=r.width;this._mh=r.height;this._ml=r.left;this._mt=r.top;return true;}
+  _clampPan(px,py,z){var W=this._mw,H=this._mh;return {x:Math.max(W-z*W,Math.min(0,px)),y:Math.max(H-z*H,Math.min(0,py))};}
+  _zoomBtn(d){if(!this._dims())return;var z=this.state.zoom,nz=Math.max(1,Math.min(5,d>0?z*1.4:z/1.4)),cx=this._mw/2,cy=this._mh/2,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:true});}
   _mapWheel(e){this._mapDims(e);var z=this.state.zoom,f=e.deltaY<0?1.18:1/1.18,nz=Math.max(1,Math.min(5,z*f)),cx=e.clientX-this._ml,cy=e.clientY-this._mt,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:false});}
   _mapDown(e){if(this.state.zoom<=1)return;this._mapDims(e);this._drag={x:e.clientX,y:e.clientY,px:this.state.panX,py:this.state.panY};this.setState({_smooth:false});}
   _mapMove(e){if(!this._drag)return;var px=this._drag.px+(e.clientX-this._drag.x),py=this._drag.py+(e.clientY-this._drag.y),p=this._clampPan(px,py,this.state.zoom);this.setState({panX:p.x,panY:p.y});}
