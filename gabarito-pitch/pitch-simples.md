@@ -10,7 +10,7 @@
 > **O governo usa um mapa pra conferir se cada fazenda está dentro da lei — mas esse mapa está velho de anos, então ninguém confia nele e tudo é conferido na mão, devagar.**
 > **O Gabarito usa fotos de satélite (que já existem, e a imagem é de graça) pra achar só o que mudou no terreno e mostrar pra analista, com um semáforo, o que ela pode liberar primeiro — com a foto guardada como prova pra ela assinar com segurança.**
 
-Exemplo concreto: hoje a analista abre 6 fazendas por dia, na mão, sem confiar no mapa. Com o Gabarito, as fáceis (a maioria) já vêm marcadas em verde e ela aprova em segundos; ela só gasta o olho nas vermelhas.
+Exemplo concreto: hoje a analista abre um punhado de imóveis por dia, na mão, sem confiar no mapa. Com o Gabarito, as fáceis (a maioria) já vêm marcadas em verde e ela libera em segundos; ela só gasta o olho nas vermelhas.
 
 ---
 
