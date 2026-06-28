@@ -703,17 +703,17 @@
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Isso não é só uma feature do MapBiomas ou da Análise Dinamizada?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Não. O MapBiomas diz o que <em>existe</em> (anual, classes genéricas); PRODES/DETER dizem o que <em>mudou</em>. Nenhum dos dois diz, por talhão, “aqui dá pra liberar com prova / aqui precisa de humano”. Essa fusão, confiança por talhão + trilha que torna a decisão assinável, ninguém produtiza. A Dinamizada tria por <em>imóvel</em>; nós roteamos por <em>talhão</em> com evidência. <strong style="color:#2E2519;">Feature detecta; produto endossa a decisão sob responsabilidade.</strong> [Pesquisa 2026: nenhum concorrente open-source de “confiança por talhão + frescor”.]</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">É uma comparação justa, e a diferença é sutil mas importante. O MapBiomas diz o que <em>existe</em> (anual, classes genéricas) e o PRODES/DETER dizem o que <em>mudou</em>; nenhum dos dois diz, por talhão, “aqui dá pra liberar com prova, aqui precisa de humano”. Essa fusão (confiança por talhão e trilha que torna a decisão assinável) é o que a gente não viu ninguém oferecer em código aberto. A Dinamizada tria por <em>imóvel</em>; nós roteamos por <em>talhão</em> com evidência. Em resumo: a feature detecta, o produto ajuda a endossar a decisão.</p></div>
           </details>
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Com que autoridade vocês dizem que um talhão é confiável? Como calibram o score?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">O score não é caixa-preta, é uma heurística transparente e versionada: concordância PRODES×DETER + magnitude da mudança (Sentinel-2/NDVI) + idade do dado, com pesos explícitos que a analista vê e ajusta. E o ponto crítico: calibramos contra <strong style="color:#2E2519;">verdade independente</strong> (PRODES + DETER + amostra de campo), <strong style="color:#2E2519;">nunca contra a base velha.</strong> [Metas pré-registradas: kappa ≥ 0,70, recall ≥ 0,90, falso-negativo visível = 0.]</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">O score não é caixa-preta, é uma heurística transparente e versionada: concordância PRODES×DETER + magnitude da mudança (Sentinel-2/NDVI) + idade do dado, com pesos explícitos que a analista vê e ajusta. E o ponto crítico: calibramos contra <strong style="color:#2E2519;">verdade independente</strong> (PRODES + DETER + amostra de campo), <strong style="color:#2E2519;">nunca contra a base velha.</strong> As metas que assumimos para o piloto são públicas: kappa de pelo menos 0,70, recall de pelo menos 0,90 e nenhum falso-negativo visível.</p></div>
           </details>
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Por que o próprio SFB não faz isso? Vocês não viram reféns do SICAR?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Roda em qualquer OEMA hoje, sozinha, sobre dados públicos (Sentinel-2, PRODES/DETER), em QGIS/PostGIS, sem pedir licença a Brasília, <strong style="color:#2E2519;">zero integração obrigatória com o SICAR.</strong> Independência operacional primeiro. O SFB não é pré-requisito; é o maior comprador possível depois. Adoção vira upside, não coleira.</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Boa pergunta. O Gabarito roda em qualquer OEMA hoje, sozinho, sobre dados públicos (Sentinel-2, PRODES/DETER), em QGIS/PostGIS, <strong style="color:#2E2519;">sem integração obrigatória com o SICAR.</strong> A independência operacional vem primeiro: o SFB não é pré-requisito, e sim o maior parceiro possível depois. Assim a adoção é um ganho para o estado, não uma dependência.</p></div>
           </details>
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
@@ -723,7 +723,8 @@
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Quem opera isso depois do piloto? Quem é o dono?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Por isso a submissão é <strong style="color:#2E2519;">dupla:</strong> o artefato técnico + um modelo de governança que nomeia o dono (OEMA early-adopter ou requisito de licitação estadual), o operador do custo contínuo e o ciclo de recalibração. Sem dono, a base viva morre no fim do piloto, e a gente diz isso na cara. O custeio é viável via Fundo Amazônia/BNDES ou edital climático.</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Pergunta justa, e a gente encara de frente. Por isso a submissão é <strong style="color:#2E2519;">dupla:</strong> o artefato técnico mais um modelo de governança que nomeia o dono (uma OEMA early-adopter ou um requisito de licitação estadual), quem opera o custo contínuo e o ciclo de recalibração. Sem dono, a base viva morre no fim do piloto, e preferimos dizer isso com clareza. O custeio é viável via Fundo Amazônia/BNDES ou edital climático.</p>
+              <p style="font-size:13px; line-height:1.9; margin:14px 0 0; color:#8A7B63;"><span style="text-transform:uppercase; letter-spacing:1.5px; font-size:11px; font-weight:700; color:#99694E; margin-right:8px;">Fontes</span><a class="ga-cite" href="https://www.gov.br/mma/pt-br/noticias/fundo-amazonia-aprova-mais-de-r-2-bilhoes-em-2025-e-brasil-avanca-na-meta-rumo-ao-desmatamento-zero" target="_blank" rel="noopener" data-desc="<b>Fundo Amazônia (MMA/BNDES)</b>: aprovou mais de R$ 2 bilhões em projetos em 2025, o maior volume anual da sua história, incluindo regularização ambiental, uma fonte concreta de custeio contínuo.">Fundo Amazônia</a></p></div>
           </details>
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
@@ -758,7 +759,8 @@
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Qual o tamanho do impacto? Por que isso importa nacionalmente?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Três marés com prazo, meta e dinheiro: <strong style="color:#2E2519;">EUDR</strong> (UE barra desmatamento pós-2020 a partir de 30/dez/2026; cerca de 1/3 das exportações agro BR→UE no escopo, CNA), <strong style="color:#2E2519;">desmatamento zero / COP30</strong>, e <strong style="color:#2E2519;">Fundo Amazônia</strong> (R$ 2 bi aprovados em 2025). O CAR é a base georreferenciada natural dessas provas, só se fresca e auditável. Saímos de “melhoria operacional” pra infraestrutura estratégica.</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Três marés com prazo, meta e dinheiro: <strong style="color:#2E2519;">EUDR</strong> (UE barra desmatamento pós-2020 a partir de 30/dez/2026; cerca de 1/3 das exportações agro BR→UE no escopo, CNA), <strong style="color:#2E2519;">desmatamento zero / COP30</strong>, e <strong style="color:#2E2519;">Fundo Amazônia</strong> (R$ 2 bi aprovados em 2025). O CAR é a base georreferenciada natural dessas provas, só se fresca e auditável. Saímos de “melhoria operacional” pra infraestrutura estratégica.</p>
+              <p style="font-size:13px; line-height:1.9; margin:14px 0 0; color:#8A7B63;"><span style="text-transform:uppercase; letter-spacing:1.5px; font-size:11px; font-weight:700; color:#99694E; margin-right:8px;">Fontes</span><a class="ga-cite" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1115" target="_blank" rel="noopener" data-desc="<b>EUDR (Regulamento UE 2023/1115)</b>: a partir de 30/12/2026 (grandes e médias) a UE exige geolocalização por lote e prova de produção livre de desmatamento pós-2020. Não distingue corte legal de ilegal.">EUDR (UE 2023/1115)</a> · <a class="ga-cite" href="https://www.gov.br/mma/pt-br/noticias/fundo-amazonia-aprova-mais-de-r-2-bilhoes-em-2025-e-brasil-avanca-na-meta-rumo-ao-desmatamento-zero" target="_blank" rel="noopener" data-desc="<b>Fundo Amazônia (MMA/BNDES)</b>: mais de R$ 2 bilhões em projetos aprovados em 2025, o maior volume anual da sua história.">Fundo Amazônia (R$ 2 bi em 2025)</a></p></div>
           </details>
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
@@ -773,7 +775,7 @@
 
           <details style="background:#FCF8EF; border:1px solid #E4D8BD; border-radius:14px; padding:4px 4px;">
             <summary style="display:flex; align-items:flex-start; gap:14px; padding:20px 22px;"><span class="ga-chev" style="color:var(--ga-accent,#D6A23E); font-size:18px; font-weight:800; line-height:1.3; transition:transform .18s; flex:none;">›</span><span style="font-family:'Spectral',serif; font-size:19px; font-weight:700; color:#2E2519;">“Como isso vira política pública / é adotado?”</span></summary>
-            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Não por incorporação federal direta (sem precedente). A via realista: <strong style="color:#2E2519;">virar requisito na próxima licitação estadual</strong> de base de referência, ou uma OEMA early-adopter rodando voluntariamente, como a análise dinamizada foi de 0→9 estados. Vencemos como <em>padrão</em>, não como sistema único.</p></div>
+            <div style="padding:0 22px 22px 50px;"><p style="font-size:16px; line-height:1.6; margin:0; color:#5A4F3D;">Não por incorporação federal direta (sem precedente). A via realista: <strong style="color:#2E2519;">virar requisito na próxima licitação estadual</strong> de base de referência, ou uma OEMA early-adopter rodando voluntariamente, como a análise dinamizada <a class="ga-cite" href="https://www.gov.br/florestal/pt-br/assuntos/noticias/2026/junho/sfb-apoia-estados-na-analise-de-mais-de-um-milhao-de-cadastros-rurais" target="_blank" rel="noopener" data-desc="<b>Serviço Florestal Brasileiro</b> (jun/2026): a Análise Dinamizada do SICAR já é usada por 9 estados e passou de 1 milhão de CARs analisados.">foi de 0 a 9 estados</a>. Vencemos como <em>padrão</em>, não como sistema único.</p></div>
           </details>
 
         </div>
@@ -952,7 +954,7 @@
   var tabs=document.querySelectorAll('[data-tab]');
   var order=Array.prototype.map.call(btns,function(b){return b.getAttribute('data-nav');});
   var cur=0;
-  function show(name){
+  function show(name, fromUser){
     var idx=order.indexOf(name); if(idx<0) return; cur=idx;
     for(var i=0;i<tabs.length;i++){ tabs[i].style.display = tabs[i].getAttribute('data-tab')===name?'block':'none'; }
     for(var j=0;j<btns.length;j++){
@@ -963,11 +965,12 @@
       btns[j].setAttribute('aria-current', on?'true':'false');
       if(on && btns[j].scrollIntoView){ try{ btns[j].scrollIntoView({inline:'center',block:'nearest'}); }catch(e){} }
     }
+    if(fromUser && window.history && history.replaceState){ try{ history.replaceState(null,'','#'+name); }catch(e){} }
     if(window.scrollTo) window.scrollTo(0,0);
   }
-  function go(delta){ var n=cur+delta; if(n<0||n>=order.length) return; show(order[n]); }
+  function go(delta){ var n=cur+delta; if(n<0||n>=order.length) return; show(order[n], true); }
   for(var k=0;k<btns.length;k++){ btns[k].removeAttribute('onclick'); btns[k].style.cursor='pointer';
-    (function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-nav')); }); })(btns[k]); }
+    (function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-nav'), true); }); })(btns[k]); }
   // swipe horizontal entre abas (Android/touch). Nao bloqueia scroll vertical; ignora a navbar (que rola sozinha).
   var sx=0, sy=0, track=false;
   document.addEventListener('touchstart',function(e){
@@ -980,7 +983,9 @@
     var t=e.changedTouches[0], dx=t.clientX-sx, dy=t.clientY-sy;
     if(Math.abs(dx)>60 && Math.abs(dx)>Math.abs(dy)*1.6){ go(dx<0?1:-1); }
   },{passive:true});
-  show('resumo');
+  function fromHash(){ var h=(location.hash||'').replace(/^#/,''); return order.indexOf(h)>=0 ? h : null; }
+  window.addEventListener('hashchange', function(){ var h=fromHash(); if(h) show(h); });
+  show(fromHash() || 'resumo');
 })();
 </script>
 </body>
