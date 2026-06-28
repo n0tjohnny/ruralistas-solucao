@@ -1,0 +1,21 @@
+flowchart TD
+    A(["🏛️ Estado precisa da base de referência do CAR"]) --> B["📑 Licita o remapeamento do ESTADO INTEIRO<br/>💰 CAPEX alto · ⏳ meses de execução"]
+    B --> C["🗺️ Base entregue — já nasce defasada<br/>📸 snapshot pontual, sem atualização sub-anual"]
+    C --> D{"🧑‍💼 A analista confia na base?"}
+    D -->|"❌ Não — base velha"| E["🔍 Abre imóvel a imóvel no MANUAL<br/>🐢 ~3% da base concluída em ~12 anos"]
+    D -->|"⚠️ Só em parte"| E
+    E --> F["✍️ Decisão demora — risco de assinar no escuro<br/>o nome e a responsabilidade jurídica são dela"]
+    F --> G["📨 Produtor notificado tarde"]
+    G --> H{"🌾 Produtor corrige a geometria?"}
+    H -->|"🔁 vai-e-volta de meses"| G
+    H -->|"✅ enfim, depois de meses"| I(["🚫 Crédito travado nesse meio-tempo<br/>e o território já mudou de novo"])
+
+    classDef start fill:#E6E6FA,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef problem fill:#FBEDE6,stroke:#C0573B,stroke-width:2px,color:#7A2E1C
+    classDef decision fill:#FFD700,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef bad fill:#FFB6C1,stroke:#DC143C,stroke-width:2px,color:#1a1a1a
+
+    class A start
+    class B,C,E,F,G problem
+    class D,H decision
+    class I bad

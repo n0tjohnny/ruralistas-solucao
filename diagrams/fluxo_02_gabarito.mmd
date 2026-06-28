@@ -1,0 +1,23 @@
+flowchart TD
+    A(["🏛️ Estado tem um t0 aberto<br/>(a base de hoje: estadual ou MapBiomas Col.10)"]) --> B["🛰️ Detecta a mudança sobre o t0<br/>Sentinel-2 (revisita ~5 dias) + alertas PRODES/DETER"]
+    B --> C{"🔎 O talhão mudou?"}
+    C -->|"⬜ Não mudou"| K["✅ Mantém — não remapeia o que não mudou"]
+    C -->|"🟧 Mudou (o delta)"| D["🗺️ Remapeia SÓ o talhão do delta<br/>⚡ semanas, não meses · revisão humana embutida"]
+    D --> E["🎯 Score de confiança POR TALHÃO<br/>com evidência datada: cena Sentinel, alerta, fonte"]
+    E --> F{"📊 Confiança alta?"}
+    F -->|"🟢 Alta"| G["🤖 Liberação automática com trilha auditável"]
+    F -->|"🔴 Baixa"| H["🧑‍💼 Fila humana priorizada por risco<br/>📈 6 → 18 análises/dia (meta de piloto)"]
+    K --> G
+    G --> I["📨 Evidência legível chega ao produtor ANTES da notificação"]
+    H --> I
+    I --> J(["✅ Produtor corrige na 1ª tentativa<br/>crédito destravado · base viva no presente"])
+
+    classDef start fill:#E6E6FA,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef good fill:#EEF3E6,stroke:#2F4A33,stroke-width:2px,color:#1E3322
+    classDef decision fill:#FFD700,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef win fill:#90EE90,stroke:#2F4A33,stroke-width:2px,color:#1E3322
+
+    class A start
+    class B,D,E,H,I good
+    class C,F decision
+    class K,G,J win

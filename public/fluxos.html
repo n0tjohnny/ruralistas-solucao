@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabarito — Fluxos do processo · Hoje × Com o Gabarito</title>
+<meta name="description" content="Os fluxogramas do processo de análise do CAR: como é hoje (sem o Gabarito), como fica com o Gabarito, e o comparativo das diferenças.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --accent:#D6A23E; --terra:#C0573B; --mata:#25382A; --verde:#2F4A33; --creme:#F6EFE0; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--creme); color:#2E2519; font-family:'Hanken Grotesk',sans-serif; line-height:1.55; }
+  header { background:var(--mata); color:#F3ECDC; padding:64px 24px 56px; text-align:center; }
+  header .eyebrow { font-size:14px; letter-spacing:4px; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 16px; }
+  header h1 { font-family:'Spectral',serif; font-weight:700; font-size:clamp(30px,5vw,52px); line-height:1.08; margin:0 auto 18px; max-width:900px; letter-spacing:-1px; }
+  header p { font-size:clamp(16px,2.4vw,20px); color:#CFC6AF; margin:0 auto; max-width:720px; }
+  main { max-width:1080px; margin:0 auto; padding:48px 20px 80px; }
+  .legend { background:#FCF8EF; border:1px solid #E4D8BD; border-radius:18px; padding:22px 26px; margin-bottom:48px; font-size:16px; }
+  .legend b { color:var(--verde); }
+  .legend .term { border-bottom:2px solid var(--accent); font-style:normal; font-weight:600; }
+  section.fluxo { margin-bottom:64px; }
+  section.fluxo .num { font-family:'Spectral',serif; font-size:18px; font-weight:700; color:var(--terra); letter-spacing:3px; text-transform:uppercase; margin:0 0 8px; }
+  section.fluxo h2 { font-family:'Spectral',serif; font-weight:700; font-size:clamp(24px,3.6vw,36px); line-height:1.12; margin:0 0 10px; letter-spacing:-0.6px; }
+  section.fluxo p.sub { font-size:17px; color:#5A4F3D; margin:0 0 22px; max-width:760px; }
+  .frame { background:#fff; border:1px solid #E4D8BD; border-radius:20px; padding:20px; text-align:center; box-shadow:0 8px 30px rgba(37,56,42,0.07); }
+  .frame img { max-width:100%; height:auto; border-radius:8px; }
+  .frame a.zoom { display:inline-block; margin-top:12px; font-size:14px; color:var(--terra); text-decoration:none; font-weight:600; }
+  .frame a.zoom:hover { text-decoration:underline; }
+  footer { text-align:center; padding:40px 20px 64px; color:#7C7058; font-size:14px; }
+  footer a { color:var(--verde); }
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">Gabarito · haCARthon Desafio 02</p>
+  <h1>De anos para dias: o processo de análise do CAR, antes e depois</h1>
+  <p>Como a base de referência é mantida e como o CAR é analisado hoje — e o que muda quando o Gabarito mantém essa base viva.</p>
+</header>
+<main>
+  <div class="legend">
+    🧭 <b>Para ler os fluxos:</b> &nbsp;
+    <span class="term">t0</span> é a base de referência de hoje (o mapa-resposta que a analista usa pra conferir cada CAR). &nbsp;
+    O <span class="term">delta</span> é só o que mudou no território desde esse t0 — os talhões que de fato precisam ser remapeados.
+  </div>
+
+  <section class="fluxo">
+    <p class="num">Fluxo 1</p>
+    <h2>Como é hoje — sem o Gabarito</h2>
+    <p class="sub">A base é licitada como um retrato pontual e já nasce velha. Sem confiar nela, a analista cai no manual, imóvel a imóvel, e o produtor só é corrigido depois de meses de vai-e-volta.</p>
+    <div class="frame">
+      <img src="/diagrams/fluxo_01_atual.png" alt="Fluxograma do processo atual de análise do CAR, sem o Gabarito">
+      <a class="zoom" href="/diagrams/fluxo_01_atual.png" target="_blank">abrir em tamanho real ↗</a>
+    </div>
+  </section>
+
+  <section class="fluxo">
+    <p class="num">Fluxo 2</p>
+    <h2>Como fica — com o Gabarito</h2>
+    <p class="sub">O Sentinel-2 revisita o território a cada ~5 dias e aponta só o delta; remapeamos apenas esses talhões. O score por talhão roteia a fila e a evidência datada torna a liberação assinável.</p>
+    <div class="frame">
+      <img src="/diagrams/fluxo_02_gabarito.png" alt="Fluxograma do processo de análise do CAR com o Gabarito">
+      <a class="zoom" href="/diagrams/fluxo_02_gabarito.png" target="_blank">abrir em tamanho real ↗</a>
+    </div>
+  </section>
+
+  <section class="fluxo">
+    <p class="num">Fluxo 3</p>
+    <h2>As diferenças, lado a lado</h2>
+    <p class="sub">A mesma jornada, dimensão por dimensão: o que era gargalo de meses/anos vira fluxo de dias — e cada ganho está marcado.</p>
+    <div class="frame">
+      <img src="/diagrams/fluxo_03_comparativo.png" alt="Comparativo entre o processo atual e o processo com o Gabarito">
+      <a class="zoom" href="/diagrams/fluxo_03_comparativo.png" target="_blank">abrir em tamanho real ↗</a>
+    </div>
+  </section>
+</main>
+<footer>
+  Gabarito — o roteador auditável da análise do CAR · <a href="/">visão do produto</a> · <a href="/pitch">pitch</a>
+</footer>
+</body>
+</html>

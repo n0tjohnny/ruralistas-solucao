@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph HOJE["🔴 HOJE — sem o Gabarito"]
+        direction TB
+        H1["🗺️ Base: snapshot por ciclo de licitação"]
+        H2["📐 Remapeia o ESTADO INTEIRO · CAPEX alto"]
+        H3["⚙️ Análise manual, imóvel a imóvel"]
+        H4["📊 Vazão: gargalo (~3% em ~12 anos)"]
+        H5["📨 Produtor notificado tarde · vai-e-volta"]
+        H6["✍️ Decisão sem lastro — assinar no escuro"]
+        H1 ~~~ H2 ~~~ H3 ~~~ H4 ~~~ H5 ~~~ H6
+    end
+    subgraph GAB["🟢 COM o Gabarito"]
+        direction TB
+        G1["🛰️ Base contínua — revisita a cada ~5 dias<br/><b>meses/anos ➜ dias</b>"]
+        G2["🎯 Remapeia só o delta (talhões que mudaram)<br/><b>estado ➜ só o delta</b>"]
+        G3["🤖 Análise roteada por score + revisão humana<br/><b>manual ➜ automático + humano</b>"]
+        G4["📈 6 ➜ 18 análises/dia (meta de piloto)<br/><b>~3x a vazão</b>"]
+        G5["⏱️ Produtor corrige antes, na 1ª tentativa<br/><b>meses ➜ dias</b>"]
+        G6["🔏 Evidência datada → decisão assinável<br/><b>risco ➜ auditável</b>"]
+        G1 ~~~ G2 ~~~ G3 ~~~ G4 ~~~ G5 ~~~ G6
+    end
+    HOJE ~~~ GAB
+
+    classDef hoje fill:#FBEDE6,stroke:#C0573B,stroke-width:2px,color:#7A2E1C
+    classDef gab fill:#EEF3E6,stroke:#2F4A33,stroke-width:2px,color:#1E3322
+    class H1,H2,H3,H4,H5,H6 hoje
+    class G1,G2,G3,G4,G5,G6 gab
+    style HOJE fill:#FFF6F1,stroke:#C0573B,stroke-width:3px,color:#7A2E1C
+    style GAB fill:#F4F8EE,stroke:#2F4A33,stroke-width:3px,color:#1E3322
