@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A **product-strategy workspace for the haCARthon** (a Brazilian government open-innovation marathon for the CAR — Cadastro Ambiental Rural). It holds research, an AI Product-Manager toolchain, debate transcripts, a PRD, and one deployable **product-vision web page**. There is no application source code, build step, or test suite — the "product" is currently a single static HTML page plus strategy documents.
+A **product-strategy workspace for the haCARthon** (a Brazilian government open-innovation marathon for the CAR — Cadastro Ambiental Rural). It holds research, an AI Product-Manager toolchain, debate transcripts, a PRD, and several deployable **static pages**. There is no application source/test suite, but there IS one build step now (`tools/build-pitch.cjs` compiles the pitch deck). Published pages on `gabarito.pages.dev`: `/` (vision), `/pitch` (deck), `/entenda` (no-jargon team explainer), `/fluxos` (technical flows), plus `/apresentacao*`.
 
 **Active product: `Gabarito`** — a "living reference base" for the CAR that detects land-cover change (Sentinel-2 + PRODES/DETER over a t0 = state base or MapBiomas Col.10), remaps only changed parcels (talhões), and emits an **auditable** per-talhão confidence score. It targets **Desafio 02** (geospatial data) of the haCARthon. Persona **Luana** (state OEMA analyst), but the same delta+score artifact serves **three publics** (analyst routes the queue · SICAR/análise-dinamizada automates with an audit trail · producer/RT fixes the declaration before the notification). The moat is **technical-operational, not economic**: MapBiomas (annual, free) + INPE PRODES/DETER (continuous, free) already provide continuously-funded base/change layers — so the "only-CAPEX/no-OPEX" economic thesis was **refuted** (see `reports/09-verificacao-dados-2026.md`). What's missing, and what Gabarito adds: **sub-annual freshness + Código Florestal classes + per-talhão confidence as an operational decision**. **Moat correction (web-verified jun/2026, `reports/10`):** MapBiomas Alerta **already prioritizes by imóvel** (automatic laudo, RAD-2024) — so *prioritizing the analysis is NOT the moat*. The surviving moat is **per-talhão auditable confidence + a signable audit trail** (decision the analyst can sign). Other adjacent competitors: SICAR's per-imóvel triagem. **Locked direction** lives in `pm-role.md` → section **DIREÇÃO DECIDIDA (27/06/2026)** (positioning, pilot = Goiás/SEMAD, prototype = antecipation backtest, 5-beat pitch, dual submission). Deep rationale & current artifacts: `pm-role.md`, latest PRD **`prd-outputs/prd_gabarito_2606280600.md` (v5.0)**, `debate-outputs/` (esp. `viabilidade-edital-chance` + `refutacao-oradores`), and the data-verification logs **`reports/09` + `reports/10`** (web-verified; prevail on data).
 
@@ -18,11 +18,18 @@ No build/lint/test. The deliverable is static and deployed with Cloudflare Wrang
 
 ```bash
 npx wrangler pages dev ./public     # serve the page locally
-npx wrangler pages deploy ./public  # deploy (project: compadre-apresentacao)
+npx wrangler pages deploy ./public --project-name compadre-apresentacao  # deploy
 ./claude-pm.sh                      # launch the AI Product Manager (loads pm-role.md as system prompt)
+node tools/build-pitch.cjs          # (re)compile pitch.html + public/pitch.html from the Claude Design bundle
+# re-render a flow diagram after editing its .mmd:
+npx @mermaid-js/mermaid-cli -i diagrams/<name>.mmd -o diagrams/<name>.png -b white   # then cp to public/diagrams/
 ```
 
-`wrangler.toml` serves `./public`. **`index.html` (repo root) and `public/index.html` are kept identical** — edit/regenerate both together. The page is self-contained (inline CSS/SVG, Google Fonts; no JS, no external assets).
+`wrangler.toml` serves `./public`. **`index.html` (repo root) and `public/index.html` are kept identical** — edit/regenerate both together. Self-contained (inline CSS/SVG, Google Fonts; no JS, no external assets).
+
+### How `pitch.html` is produced (do NOT hand-edit it)
+
+`pitch.html` / `public/pitch.html` (`/pitch`, the deck) are **compiled by `tools/build-pitch.cjs`** from the Claude Design bundle `Gabarito - Pitch (haCARthon).dc.html` (saved as `tools/pitch-bundle.dc.json`, fetched via DesignSync). The script: reuses the standalone scaffolding, strips the `x-dc`/`x-import`/`support.js` wrapper, replaces the external satellite PNG with an inline mock (keeps the deck asset-free), injects the GPS-analogy slide, and runs a **sanitize map + forbidden-string trap** (see the anti-fabrication guardrail below). It writes both copies and is **idempotent** (verify with a double-run `md5sum`). Editing `pitch.html` directly is wrong — the next `node tools/build-pitch.cjs` silently reverts it; change the script's transforms instead. `tools/` is gitignored but force-committed because the build + guardrail must persist.
 
 ## Git workflow (owner's standing rule)
 

@@ -1,6 +1,15 @@
 # Gabarito — workspace de estratégia de produto (haCARthon)
 
-Repositório de **estratégia de produto** para o **haCARthon** (maratona de inovação aberta do governo para o **CAR — Cadastro Ambiental Rural**). Não é um repositório de aplicação: não há código de app, build ou testes. O "produto" hoje é **uma página estática de visão** (`index.html`) + os documentos de estratégia.
+Repositório de **estratégia de produto** para o **haCARthon** (maratona de inovação aberta do governo para o **CAR — Cadastro Ambiental Rural**). Não é um repositório de aplicação: não há código de app, build ou testes. O "produto" hoje são **páginas estáticas** (visão, pitch, explicador, fluxos) + os documentos de estratégia.
+
+## Páginas publicadas (Cloudflare Pages — `gabarito.pages.dev`)
+
+| URL | O que é | Público |
+|---|---|---|
+| [`/`](https://gabarito.pages.dev/) | Visão do produto | geral |
+| [`/pitch`](https://gabarito.pages.dev/pitch) | Deck do pitch (13 slides, tecla `N` = narração). Compilado via `tools/build-pitch.cjs` do bundle Claude Design. | banca do haCARthon |
+| [`/entenda`](https://gabarito.pages.dev/entenda) | **Explicador sem jargão** — analogia do GPS, fluxos simples e pitch comercial. | o **time** (entender antes de vender) |
+| [`/fluxos`](https://gabarito.pages.dev/fluxos) | Fluxogramas técnicos (hoje × com o Gabarito × comparativo). | banca / técnico |
 
 > ⚠️ **Houve um pivô.** O projeto começou como **Compadre** (Desafio 03 — entendimento da legislação do CAR no WhatsApp, persona *Seu Raimundo*) e migrou para **Gabarito** (Desafio 02 — dados geoespaciais). Tudo que menciona Compadre/Seu Raimundo está **superado**. O índice da virada e o status de cada arquivo estão em **[`PIVOT-DESAFIO-02.md`](PIVOT-DESAFIO-02.md)**.
 
@@ -23,6 +32,12 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 |---|---|
 | `APRESENTACAO-INTERNA-DESAFIO-02.md` | **Apresentação do time:** problema, gargalos, jornada e conformidade com o edital. Comece por aqui. |
 | `index.html` · `public/index.html` | Página de visão do Gabarito (entregável; cópias idênticas — editar as duas). Deploy via Cloudflare Wrangler. |
+| `pitch.html` · `public/pitch.html` | **Deck do pitch** (`/pitch`, 13 slides). **NÃO editar à mão** — é compilado por `tools/build-pitch.cjs` a partir do bundle Claude Design; cópias idênticas geradas pelo script. |
+| `public/entenda.html` | Explicador sem jargão (`/entenda`) para o time. |
+| `public/fluxos.html` | Fluxogramas técnicos (`/fluxos`). |
+| `diagrams/` | Fontes Mermaid (`.mmd`) + PNG renderizado dos fluxos (`simples_*` didáticos, `fluxo_*` técnicos) + `README.md`. Re-renderizar com `npx @mermaid-js/mermaid-cli`. |
+| `gabarito-pitch/` | Roteiros de pitch: `pitch-simples.md` (comercial, sem jargão) e `narracao-prototipo.md` (narração ≤2 min do vídeo de protótipo). |
+| `tools/` *(gitignored, versionado à força)* | `build-pitch.cjs` (compila `pitch.html` do bundle + **saneamento idempotente** anti-fabricação) e `pitch-bundle.dc.json` (bundle-fonte). |
 | `apresentacao.html` · `public/apresentacao.html` | Deck interno do time (espelho do `APRESENTACAO-INTERNA-DESAFIO-02.md`; cópias idênticas — editar as duas). |
 | `apresentacao-mentores.html` · `public/apresentacao-mentores.html` | Deck para os **mentores** do haCARthon (compilado do bundle Claude Design via DesignSync MCP; 100% responsivo). Cópias idênticas — editar as duas. |
 | `pm-role.md` | Persona/estratégia de PM do Gabarito — **fonte da verdade** (produto). |
