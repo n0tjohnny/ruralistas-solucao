@@ -25,4 +25,4 @@ Direção canônica: `../pm-role.md` (DIREÇÃO DECIDIDA). Deck: `../pitch.html`
 2. **Rodar o backtest com imagem real.** O método está pronto e é gratuito (CDSE free tier); falta executar.
 
 ## Mentoria (obrigatória — Live 7)
-Registrar nome do mentor + feedback aqui antes de submeter: _________________
+✅ Realizada. Mentor: **Eloi Chad**. Feedback + ajustes registrados em `ideacao-completa.md` §10.

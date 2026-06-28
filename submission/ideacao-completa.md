@@ -102,10 +102,18 @@ A submissão é **dupla: artefato técnico + modelo de governança** (com o dono
 
 ## 10. MENTORIA E FEEDBACK DA SOLUÇÃO
 
-> ⚠️ **A preencher pela equipe com uma mentoria REAL** (obrigatória ≥1). Não preenchemos com dados inventados — registrar nome verdadeiro e feedback verdadeiro. Estrutura abaixo:
+**Nome do(a) mentor(a):** Eloi Chad
 
-- **Nome do(a) mentor(a):** _[nome real do mentor com quem a equipe conversou]_
-- **Resumo do feedback recebido:** _[principais pontos comentados — ex.: o mentor questionou X, validou Y, alertou para Z]_
-- **O que a equipe decidiu ajustar/melhorar/repensar:** _[mudança concreta feita na solução a partir do feedback]_
+**Resumo do feedback recebido:** o mentor avaliou a solução como **criativa e autêntica** e levantou cinco questionamentos:
+1. A solução não corre o risco de **engessar ainda mais** o processo de aprovação da analista?
+2. Qual a **previsibilidade legal** para a adoção — é possível e viável juridicamente?
+3. Falta um **comparativo de tempo** ganho com a solução.
+4. **Como seria o piloto** na prática?
+5. A **comparação das imagens** de satélite não seria custosa demais?
 
-**Pauta que a equipe levará à mentoria** (para extrair feedback útil): (a) o fosso é mesmo a *decisão assinável por talhão*, e não priorizar a análise? (b) o ponto de corte automático × humano é defensável juridicamente? (c) a calibração contra verdade independente (PRODES/DETER) evita a circularidade? (d) o arranjo de sustentação (SFB-serviço + ABEMA + Fundo Amazônia) é realista?
+**O que a equipe decidiu ajustar/melhorar/repensar:** revisar e validar cada ponto, refletindo as respostas nos campos da ideação:
+1. **Engessamento:** reforçamos que o score é **invisível na fila** (apenas ordena por risco) e que a decisão legal **continua da analista** — o Gabarito remove trabalho manual nos casos fáceis em vez de adicionar etapa (§3 e §4); deixamos esse ponto explícito.
+2. **Previsibilidade legal:** tratada em §7 (Viabilidade legal) — score transparente, versionado e rastreável evita nulidade por "caixa-preta"; e na sustentação (§9) propomos uma **minuta de Nota Técnica** que reparte a responsabilidade e dá previsibilidade ao ato administrativo.
+3. **Comparativo de tempo:** assumido como métrica-alvo a medir no piloto (§5/§8) — vazão da análise sobe sem aumentar o erro; o **backtest de antecipação** mede os "dias de antecipação" por talhão. Reforçamos que são metas, não resultados já obtidos.
+4. **Piloto:** detalhamos em §8 — recorte de município na **SEMAD-GO** (Cerrado/céu limpo), com t0 estadual + backtest calibrado contra verdade independente (PRODES/DETER), e plano B de dado (MapBiomas Col.10 + consulta.car).
+5. **Custo das imagens:** esclarecemos que a imagem **Sentinel-2 é gratuita** (Copernicus) e que **só remapeamos os talhões que mudaram** (não o estado inteiro) — exatamente o que torna o custo viável (§3 e §7); o processamento pesado é cloud-assistido via openEO/CDSE, fora do desktop da OEMA.
