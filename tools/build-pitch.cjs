@@ -49,6 +49,9 @@ const sanitize = [
   ['Igreja Nova · t4', 'Cristalina · t4'],
   ['Marechal Deodoro', 'Luziânia'],
   ['CAR-AL-0421', 'CAR-GO-0421'],
+  // --- números de UI inventados: marcar como exemplo (não são dados operacionais reais) ---
+  ['propriedades aguardando análise', 'propriedades aguardando análise · exemplo'],
+  ['A prova, com data · imóvel CAR-GO-0421', 'A prova, com data · imóvel exemplo CAR-GO-0421'],
 ];
 for (const [a, b] of sanitize) sections = sections.split(a).join(b);
 const forbidden = ['Testamos', 'resultado publicado', 'a gente avisou', 'O resultado:', 'Penedo', 'Coruripe', 'Igreja N', 'Marechal Deodoro', 'CAR-AL'];
