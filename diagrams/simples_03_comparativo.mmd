@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph HOJE["🔴 Como é HOJE"]
+        direction TB
+        H1["🗺️ O mapa do governo<br/>está velho (anos atrás)"]
+        H2["🐢 A fiscal confere tudo na mão"]
+        H3["⏳ Em 12 anos, só 3% foi conferido"]
+        H4["😰 Ela assina insegura, no escuro"]
+        H5["🏦 Produtor espera anos pelo empréstimo"]
+        H1 ~~~ H2 ~~~ H3 ~~~ H4 ~~~ H5
+    end
+    subgraph NOVO["🟢 Com a nossa ideia"]
+        direction TB
+        N1["🛰️ O mapa fica sempre atual<br/>com foto de satélite (de graça)"]
+        N2["🚦 Só o que mudou precisa de olho humano"]
+        N3["⚡ Os casos fáceis se resolvem sozinhos"]
+        N4["✍️ Ela assina segura, com prova guardada"]
+        N5["✅ Produtor resolve rápido, libera o crédito"]
+        N1 ~~~ N2 ~~~ N3 ~~~ N4 ~~~ N5
+    end
+    HOJE ~~~ NOVO
+
+    classDef hoje fill:#FBEDE6,stroke:#C0573B,stroke-width:2px,color:#7A2E1C
+    classDef novo fill:#EEF3E6,stroke:#2F4A33,stroke-width:2px,color:#1E3322
+    class H1,H2,H3,H4,H5 hoje
+    class N1,N2,N3,N4,N5 novo
+    style HOJE fill:#FFF6F1,stroke:#C0573B,stroke-width:3px,color:#7A2E1C
+    style NOVO fill:#F4F8EE,stroke:#2F4A33,stroke-width:3px,color:#1E3322

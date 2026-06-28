@@ -1,0 +1,17 @@
+flowchart TD
+    A(["🌾 O produtor desenha a própria fazenda<br/>e manda pro governo (o cadastro ambiental)"]) --> B["👩‍💼 Uma fiscal do governo precisa conferir<br/>se o que ele desenhou bate com a realidade"]
+    B --> C["🗺️ Mas o mapa oficial que ela usa pra conferir<br/>foi feito anos atrás — está VELHO"]
+    C --> D{"🤔 Dá pra confiar nesse mapa velho?"}
+    D -->|"Não"| E["🐢 Então ela confere TUDO na mão, uma por uma<br/>Resultado: em ~12 anos, só 3% foi conferido"]
+    E --> F["⏳ O produtor espera anos por uma resposta"]
+    F --> G["🏦 Sem aprovação, ele não consegue empréstimo no banco"]
+    E --> H["🌲 E o desmatamento de verdade se esconde na fila"]
+
+    classDef start fill:#E6E6FA,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef step fill:#FBEDE6,stroke:#C0573B,stroke-width:2px,color:#7A2E1C
+    classDef decision fill:#FFD700,stroke:#333,stroke-width:2px,color:#1a1a1a
+    classDef bad fill:#FFB6C1,stroke:#DC143C,stroke-width:2px,color:#1a1a1a
+    class A start
+    class B,C,E,F step
+    class D decision
+    class G,H bad
