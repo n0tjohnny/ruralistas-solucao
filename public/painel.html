@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  ::selection{background:#C0573B;color:#FCF8EF;}
+  @keyframes gpulse{0%,100%{box-shadow:0 0 0 0 rgba(192,87,59,0.55);}50%{box-shadow:0 0 0 9px rgba(192,87,59,0);}}
+  @keyframes gtoast{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes gfade{from{opacity:0;}to{opacity:1;}}
+  @keyframes gring{0%{box-shadow:0 0 0 0 rgba(214,162,62,0.55);}70%{box-shadow:0 0 0 16px rgba(214,162,62,0);}100%{box-shadow:0 0 0 0 rgba(214,162,62,0);}}
+  @keyframes gnudge{0%,100%{transform:translateX(0);}50%{transform:translateX(4px);}}
+  ::-webkit-scrollbar{width:9px;height:9px;}
+  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.13);border-radius:6px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  .ga-cream ::-webkit-scrollbar-thumb{background:rgba(46,37,25,0.18);}
+</style>
+</helmet>
+
+<div style="display:flex; flex-direction:column; height:100vh; min-height:680px; overflow:hidden; background:#16201A; font-family:'Hanken Grotesk',sans-serif; color:#F3ECDC;">
+
+  <!-- ============ TOP BAR ============ -->
+  <header style="flex:none; height:58px; background:#1B2A1F; border-bottom:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; gap:14px; padding:0 18px;">
+    <div style="display:flex; align-items:center; gap:11px;">
+      <div style="width:34px; height:34px; border-radius:9px; background:#D6A23E; display:flex; align-items:center; justify-content:center; flex:none;">
+        <svg width="19" height="19" viewBox="0 0 32 32" fill="none"><rect x="5" y="5" width="22" height="22" rx="3" stroke="#1B2A1F" stroke-width="2.4"/><path d="M5 12H27" stroke="#1B2A1F" stroke-width="2.4"/><path d="M12 12V27" stroke="#1B2A1F" stroke-width="2.4"/><circle cx="19.5" cy="19" r="3" fill="#1B2A1F"/></svg>
+      </div>
+      <div style="line-height:1;">
+        <div style="font-family:'Spectral',serif; font-size:17px; font-weight:600;">Gabarito</div>
+        <div style="font-size:10px; color:#7F9173; letter-spacing:0.4px; margin-top:2px;">Painel do analista</div>
+      </div>
+    </div>
+
+    <div style="width:1px; height:26px; background:rgba(255,255,255,0.1);"></div>
+
+    <div style="display:flex; align-items:center; gap:8px; font-size:12.5px; color:#C7CFB9;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke="#9FB191" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="#9FB191" stroke-width="1.8"/></svg>
+      <strong style="color:#F3ECDC; font-weight:600;">Rio Verde · GO</strong>
+      <span style="color:#5F7256;">·</span>
+      <span>SEMAD‑GO</span>
+    </div>
+
+    <div style="margin-left:auto; display:flex; align-items:center; gap:14px;">
+      <div style="text-align:right; line-height:1.2;">
+        <div style="font-size:12px; color:#9FB191;"><strong style="color:#F3ECDC; font-family:'Spectral',serif; font-weight:600; font-size:15px;">{{ filaRestante }}</strong> na fila</div>
+        <div style="font-size:10.5px; color:#7F9173; margin-top:1px;">{{ concludedLabel }}</div>
+      </div>
+      <button onClick="{{ startTour }}" style="display:flex; align-items:center; gap:7px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); color:#C7CFB9; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:600; padding:8px 13px; border-radius:999px; cursor:pointer;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#9FB191" stroke-width="1.8"/><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.8-2.6 2.2-2.6 3.7" stroke="#9FB191" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17.2" r="1" fill="#9FB191"/></svg>
+        Tutorial
+      </button>
+      <div style="display:flex; align-items:center; gap:9px; padding:5px 12px 5px 6px; background:rgba(255,255,255,0.05); border-radius:999px;">
+        <div style="width:30px; height:30px; border-radius:50%; background:#D6A23E; color:#1B2A1F; display:flex; align-items:center; justify-content:center; font-family:'Spectral',serif; font-weight:700; font-size:15px;">L</div>
+        <div style="line-height:1.15;"><div style="font-size:12.5px; font-weight:600;">Luana A.</div><div style="font-size:10px; color:#7F9173;">analista ambiental</div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main style="flex:1; min-height:0; display:grid; grid-template-columns:288px 1fr 384px;">
+
+    <!-- -------- FILA -------- -->
+    <aside data-tour="fila" style="background:#1B2A1F; border-right:1px solid rgba(255,255,255,0.07); display:flex; flex-direction:column; min-height:0;">
+      <div style="flex:none; padding:16px 16px 12px;">
+        <p style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#7F9173; font-weight:700; margin:0 0 3px;">Fila · ordenada por risco</p>
+        <p style="font-size:11.5px; color:#9FB191; margin:0; line-height:1.45;">Score de risco define a ordem (não exibido). Agrupamento por semáforo de confiança.</p>
+      </div>
+
+      <div style="flex:1; min-height:0; overflow-y:auto; padding:0 12px 18px;">
+        <sc-for list="{{ groups }}" as="group" hint-placeholder-count="2">
+          <div style="margin-bottom:18px;">
+            <div style="display:flex; align-items:center; gap:8px; padding:6px 4px 9px;">
+              <span style="width:9px; height:9px; border-radius:50%; background:{{ group.color }}; flex:none; box-shadow:0 0 0 3px rgba(255,255,255,0.05);"></span>
+              <div>
+                <p style="font-size:11px; font-weight:700; color:#E7DFCB; margin:0; text-transform:uppercase; letter-spacing:0.4px; white-space:nowrap; line-height:1.2;">{{ group.label }}</p>
+                <p style="font-size:10px; color:#7F9173; margin:3px 0 0; white-space:nowrap; line-height:1;">{{ group.sub }}</p>
+              </div>
+              <span style="margin-left:auto; font-size:11px; font-weight:700; color:#9FB191; background:rgba(255,255,255,0.06); padding:2px 8px; border-radius:999px;">{{ group.count }}</span>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:7px;">
+              <sc-for list="{{ group.items }}" as="item" hint-placeholder-count="3">
+                <button onClick="{{ item.onSelect }}" style="text-align:left; border:none; cursor:pointer; border-radius:10px; padding:11px 12px; outline:{{ item.outline }}; background:{{ item.cardBg }}; color:#F3ECDC; font-family:'Hanken Grotesk',sans-serif; transition:background .15s; display:block; width:100%;">
+                  <div style="display:flex; align-items:center; gap:7px;">
+                    <span style="font-size:13px; font-weight:700; color:#F6EFE0;">{{ item.municipio }}</span>
+                    <span style="font-size:11px; color:#8FA284;">· {{ item.gleba }}</span>
+                  </div>
+                  <span style="display:inline-block; margin-top:7px; font-size:9.5px; font-weight:700; letter-spacing:0.4px; text-transform:uppercase; color:{{ item.tagFg }}; background:{{ item.tagBg }}; padding:3px 8px; border-radius:999px;">{{ item.tagsText }}</span>
+                </button>
+              </sc-for>
+            </div>
+
+            <sc-if value="{{ group.batchShow }}" hint-placeholder-val="{{ true }}">
+              <button onClick="{{ group.onBatch }}" style="margin-top:10px; width:100%; border:1px dashed rgba(127,176,122,0.5); background:rgba(127,176,122,0.08); color:#9FD194; font-family:'Hanken Grotesk',sans-serif; font-size:11.5px; font-weight:700; padding:9px; border-radius:9px; cursor:pointer;">{{ group.batchLabel }}</button>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </aside>
+
+    <!-- -------- MAPA (visor GIS) -------- -->
+    <section data-tour="map" style="position:relative; min-height:0; overflow:hidden; background:#3a4a2c;">
+
+      <!-- imagery base -->
+      <div style="position:absolute; inset:0; background:linear-gradient(135deg,#3a4a2c,#445331);"></div>
+
+      <!-- floresta / vegetação nativa -->
+      <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; left:-6%; top:-12%; width:56%; height:86%; transform:rotate(-4deg); clip-path:polygon(0 4%,62% 0,100% 26%,90% 72%,52% 98%,14% 86%,0 48%); background-color:#2f4327; background-image:radial-gradient(circle at 22% 26%,rgba(92,126,70,0.85),transparent 24%),radial-gradient(circle at 52% 44%,rgba(38,62,32,0.9),transparent 28%),radial-gradient(circle at 34% 72%,rgba(78,108,60,0.7),transparent 26%),radial-gradient(circle at 72% 24%,rgba(56,82,44,0.8),transparent 22%),radial-gradient(circle at 78% 64%,rgba(42,66,34,0.85),transparent 24%),radial-gradient(circle at 14% 54%,rgba(66,94,52,0.7),transparent 20%);"></div>
+      </sc-if>
+
+      <!-- campos agrícolas / área consolidada -->
+      <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; right:-8%; top:20%; width:66%; height:88%; transform:rotate(3deg); clip-path:polygon(10% 0,100% 8%,100% 100%,0 100%,0 38%); background-color:#bda874; background-image:repeating-linear-gradient(27deg, transparent 0 30px, rgba(86,76,42,0.22) 30px 32px), repeating-linear-gradient(117deg, transparent 0 50px, rgba(64,58,34,0.18) 50px 52px), linear-gradient(0deg, rgba(150,134,80,0.45), rgba(196,176,116,0.18));"></div>
+        <div style="position:absolute; right:18%; top:30%; width:90px; height:90px; border-radius:50%; background:radial-gradient(circle,#8aa755,#62803f); box-shadow:0 0 0 1px rgba(255,255,255,0.15) inset, 0 0 0 1px rgba(40,40,20,0.3);"></div>
+        <div style="position:absolute; right:30%; top:52%; width:74px; height:74px; border-radius:50%; background:radial-gradient(circle,#93ad5d,#6a8742); box-shadow:0 0 0 1px rgba(255,255,255,0.12) inset;"></div>
+        <div style="position:absolute; right:9%; top:60%; width:64px; height:64px; border-radius:50%; background:radial-gradient(circle,#7f9a4d,#5c7838); box-shadow:0 0 0 1px rgba(255,255,255,0.12) inset;"></div>
+      </sc-if>
+
+      <!-- hidrografia -->
+      <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+          <path d="M-20,540 C160,485 250,660 430,612 C600,566 700,705 900,648 L1030,640" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          <path d="M-20,540 C160,485 250,660 430,612 C600,566 700,705 900,648 L1030,640" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </sc-if>
+
+      <!-- vignette + grão de imagem -->
+      <div style="position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 130px rgba(8,14,8,0.6);"></div>
+      <div style="position:absolute; inset:0; pointer-events:none; opacity:0.05; background-image:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 2px);"></div>
+
+      <!-- graticule -->
+      <div style="position:absolute; inset:0; pointer-events:none; background-image:linear-gradient(rgba(230,240,220,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(230,240,220,0.08) 1px,transparent 1px); background-size:90px 90px;"></div>
+
+      <!-- cadastro: limites das parcelas -->
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+        <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
+          <path d="M120,150 L430,120 L478,360 L300,470 L150,420 Z"/>
+          <path d="M478,360 L770,300 L825,560 L560,648 L300,470 Z"/>
+          <path d="M150,420 L300,470 L322,772 L120,825 Z"/>
+          <path d="M560,648 L825,560 L905,820 L600,902 L322,772 Z"/>
+          <path d="M430,120 L748,92 L770,300 L478,360 Z"/>
+        </g>
+      </svg>
+
+      <!-- nuvem -->
+      <sc-if value="{{ selNuvem }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; left:32%; top:26%; width:48%; height:50%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.9), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
+      </sc-if>
+
+      <!-- células de mudança (vetor) -->
+      <sc-if value="{{ layerMudanca }}" hint-placeholder-val="{{ true }}">
+        <sc-for list="{{ selCells }}" as="cell" hint-placeholder-count="0">
+          <div style="{{ cell.style }}"></div>
+        </sc-for>
+      </sc-if>
+
+      <!-- talhão em foco -->
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+        <path d="M120,150 L430,120 L478,360 L300,470 L150,420 Z" fill="rgba(242,200,75,0.08)" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+      </svg>
+
+      <!-- chip título -->
+      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; left:18px; top:16px; display:flex; align-items:center; gap:8px; background:rgba(27,42,31,0.94); color:#F3ECDC; padding:8px 13px; border-radius:9px; font-size:12px; box-shadow:0 6px 18px rgba(0,0,0,0.28);">
+          <span style="width:8px; height:8px; border-radius:50%; background:#D6A23E;"></span>
+          <strong style="font-weight:600;">{{ selected.municipio }} · {{ selected.gleba }}</strong>
+          <span style="color:#7FB07A;">· caso aberto</span>
+        </div>
+      </sc-if>
+
+      <!-- controle antes/depois -->
+      <sc-if value="{{ selChange }}" hint-placeholder-val="{{ true }}">
+        <div data-tour="epoch" style="position:absolute; left:18px; top:56px; display:flex; align-items:center; gap:2px; background:rgba(27,42,31,0.94); padding:4px; border-radius:9px; box-shadow:0 6px 18px rgba(0,0,0,0.28);">
+          <button onClick="{{ setBase }}" style="border:none; cursor:pointer; font-family:'Hanken Grotesk',sans-serif; font-size:11px; font-weight:700; padding:7px 12px; border-radius:6px; background:{{ baseBtnBg }}; color:{{ baseBtnFg }};">Base · 2023</button>
+          <button onClick="{{ setAtual }}" style="border:none; cursor:pointer; font-family:'Hanken Grotesk',sans-serif; font-size:11px; font-weight:700; padding:7px 12px; border-radius:6px; background:{{ atualBtnBg }}; color:{{ atualBtnFg }};">Sentinel‑2 · hoje</button>
+        </div>
+      </sc-if>
+
+      <!-- alerta -->
+      <sc-if value="{{ selAlertPill }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; left:20%; top:30%; display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
+          <span style="width:6px; height:6px; border-radius:50%; background:#C0573B;"></span>{{ selAlertPill }}
+        </div>
+      </sc-if>
+
+      <!-- selo sem mudança -->
+      <sc-if value="{{ selNoChange }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; left:50%; top:40%; transform:translate(-50%,-50%); display:flex; align-items:center; gap:8px; background:rgba(62,107,69,0.95); color:#EAF2E2; padding:9px 16px; border-radius:999px; font-size:12.5px; font-weight:700; white-space:nowrap; box-shadow:0 6px 18px rgba(0,0,0,0.28); animation:gfade .4s ease;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#EAF2E2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Sem mudança desde 2023 · estável
+        </div>
+      </sc-if>
+
+      <!-- zoom -->
+      <div style="position:absolute; right:16px; top:16px; display:flex; flex-direction:column; border-radius:9px; overflow:hidden; box-shadow:0 5px 14px rgba(0,0,0,0.32);">
+        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; border-bottom:1px solid rgba(255,255,255,0.12); cursor:pointer;">+</div>
+        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; cursor:pointer;">−</div>
+      </div>
+
+      <!-- basemap chip -->
+      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; right:16px; top:92px; display:flex; align-items:center; gap:7px; background:rgba(27,42,31,0.92); color:#DCD3BE; padding:6px 11px; border-radius:8px; font-size:10.5px; box-shadow:0 4px 12px rgba(0,0,0,0.26);">
+          <span style="width:7px; height:7px; border-radius:2px; background:#5E8CA8;"></span>{{ selBasemap }}
+        </div>
+      </sc-if>
+
+      <!-- coordenadas -->
+      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; left:16px; bottom:52px; display:flex; align-items:center; gap:7px; background:rgba(27,42,31,0.92); color:#C7CFB9; padding:6px 11px; border-radius:8px; font-size:10.5px; letter-spacing:0.3px; box-shadow:0 4px 12px rgba(0,0,0,0.26);">
+          <span style="color:#9FB191; font-size:8px;">●</span>{{ selCoord }} · SIRGAS 2000
+        </div>
+      </sc-if>
+
+      <!-- norte + escala -->
+      <div style="position:absolute; right:16px; bottom:52px; display:flex; align-items:center; gap:13px; background:rgba(27,42,31,0.9); padding:8px 12px; border-radius:9px; box-shadow:0 4px 12px rgba(0,0,0,0.28);">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:2px; color:#F3ECDC;">
+          <div style="width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:13px solid #F3ECDC;"></div>
+          <span style="font-size:9px; font-weight:800; letter-spacing:0.5px;">N</span>
+        </div>
+        <div style="width:1px; height:26px; background:rgba(255,255,255,0.15);"></div>
+        <div style="display:flex; flex-direction:column; align-items:flex-start; gap:3px;">
+          <div style="display:flex; height:6px; border:1px solid rgba(243,236,220,0.7);">
+            <div style="width:30px; background:#F3ECDC;"></div>
+            <div style="width:30px; background:transparent;"></div>
+            <div style="width:30px; background:#F3ECDC;"></div>
+          </div>
+          <span style="font-size:9px; color:#DCD3BE; letter-spacing:0.3px;">0&nbsp;&nbsp;250&nbsp;&nbsp;500 m</span>
+        </div>
+      </div>
+
+      <!-- empty state -->
+      <sc-if value="{{ emptyState }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; z-index:6; background:rgba(22,32,26,0.94); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px; animation:gfade .4s ease;">
+          <div style="width:64px; height:64px; border-radius:50%; background:rgba(127,176,122,0.16); display:flex; align-items:center; justify-content:center; margin-bottom:22px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#9FD194" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 style="font-family:'Spectral',serif; font-size:26px; font-weight:700; color:#F3ECDC; margin:0 0 10px;">Fila do dia zerada.</h3>
+          <p style="font-size:15px; color:#9FB191; margin:0; max-width:360px; line-height:1.5;">Cada decisão saiu com registro auditável anexado à análise dinamizada.</p>
+        </div>
+      </sc-if>
+
+      <!-- legenda -->
+      <div style="position:absolute; left:0; right:0; bottom:0; display:flex; flex-wrap:wrap; gap:6px; padding:9px 14px; background:rgba(27,42,31,0.9); backdrop-filter:blur(2px);">
+        <sc-for list="{{ legend }}" as="chip" hint-placeholder-count="4">
+          <button onClick="{{ chip.onToggle }}" style="{{ chip.chipStyle }}">
+            <span style="width:11px; height:11px; border-radius:3px; background:{{ chip.color }}; flex:none;"></span>{{ chip.label }}
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- -------- CASO / TRILHA -------- -->
+    <aside class="ga-cream" style="background:#F4EEDF; color:#2E2519; display:flex; flex-direction:column; min-height:0; border-left:1px solid rgba(0,0,0,0.08);">
+      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
+        <div style="flex:1; min-height:0; overflow-y:auto;">
+
+          <!-- header do caso -->
+          <div style="padding:18px 20px 16px; border-bottom:1px solid #E4D8BD;">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
+              <div>
+                <p style="font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:#99694E; font-weight:700; margin:0 0 5px;">Caso aberto · trilha de auditoria</p>
+                <h2 style="font-family:'Spectral',serif; font-size:23px; font-weight:700; margin:0; line-height:1.1; color:#2E2519;">{{ selected.municipio }} · {{ selected.gleba }}</h2>
+                <p style="font-size:11.5px; color:#8A7B63; margin:6px 0 0; font-family:'Hanken Grotesk',sans-serif;">{{ selected.car }} · {{ selected.area }}</p>
+              </div>
+              <span style="flex:none; font-size:10px; font-weight:700; letter-spacing:0.3px; text-transform:uppercase; color:{{ confColor }}; background:{{ confBg }}; padding:4px 9px; border-radius:999px; white-space:nowrap;">{{ confLabel }}</span>
+            </div>
+          </div>
+
+          <!-- recomendação -->
+          <div style="margin:16px 20px 0; padding:14px 16px; background:{{ recoBg }}; border-left:3px solid {{ recoBd }}; border-radius:0 10px 10px 0;">
+            <p style="font-size:10px; letter-spacing:0.8px; text-transform:uppercase; color:{{ recoBd }}; font-weight:800; margin:0 0 7px;">{{ recoTag }}</p>
+            <p style="font-size:14px; line-height:1.5; margin:0; color:#3A3122;">{{ selected.reco }}</p>
+          </div>
+
+          <!-- evidência datada -->
+          <div data-tour="trilha" style="padding:18px 20px 4px;">
+            <p style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 11px;">A prova guardada · evidência datada</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:9px;">
+              <sc-for list="{{ selEv }}" as="ev" hint-placeholder-count="4">
+                <div style="background:#FCF8EF; border:1px solid #E8DDC4; border-radius:9px; padding:10px 11px;">
+                  <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px; white-space:nowrap;">
+                    <span style="width:7px; height:7px; border-radius:2px; background:{{ ev.color }}; flex:none;"></span>
+                    <span style="font-size:9px; text-transform:uppercase; letter-spacing:0.4px; color:#8A7B63;">{{ ev.k }}</span>
+                  </div>
+                  <p style="font-size:12.5px; font-weight:700; color:#2E2519; margin:0; line-height:1.3;">{{ ev.val }}</p>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <!-- backtest de antecipação -->
+          <sc-if value="{{ selAntecip }}" hint-placeholder-val="{{ true }}">
+            <div style="margin:14px 20px 0; padding:14px 16px; background:#25382A; border-radius:12px; color:#F3ECDC;">
+              <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+                <span style="font-family:'Spectral',serif; font-size:30px; font-weight:700; color:#D6A23E; line-height:1;">{{ selected.antecip }}</span>
+                <span style="font-size:12px; color:#C7CFB9;">dias de antecipação vs PRODES</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:10px; color:#9FB191; margin-bottom:3px;"><span>Gabarito sinalizou</span><span>{{ selected.imgShort }}</span></div>
+                  <div style="height:7px; border-radius:4px; background:rgba(255,255,255,0.1); overflow:hidden;"><div style="height:100%; width:{{ selAntecipWidth }}; background:#D6A23E; border-radius:4px; transition:width .5s ease;"></div></div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:10px; color:#9FB191; margin-bottom:3px;"><span>Base de referência atualizaria</span><span>PRODES anual</span></div>
+                  <div style="height:7px; border-radius:4px; background:rgba(255,255,255,0.1); overflow:hidden;"><div style="height:100%; width:100%; background:rgba(192,87,59,0.55); border-radius:4px;"></div></div>
+                </div>
+              </div>
+              <p style="font-size:10.5px; color:#7F9173; margin:10px 0 0; line-height:1.4;">Calibrado contra verdade independente (PRODES/DETER), nunca contra o t0.</p>
+            </div>
+          </sc-if>
+
+          <!-- decisão -->
+          <div style="padding:18px 20px 24px;">
+            <sc-if value="{{ selDanger }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; gap:10px; align-items:flex-start; padding:11px 13px; background:rgba(192,87,59,0.1); border:1px solid rgba(192,87,59,0.35); border-radius:10px; margin-bottom:12px;">
+                <span style="width:20px; height:20px; border-radius:6px; background:#C0573B; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; flex:none;">✕</span>
+                <p style="font-size:12px; line-height:1.45; margin:0; color:#7A3320;"><strong>Liberação automática bloqueada.</strong> Confiança abaixo do limiar pré‑registrado: na dúvida, o caso é rebaixado para revisão humana.</p>
+              </div>
+            </sc-if>
+
+            <button data-tour="decisao" onClick="{{ decideP }}" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:13px; border:none; border-radius:10px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:700; cursor:pointer; background:{{ primaryBg }}; color:{{ primaryColor }};">{{ primaryIcon }} {{ selected.primary.label }}</button>
+
+            <div style="display:flex; gap:8px; margin-top:9px;">
+              <sc-for list="{{ selSecondary }}" as="sec" hint-placeholder-count="2">
+                <button onClick="{{ sec.onClick }}" style="flex:1; padding:10px; border:1.5px solid #D8C9A8; background:#FCF8EF; color:#5A4F3D; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:700; border-radius:9px; cursor:pointer;">{{ sec.label }}</button>
+              </sc-for>
+            </div>
+
+            <p style="font-size:10.5px; color:#A2937A; margin:14px 0 0; line-height:1.5; text-align:center;">Cada decisão gera registro auditável anexado ao fluxo da análise dinamizada (SICAR).<br>Representação do produto · dados ilustrativos (Goiás).</p>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ emptyState }}" hint-placeholder-val="{{ false }}">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px;">
+          <p style="font-family:'Spectral',serif; font-size:20px; font-weight:700; color:#2E2519; margin:0 0 8px;">Nada para assinar.</p>
+          <p style="font-size:13px; color:#8A7B63; margin:0; line-height:1.5;">A trilha de cada caso fechado fica guardada e auditável.</p>
+        </div>
+      </sc-if>
+    </aside>
+  </main>
+
+  <!-- ============ TUTORIAL GUIADO ============ -->
+  <sc-if value="{{ tourActive }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; z-index:200; background:{{ tourCatcherBg }}; pointer-events:auto; transition:background .3s;"></div>
+    <sc-if value="{{ tourHasTarget }}" hint-placeholder-val="{{ false }}">
+      <div style="position:fixed; z-index:201; border-radius:14px; pointer-events:none; box-shadow:0 0 0 9999px rgba(13,20,14,0.78); border:2px solid rgba(214,162,62,0.95); transition:all .32s cubic-bezier(.4,0,.2,1); {{ tourSpotStyle }}"></div>
+      <div style="position:fixed; z-index:201; border-radius:14px; pointer-events:none; animation:gring 1.8s ease-out infinite; {{ tourRingStyle }}"></div>
+    </sc-if>
+    <div style="position:fixed; z-index:202; width:360px; background:#FCF8EF; border-radius:16px; border-top:4px solid #D6A23E; box-shadow:0 24px 60px rgba(0,0,0,0.45); padding:22px 24px; animation:gfade .25s ease; {{ tourCalloutStyle }}">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+        <span style="display:flex; align-items:center; gap:6px; font-size:10px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#9A5A1E; background:rgba(214,162,62,0.18); padding:4px 10px; border-radius:999px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Z" stroke="#9A5A1E" stroke-width="1.8"/><path d="M9 21h6" stroke="#9A5A1E" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Tutorial
+        </span>
+        <span style="font-size:11px; color:#A2937A; font-weight:600;">{{ tourStepLabel }}</span>
+        <button onClick="{{ tourSkip }}" style="margin-left:auto; border:none; background:transparent; color:#A2937A; font-size:12px; font-family:'Hanken Grotesk',sans-serif; cursor:pointer; text-decoration:underline;">Pular</button>
+      </div>
+      <h3 style="font-family:'Spectral',serif; font-size:23px; font-weight:700; color:#2E2519; margin:0 0 10px; line-height:1.12;">{{ tourTitle }}</h3>
+      <p style="font-size:15.5px; line-height:1.6; color:#5A4F3D; margin:0 0 20px;">{{ tourBody }}</p>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="display:flex; gap:6px;">
+          <sc-for list="{{ tourDots }}" as="dot" hint-placeholder-count="7"><span style="{{ dot.style }}"></span></sc-for>
+        </div>
+        <div style="margin-left:auto; display:flex; gap:8px;">
+          <sc-if value="{{ tourShowPrev }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ tourPrev }}" style="border:1.5px solid #D8C9A8; background:#FCF8EF; color:#5A4F3D; font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:700; padding:10px 16px; border-radius:9px; cursor:pointer;">Voltar</button>
+          </sc-if>
+          <button onClick="{{ tourNext }}" style="display:flex; align-items:center; gap:7px; border:none; background:#D6A23E; color:#2A2008; font-family:'Hanken Grotesk',sans-serif; font-size:13px; font-weight:800; padding:10px 18px; border-radius:9px; cursor:pointer;">{{ tourNextLabel }} <span style="display:inline-block; animation:gnudge 1s ease-in-out infinite;">→</span></button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ============ TOAST ============ -->
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; left:50%; bottom:26px; transform:translateX(-50%); z-index:50; display:flex; align-items:center; gap:13px; background:{{ toastBg }}; color:#F3ECDC; padding:14px 18px; border-radius:12px; box-shadow:0 16px 44px rgba(0,0,0,0.4); min-width:340px; animation:gtoast .32s cubic-bezier(.2,.8,.3,1);">
+      <div style="width:34px; height:34px; border-radius:9px; background:rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; flex:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div style="line-height:1.3;">
+        <p style="font-size:13.5px; font-weight:700; margin:0;">{{ toast.title }}</p>
+        <p style="font-size:11.5px; color:rgba(243,236,220,0.82); margin:2px 0 0;">{{ toast.sub }}</p>
+      </div>
+      <button onClick="{{ dismiss }}" style="margin-left:auto; border:none; background:transparent; color:rgba(243,236,220,0.7); cursor:pointer; font-size:18px; line-height:1; padding:2px 4px;">×</button>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1340, &quot;height&quot;: 850 }
+}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.cases = [
+      { id:'rv7', municipio:'Rio Verde', gleba:'gleba 7', car:'CAR‑GO‑52218‑7', group:'revisar', conf:'média', area:'182 ha', coord:'17°47′S · 50°55′W',
+        tagsText:'delta · t0 2023', change:true, changeKind:'supressão', alert:'DETER · mar/26',
+        img:'Sentinel‑2 · 14/03/26', imgShort:'14/03/26', base:'estadual · 2023', score:'supressão de nativa', scoreVer:'v2.1',
+        recoType:'warn', antecip:23,
+        reco:'Supressão de nativa confirmada no delta de mar/26. A base estadual t0 (2023) ainda classifica o polígono como vegetação nativa. Geometria coerente com o alerta DETER: emitir notificação com a trilha anexada.',
+        cells:[{l:25,t:18,s:46,strong:true},{l:35,t:18,s:46},{l:35,t:33,s:46,weak:true}],
+        primary:{label:'Notificar produtor', action:'notificar'},
+        secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
+
+      { id:'cris4', municipio:'Cristalina', gleba:'talhão 4', car:'CAR‑GO‑48091‑4', group:'revisar', conf:'baixa', area:'94 ha', coord:'16°46′S · 47°36′W',
+        tagsText:'borda · nuvem 38%', change:true, changeKind:'mudança incerta', alert:'DETER · mar/26',
+        img:'Sentinel‑2 · 11/03 · 38% nuvem', imgShort:'11/03/26', base:'estadual · 2023', score:'abaixo do limiar', scoreVer:'v2.1',
+        recoType:'danger', antecip:null, nuvem:true,
+        reco:'Delta restrito à borda do talhão, sob 38% de cobertura de nuvem e em classe fora da calibração. Confiança abaixo do limiar operacional: liberação automática bloqueada, encaminhar para fotointerpretação manual.',
+        cells:[{l:46,t:48,s:36,weak:true},{l:54,t:54,s:28,weak:true}],
+        primary:{label:'Enviar p/ revisão manual', action:'revisar'},
+        secondary:[{label:'Reagendar imagem', action:'reagendar'}] },
+
+      { id:'jat12', municipio:'Jataí', gleba:'talhão 12', car:'CAR‑GO‑51120‑12', group:'revisar', conf:'média', area:'267 ha', coord:'17°52′S · 51°43′W',
+        tagsText:'delta · t0 2022', change:true, changeKind:'conversão', alert:'PRODES · 2025',
+        img:'Sentinel‑2 · 09/03/26', imgShort:'09/03/26', base:'estadual · 2022', score:'conversão p/ pasto', scoreVer:'v2.1',
+        recoType:'warn', antecip:41,
+        reco:'Conversão de nativa para pastagem corroborada pelo PRODES 2025 (polígono coincidente), com delta acima do MMU de 6,25 ha. Notificar: a trilha datada sustenta o auto de infração.',
+        cells:[{l:18,t:26,s:54,strong:true},{l:31,t:26,s:54}],
+        primary:{label:'Notificar produtor', action:'notificar'},
+        secondary:[{label:'Revisão', action:'revisar'}] },
+
+      { id:'min8', municipio:'Mineiros', gleba:'talhão 8', car:'CAR‑GO‑49370‑8', group:'revisar', conf:'média', area:'53 ha', coord:'17°34′S · 52°33′W',
+        tagsText:'APP · faixa 30 m', change:true, changeKind:'intervenção em APP', alert:'DETER · fev/26',
+        img:'Sentinel‑2 · 22/02/26', imgShort:'22/02/26', base:'estadual · 2023', score:'intervenção em APP', scoreVer:'v2.1',
+        recoType:'warn', antecip:18,
+        reco:'Intervenção antrópica em APP de curso d’água (faixa marginal de 30 m, Lei 12.651/2012). Recorte datado anexado; a geometria da base pode ser contestada pelo RT. Notificar produtor.',
+        cells:[{l:14,t:38,s:32,strong:true},{l:24,t:44,s:26}],
+        primary:{label:'Notificar produtor', action:'notificar'},
+        secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
+
+      { id:'ari3', municipio:'Aragarças', gleba:'talhão 3', car:'CAR‑GO‑50442‑3', group:'revisar', conf:'baixa', area:'120 ha', coord:'15°53′S · 52°15′W',
+        tagsText:'nuvem 100%', change:false, changeKind:null, alert:null,
+        img:'Sentinel‑2 · 05/03 · nuvem 100%', imgShort:'05/03/26', base:'estadual · 2023', score:'imagem insuficiente', scoreVer:'v2.1',
+        recoType:'danger', antecip:null, nuvem:true,
+        reco:'Cobertura de nuvem de 100% nas três últimas passagens Sentinel‑2, sem observação óptica válida para compor o delta. Reagendar a aquisição para a próxima janela de céu limpo.',
+        cells:[],
+        primary:{label:'Reagendar imagem (céu limpo)', action:'reagendar'},
+        secondary:[{label:'Revisão', action:'revisar'}] },
+
+      { id:'luz2', municipio:'Luziânia', gleba:'gleba 2', car:'CAR‑GO‑53310‑2', group:'liberavel', conf:'alta', area:'210 ha', coord:'16°15′S · 47°56′W',
+        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+        img:'Sentinel‑2 · 16/03/26', imgShort:'16/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
+        recoType:'ok', antecip:null,
+        reco:'Delta nulo no período e confiança acima do limiar. Apta à liberação automática com trilha; recibo anexado ao fluxo da análise dinamizada.',
+        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+
+      { id:'cat5', municipio:'Catalão', gleba:'gleba 5', car:'CAR‑GO‑47815‑5', group:'liberavel', conf:'alta', area:'178 ha', coord:'18°10′S · 47°56′W',
+        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+        img:'Sentinel‑2 · 13/03/26', imgShort:'13/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
+        recoType:'ok', antecip:null,
+        reco:'Área consolidada estável desde o t0, sem delta significativo. Confiança alta: liberação automática com trilha.',
+        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+
+      { id:'ita1', municipio:'Itaberaí', gleba:'talhão 1', car:'CAR‑GO‑46002‑1', group:'liberavel', conf:'alta', area:'96 ha', coord:'16°01′S · 49°48′W',
+        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+        img:'Sentinel‑2 · 15/03/26', imgShort:'15/03/26', base:'estadual · 2022', score:'estável', scoreVer:'v2.1',
+        recoType:'ok', antecip:null,
+        reco:'Sem delta detectado e confiança acima do limiar. Liberação automática com trilha; recorte datado arquivado como evidência.',
+        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+
+      { id:'for9', municipio:'Formosa', gleba:'talhão 9', car:'CAR‑GO‑54127‑9', group:'liberavel', conf:'alta', area:'143 ha', coord:'15°32′S · 47°20′W',
+        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+        img:'Sentinel‑2 · 17/03/26', imgShort:'17/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
+        recoType:'ok', antecip:null,
+        reco:'Delta nulo e confiança acima do limiar. Liberação automática com trilha; recibo anexado à análise dinamizada.',
+        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+    ];
+
+    this.tourSteps = [
+      { key:null, place:'center',
+        title:'Bem‑vinda ao seu painel.',
+        body:'Eu vou te ensinar a usar, do começo ao fim, em passos curtos. Você não precisa decorar nada. Quando quiser seguir, aperte o botão laranja “Próximo”.' },
+      { key:'fila', place:'right',
+        title:'1 · A fila de fazendas',
+        body:'Aqui do lado esquerdo ficam as fazendas esperando você. As de bolinha vermelha mudaram e precisam do seu olho. As de bolinha verde não mudaram, são as fáceis. Você clica numa para abrir.' },
+      { key:'map', place:'bottom',
+        title:'2 · O mapa de satélite',
+        body:'No meio aparece a foto de satélite da fazenda escolhida. O contorno amarelo é o limite da fazenda no cadastro. As marcas vermelhas são exatamente o pedaço que mudou no terreno.' },
+      { key:'epoch', place:'bottom',
+        title:'3 · Antes e depois',
+        body:'Aperte “Base · 2023” e depois “Sentinel‑2 · hoje”. O mapa troca da foto antiga para a de agora e você vê a mudança aparecer. É assim que você confere com seus próprios olhos.' },
+      { key:'trilha', place:'left',
+        title:'4 · A prova guardada',
+        body:'Aqui do lado direito fica a prova de cada caso: a foto, a data, o alerta oficial e a base usada. É isso que deixa você assinar com segurança: fica tudo registrado e ninguém pode contestar depois.' },
+      { key:'decisao', place:'left',
+        title:'5 · A sua decisão',
+        body:'Quando estiver pronta, aperte o botão grande. Ele muda conforme o caso: verde libera a fazenda, ou então você avisa o produtor / manda pra revisão. Pronto: a fazenda sai da fila e a prova vai junto.' },
+      { key:null, place:'center',
+        title:'É só isso. Pode começar.',
+        body:'Comece pela primeira fazenda da fila e siga os passos. Se esquecer alguma coisa, aperte “Tutorial” lá em cima, a qualquer hora, que eu te mostro de novo.' },
+    ];
+
+    let done = false;
+    try { done = !!localStorage.getItem('gab_tour_v1'); } catch(e){}
+
+    this.state = {
+      selectedId:'rv7', decided:{}, epoch:'atual',
+      layers:{ nativa:true, consolidada:true, hidro:true, mudanca:true },
+      toast:null,
+      tourActive:!done, tourStep:0,
+    };
+  }
+
+  componentDidMount(){
+    this._onResize = ()=>this.forceUpdate();
+    window.addEventListener('resize', this._onResize);
+    if(this.state.tourActive) requestAnimationFrame(()=>this.forceUpdate());
+  }
+  componentWillUnmount(){
+    window.removeEventListener('resize', this._onResize);
+    clearTimeout(this._t);
+  }
+
+  select(id){ this.setState({ selectedId:id, epoch:'atual' }); }
+  toggleLayer(k){ this.setState({ layers:{ ...this.state.layers, [k]:!this.state.layers[k] } }); }
+  setEpoch(e){ this.setState({ epoch:e }); }
+  dismissToast(){ this.setState({ toast:null }); }
+
+  startTour(){ this.setState({ selectedId:'rv7', epoch:'atual', tourActive:true, tourStep:0 }); requestAnimationFrame(()=>this.forceUpdate()); }
+  tourNext(){ if(this.state.tourStep >= this.tourSteps.length-1){ this.tourFinish(); } else { this.setState({ tourStep:this.state.tourStep+1 }); } }
+  tourPrev(){ this.setState({ tourStep:Math.max(0, this.state.tourStep-1) }); }
+  tourFinish(){ try{ localStorage.setItem('gab_tour_v1','1'); }catch(e){} this.setState({ tourActive:false }); }
+
+  _flash(toast){
+    clearTimeout(this._t);
+    this.setState({ toast });
+    this._t = setTimeout(()=>this.setState({ toast:null }), 3800);
+  }
+
+  decide(action){
+    const c = this.cases.find(x=>x.id===this.state.selectedId);
+    if(!c) return;
+    const decided = { ...this.state.decided, [c.id]:action };
+    const active = this.cases.filter(x=>!decided[x.id]);
+    const labels = { liberar:'Liberado com trilha', notificar:'Notificação emitida', revisar:'Enviado para revisão manual', reagendar:'Reimagem agendada' };
+    this.setState({ decided, selectedId: active[0] ? active[0].id : null, epoch:'atual' });
+    this._flash({ action, title: labels[action] || 'Resolvido', sub: `${c.municipio} · ${c.gleba} · ${c.car} · trilha registrada` });
+  }
+
+  batchLiberar(){
+    const list = this.cases.filter(c=>c.group==='liberavel' && !this.state.decided[c.id]);
+    if(!list.length) return;
+    const decided = { ...this.state.decided };
+    list.forEach(c=>{ decided[c.id]='liberar'; });
+    const active = this.cases.filter(x=>!decided[x.id]);
+    this.setState({ decided, selectedId: active[0] ? active[0].id : null, epoch:'atual' });
+    this._flash({ action:'liberar', title:`${list.length} imóveis liberados com trilha`, sub:'Lote sem delta · confiança alta · recibo único gerado' });
+  }
+
+  renderVals(){
+    const S = this.state, decided = S.decided;
+    const fmt = n => n.toLocaleString('pt-BR');
+    const active = this.cases.filter(c=>!decided[c.id]);
+    const concluded = Object.keys(decided).length;
+
+    const defs = [
+      { key:'revisar',  label:'Revisar primeiro',   color:'#C0573B', sub:'delta × confiança < limiar' },
+      { key:'liberavel',label:'Liberável c/ trilha', color:'#7FB07A', sub:'sem delta × confiança alta' },
+    ];
+    const groups = defs.map(g=>{
+      const items = active.filter(c=>c.group===g.key).map(c=>({
+        id:c.id, municipio:c.municipio, gleba:c.gleba, tagsText:c.tagsText,
+        tagFg: g.key==='revisar' ? '#E0926E' : '#7FB07A',
+        tagBg: g.key==='revisar' ? 'rgba(192,87,59,0.16)' : 'rgba(127,176,122,0.18)',
+        cardBg: c.id===S.selectedId ? '#2E3E2B' : '#202E22',
+        outline: c.id===S.selectedId ? '2px solid #D6A23E' : '1px solid rgba(255,255,255,0.06)',
+        onSelect: ()=>this.select(c.id)
+      }));
+      const r = { key:g.key, label:g.label, color:g.color, sub:g.sub, items, count:items.length, batchShow:false };
+      if(g.key==='liberavel' && items.length>1){ r.batchShow=true; r.batchLabel=`Liberar lote (${items.length}) com trilha`; r.onBatch=()=>this.batchLiberar(); }
+      return r;
+    }).filter(g=>g.items.length);
+
+    const sel = this.cases.find(c=>c.id===S.selectedId) || null;
+    const hasSelected = !!sel;
+
+    const out = {
+      filaRestante: fmt(12480 - concluded),
+      concludedLabel: concluded===0 ? 'nenhum concluído ainda' : (concluded===1 ? '1 concluído hoje' : concluded+' concluídos hoje'),
+      groups, hasSelected, emptyState: !hasSelected,
+      layerNativa:S.layers.nativa, layerConsolidada:S.layers.consolidada, layerHidro:S.layers.hidro, layerMudanca:S.layers.mudanca,
+      legend: [
+        { key:'nativa', label:'Vegetação nativa', color:'#5f8a55' },
+        { key:'consolidada', label:'Área consolidada', color:'#c9a86a' },
+        { key:'hidro', label:'Hidrografia', color:'#5E8CA8' },
+        { key:'mudanca', label:'Mudança recente', color:'#C0573B' },
+      ].map(x=>({
+        key:x.key, label:x.label, color:x.color, on:S.layers[x.key],
+        onToggle: ()=>this.toggleLayer(x.key),
+        chipStyle: `display:flex; align-items:center; gap:7px; font-size:10.5px; font-weight:600; cursor:pointer; border:none; font-family:'Hanken Grotesk',sans-serif; padding:5px 10px; border-radius:999px; transition:all .15s; background:${S.layers[x.key]?'rgba(255,255,255,0.09)':'transparent'}; color:${S.layers[x.key]?'#DCD3BE':'#6E8067'};${S.layers[x.key]?'':'text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.3);'}`
+      })),
+      epoch:S.epoch,
+      baseBtnBg:  S.epoch==='base'  ? '#D6A23E' : 'transparent', baseBtnFg:  S.epoch==='base'  ? '#1B2A1F' : '#C7CFB9',
+      atualBtnBg: S.epoch==='atual' ? '#D6A23E' : 'transparent', atualBtnFg: S.epoch==='atual' ? '#1B2A1F' : '#C7CFB9',
+      setBase: ()=>this.setEpoch('base'), setAtual: ()=>this.setEpoch('atual'),
+      toast:S.toast, dismiss: ()=>this.dismissToast(),
+      toastBg: S.toast ? ({ liberar:'#3E6B45', notificar:'#B5832B', revisar:'#5A3326', reagendar:'#2F4A6B' }[S.toast.action] || '#25382A') : '#25382A',
+      startTour: ()=>this.startTour(),
+      tourActive: S.tourActive,
+    };
+
+    if(sel){
+      const confMap = {
+        alta:  { c:'#3E6B45', b:'rgba(127,176,122,0.22)', l:'confiança alta' },
+        'média':{ c:'#9A5A1E', b:'rgba(214,162,62,0.2)', l:'confiança média' },
+        baixa: { c:'#9A3B22', b:'rgba(192,87,59,0.16)', l:'confiança baixa' },
+      };
+      const recoMap = {
+        ok:     { bg:'rgba(127,176,122,0.14)', bd:'#3E6B45', tag:'confiança ≥ limiar · apto a liberar' },
+        warn:   { bg:'rgba(214,162,62,0.16)',  bd:'#9A5A1E', tag:'delta confirmado · revisar antes de assinar' },
+        danger: { bg:'rgba(192,87,59,0.12)',   bd:'#C0573B', tag:'confiança < limiar · liberação bloqueada' },
+      };
+      const pkind = { ok:{ bg:'#3E6B45', fg:'#F3ECDC' }, warn:{ bg:'#B5832B', fg:'#2A2008' }, danger:{ bg:'#5A3326', fg:'#F3ECDC' } }[sel.recoType];
+      const cm = confMap[sel.conf] || confMap.baixa;
+      const rm = recoMap[sel.recoType];
+
+      const ev = [
+        { k:'Cena óptica', val:sel.img, color:'#5E8CA8' },
+        { k:'Alerta', val: sel.alert || 'sem alerta no período', color: sel.alert ? '#C0573B' : '#9FA890' },
+        { k:'Base t0', val:sel.base, color:'#C9A86A' },
+        { k:'Score · '+sel.scoreVer, val:sel.score, color: sel.recoType==='ok' ? '#7FB07A' : '#C0573B' },
+      ];
+      const cells = (sel.cells||[]).map(c=>({
+        style: `position:absolute; left:${c.l}%; top:${c.t}%; width:${c.s}px; height:${c.s}px; border:2px solid #C0573B; border-radius:2px; background-color:rgba(192,87,59,0.14); background-image:repeating-linear-gradient(45deg, rgba(192,87,59,0.5) 0 4px, transparent 4px 9px); opacity:${S.epoch==='atual'?1:0}; transform:${S.epoch==='atual'?'scale(1)':'scale(0.5)'}; transition:opacity .45s ease, transform .45s ease;${c.strong?' box-shadow:0 0 0 1px rgba(255,255,255,0.25); animation:gpulse 2s ease-in-out infinite;':''}`
+      }));
+      const primaryIcon = sel.recoType==='ok' ? '✓' : (sel.recoType==='danger' ? '↻' : '✉');
+
+      Object.assign(out, {
+        selected: sel,
+        confColor:cm.c, confBg:cm.b, confLabel:cm.l,
+        recoBg:rm.bg, recoBd:rm.bd, recoTag:rm.tag,
+        primaryBg:pkind.bg, primaryColor:pkind.fg, primaryIcon,
+        selEv:ev, selCells:cells,
+        selChange:!!sel.change, selNoChange:(!sel.change && !sel.nuvem), selNuvem:!!sel.nuvem,
+        selOk:sel.recoType==='ok', selWarn:sel.recoType==='warn', selDanger:sel.recoType==='danger',
+        selAntecip:!!sel.antecip, selAntecipWidth: sel.antecip ? Math.min(94, sel.antecip*1.7+18)+'%' : '0%',
+        selAlertPill: sel.alert ? (sel.changeKind || 'mudança')+' · '+sel.alert : null,
+        selCoord: sel.coord, selBasemap: 'Sentinel‑2 · RGB B4/B3/B2 · '+sel.imgShort,
+        decideP: ()=>this.decide(sel.primary.action),
+        selSecondary: (sel.secondary||[]).map(s=>({ label:s.label, onClick: ()=>this.decide(s.action) })),
+      });
+    }
+
+    if(S.tourActive){
+      const i = S.tourStep, step = this.tourSteps[i], total = this.tourSteps.length;
+      let rect = null;
+      if(step.key){ const el = document.querySelector(`[data-tour="${step.key}"]`); if(el) rect = el.getBoundingClientRect(); }
+      const hasTarget = !!rect;
+      const p = 6;
+      const W = window.innerWidth, H = window.innerHeight, cw = 360;
+      let cs;
+      if(!hasTarget){ cs = 'left:50%; top:50%; transform:translate(-50%,-50%);'; }
+      else if(step.place==='right'){ const L=Math.min(rect.right+20, W-cw-16), T=Math.max(16, Math.min(rect.top, H-300)); cs=`left:${L}px; top:${T}px;`; }
+      else if(step.place==='left'){ const L=Math.max(16, rect.left-cw-20), T=Math.max(16, Math.min(rect.top, H-300)); cs=`left:${L}px; top:${T}px;`; }
+      else if(step.place==='bottom'){ const L=Math.max(16, Math.min(rect.left, W-cw-16)), T=Math.min(rect.bottom+20, H-300); cs=`left:${L}px; top:${T}px;`; }
+      else { const L=Math.max(16, Math.min(rect.left, W-cw-16)), B=Math.max(16, H-rect.top+20); cs=`left:${L}px; bottom:${B}px;`; }
+
+      Object.assign(out, {
+        tourHasTarget: hasTarget,
+        tourCatcherBg: hasTarget ? 'transparent' : 'rgba(13,20,14,0.84)',
+        tourSpotStyle: hasTarget ? `left:${rect.left-p}px; top:${rect.top-p}px; width:${rect.width+2*p}px; height:${rect.height+2*p}px;` : '',
+        tourRingStyle: hasTarget ? `left:${rect.left-p}px; top:${rect.top-p}px; width:${rect.width+2*p}px; height:${rect.height+2*p}px;` : '',
+        tourCalloutStyle: cs,
+        tourTitle: step.title, tourBody: step.body,
+        tourStepLabel: `Passo ${i+1} de ${total}`,
+        tourShowPrev: i>0, tourIsLast: i===total-1,
+        tourNextLabel: i===total-1 ? 'Começar a usar' : 'Próximo',
+        tourDots: this.tourSteps.map((s,idx)=>({ style:`width:7px; height:7px; border-radius:50%; transition:all .2s; background:${idx===i?'#D6A23E':(idx<i?'#7FB07A':'rgba(46,37,25,0.2)')};` })),
+        tourNext: ()=>this.tourNext(), tourPrev: ()=>this.tourPrev(), tourSkip: ()=>this.tourFinish(),
+      });
+    }
+
+    return out;
+  }
+}
+</script>
+</body>
+</html>
