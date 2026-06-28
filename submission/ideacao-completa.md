@@ -117,3 +117,5 @@ A submissão é **dupla: artefato técnico + modelo de governança** (com o dono
 3. **Comparativo de tempo:** assumido como métrica-alvo a medir no piloto (§5/§8) — vazão da análise sobe sem aumentar o erro; o **backtest de antecipação** mede os "dias de antecipação" por talhão. Reforçamos que são metas, não resultados já obtidos.
 4. **Piloto:** detalhamos em §8 — recorte de município na **SEMAD-GO** (Cerrado/céu limpo), com t0 estadual + backtest calibrado contra verdade independente (PRODES/DETER), e plano B de dado (MapBiomas Col.10 + consulta.car).
 5. **Custo das imagens:** esclarecemos que a imagem **Sentinel-2 é gratuita** (Copernicus) e que **só remapeamos os talhões que mudaram** (não o estado inteiro) — exatamente o que torna o custo viável (§3 e §7); o processamento pesado é cloud-assistido via openEO/CDSE, fora do desktop da OEMA.
+
+> Respaldo com dados concretos e fontes para cada uma das 5 perguntas do mentor: ver `respostas-mentoria-eloi.md`.
