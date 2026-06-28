@@ -111,64 +111,38 @@
     <!-- -------- MAPA (visor GIS) -------- -->
     <section data-tour="map" style="position:relative; min-height:0; overflow:hidden; background:#3a4a2c;">
 
-      <!-- imagery base -->
-      <div style="position:absolute; inset:0; background:linear-gradient(135deg,#3a4a2c,#445331);"></div>
+      <!-- imagery base (por talhão) -->
+      <div style="position:absolute; inset:0; background:{{ selMap.bg }};"></div>
 
-      <!-- floresta / vegetação nativa -->
-      <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; left:-6%; top:-12%; width:56%; height:86%; transform:rotate(-4deg); clip-path:polygon(0 4%,62% 0,100% 26%,90% 72%,52% 98%,14% 86%,0 48%); background-color:#2f4327; background-image:radial-gradient(circle at 22% 26%,rgba(92,126,70,0.85),transparent 24%),radial-gradient(circle at 52% 44%,rgba(38,62,32,0.9),transparent 28%),radial-gradient(circle at 34% 72%,rgba(78,108,60,0.7),transparent 26%),radial-gradient(circle at 72% 24%,rgba(56,82,44,0.8),transparent 22%),radial-gradient(circle at 78% 64%,rgba(42,66,34,0.85),transparent 24%),radial-gradient(circle at 14% 54%,rgba(66,94,52,0.7),transparent 20%);"></div>
-      </sc-if>
+      <!-- camadas vetoriais do talhão -->
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+        <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
+          <sc-for list="{{ selMap.fields }}" as="f" hint-placeholder-count="3"><path d="{{ f.d }}" fill="{{ f.fill }}"/></sc-for>
+          <sc-for list="{{ selMap.pivots }}" as="pv" hint-placeholder-count="2"><circle cx="{{ pv.cx }}" cy="{{ pv.cy }}" r="{{ pv.r }}" fill="{{ pv.fill }}"/></sc-for>
+        </sc-if>
+        <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
+          <sc-for list="{{ selMap.nativa }}" as="n" hint-placeholder-count="3"><path d="{{ n.d }}" fill="{{ n.fill }}"/></sc-for>
+        </sc-if>
+        <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
+          <path d="{{ selMap.river }}" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          <path d="{{ selMap.river }}" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        </sc-if>
+        <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
+          <sc-for list="{{ selMap.parcels }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}"/></sc-for>
+        </g>
+        <sc-if value="{{ selShowScar }}" hint-placeholder-val="{{ true }}"><path d="{{ selMap.focusD }}" fill="{{ selMap.scarFill }}" stroke="#C0573B" stroke-width="2.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></sc-if>
+        <path d="{{ selMap.focusD }}" fill="{{ selMap.focusFill }}" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+      </svg>
 
-      <!-- campos agrícolas / área consolidada -->
-      <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; right:-8%; top:20%; width:66%; height:88%; transform:rotate(3deg); clip-path:polygon(10% 0,100% 8%,100% 100%,0 100%,0 38%); background-color:#bda874; background-image:repeating-linear-gradient(27deg, transparent 0 30px, rgba(86,76,42,0.22) 30px 32px), repeating-linear-gradient(117deg, transparent 0 50px, rgba(64,58,34,0.18) 50px 52px), linear-gradient(0deg, rgba(150,134,80,0.45), rgba(196,176,116,0.18));"></div>
-        <div style="position:absolute; right:18%; top:30%; width:90px; height:90px; border-radius:50%; background:radial-gradient(circle,#8aa755,#62803f); box-shadow:0 0 0 1px rgba(255,255,255,0.15) inset, 0 0 0 1px rgba(40,40,20,0.3);"></div>
-        <div style="position:absolute; right:30%; top:52%; width:74px; height:74px; border-radius:50%; background:radial-gradient(circle,#93ad5d,#6a8742); box-shadow:0 0 0 1px rgba(255,255,255,0.12) inset;"></div>
-        <div style="position:absolute; right:9%; top:60%; width:64px; height:64px; border-radius:50%; background:radial-gradient(circle,#7f9a4d,#5c7838); box-shadow:0 0 0 1px rgba(255,255,255,0.12) inset;"></div>
-      </sc-if>
-
-      <!-- hidrografia -->
-      <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
-          <path d="M-20,540 C160,485 250,660 430,612 C600,566 700,705 900,648 L1030,640" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-          <path d="M-20,540 C160,485 250,660 430,612 C600,566 700,705 900,648 L1030,640" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-        </svg>
-      </sc-if>
-
-      <!-- vignette + grão de imagem -->
+      <!-- vignette + grão + graticule (chrome) -->
       <div style="position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 130px rgba(8,14,8,0.6);"></div>
       <div style="position:absolute; inset:0; pointer-events:none; opacity:0.05; background-image:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 2px);"></div>
-
-      <!-- graticule -->
       <div style="position:absolute; inset:0; pointer-events:none; background-image:linear-gradient(rgba(230,240,220,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(230,240,220,0.08) 1px,transparent 1px); background-size:90px 90px;"></div>
-
-      <!-- cadastro: limites das parcelas -->
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
-        <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
-          <path d="M120,150 L430,120 L478,360 L300,470 L150,420 Z"/>
-          <path d="M478,360 L770,300 L825,560 L560,648 L300,470 Z"/>
-          <path d="M150,420 L300,470 L322,772 L120,825 Z"/>
-          <path d="M560,648 L825,560 L905,820 L600,902 L322,772 Z"/>
-          <path d="M430,120 L748,92 L770,300 L478,360 Z"/>
-        </g>
-      </svg>
-
       <!-- nuvem -->
       <sc-if value="{{ selNuvem }}" hint-placeholder-val="{{ false }}">
-        <div style="position:absolute; left:32%; top:26%; width:48%; height:50%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.9), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
+        <div style="position:absolute; left:30%; top:24%; width:50%; height:54%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.92), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
       </sc-if>
 
-      <!-- células de mudança (vetor) -->
-      <sc-if value="{{ layerMudanca }}" hint-placeholder-val="{{ true }}">
-        <sc-for list="{{ selCells }}" as="cell" hint-placeholder-count="0">
-          <div style="{{ cell.style }}"></div>
-        </sc-for>
-      </sc-if>
-
-      <!-- talhão em foco -->
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
-        <path d="M120,150 L430,120 L478,360 L300,470 L150,420 Z" fill="rgba(242,200,75,0.08)" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
-      </svg>
 
       <!-- chip título -->
       <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
@@ -189,7 +163,7 @@
 
       <!-- alerta -->
       <sc-if value="{{ selAlertPill }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; left:20%; top:30%; display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
+        <div style="position:absolute; {{ selAlertPos }} display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
           <span style="width:6px; height:6px; border-radius:50%; background:#C0573B;"></span>{{ selAlertPill }}
         </div>
       </sc-if>
@@ -571,6 +545,17 @@ class Component extends DCLogic {
     this._flash({ action:'liberar', title:`${list.length} imóveis liberados com trilha`, sub:'Lote sem delta · confiança alta · recibo único gerado' });
   }
 
+  _rng(s){var h=2166136261>>>0;for(var i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;}return function(){h^=h<<13;h^=h>>>17;h^=h<<5;h=h>>>0;return h/4294967296;};}
+  _terrain(sel){var r=this._rng(sel.id),C=3,Rr=3,pts=[],i,j;function jit(b,a){return b+(r()*2-1)*a;}
+    for(i=0;i<=Rr;i++){pts[i]=[];for(j=0;j<=C;j++){var x=(j/C)*1100-50,y=(i/Rr)*1100-50;if(j>0&&j<C)x=jit(x,70);if(i>0&&i<Rr)y=jit(y,70);pts[i][j]={x:Math.round(x),y:Math.round(y)};}}
+    function quad(i,j){var a=pts[i][j],b=pts[i][j+1],c=pts[i+1][j+1],d=pts[i+1][j];return 'M'+a.x+','+a.y+' L'+b.x+','+b.y+' L'+c.x+','+c.y+' L'+d.x+','+d.y+' Z';}
+    function cen(i,j){var a=pts[i][j],b=pts[i][j+1],c=pts[i+1][j+1],d=pts[i+1][j];return {x:Math.round((a.x+b.x+c.x+d.x)/4),y:Math.round((a.y+b.y+c.y+d.y)/4)};}
+    var frontier=r()<0.5?1:2,nativa=[],fields=[],parcels=[],ng=['#2f4327','#33492b','#3a512f'],fg=['#b9a36e','#c2ad77','#ad9760'];
+    for(i=0;i<Rr;i++)for(j=0;j<C;j++){var d=quad(i,j);parcels.push({d:d});var isN=j<frontier?true:(r()<0.18);if(isN)nativa.push({d:d,fill:ng[Math.floor(r()*3)]});else fields.push({d:d,fill:fg[Math.floor(r()*3)]});}
+    var pivots=[],npv=Math.floor(r()*3)+1,k;for(k=0;k<npv;k++){var pi=Math.min(Math.floor(r()*Rr),Rr-1),pj=Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),pc=cen(pi,pj);pivots.push({cx:pc.x,cy:pc.y,r:26+Math.floor(r()*22),fill:'rgba(120,150,80,0.45)'});}
+    var ry=jit(540,120),river='M-30,'+Math.round(jit(ry,40))+' C'+Math.round(jit(280,80))+','+Math.round(jit(ry,90))+' '+Math.round(jit(520,80))+','+Math.round(jit(ry+60,90))+' '+Math.round(jit(760,60))+','+Math.round(jit(ry,80))+' L1030,'+Math.round(jit(ry,40));
+    var fi=Math.min(Math.floor(r()*Rr),Rr-1),fj=sel.change?Math.max(0,frontier-1):Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),fc=cen(fi,fj);
+    return {bg:'linear-gradient('+Math.floor(jit(135,30))+'deg,#3a4a2c,#445331)',nativa:nativa,fields:fields,pivots:pivots,river:river,parcels:parcels,focusD:quad(fi,fj),fcx:fc.x,fcy:fc.y};}
   renderVals(){
     const S = this.state, decided = S.decided;
     const fmt = n => n.toLocaleString('pt-BR');
@@ -621,6 +606,7 @@ class Component extends DCLogic {
       toastBg: S.toast ? ({ liberar:'#3E6B45', notificar:'#B5832B', revisar:'#5A3326', reagendar:'#2F4A6B' }[S.toast.action] || '#25382A') : '#25382A',
       startTour: ()=>this.startTour(),
       tourActive: S.tourActive,
+      selMap:{bg:'linear-gradient(135deg,#3a4a2c,#445331)',nativa:[],fields:[],pivots:[],parcels:[],river:'',focusD:'',focusFill:'rgba(242,200,75,0.10)',scarFill:'rgba(192,87,59,0.6)'}, selShowScar:false, selAlertPos:'left:20%; top:30%;',
     };
 
     if(sel){
@@ -649,7 +635,11 @@ class Component extends DCLogic {
       }));
       const primaryIcon = sel.recoType==='ok' ? '✓' : (sel.recoType==='danger' ? '↻' : '✉');
 
+      var __T=this._terrain(sel), __base=(S.epoch==='base');
       Object.assign(out, {
+        selMap:{bg:__T.bg,nativa:__T.nativa,fields:__T.fields,pivots:__T.pivots,river:__T.river,parcels:__T.parcels,focusD:__T.focusD,focusFill:(sel.change&&__base)?'rgba(58,88,48,0.62)':'rgba(242,200,75,0.10)',scarFill:'rgba(192,87,59,0.6)'},
+        selShowScar: !!sel.change && S.layers.mudanca && S.epoch==='atual',
+        selAlertPos: 'left:'+Math.max(8,Math.min(70,Math.round(__T.fcx/10)))+'%; top:'+Math.max(12,Math.min(66,Math.round(__T.fcy/10)))+'%;',
         selected: sel,
         confColor:cm.c, confBg:cm.b, confLabel:cm.l,
         recoBg:rm.bg, recoBd:rm.bd, recoTag:rm.tag,
