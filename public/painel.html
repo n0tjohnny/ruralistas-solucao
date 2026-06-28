@@ -24,10 +24,18 @@
   ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.13);border-radius:6px;}
   ::-webkit-scrollbar-track{background:transparent;}
   .ga-cream ::-webkit-scrollbar-thumb{background:rgba(46,37,25,0.18);}
+  @media (max-width:880px){
+    .ga-shell{height:auto!important;min-height:0!important;overflow:visible!important;}
+    .ga-shell>header{flex-wrap:wrap;height:auto!important;padding:10px 14px!important;gap:10px!important;}
+    .ga-main{display:block!important;}
+    .ga-main>aside[data-tour="fila"]{max-height:46vh;}
+    .ga-main>section[data-tour="map"]{height:58vh!important;min-height:330px;}
+    .ga-main>aside.ga-cream{height:auto!important;border-left:none!important;border-top:1px solid rgba(0,0,0,0.08)!important;}
+  }
 </style>
 </helmet>
 
-<div style="display:flex; flex-direction:column; height:100vh; min-height:680px; overflow:hidden; background:#16201A; font-family:'Hanken Grotesk',sans-serif; color:#F3ECDC;">
+<div class="ga-shell" style="display:flex; flex-direction:column; height:100vh; min-height:680px; overflow:hidden; background:#16201A; font-family:'Hanken Grotesk',sans-serif; color:#F3ECDC;">
 
   <!-- ============ TOP BAR ============ -->
   <header style="flex:none; height:58px; background:#1B2A1F; border-bottom:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; gap:14px; padding:0 18px;">
@@ -67,7 +75,7 @@
   </header>
 
   <!-- ============ MAIN ============ -->
-  <main style="flex:1; min-height:0; display:grid; grid-template-columns:288px 1fr 384px;">
+  <main class="ga-main" style="flex:1; min-height:0; display:grid; grid-template-columns:288px 1fr 384px;">
 
     <!-- -------- FILA -------- -->
     <aside data-tour="fila" style="background:#1B2A1F; border-right:1px solid rgba(255,255,255,0.07); display:flex; flex-direction:column; min-height:0;">
@@ -109,39 +117,39 @@
     </aside>
 
     <!-- -------- MAPA (visor GIS) -------- -->
-    <section data-tour="map" style="position:relative; min-height:0; overflow:hidden; background:#3a4a2c;">
+    <section data-tour="map" onWheel="{{ mapWheel }}" onMouseDown="{{ mapDown }}" style="position:relative; min-height:0; overflow:hidden; background:#3a4a2c; cursor:{{ mapCursor }};">
 
-      <!-- imagery base (por talhão) -->
-      <div style="position:absolute; inset:0; background:{{ selMap.bg }};"></div>
+      <!-- imagery + vetores (wrapper de zoom/pan) -->
+      <div style="position:absolute; inset:0; {{ mapStyle }}">
+        <div style="position:absolute; inset:0; background:{{ selMap.bg }};"></div>
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+          <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
+            <sc-for list="{{ selMap.fields }}" as="f" hint-placeholder-count="3"><path d="{{ f.d }}" fill="{{ f.fill }}"/></sc-for>
+            <sc-for list="{{ selMap.pivots }}" as="pv" hint-placeholder-count="2"><circle cx="{{ pv.cx }}" cy="{{ pv.cy }}" r="{{ pv.r }}" fill="{{ pv.fill }}"/></sc-for>
+          </sc-if>
+          <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
+            <sc-for list="{{ selMap.nativa }}" as="n" hint-placeholder-count="3"><path d="{{ n.d }}" fill="{{ n.fill }}"/></sc-for>
+          </sc-if>
+          <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
+            <path d="{{ selMap.river }}" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+            <path d="{{ selMap.river }}" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+          </sc-if>
+          <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
+            <sc-for list="{{ selMap.parcels }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}"/></sc-for>
+          </g>
+          <sc-if value="{{ selShowScar }}" hint-placeholder-val="{{ true }}"><path d="{{ selMap.focusD }}" fill="{{ selMap.scarFill }}" stroke="#C0573B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></sc-if>
+          <path d="{{ selMap.focusD }}" fill="{{ selMap.focusFill }}" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+        </svg>
+        <!-- wash de época (antes/depois) -->
+        <div style="position:absolute; inset:0; pointer-events:none; background:{{ selEpochWash }}; transition:background .3s ease;"></div>
+        <sc-if value="{{ selNuvem }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute; left:30%; top:24%; width:50%; height:54%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.92), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
+        </sc-if>
+      </div>
 
-      <!-- camadas vetoriais do talhão -->
-      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
-        <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
-          <sc-for list="{{ selMap.fields }}" as="f" hint-placeholder-count="3"><path d="{{ f.d }}" fill="{{ f.fill }}"/></sc-for>
-          <sc-for list="{{ selMap.pivots }}" as="pv" hint-placeholder-count="2"><circle cx="{{ pv.cx }}" cy="{{ pv.cy }}" r="{{ pv.r }}" fill="{{ pv.fill }}"/></sc-for>
-        </sc-if>
-        <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
-          <sc-for list="{{ selMap.nativa }}" as="n" hint-placeholder-count="3"><path d="{{ n.d }}" fill="{{ n.fill }}"/></sc-for>
-        </sc-if>
-        <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
-          <path d="{{ selMap.river }}" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-          <path d="{{ selMap.river }}" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-        </sc-if>
-        <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
-          <sc-for list="{{ selMap.parcels }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}"/></sc-for>
-        </g>
-        <sc-if value="{{ selShowScar }}" hint-placeholder-val="{{ true }}"><path d="{{ selMap.focusD }}" fill="{{ selMap.scarFill }}" stroke="#C0573B" stroke-width="2.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></sc-if>
-        <path d="{{ selMap.focusD }}" fill="{{ selMap.focusFill }}" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
-      </svg>
-
-      <!-- vignette + grão + graticule (chrome) -->
+      <!-- overlays fixos (lente) -->
       <div style="position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 130px rgba(8,14,8,0.6);"></div>
       <div style="position:absolute; inset:0; pointer-events:none; opacity:0.05; background-image:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 2px);"></div>
-      <div style="position:absolute; inset:0; pointer-events:none; background-image:linear-gradient(rgba(230,240,220,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(230,240,220,0.08) 1px,transparent 1px); background-size:90px 90px;"></div>
-      <!-- nuvem -->
-      <sc-if value="{{ selNuvem }}" hint-placeholder-val="{{ false }}">
-        <div style="position:absolute; left:30%; top:24%; width:50%; height:54%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.92), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
-      </sc-if>
 
 
       <!-- chip título -->
@@ -163,7 +171,7 @@
 
       <!-- alerta -->
       <sc-if value="{{ selAlertPill }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; {{ selAlertPos }} display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
+        <div style="position:absolute; left:20%; top:30%; display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
           <span style="width:6px; height:6px; border-radius:50%; background:#C0573B;"></span>{{ selAlertPill }}
         </div>
       </sc-if>
@@ -178,8 +186,8 @@
 
       <!-- zoom -->
       <div style="position:absolute; right:16px; top:16px; display:flex; flex-direction:column; border-radius:9px; overflow:hidden; box-shadow:0 5px 14px rgba(0,0,0,0.32);">
-        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; border-bottom:1px solid rgba(255,255,255,0.12); cursor:pointer;">+</div>
-        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; cursor:pointer;">−</div>
+        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; border-bottom:1px solid rgba(255,255,255,0.12); cursor:pointer;" onClick="{{ zoomIn }}">+</div>
+        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; cursor:pointer;" onClick="{{ zoomOut }}">−</div>
       </div>
 
       <!-- basemap chip -->
@@ -304,8 +312,10 @@
             </div>
           </sc-if>
 
-          <!-- decisão -->
-          <div style="padding:18px 20px 24px;">
+          </div>
+
+          <!-- decisão (rodapé sempre visível) -->
+          <div style="flex:none; border-top:1px solid #E4D8BD; background:#F4EEDF; padding:13px 20px 15px;">
             <sc-if value="{{ selDanger }}" hint-placeholder-val="{{ false }}">
               <div style="display:flex; gap:10px; align-items:flex-start; padding:11px 13px; background:rgba(192,87,59,0.1); border:1px solid rgba(192,87,59,0.35); border-radius:10px; margin-bottom:12px;">
                 <span style="width:20px; height:20px; border-radius:6px; background:#C0573B; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; flex:none;">✕</span>
@@ -321,9 +331,8 @@
               </sc-for>
             </div>
 
-            <p style="font-size:10.5px; color:#A2937A; margin:14px 0 0; line-height:1.5; text-align:center;">Cada decisão gera registro auditável anexado ao fluxo da análise dinamizada (SICAR).<br>Representação do produto · dados ilustrativos (Goiás).</p>
+            <p style="font-size:10.5px; color:#A2937A; margin:9px 0 0; line-height:1.4; text-align:center;">Cada decisão gera registro auditável anexado ao fluxo da análise dinamizada (SICAR).<br>Representação do produto · dados ilustrativos (Goiás).</p>
           </div>
-        </div>
       </sc-if>
 
       <sc-if value="{{ emptyState }}" hint-placeholder-val="{{ false }}">
@@ -492,7 +501,7 @@ class Component extends DCLogic {
     try { done = !!localStorage.getItem('gab_tour_v1'); } catch(e){}
 
     this.state = {
-      selectedId:'rv7', decided:{}, epoch:'atual',
+      selectedId:'rv7', decided:{}, epoch:'atual', zoom:1, panX:0, panY:0, _smooth:true,
       layers:{ nativa:true, consolidada:true, hidro:true, mudanca:true },
       toast:null,
       tourActive:!done, tourStep:0,
@@ -502,14 +511,16 @@ class Component extends DCLogic {
   componentDidMount(){
     this._onResize = ()=>this.forceUpdate();
     window.addEventListener('resize', this._onResize);
+    this._mmH=(e)=>this._mapMove(e); this._muH=()=>this._mapUp(); window.addEventListener('mousemove',this._mmH); window.addEventListener('mouseup',this._muH);
     if(this.state.tourActive) requestAnimationFrame(()=>this.forceUpdate());
   }
   componentWillUnmount(){
     window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('mousemove',this._mmH); window.removeEventListener('mouseup',this._muH);
     clearTimeout(this._t);
   }
 
-  select(id){ this.setState({ selectedId:id, epoch:'atual' }); }
+  select(id){ this.setState({ selectedId:id, epoch:'atual', zoom:1, panX:0, panY:0, _smooth:true }); }
   toggleLayer(k){ this.setState({ layers:{ ...this.state.layers, [k]:!this.state.layers[k] } }); }
   setEpoch(e){ this.setState({ epoch:e }); }
   dismissToast(){ this.setState({ toast:null }); }
@@ -556,6 +567,13 @@ class Component extends DCLogic {
     var ry=jit(540,120),river='M-30,'+Math.round(jit(ry,40))+' C'+Math.round(jit(280,80))+','+Math.round(jit(ry,90))+' '+Math.round(jit(520,80))+','+Math.round(jit(ry+60,90))+' '+Math.round(jit(760,60))+','+Math.round(jit(ry,80))+' L1030,'+Math.round(jit(ry,40));
     var fi=Math.min(Math.floor(r()*Rr),Rr-1),fj=sel.change?Math.max(0,frontier-1):Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),fc=cen(fi,fj);
     return {bg:'linear-gradient('+Math.floor(jit(135,30))+'deg,#3a4a2c,#445331)',nativa:nativa,fields:fields,pivots:pivots,river:river,parcels:parcels,focusD:quad(fi,fj),fcx:fc.x,fcy:fc.y};}
+  _mapDims(e){var r=e.currentTarget.getBoundingClientRect();this._mw=r.width;this._mh=r.height;this._ml=r.left;this._mt=r.top;}
+  _clampPan(px,py,z){var W=this._mw||800,H=this._mh||600;return {x:Math.max(W-z*W,Math.min(0,px)),y:Math.max(H-z*H,Math.min(0,py))};}
+  _zoomBtn(d){var z=this.state.zoom,nz=Math.max(1,Math.min(5,d>0?z*1.4:z/1.4)),W=this._mw||800,H=this._mh||600,cx=W/2,cy=H/2,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:true});}
+  _mapWheel(e){this._mapDims(e);var z=this.state.zoom,f=e.deltaY<0?1.18:1/1.18,nz=Math.max(1,Math.min(5,z*f)),cx=e.clientX-this._ml,cy=e.clientY-this._mt,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:false});}
+  _mapDown(e){if(this.state.zoom<=1)return;this._mapDims(e);this._drag={x:e.clientX,y:e.clientY,px:this.state.panX,py:this.state.panY};this.setState({_smooth:false});}
+  _mapMove(e){if(!this._drag)return;var px=this._drag.px+(e.clientX-this._drag.x),py=this._drag.py+(e.clientY-this._drag.y),p=this._clampPan(px,py,this.state.zoom);this.setState({panX:p.x,panY:p.y});}
+  _mapUp(){this._drag=null;}
   renderVals(){
     const S = this.state, decided = S.decided;
     const fmt = n => n.toLocaleString('pt-BR');
@@ -606,7 +624,8 @@ class Component extends DCLogic {
       toastBg: S.toast ? ({ liberar:'#3E6B45', notificar:'#B5832B', revisar:'#5A3326', reagendar:'#2F4A6B' }[S.toast.action] || '#25382A') : '#25382A',
       startTour: ()=>this.startTour(),
       tourActive: S.tourActive,
-      selMap:{bg:'linear-gradient(135deg,#3a4a2c,#445331)',nativa:[],fields:[],pivots:[],parcels:[],river:'',focusD:'',focusFill:'rgba(242,200,75,0.10)',scarFill:'rgba(192,87,59,0.6)'}, selShowScar:false, selAlertPos:'left:20%; top:30%;',
+      selMap:{bg:'linear-gradient(135deg,#3a4a2c,#445331)',nativa:[],fields:[],pivots:[],parcels:[],river:'',focusD:'',focusFill:'rgba(242,200,75,0.12)',scarFill:'#a8663f'}, selShowScar:false, selAlertPos:'left:20%; top:30%;', selEpochWash:'transparent',
+      mapStyle:'transform:translate('+S.panX+'px,'+S.panY+'px) scale('+S.zoom+'); transform-origin:0 0; transition:'+(S._smooth?'transform .16s ease':'none')+'; will-change:transform;', mapCursor:(S.zoom>1?'grab':'default'), mapWheel:(e)=>this._mapWheel(e), mapDown:(e)=>this._mapDown(e), zoomIn:()=>this._zoomBtn(1), zoomOut:()=>this._zoomBtn(-1),
     };
 
     if(sel){
@@ -637,8 +656,9 @@ class Component extends DCLogic {
 
       var __T=this._terrain(sel), __base=(S.epoch==='base');
       Object.assign(out, {
-        selMap:{bg:__T.bg,nativa:__T.nativa,fields:__T.fields,pivots:__T.pivots,river:__T.river,parcels:__T.parcels,focusD:__T.focusD,focusFill:(sel.change&&__base)?'rgba(58,88,48,0.62)':'rgba(242,200,75,0.10)',scarFill:'rgba(192,87,59,0.6)'},
+        selMap:{bg:__T.bg,nativa:__T.nativa,fields:__T.fields,pivots:__T.pivots,river:__T.river,parcels:__T.parcels,focusD:__T.focusD,focusFill:(sel.change&&__base)?'#33492b':'rgba(242,200,75,0.12)',scarFill:'#a8663f'},
         selShowScar: !!sel.change && S.layers.mudanca && S.epoch==='atual',
+        selEpochWash: sel.change ? (__base?'rgba(54,96,52,0.20)':'rgba(176,112,58,0.16)') : 'transparent',
         selAlertPos: 'left:'+Math.max(8,Math.min(70,Math.round(__T.fcx/10)))+'%; top:'+Math.max(12,Math.min(66,Math.round(__T.fcy/10)))+'%;',
         selected: sel,
         confColor:cm.c, confBg:cm.b, confLabel:cm.l,
