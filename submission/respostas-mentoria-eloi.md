@@ -51,7 +51,7 @@
 
 **Resposta:** um **backtest sobre 1–3 municípios do sudoeste goiano** (Rio Verde, Jataí, Mineiros, Cristalina — agropecuária forte, talhões grandes), em Goiás, porque a dor é documentada e a SEMAD tem autonomia para plugar o artefato.
 
-- **A dor tem número:** Goiás atingiu **100% dos imóveis cadastrados (150.592 CARs)**, mas só **~27.496 analisados (~18%)** na foto do anúncio. O cadastro é fácil; a análise é o funil. **[DADO OFICIAL]** — https://goias.gov.br/meioambiente/goias-atinge-100-de-imoveis-rurais-cadastrados-no-car/
+- **A dor tem número:** Goiás atingiu **100% dos imóveis cadastrados (150.592 CARs)**, mas só **~27.496 analisados (~18%)** na foto do anúncio do marco de 100% de cadastro. O cadastro é fácil; a análise é o funil. **[NÚMERO PUBLICADO, MAS DATADO]** — é um snapshot antigo (mesmo artigo do anúncio de 100% cadastro, provavelmente ~2019; o nº de análises desde então cresceu). Usar como ilustração do funil cadastro→análise, **não como % atual** — reconfirmar com a SEMAD-GO no acesso ao t0. — https://goias.gov.br/meioambiente/goias-atinge-100-de-imoveis-rurais-cadastrados-no-car/
 - **Autonomia:** a SEMAD lançou o **SIGCAR** (sistema estadual próprio, set/2025), adaptado à legislação local → pode integrar o delta+score sem depender do federal. **[DADO OFICIAL]** — https://goias.gov.br/meioambiente/semad-deixa-sistema-nacional-do-car-e-lanca-plataforma-propria-mais-funcional/
 - **Céu favorável:** Cerrado tem estação seca (mai–set) com céu limpo → Sentinel-2 óptico funciona sem precisar de SAR (que na Amazônia é necessário pela nuvem >80% na estação úmida). **[DADO OFICIAL]**
 
@@ -76,3 +76,8 @@
 - **9 estados / +1 mi analisados** (gov.br jun/2026) é a fonte oficial — usar essa, não "13 estados".
 - **66 mil/dia**, **5,9%**, **~94%**, **8,1 mi** já constam como verificados no repo (`reports/09`).
 - Páginas Canal Rural / Portal DBO retornaram HTTP 403 na captura direta; os números batem com SFB/CPI, mas revalidar no navegador antes de cravar em slide.
+
+### Re-verificação (28/06/2026) — auditoria dos dados apresentados
+Confirmados em busca independente (múltiplas fontes): **66 mil/dia** (canalrural + gov.br); **5,9% vs 2,3%, 8.154.567 inscrições, 480.700 concluídos, 718,9 mi ha, análises +23%** (SFB via DBO); **+1 mi analisados / 9 estados** (AL, AP, CE, MG, PB, PE, PI, PR, RJ — gov.br jun/2026); **Cerrado 8.174 km² (-25,7%, ago/2023–jul/2024)** (INPE/MMA, nov/2024); **Alagoas +1.300% / RJ dobrou** (CPI, dez/2024); **CDSE free tier 40 mil PU + 10 mil créditos openEO/mês** (dataspace.copernicus.eu); **Lei 9.784/99 art. 50 §2º** — texto verbatim confere ("meio mecânico que reproduza os fundamentos das decisões, desde que não prejudique direito ou garantia dos interessados").
+**Corrigido:** o **~18% analisado de Goiás** era apresentado como atual — é snapshot **datado** (mesmo artigo do marco de 100% cadastro, provavelmente ~2019); rebaixado para ilustração do funil, a reconfirmar com a SEMAD.
+**Ressalva de interpretação:** o art. 50 §2º (norma) autoriza *motivação mecanizada* — aplicá-lo a um *score de confiança* é argumento defensável nosso, não autorização literal de "score de IA no CAR"; Goiás **não** está entre os 9 estados da Análise Dinamizada (usa SIGCAR próprio), o que reforça o enquadramento de "autonomia para plugar", não o contradiz.
