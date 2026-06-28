@@ -2,7 +2,9 @@
 
 > **Regras Live 7 (duras):** vídeo **≤ 2 min** (acima **desclassifica**); YouTube **público ou não-listado** (privado **desclassifica** — testar o link antes); **narração por um integrante do time** (voz humana real — **não** usar voz clonada); IA pode auxiliar a edição. O material complementar não é avaliado — **só estes 2 min contam**.
 >
-> Meta do vídeo: mostrar o produto **funcionando no caso difícil** + a **prova de antecipação**. Mostrar, não descrever. Telas a partir de `../pitch.html` (slide "O produto" e "A prova") e do QGIS, se houver.
+> Meta do vídeo: mostrar o produto **funcionando no caso difícil** + a **prova de antecipação**. Mostrar, não descrever. Telas: o **protótipo interativo ao vivo em `gabarito.pages.dev/painel`** (Cenas 2–4) + o slide "A prova" de `../pitch.html` para o gráfico de antecipação (Cena 5). QGIS com a camada DETER se houver.
+>
+> **Antes de gravar o painel:** ele abre um **tutorial guiado** no primeiro acesso. Para filmar o cockpit limpo, clique **"Pular"** (ou navegue numa aba onde o tour já foi concluído / limpe o `localStorage`). Opcional: usar 1–2 passos do tutorial como introdução, mas isso consome tempo dos 2 min.
 
 **Duração-alvo: 1 min 50 s · narração ~290 palavras (~150 ppm).**
 
