@@ -597,6 +597,10 @@ class Component extends DCLogic {
       if(g.key==='liberavel' && items.length>1){ r.batchShow=true; r.batchLabel=`Liberar lote (${items.length}) com trilha`; r.onBatch=()=>this.batchLiberar(); }
       return r;
     }).filter(g=>g.items.length);
+    var __cc=this.cases.filter(c=>decided[c.id]);
+    if(__cc.length){var __lb={liberar:'Liberado',notificar:'Notificado',revisar:'Em revisão',reagendar:'Reagendado'};
+      groups.push({key:'concluido',label:'Concluídos',color:'#7FB07A',sub:'revisados e finalizados · Luana A.',count:__cc.length,batchShow:false,
+        items:__cc.map(c=>({id:c.id,municipio:c.municipio,gleba:c.gleba,tagsText:'✓ '+(__lb[decided[c.id]]||'Concluído')+' · Luana A.',tagFg:'#9FB191',tagBg:'rgba(127,176,122,0.12)',cardBg:c.id===S.selectedId?'#2E3E2B':'rgba(255,255,255,0.02)',outline:c.id===S.selectedId?'2px solid #D6A23E':'1px solid rgba(255,255,255,0.05)',onSelect:()=>this.select(c.id)}))});}
 
     const sel = this.cases.find(c=>c.id===S.selectedId) || null;
     const hasSelected = !!sel;

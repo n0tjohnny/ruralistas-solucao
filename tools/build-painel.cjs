@@ -145,6 +145,16 @@ must('font-weight:300; border-bottom:1px solid rgba(255,255,255,0.12); cursor:po
 must('font-size:19px; font-weight:300; cursor:pointer;">−</div>',
      'font-size:19px; font-weight:300; cursor:pointer;" onClick="{{ zoomOut }}">−</div>', 1);
 
+// ════════════════════ ENRICH 5 — fila "Concluídos" (quem revisou/finalizou) ════════════════════
+// Fechava o caso e ele só sumia. Agora vira uma seção "Concluídos" no fim da fila, com a decisão
+// tomada e o nome do analista (Luana A.) — a trilha de quem assinou, visível na própria fila.
+must('    }).filter(g=>g.items.length);\n',
+  "    }).filter(g=>g.items.length);\n" +
+  "    var __cc=this.cases.filter(c=>decided[c.id]);\n" +
+  "    if(__cc.length){var __lb={liberar:'Liberado',notificar:'Notificado',revisar:'Em revisão',reagendar:'Reagendado'};\n" +
+  "      groups.push({key:'concluido',label:'Concluídos',color:'#7FB07A',sub:'revisados e finalizados · Luana A.',count:__cc.length,batchShow:false,\n" +
+  "        items:__cc.map(c=>({id:c.id,municipio:c.municipio,gleba:c.gleba,tagsText:'✓ '+(__lb[decided[c.id]]||'Concluído')+' · Luana A.',tagFg:'#9FB191',tagBg:'rgba(127,176,122,0.12)',cardBg:c.id===S.selectedId?'#2E3E2B':'rgba(255,255,255,0.02)',outline:c.id===S.selectedId?'2px solid #D6A23E':'1px solid rgba(255,255,255,0.05)',onSelect:()=>this.select(c.id)}))});}\n", 1);
+
 // ════════════════════ ENRICH 4 — responsivo (mobile/telas curtas) ════════════════════
 // O grid fixo 288/1fr/384 estourava na horizontal em telas estreitas — colunas (e os botões)
 // ficavam inacessíveis. Em <=880px as 3 colunas empilham e a página rola naturalmente.
@@ -182,6 +192,7 @@ const MUST = [
   '_terrain(sel)', '{{ selMap.bg }}', '{{ selMap.focusD }}', '{{ selShowScar }}', '{{ selEpochWash }}',
   '_zoomBtn', 'zoom:1, panX:0', '{{ mapStyle }}', 'onWheel="{{ mapWheel }}"', 'onClick="{{ zoomIn }}"', 'onClick="{{ zoomOut }}"',
   'class="ga-shell"', 'class="ga-main"', '@media (max-width:880px)', 'rodapé sempre visível',
+  "label:'Concluídos'", 'revisados e finalizados · Luana A.',
   'dias de antecipação vs atualização da base · projeção',
   '<span>Base de referência atualizaria</span><span>só na consolidação anual</span>',
   '</strong> na fila · exemplo</div>', 'nunca contra o t0', 'dados ilustrativos (Goiás)',
