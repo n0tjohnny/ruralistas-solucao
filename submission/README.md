@@ -8,7 +8,7 @@ Direção canônica: `../pm-role.md` (DIREÇÃO DECIDIDA). Deck: `../pitch.html`
 | Entregável (Live 7) | Formato exigido | Artefato neste pacote | Status |
 |---|---|---|---|
 | **Ideação** | Formulário appdesafios (nome, logo, resumo ≤300, próximos passos) | `ideacao-form.md` | ✅ texto pronto p/ colar |
-| **Protótipo** | Vídeo **≤ 2 min**, YouTube público/não-listado, narração humana | `prototipo-script.md` (roteiro + shotlist) | ✅ roteiro pronto · falta gravar |
+| **Protótipo** | Vídeo **≤ 2 min**, YouTube público/não-listado, narração humana | `prototipo-script.md` (roteiro + shotlist) — **filma ao vivo o protótipo interativo `gabarito.pages.dev/painel`** | ✅ roteiro + protótipo prontos · falta gravar |
 | **Pitch** | Slides **PDF estático + áudio**, ≤ 3 min | `../pitch.html` → `⌘/Ctrl+P` (PDF) · `pitch-narration.md` (áudio) | ✅ deck + narração prontos · falta gravar |
 
 ## Submissão dupla (artefato técnico + governança)
