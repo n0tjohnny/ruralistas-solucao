@@ -8,6 +8,14 @@
 ## Desafio
 Desafio 02, Melhorar o acesso aos dados geoespaciais do CAR
 
+## Equipe (membros)
+- **Mário Guilberto Machado Souza** — Tecnólogo em Gestão da TI; Pós em Arquitetura e Gestão de Infraestrutura em TI
+- **João Marcos Cassol** — Analista de Segurança da Informação
+- **Jackson Meires Dantas Canuto** — Mestre em Engenharia de Software; graduação em Sistemas de Informação
+
+## Como usamos IA (campo do formulário)
+Ver texto pronto em `uso-de-ia.md` (versão curta e versão de uma linha).
+
 ## Logo
 Quadrado arredondado verde-mata (#25382A) com o ícone "gabarito" em dourado (#D6A23E):
 uma grade/tabela com uma marca de conferência. (Qualidade do logo não é avaliada, usar o

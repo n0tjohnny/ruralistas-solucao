@@ -3,13 +3,15 @@
 Artefatos prontos para a submissão (e para a conversa de adoção). Produzidos em 28/06/2026.
 Direção canônica: `../pm-role.md` (DIREÇÃO DECIDIDA). Deck: `../pitch.html` (`/pitch`).
 
-## Mapa para os 3 entregáveis da Live 7
+**Equipe:** Mário Guilberto Machado Souza · João Marcos Cassol · Jackson Meires Dantas Canuto (Jackson narra o áudio do pitch).
 
-| Entregável (Live 7) | Formato exigido | Artefato neste pacote | Status |
+## Mapa para os 3 entregáveis (Live 07/08)
+
+| Entregável | Formato exigido | Artefato neste pacote | Status |
 |---|---|---|---|
-| **Ideação** | Formulário appdesafios (nome, logo, resumo ≤300, próximos passos) | `ideacao-form.md` | ✅ texto pronto p/ colar |
+| **Ideação** | Formulário appdesafios (nome, logo, resumo ≤300, próximos passos) | `ideacao-form.md` · campo de IA em `uso-de-ia.md` | ✅ texto pronto p/ colar |
 | **Protótipo** | Vídeo **≤ 2 min**, YouTube público/não-listado, narração humana | `prototipo-script.md` (roteiro + shotlist) — **filma ao vivo o protótipo interativo `gabarito.pages.dev/painel`** | ✅ roteiro + protótipo prontos · falta gravar |
-| **Pitch** | Slides **PDF estático + áudio**, ≤ 3 min | `../pitch.html` → `⌘/Ctrl+P` (PDF) · `pitch-narration.md` (áudio) | ✅ deck + narração prontos · falta gravar |
+| **Pitch** | Slides (horizontal) **+ áudio**, ≤ 3 min | `../pitch.html` (10 slides, estrutura oficial; satélite real; slide Time com fotos) → `⌘/Ctrl+P` (PDF) · **roteiro do Jackson: `roteiro-jackson.md`** (corrido, pronto p/ ler; `pitch-narration.md` é a versão com notas) | ✅ deck + roteiro prontos · falta gravar |
 
 ## Submissão dupla (artefato técnico + governança)
 
