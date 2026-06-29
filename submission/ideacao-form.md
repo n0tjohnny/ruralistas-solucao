@@ -17,9 +17,13 @@ Desafio 02, Melhorar o acesso aos dados geoespaciais do CAR
 Ver texto pronto em `uso-de-ia.md` (versão curta e versão de uma linha).
 
 ## Logo
-Quadrado arredondado verde-mata (#25382A) com o ícone "gabarito" em dourado (#D6A23E):
-uma grade/tabela com uma marca de conferência. (Qualidade do logo não é avaliada, usar o
-SVG do cabeçalho de `../pitch.html`.)
+Arquivo pronto para upload (jpg ou png) em `submission/`:
+- **`gabarito-logo-icon.png`** / `.jpg` (1:1, 2048×2048) — quadrado arredondado verde-mata (#25382A)
+  com o ícone "gabarito" em dourado (#D6A23E): uma grade/tabela com a marca de conferência (check).
+  **É este o arquivo a subir no campo "Identidade visual".**
+- `gabarito-logo-horizontal.png` (lockup com o wordmark "Gabarito" + "a base viva do CAR"), para slides/site.
+
+Fontes do logo (HTML/SVG, regeram via chromium headless): `../tools/logo-icon.html`, `../tools/logo-horizontal.html`.
 
 ## Resumo (≤ 300 caracteres), **274 caracteres**
 > O Gabarito é o roteador auditável da análise do CAR: com Sentinel-2 + PRODES/DETER detecta os talhões que mudaram, remapeia só eles e entrega à analista da OEMA uma fila por risco com trilha de auditoria datada, tornando a liberação assinável. Aberto, roda em QGIS/PostGIS.
