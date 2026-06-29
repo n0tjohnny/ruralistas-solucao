@@ -15,27 +15,26 @@
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   ::selection{background:#C0573B;color:#FCF8EF;}
-  @keyframes gpulse{0%,100%{box-shadow:0 0 0 0 rgba(192,87,59,0.55);}50%{box-shadow:0 0 0 9px rgba(192,87,59,0);}}
   @keyframes gtoast{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
   @keyframes gfade{from{opacity:0;}to{opacity:1;}}
-  @keyframes gring{0%{box-shadow:0 0 0 0 rgba(214,162,62,0.55);}70%{box-shadow:0 0 0 16px rgba(214,162,62,0);}100%{box-shadow:0 0 0 0 rgba(214,162,62,0);}}
+  @keyframes gring{0%{box-shadow:0 0 0 0 rgba(214,162,62,0.5);}70%{box-shadow:0 0 0 16px rgba(214,162,62,0);}100%{box-shadow:0 0 0 0 rgba(214,162,62,0);}}
   @keyframes gnudge{0%,100%{transform:translateX(0);}50%{transform:translateX(4px);}}
-  ::-webkit-scrollbar{width:9px;height:9px;}
-  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.13);border-radius:6px;}
+  ::-webkit-scrollbar{width:8px;height:8px;}
+  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:6px;}
   ::-webkit-scrollbar-track{background:transparent;}
-  .ga-cream ::-webkit-scrollbar-thumb{background:rgba(46,37,25,0.18);}
-  @media (max-width:880px){
+  .ga-cream ::-webkit-scrollbar-thumb{background:rgba(46,37,25,0.16);}
+  @media (max-width:900px){
     .ga-shell{height:auto!important;min-height:0!important;overflow:visible!important;}
     .ga-shell>header{flex-wrap:wrap;height:auto!important;padding:10px 14px!important;gap:10px!important;}
-    .ga-main{display:block!important;}
-    .ga-main>aside[data-tour="fila"]{max-height:46vh;}
-    .ga-main>section[data-tour="map"]{height:58vh!important;min-height:330px;}
-    .ga-main>aside.ga-cream{height:auto!important;border-left:none!important;border-top:1px solid rgba(0,0,0,0.08)!important;}
+    .ga-main{display:flex!important;flex-direction:column!important;}
+    .ga-main>section[data-tour="map"]{position:relative!important;inset:auto!important;height:54vh!important;min-height:320px!important;order:1;}
+    .ga-main>aside[data-tour="fila"]{position:static!important;width:auto!important;inset:auto!important;border-radius:0!important;max-height:40vh;order:2;box-shadow:none!important;}
+    .ga-main>aside.ga-cream{position:static!important;width:auto!important;inset:auto!important;border-radius:0!important;height:auto!important;order:3;box-shadow:none!important;}
   }
 </style>
 </helmet>
 
-<div class="ga-shell" style="display:flex; flex-direction:column; height:100vh; min-height:680px; overflow:hidden; background:#16201A; font-family:'Hanken Grotesk',sans-serif; color:#F3ECDC;">
+<div class="ga-shell" data-screen-label="Painel do analista" style="display:flex; flex-direction:column; height:100vh; min-height:680px; overflow:hidden; background:#16201A; font-family:'Hanken Grotesk',sans-serif; color:#F3ECDC;">
 
   <!-- ============ TOP BAR ============ -->
   <header style="flex:none; height:58px; background:#1B2A1F; border-bottom:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; gap:14px; padding:0 18px;">
@@ -53,7 +52,7 @@
 
     <div style="display:flex; align-items:center; gap:8px; font-size:12.5px; color:#C7CFB9;">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke="#9FB191" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="#9FB191" stroke-width="1.8"/></svg>
-      <strong style="color:#F3ECDC; font-weight:600;">Rio Verde · GO</strong>
+      <strong style="color:#F3ECDC; font-weight:600;">{{ headerLoc }}</strong>
       <span style="color:#5F7256;">·</span>
       <span>SEMAD‑GO</span>
     </div>
@@ -75,15 +74,21 @@
   </header>
 
   <!-- ============ MAIN ============ -->
-  <main class="ga-main" style="flex:1; min-height:0; display:grid; grid-template-columns:288px 1fr 384px;">
+  <main class="ga-main" style="flex:1; min-height:0; position:relative; background:#16201A;">
 
     <!-- -------- FILA -------- -->
-    <aside data-tour="fila" style="background:#1B2A1F; border-right:1px solid rgba(255,255,255,0.07); display:flex; flex-direction:column; min-height:0;">
-      <div style="flex:none; padding:16px 16px 12px;">
-        <p style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#7F9173; font-weight:700; margin:0 0 3px;">Fila · ordenada por risco</p>
-        <p style="font-size:11.5px; color:#9FB191; margin:0; line-height:1.45;">Score de risco define a ordem (não exibido). Agrupamento por semáforo de confiança.</p>
+    <aside data-tour="fila" style="position:absolute; {{ filaPanelStyle }} z-index:7; background:rgba(20,30,23,0.86); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.09); border-radius:16px; box-shadow:0 18px 48px rgba(0,0,0,0.42); display:flex; flex-direction:column; min-height:0; overflow:hidden;">
+      <div style="flex:none; display:flex; align-items:flex-start; gap:10px; padding:14px 14px 12px;">
+        <div style="flex:1; min-width:0;">
+          <p style="font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#7F9173; font-weight:700; margin:0 0 3px; white-space:nowrap;">Fila · {{ filaRestante }} · exemplo</p>
+          <sc-if value="{{ filaOpen }}" hint-placeholder-val="{{ true }}">
+            <p style="font-size:11.5px; color:#9FB191; margin:0; line-height:1.45;">Ordenada por score de risco. Agrupada por semáforo de confiança.</p>
+          </sc-if>
+        </div>
+        <button onClick="{{ toggleFila }}" title="Recolher fila" style="flex:none; width:30px; height:30px; border-radius:8px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.05); color:#C7CFB9; font-size:17px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">{{ filaToggleIcon }}</button>
       </div>
 
+      <sc-if value="{{ filaOpen }}" hint-placeholder-val="{{ true }}">
       <div style="flex:1; min-height:0; overflow-y:auto; padding:0 12px 18px;">
         <sc-for list="{{ groups }}" as="group" hint-placeholder-count="2">
           <div style="margin-bottom:18px;">
@@ -100,10 +105,13 @@
               <sc-for list="{{ group.items }}" as="item" hint-placeholder-count="3">
                 <button onClick="{{ item.onSelect }}" style="text-align:left; border:none; cursor:pointer; border-radius:10px; padding:11px 12px; outline:{{ item.outline }}; background:{{ item.cardBg }}; color:#F3ECDC; font-family:'Hanken Grotesk',sans-serif; transition:background .15s; display:block; width:100%;">
                   <div style="display:flex; align-items:center; gap:7px;">
-                    <span style="font-size:13px; font-weight:700; color:#F6EFE0;">{{ item.municipio }}</span>
+                    <span style="font-size:13.5px; font-weight:700; color:#F6EFE0;">{{ item.municipio }}</span>
                     <span style="font-size:11px; color:#8FA284;">· {{ item.gleba }}</span>
                   </div>
                   <span style="display:inline-block; margin-top:7px; font-size:9.5px; font-weight:700; letter-spacing:0.4px; text-transform:uppercase; color:{{ item.tagFg }}; background:{{ item.tagBg }}; padding:3px 8px; border-radius:999px;">{{ item.tagsText }}</span>
+                  <sc-if value="{{ item.note }}" hint-placeholder-val="{{ true }}">
+                    <p style="font-size:11.5px; color:#A9B79C; margin:8px 0 0; line-height:1.4;">{{ item.note }}</p>
+                  </sc-if>
                 </button>
               </sc-for>
             </div>
@@ -114,112 +122,85 @@
           </div>
         </sc-for>
       </div>
+      </sc-if>
     </aside>
 
-    <!-- -------- MAPA (visor GIS) -------- -->
-    <section data-tour="map" onWheel="{{ mapWheel }}" onMouseDown="{{ mapDown }}" style="position:relative; min-height:0; overflow:hidden; background:#3a4a2c; cursor:{{ mapCursor }};">
+    <!-- -------- MAPA (imagem de satélite real + comparação antes/depois) -------- -->
+    <section data-tour="map" style="position:absolute; inset:0; overflow:hidden; background:#2c3b24;">
 
-      <!-- imagery + vetores (wrapper de zoom/pan) -->
-      <div style="position:absolute; inset:0; {{ mapStyle }}">
-        <div style="position:absolute; inset:0; background:{{ selMap.bg }};"></div>
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
-          <sc-if value="{{ layerConsolidada }}" hint-placeholder-val="{{ true }}">
-            <sc-for list="{{ selMap.fields }}" as="f" hint-placeholder-count="3"><path d="{{ f.d }}" fill="{{ f.fill }}"/></sc-for>
-            <sc-for list="{{ selMap.pivots }}" as="pv" hint-placeholder-count="2"><circle cx="{{ pv.cx }}" cy="{{ pv.cy }}" r="{{ pv.r }}" fill="{{ pv.fill }}"/></sc-for>
-          </sc-if>
-          <sc-if value="{{ layerNativa }}" hint-placeholder-val="{{ true }}">
-            <sc-for list="{{ selMap.nativa }}" as="n" hint-placeholder-count="3"><path d="{{ n.d }}" fill="{{ n.fill }}"/></sc-for>
-          </sc-if>
-          <sc-if value="{{ layerHidro }}" hint-placeholder-val="{{ true }}">
-            <path d="{{ selMap.river }}" fill="none" stroke="#4f7e9a" stroke-width="30" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-            <path d="{{ selMap.river }}" fill="none" stroke="#7AA6BE" stroke-width="12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
-          </sc-if>
-          <g fill="none" stroke="rgba(247,238,205,0.4)" stroke-width="1.3" vector-effect="non-scaling-stroke" stroke-linejoin="round">
-            <sc-for list="{{ selMap.parcels }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}"/></sc-for>
-          </g>
-          <sc-if value="{{ selShowScar }}" hint-placeholder-val="{{ true }}"><path d="{{ selMap.focusD }}" fill="{{ selMap.scarFill }}" stroke="#C0573B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></sc-if>
-          <path d="{{ selMap.focusD }}" fill="{{ selMap.focusFill }}" stroke="#F2C84B" stroke-width="2.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
-        </svg>
-        <!-- wash de época (antes/depois) -->
-        <div style="position:absolute; inset:0; pointer-events:none; background:{{ selEpochWash }}; transition:background .3s ease;"></div>
-        <sc-if value="{{ selNuvem }}" hint-placeholder-val="{{ false }}">
-          <div style="position:absolute; left:30%; top:24%; width:50%; height:54%; pointer-events:none; background:radial-gradient(circle, rgba(238,236,230,0.92), rgba(238,236,230,0.25) 66%, transparent); border-radius:50%; animation:gfade .5s ease;"></div>
+      <!-- HOJE (imagem de satélite atual) -->
+      <sc-if value="{{ scene.img }}" hint-placeholder-val="{{ false }}">
+        <img src="{{ scene.img }}" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
+      </sc-if>
+
+      <!-- BASE (à esquerda da alça): mesma cena, parcela ainda com mata -->
+      <sc-if value="{{ scene.baseImg }}" hint-placeholder-val="{{ false }}">
+        <img src="{{ scene.baseImg }}" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; clip-path:{{ wipeInset }};">
+      </sc-if>
+
+      <!-- vetores (contorno do talhão) -->
+      <svg viewBox="0 0 1000 880" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+        <sc-if value="{{ scene.poly }}" hint-placeholder-val="{{ true }}">
+          <polygon points="{{ scene.poly }}" fill="rgba(242,200,75,0.05)" stroke="rgba(18,26,12,0.5)" stroke-width="5.5" stroke-linejoin="round"></polygon>
+          <polygon points="{{ scene.poly }}" fill="none" stroke="#F2C84B" stroke-width="2.6" stroke-linejoin="round"></polygon>
         </sc-if>
-      </div>
+      </svg>
 
-      <!-- overlays fixos (lente) -->
-      <div style="position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 130px rgba(8,14,8,0.6);"></div>
-      <div style="position:absolute; inset:0; pointer-events:none; opacity:0.05; background-image:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 2px);"></div>
-
-
-      <!-- chip título -->
-      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; left:18px; top:16px; display:flex; align-items:center; gap:8px; background:rgba(27,42,31,0.94); color:#F3ECDC; padding:8px 13px; border-radius:9px; font-size:12px; box-shadow:0 6px 18px rgba(0,0,0,0.28);">
-          <span style="width:8px; height:8px; border-radius:50%; background:#D6A23E;"></span>
-          <strong style="font-weight:600;">{{ selected.municipio }} · {{ selected.gleba }}</strong>
-          <span style="color:#7FB07A;">· caso aberto</span>
+      <!-- APP: faixa marginal de 30 m -->
+      <sc-if value="{{ scene.app }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; left:calc(50% - 54px); top:64%; transform:translate(-50%,-50%); display:flex; align-items:center; gap:6px; background:rgba(94,140,168,0.94); color:#EAF4FB; padding:5px 11px; border-radius:999px; font-size:10.5px; font-weight:800; letter-spacing:0.4px; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.34);">
+          <span style="width:7px; height:7px; border-radius:2px; background:#EAF4FB; flex:none;"></span>APP · faixa de 30 m do rio
         </div>
       </sc-if>
 
-      <!-- controle antes/depois -->
-      <sc-if value="{{ selChange }}" hint-placeholder-val="{{ true }}">
-        <div data-tour="epoch" style="position:absolute; left:18px; top:56px; display:flex; align-items:center; gap:2px; background:rgba(27,42,31,0.94); padding:4px; border-radius:9px; box-shadow:0 6px 18px rgba(0,0,0,0.28);">
-          <button onClick="{{ setBase }}" style="border:none; cursor:pointer; font-family:'Hanken Grotesk',sans-serif; font-size:11px; font-weight:700; padding:7px 12px; border-radius:6px; background:{{ baseBtnBg }}; color:{{ baseBtnFg }};">Base · 2023</button>
-          <button onClick="{{ setAtual }}" style="border:none; cursor:pointer; font-family:'Hanken Grotesk',sans-serif; font-size:11px; font-weight:700; padding:7px 12px; border-radius:6px; background:{{ atualBtnBg }}; color:{{ atualBtnFg }};">Sentinel‑2 · hoje</button>
+      <!-- nuvem total -->
+      <sc-if value="{{ scene.cloudFull }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; inset:0; pointer-events:none; background:rgba(242,240,234,0.94); animation:gfade .4s ease; display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center; color:#6B6356;">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" style="margin-bottom:8px;"><path d="M6.5 18a4 4 0 0 1 .4-7.98A5.5 5.5 0 0 1 17.7 11 3.5 3.5 0 0 1 17 18H6.5Z" stroke="#9A9384" stroke-width="1.6"/></svg>
+            <p style="font-size:13px; font-weight:700; margin:0;">Sem imagem óptica válida</p>
+            <p style="font-size:11.5px; margin:4px 0 0; color:#8A8474;">100% de nuvem nas 3 últimas passagens</p>
+          </div>
+        </div>
+      </sc-if>
+      <!-- nuvem parcial -->
+      <sc-if value="{{ scene.cloudPartial }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute; right:6%; top:14%; width:54%; height:56%; pointer-events:none; background:radial-gradient(circle, rgba(244,242,236,0.92), rgba(244,242,236,0.3) 62%, transparent 80%); border-radius:50%; animation:gfade .5s ease;"></div>
+      </sc-if>
+
+      <!-- gradiente inferior só para legibilidade dos rótulos -->
+      <div style="position:absolute; left:0; right:0; bottom:0; height:120px; pointer-events:none; background:linear-gradient(180deg, transparent, rgba(10,16,10,0.34));"></div>
+
+      <!-- fonte da cena (canto superior) -->
+      <sc-if value="{{ sceneNoWipe }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute; top:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:7px; background:rgba(20,30,23,0.78); backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,0.08); color:#D8E0CC; padding:5px 11px; border-radius:999px; font-size:10.5px; font-weight:600; letter-spacing:0.3px; white-space:nowrap;">
+          <span style="width:7px; height:7px; border-radius:2px; background:#5E8CA8; flex:none;"></span>{{ sceneSource }}
         </div>
       </sc-if>
 
-      <!-- alerta -->
-      <sc-if value="{{ selAlertPill }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; left:20%; top:30%; display:flex; align-items:center; gap:6px; background:#25382A; color:#F3ECDC; padding:5px 10px; border-radius:999px; font-size:10.5px; font-weight:700; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.35); animation:gfade .4s ease;">
-          <span style="width:6px; height:6px; border-radius:50%; background:#C0573B;"></span>{{ selAlertPill }}
+      <!-- ALÇA antes/depois -->
+      <sc-if value="{{ selShowWipe }}" hint-placeholder-val="{{ false }}">
+        <div data-tour="wipe" style="position:absolute; top:0; bottom:0; left:{{ wipeLeftPct }}; width:0; z-index:5;">
+          <div style="position:absolute; top:0; bottom:0; left:0; width:3px; transform:translateX(-1.5px); background:linear-gradient(180deg, rgba(244,238,223,0.4), #F4EEDF 16%, #F4EEDF 84%, rgba(244,238,223,0.4)); box-shadow:0 0 0 1px rgba(0,0,0,0.28); pointer-events:none;"></div>
+          <div onMouseDown="{{ wipeDown }}" onKeyDown="{{ wipeKey }}" tabindex="0" role="slider" aria-label="Comparar base e imagem atual" style="position:absolute; left:0; top:50%; transform:translate(-50%,-50%); width:52px; height:52px; border-radius:50%; background:#F4EEDF; box-shadow:0 6px 20px rgba(0,0,0,0.42); display:flex; align-items:center; justify-content:center; gap:5px; cursor:ew-resize; outline:none;">
+            <svg width="10" height="16" viewBox="0 0 9 14" fill="none"><path d="M6.5 1L1.5 7l5 6" stroke="#2E2519" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="10" height="16" viewBox="0 0 9 14" fill="none"><path d="M2.5 1l5 6-5 6" stroke="#2E2519" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="position:absolute; left:-14px; top:18px; transform:translateX(-100%); display:flex; align-items:center; gap:5px; background:rgba(40,72,44,0.94); color:#EAF2E2; padding:5px 11px; border-radius:999px; font-size:11px; font-weight:800; letter-spacing:0.4px; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.34);">◀ BASE · {{ wipeBaseYear }}</div>
+          <div style="position:absolute; left:14px; top:18px; display:flex; align-items:center; gap:5px; background:rgba(160,92,46,0.96); color:#FCEFE3; padding:5px 11px; border-radius:999px; font-size:11px; font-weight:800; letter-spacing:0.4px; white-space:nowrap; box-shadow:0 5px 14px rgba(0,0,0,0.34);">HOJE · {{ selected.imgShort }} ▶</div>
+          <sc-if value="{{ wipeShowHint }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute; left:0; bottom:64px; transform:translateX(-50%); display:flex; align-items:center; gap:6px; background:#D6A23E; color:#2A2008; padding:6px 12px; border-radius:999px; font-size:11px; font-weight:800; white-space:nowrap; box-shadow:0 6px 16px rgba(0,0,0,0.35); animation:gnudge 1.1s ease-in-out infinite;">↔ arraste para comparar</div>
+          </sc-if>
         </div>
       </sc-if>
 
       <!-- selo sem mudança -->
       <sc-if value="{{ selNoChange }}" hint-placeholder-val="{{ false }}">
-        <div style="position:absolute; left:50%; top:40%; transform:translate(-50%,-50%); display:flex; align-items:center; gap:8px; background:rgba(62,107,69,0.95); color:#EAF2E2; padding:9px 16px; border-radius:999px; font-size:12.5px; font-weight:700; white-space:nowrap; box-shadow:0 6px 18px rgba(0,0,0,0.28); animation:gfade .4s ease;">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#EAF2E2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Sem mudança desde 2023 · estável
+        <div style="position:absolute; left:calc(50% - 54px); top:46%; transform:translate(-50%,-50%); display:flex; align-items:center; gap:9px; background:rgba(62,107,69,0.96); color:#EAF2E2; padding:11px 18px; border-radius:999px; font-size:13.5px; font-weight:700; white-space:nowrap; box-shadow:0 10px 26px rgba(0,0,0,0.34); animation:gfade .4s ease;">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#EAF2E2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          {{ selNoChangeLabel }}
         </div>
       </sc-if>
-
-      <!-- zoom -->
-      <div style="position:absolute; right:16px; top:16px; display:flex; flex-direction:column; border-radius:9px; overflow:hidden; box-shadow:0 5px 14px rgba(0,0,0,0.32);">
-        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; border-bottom:1px solid rgba(255,255,255,0.12); cursor:pointer;" onClick="{{ zoomIn }}">+</div>
-        <div style="width:34px; height:34px; background:rgba(27,42,31,0.95); color:#F3ECDC; display:flex; align-items:center; justify-content:center; font-size:19px; font-weight:300; cursor:pointer;" onClick="{{ zoomOut }}">−</div>
-      </div>
-
-      <!-- basemap chip -->
-      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; right:16px; top:92px; display:flex; align-items:center; gap:7px; background:rgba(27,42,31,0.92); color:#DCD3BE; padding:6px 11px; border-radius:8px; font-size:10.5px; box-shadow:0 4px 12px rgba(0,0,0,0.26);">
-          <span style="width:7px; height:7px; border-radius:2px; background:#5E8CA8;"></span>{{ selBasemap }}
-        </div>
-      </sc-if>
-
-      <!-- coordenadas -->
-      <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
-        <div style="position:absolute; left:16px; bottom:52px; display:flex; align-items:center; gap:7px; background:rgba(27,42,31,0.92); color:#C7CFB9; padding:6px 11px; border-radius:8px; font-size:10.5px; letter-spacing:0.3px; box-shadow:0 4px 12px rgba(0,0,0,0.26);">
-          <span style="color:#9FB191; font-size:8px;">●</span>{{ selCoord }} · SIRGAS 2000
-        </div>
-      </sc-if>
-
-      <!-- norte + escala -->
-      <div style="position:absolute; right:16px; bottom:52px; display:flex; align-items:center; gap:13px; background:rgba(27,42,31,0.9); padding:8px 12px; border-radius:9px; box-shadow:0 4px 12px rgba(0,0,0,0.28);">
-        <div style="display:flex; flex-direction:column; align-items:center; gap:2px; color:#F3ECDC;">
-          <div style="width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-bottom:13px solid #F3ECDC;"></div>
-          <span style="font-size:9px; font-weight:800; letter-spacing:0.5px;">N</span>
-        </div>
-        <div style="width:1px; height:26px; background:rgba(255,255,255,0.15);"></div>
-        <div style="display:flex; flex-direction:column; align-items:flex-start; gap:3px;">
-          <div style="display:flex; height:6px; border:1px solid rgba(243,236,220,0.7);">
-            <div style="width:30px; background:#F3ECDC;"></div>
-            <div style="width:30px; background:transparent;"></div>
-            <div style="width:30px; background:#F3ECDC;"></div>
-          </div>
-          <span style="font-size:9px; color:#DCD3BE; letter-spacing:0.3px;">0&nbsp;&nbsp;250&nbsp;&nbsp;500 m</span>
-        </div>
-      </div>
 
       <!-- empty state -->
       <sc-if value="{{ emptyState }}" hint-placeholder-val="{{ false }}">
@@ -232,107 +213,103 @@
         </div>
       </sc-if>
 
-      <!-- legenda -->
-      <div style="position:absolute; left:0; right:0; bottom:0; display:flex; flex-wrap:wrap; gap:6px; padding:9px 14px; background:rgba(27,42,31,0.9); backdrop-filter:blur(2px);">
-        <sc-for list="{{ legend }}" as="chip" hint-placeholder-count="4">
-          <button onClick="{{ chip.onToggle }}" style="{{ chip.chipStyle }}">
-            <span style="width:11px; height:11px; border-radius:3px; background:{{ chip.color }}; flex:none;"></span>{{ chip.label }}
-          </button>
-        </sc-for>
+      <!-- legenda + coordenadas (na faixa livre, fora do painel) -->
+      <div style="position:absolute; bottom:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:14px; padding:7px 13px; background:rgba(20,30,23,0.8); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.07); border-radius:11px; box-shadow:0 8px 22px rgba(0,0,0,0.3); max-width:92%;">
+        <div style="display:flex; flex-wrap:wrap; gap:11px;">
+          <sc-for list="{{ legend }}" as="chip" hint-placeholder-count="4">
+            <span style="display:flex; align-items:center; gap:6px; font-size:10.5px; font-weight:600; color:#CFD7C2; white-space:nowrap;"><span style="width:9px; height:9px; border-radius:3px; background:{{ chip.color }}; flex:none;"></span>{{ chip.label }}</span>
+          </sc-for>
+        </div>
+        <span style="width:1px; height:16px; background:rgba(255,255,255,0.12);"></span>
+        <span style="font-size:10px; color:#7F9173; white-space:nowrap; letter-spacing:0.3px;">{{ sceneCoord }} · SIRGAS 2000</span>
       </div>
     </section>
 
     <!-- -------- CASO / TRILHA -------- -->
-    <aside class="ga-cream" style="background:#F4EEDF; color:#2E2519; display:flex; flex-direction:column; min-height:0; border-left:1px solid rgba(0,0,0,0.08);">
+    <aside class="ga-cream" style="position:absolute; right:14px; top:10px; bottom:10px; width:382px; z-index:7; background:#F4EEDF; color:#2E2519; display:flex; flex-direction:column; min-height:0; border:1px solid rgba(0,0,0,0.10); border-radius:16px; box-shadow:0 18px 48px rgba(0,0,0,0.42); overflow:hidden;">
       <sc-if value="{{ hasSelected }}" hint-placeholder-val="{{ true }}">
-        <div style="flex:1; min-height:0; overflow-y:auto;">
+        <div style="display:flex; flex-direction:column; flex:1; min-height:0;">
 
-          <!-- header do caso -->
-          <div style="padding:18px 20px 16px; border-bottom:1px solid #E4D8BD;">
-            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
-              <div>
-                <p style="font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:#99694E; font-weight:700; margin:0 0 5px;">Caso aberto · trilha de auditoria</p>
-                <h2 style="font-family:'Spectral',serif; font-size:23px; font-weight:700; margin:0; line-height:1.1; color:#2E2519;">{{ selected.municipio }} · {{ selected.gleba }}</h2>
-                <p style="font-size:11.5px; color:#8A7B63; margin:6px 0 0; font-family:'Hanken Grotesk',sans-serif;">{{ selected.car }} · {{ selected.area }}</p>
-              </div>
-              <span style="flex:none; font-size:10px; font-weight:700; letter-spacing:0.3px; text-transform:uppercase; color:{{ confColor }}; background:{{ confBg }}; padding:4px 9px; border-radius:999px; white-space:nowrap;">{{ confLabel }}</span>
-            </div>
-          </div>
+          <div style="flex:1; min-height:0; overflow-y:auto;">
 
-          <!-- o que mudou (linguagem simples) -->
-          <div style="padding:16px 20px 0;">
-            <p style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 6px;">O que mudou neste talhão</p>
-            <p style="font-size:14.5px; line-height:1.5; margin:0; color:#2E2519; font-weight:600;">{{ selected.mudou }}</p>
-          </div>
-
-          <!-- por que entrou na fila / o que pode estar errado + o que você assina -->
-          <div style="margin:14px 20px 0; padding:14px 16px; background:{{ recoBg }}; border-left:3px solid {{ recoBd }}; border-radius:0 10px 10px 0;">
-            <p style="font-size:10px; letter-spacing:0.8px; text-transform:uppercase; color:{{ recoBd }}; font-weight:800; margin:0 0 7px;">{{ recoTag }}</p>
-            <p style="font-size:13.5px; line-height:1.5; margin:0; color:#3A3122;">{{ selected.reco }}</p>
-            <div style="margin-top:11px; padding-top:11px; border-top:1px dashed rgba(138,123,99,0.4); display:flex; gap:8px; align-items:flex-start;">
-              <span style="flex:none; width:16px; height:16px; border-radius:5px; background:#D6A23E; color:#2A2008; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">&#9998;</span>
-              <p style="font-size:12px; line-height:1.45; margin:0; color:#5A4F3D;"><strong style="color:#2E2519;">Você assina:</strong> {{ selSign }}</p>
-            </div>
-          </div>
-
-          <!-- evidência datada -->
-          <div data-tour="trilha" style="padding:18px 20px 4px;">
-            <p style="font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 11px;">A prova guardada · evidência datada</p>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:9px;">
-              <sc-for list="{{ selEv }}" as="ev" hint-placeholder-count="4">
-                <div style="background:#FCF8EF; border:1px solid #E8DDC4; border-radius:9px; padding:10px 11px;">
-                  <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px; white-space:nowrap;">
-                    <span style="width:7px; height:7px; border-radius:2px; background:{{ ev.color }}; flex:none;"></span>
-                    <span style="font-size:9px; text-transform:uppercase; letter-spacing:0.4px; color:#8A7B63;">{{ ev.k }}</span>
-                  </div>
-                  <p style="font-size:12.5px; font-weight:700; color:#2E2519; margin:0; line-height:1.3;">{{ ev.val }}</p>
-                </div>
-              </sc-for>
-            </div>
-          </div>
-
-          <!-- backtest de antecipação -->
-          <sc-if value="{{ selAntecip }}" hint-placeholder-val="{{ true }}">
-            <div style="margin:14px 20px 0; padding:14px 16px; background:#25382A; border-radius:12px; color:#F3ECDC;">
-              <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
-                <span style="font-family:'Spectral',serif; font-size:30px; font-weight:700; color:#D6A23E; line-height:1;">{{ selected.antecip }}</span>
-                <span style="font-size:12px; color:#C7CFB9;">dias de antecipação vs atualização da base · projeção</span>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
+            <!-- header -->
+            <div style="padding:13px 20px 11px; border-bottom:1px solid #E4D8BD;">
+              <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
                 <div>
-                  <div style="display:flex; justify-content:space-between; font-size:10px; color:#9FB191; margin-bottom:3px;"><span>Gabarito sinalizou</span><span>{{ selected.imgShort }}</span></div>
-                  <div style="height:7px; border-radius:4px; background:rgba(255,255,255,0.1); overflow:hidden;"><div style="height:100%; width:{{ selAntecipWidth }}; background:#D6A23E; border-radius:4px; transition:width .5s ease;"></div></div>
+                  <p style="font-size:9.5px; letter-spacing:1.2px; text-transform:uppercase; color:#99694E; font-weight:700; margin:0 0 5px;">Caso aberto · trilha de auditoria</p>
+                  <h2 style="font-family:'Spectral',serif; font-size:22px; font-weight:700; margin:0; line-height:1.1; color:#2E2519;">{{ selected.municipio }} · {{ selected.gleba }}</h2>
+                  <p style="font-size:11.5px; color:#8A7B63; margin:6px 0 0;">{{ selected.car }} · {{ selected.area }}</p>
                 </div>
-                <div>
-                  <div style="display:flex; justify-content:space-between; font-size:10px; color:#9FB191; margin-bottom:3px;"><span>Base de referência atualizaria</span><span>só na consolidação anual</span></div>
-                  <div style="height:7px; border-radius:4px; background:rgba(255,255,255,0.1); overflow:hidden;"><div style="height:100%; width:100%; background:rgba(192,87,59,0.55); border-radius:4px;"></div></div>
-                </div>
+                <span style="flex:none; font-size:10px; font-weight:700; letter-spacing:0.3px; text-transform:uppercase; color:{{ confColor }}; background:{{ confBg }}; padding:4px 9px; border-radius:999px; white-space:nowrap;">{{ confLabel }}</span>
               </div>
-              <p style="font-size:10.5px; color:#7F9173; margin:10px 0 0; line-height:1.4;">Calibrado contra verdade independente (PRODES/DETER), nunca contra o t0.</p>
             </div>
-          </sc-if>
 
-          </div>
+            <!-- o que mudou -->
+            <div style="padding:12px 20px 0;">
+              <p style="font-size:9.5px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 6px;">O que mudou neste talhão</p>
+              <p style="font-size:13.5px; line-height:1.45; margin:0; color:#2E2519; font-weight:600;">{{ selected.mudou }}</p>
+            </div>
 
-          <!-- decisão (rodapé sempre visível) -->
-          <div style="flex:none; border-top:1px solid #E4D8BD; background:#F4EEDF; padding:13px 20px 15px;">
-            <sc-if value="{{ selDanger }}" hint-placeholder-val="{{ false }}">
-              <div style="display:flex; gap:10px; align-items:flex-start; padding:11px 13px; background:rgba(192,87,59,0.1); border:1px solid rgba(192,87,59,0.35); border-radius:10px; margin-bottom:12px;">
-                <span style="width:20px; height:20px; border-radius:6px; background:#C0573B; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; flex:none;">✕</span>
-                <p style="font-size:12px; line-height:1.45; margin:0; color:#7A3320;"><strong>Liberação automática bloqueada.</strong> Confiança abaixo do limiar pré‑registrado: na dúvida, o caso é rebaixado para revisão humana.</p>
+            <!-- antecipação (valor-chave, acima da dobra) -->
+            <sc-if value="{{ selAntecip }}" hint-placeholder-val="{{ false }}">
+              <div style="margin:11px 20px 0; display:flex; align-items:center; gap:12px; padding:9px 13px; background:rgba(214,162,62,0.13); border:1px solid rgba(214,162,62,0.34); border-radius:12px;">
+                <div style="text-align:center; line-height:1; flex:none;">
+                  <div style="font-family:'Spectral',serif; font-size:26px; font-weight:700; color:#9A5A1E;">{{ selected.antecip }}</div>
+                  <div style="font-size:9px; text-transform:uppercase; letter-spacing:0.5px; color:#9A5A1E; font-weight:700; margin-top:1px;">dias</div>
+                </div>
+                <div style="width:1px; align-self:stretch; background:rgba(154,90,30,0.22);"></div>
+                <p style="font-size:11.5px; line-height:1.45; margin:0; color:#5A4F3D;"><strong style="color:#3A3122;">de antecipação · projeção (não medido).</strong> O Gabarito <em>sinalizaria</em> antes de a base de referência atualizar (só na consolidação anual). Meta a validar no backtest contra PRODES/DETER.</p>
               </div>
             </sc-if>
 
-            <button data-tour="decisao" onClick="{{ decideP }}" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:13px; border:none; border-radius:10px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:700; cursor:pointer; background:{{ primaryBg }}; color:{{ primaryColor }};">{{ primaryIcon }} {{ selected.primary.label }}</button>
+            <!-- veredito -->
+            <div style="margin:11px 20px 0; padding:11px 14px; background:{{ recoBg }}; border-left:3px solid {{ recoBd }}; border-radius:0 10px 10px 0;">
+              <p style="font-size:9.5px; letter-spacing:0.8px; text-transform:uppercase; color:{{ recoBd }}; font-weight:800; margin:0 0 6px;">{{ recoTag }}</p>
+              <p style="font-size:12.5px; line-height:1.45; margin:0; color:#3A3122;">{{ selected.reco }}</p>
+            </div>
 
-            <div style="display:flex; gap:8px; margin-top:9px;">
+            <!-- prova guardada (evidência datada) -->
+            <div data-tour="trilha" style="padding:11px 20px 13px;">
+              <p style="font-size:9.5px; letter-spacing:1px; text-transform:uppercase; color:#8A7B63; font-weight:700; margin:0 0 10px;">A prova guardada · evidência datada</p>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:7px;">
+                <sc-for list="{{ selEv }}" as="ev" hint-placeholder-count="4">
+                  <div style="background:#FCF8EF; border:1px solid #E8DDC4; border-radius:9px; padding:8px 10px;">
+                    <div style="display:flex; align-items:center; gap:6px; margin-bottom:5px; white-space:nowrap;">
+                      <span style="width:7px; height:7px; border-radius:2px; background:{{ ev.color }}; flex:none;"></span>
+                      <span style="font-size:8.5px; text-transform:uppercase; letter-spacing:0.4px; color:#8A7B63;">{{ ev.k }}</span>
+                    </div>
+                    <p style="font-size:12.5px; font-weight:700; color:#2E2519; margin:0; line-height:1.3;">{{ ev.val }}</p>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+
+          <!-- decisão (rodapé sempre visível) -->
+          <div style="flex:none; border-top:1px solid #E4D8BD; background:#F4EEDF; padding:10px 20px 12px;">
+            <sc-if value="{{ selDanger }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; gap:10px; align-items:flex-start; padding:10px 12px; background:rgba(192,87,59,0.1); border:1px solid rgba(192,87,59,0.35); border-radius:10px; margin-bottom:11px;">
+                <span style="width:18px; height:18px; border-radius:6px; background:#C0573B; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; flex:none;">✕</span>
+                <p style="font-size:11.5px; line-height:1.45; margin:0; color:#7A3320;"><strong>Liberação automática bloqueada.</strong> Confiança abaixo do limiar: na dúvida, o caso é rebaixado para revisão humana.</p>
+              </div>
+            </sc-if>
+
+            <div style="display:flex; gap:8px; align-items:flex-start; margin-bottom:8px;">
+              <span style="flex:none; width:16px; height:16px; border-radius:5px; background:#D6A23E; color:#2A2008; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800;">&#9998;</span>
+              <p style="font-size:11.5px; line-height:1.4; margin:0; color:#5A4F3D;"><strong style="color:#2E2519;">Você assina:</strong> {{ selSign }}</p>
+            </div>
+
+            <button data-tour="decisao" onClick="{{ decideP }}" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:11px; border:none; border-radius:10px; font-family:'Hanken Grotesk',sans-serif; font-size:14px; font-weight:700; cursor:pointer; background:{{ primaryBg }}; color:{{ primaryColor }};">{{ primaryIcon }} {{ selected.primary.label }}</button>
+
+            <div style="display:flex; gap:8px; margin-top:7px;">
               <sc-for list="{{ selSecondary }}" as="sec" hint-placeholder-count="2">
-                <button onClick="{{ sec.onClick }}" style="flex:1; padding:10px; border:1.5px solid #D8C9A8; background:#FCF8EF; color:#5A4F3D; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:700; border-radius:9px; cursor:pointer;">{{ sec.label }}</button>
+                <button onClick="{{ sec.onClick }}" style="flex:1; padding:9px; border:1.5px solid #D8C9A8; background:#FCF8EF; color:#5A4F3D; font-family:'Hanken Grotesk',sans-serif; font-size:12px; font-weight:700; border-radius:9px; cursor:pointer;">{{ sec.label }}</button>
               </sc-for>
             </div>
 
-            <p style="font-size:10.5px; color:#A2937A; margin:9px 0 0; line-height:1.4; text-align:center;">Cada decisão gera registro auditável anexado ao fluxo da análise dinamizada (SICAR).<br>Representação do produto · dados ilustrativos (Goiás).</p>
+            <p style="font-size:10px; color:#A2937A; margin:6px 0 0; line-height:1.4; text-align:center;">Cada decisão gera registro auditável anexado ao fluxo da análise dinamizada (SICAR). Dados ilustrativos (Goiás).</p>
           </div>
+        </div>
       </sc-if>
 
       <sc-if value="{{ emptyState }}" hint-placeholder-val="{{ false }}">
@@ -344,7 +321,7 @@
     </aside>
   </main>
 
-  <!-- ============ TUTORIAL GUIADO ============ -->
+  <!-- ============ TUTORIAL ============ -->
   <sc-if value="{{ tourActive }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed; inset:0; z-index:200; background:{{ tourCatcherBg }}; pointer-events:auto; transition:background .3s;"></div>
     <sc-if value="{{ tourHasTarget }}" hint-placeholder-val="{{ false }}">
@@ -399,79 +376,99 @@ class Component extends DCLogic {
   constructor(props){
     super(props);
     this.cases = [
-      { id:'rv7', municipio:'Rio Verde', gleba:'gleba 7', car:'CAR‑GO‑52218‑7', mudou:'Era vegetação nativa na base de 2023. A imagem de 14/03/26 mostra solo exposto: houve supressão de nativa recente, sem autorização registrada no CAR.', group:'revisar', conf:'média', area:'182 ha', coord:'17°47′S · 50°55′W',
-        tagsText:'delta · t0 2023', change:true, changeKind:'supressão', alert:'DETER · mar/26',
+      { id:'rv7', municipio:'Rio Verde', gleba:'gleba 7', car:'CAR‑GO‑52218‑7', group:'revisar', conf:'média', area:'182 ha', coord:'17°47′S · 50°55′W',
+        changeKind:'supressão', change:true, alert:'DETER · mar/26',
         img:'Sentinel‑2 · 14/03/26', imgShort:'14/03/26', base:'estadual · 2023', score:'supressão de nativa', scoreVer:'v2.1',
         recoType:'warn', antecip:23,
+        queueNote:'Mata virou solo exposto desde a base de 2023.',
+        mudou:'Era vegetação nativa na base de 2023. A imagem de 14/03/26 mostra solo exposto: houve supressão de nativa recente, sem autorização registrada no CAR.',
         reco:'Supressão de nativa confirmada no delta de mar/26. A base estadual t0 (2023) ainda classifica o polígono como vegetação nativa. Geometria coerente com o alerta DETER: emitir notificação com a trilha anexada.',
-        cells:[{l:25,t:18,s:46,strong:true},{l:35,t:18,s:46},{l:35,t:33,s:46,weak:true}],
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
 
-      { id:'cris4', municipio:'Cristalina', gleba:'talhão 4', car:'CAR‑GO‑48091‑4', mudou:'Há um sinal de mudança na borda do talhão, mas a imagem de 11/03 está com 38% de nuvem e a classe está fora da calibração. Não dá para afirmar com segurança.', group:'revisar', conf:'baixa', area:'94 ha', coord:'16°46′S · 47°36′W',
-        tagsText:'borda · nuvem 38%', change:true, changeKind:'mudança incerta', alert:'DETER · mar/26',
+      { id:'cris4', municipio:'Cristalina', gleba:'talhão 4', car:'CAR‑GO‑48091‑4', group:'revisar', conf:'baixa', area:'94 ha', coord:'16°46′S · 47°36′W',
+        changeKind:'mudança incerta', change:true, alert:'DETER · mar/26', nuvem:true,
         img:'Sentinel‑2 · 11/03 · 38% nuvem', imgShort:'11/03/26', base:'estadual · 2023', score:'abaixo do limiar', scoreVer:'v2.1',
-        recoType:'danger', antecip:null, nuvem:true,
+        recoType:'danger', antecip:null,
+        queueNote:'Sinal na borda, mas 38% de nuvem na cena.',
+        mudou:'Há um sinal de mudança na borda do talhão, mas a imagem de 11/03 está com 38% de nuvem e a classe está fora da calibração. Não dá para afirmar com segurança.',
         reco:'Delta restrito à borda do talhão, sob 38% de cobertura de nuvem e em classe fora da calibração. Confiança abaixo do limiar operacional: liberação automática bloqueada, encaminhar para fotointerpretação manual.',
-        cells:[{l:46,t:48,s:36,weak:true},{l:54,t:54,s:28,weak:true}],
         primary:{label:'Enviar p/ revisão manual', action:'revisar'},
         secondary:[{label:'Reagendar imagem', action:'reagendar'}] },
 
-      { id:'jat12', municipio:'Jataí', gleba:'talhão 12', car:'CAR‑GO‑51120‑12', mudou:'Era vegetação nativa na base de 2022; a imagem de 09/03/26 mostra pastagem. Conversão de nativa para pasto, confirmada pelo PRODES 2025.', group:'revisar', conf:'média', area:'267 ha', coord:'17°52′S · 51°43′W',
-        tagsText:'delta · t0 2022', change:true, changeKind:'conversão', alert:'PRODES · 2025',
+      { id:'jat12', municipio:'Jataí', gleba:'talhão 12', car:'CAR‑GO‑51120‑12', group:'revisar', conf:'média', area:'267 ha', coord:'17°52′S · 51°43′W',
+        changeKind:'conversão', change:true, alert:'PRODES · 2025',
         img:'Sentinel‑2 · 09/03/26', imgShort:'09/03/26', base:'estadual · 2022', score:'conversão p/ pasto', scoreVer:'v2.1',
         recoType:'warn', antecip:41,
+        queueNote:'Nativa virou pasto — PRODES 2025 confirma.',
+        mudou:'Era vegetação nativa na base de 2022; a imagem de 09/03/26 mostra pastagem. Conversão de nativa para pasto, confirmada pelo PRODES 2025.',
         reco:'Conversão de nativa para pastagem corroborada pelo PRODES 2025 (polígono coincidente), com delta acima do MMU de 6,25 ha. Notificar: a trilha datada sustenta o auto de infração.',
-        cells:[{l:18,t:26,s:54,strong:true},{l:31,t:26,s:54}],
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Revisão', action:'revisar'}] },
 
-      { id:'min8', municipio:'Mineiros', gleba:'talhão 8', car:'CAR‑GO‑49370‑8', mudou:'Houve supressão dentro da faixa de 30 m da margem do rio, que é Área de Preservação Permanente (APP). A base de 2023 ainda mostra vegetação nessa faixa.', group:'revisar', conf:'média', area:'53 ha', coord:'17°34′S · 52°33′W',
-        tagsText:'APP · faixa 30 m', change:true, changeKind:'intervenção em APP', alert:'DETER · fev/26',
+      { id:'min8', municipio:'Mineiros', gleba:'talhão 8', car:'CAR‑GO‑49370‑8', group:'revisar', conf:'média', area:'53 ha', coord:'17°34′S · 52°33′W',
+        changeKind:'intervenção em APP', change:true, alert:'DETER · fev/26',
         img:'Sentinel‑2 · 22/02/26', imgShort:'22/02/26', base:'estadual · 2023', score:'intervenção em APP', scoreVer:'v2.1',
         recoType:'warn', antecip:18,
+        queueNote:'Supressão na faixa de 30 m do rio (APP).',
+        mudou:'Houve supressão dentro da faixa de 30 m da margem do rio, que é Área de Preservação Permanente (APP). A base de 2023 ainda mostra vegetação nessa faixa.',
         reco:'Intervenção antrópica em APP de curso d’água (faixa marginal de 30 m, Lei 12.651/2012). Recorte datado anexado; a geometria da base pode ser contestada pelo RT. Notificar produtor.',
-        cells:[{l:14,t:38,s:32,strong:true},{l:24,t:44,s:26}],
         primary:{label:'Notificar produtor', action:'notificar'},
         secondary:[{label:'Liberar mesmo assim', action:'liberar'},{label:'Revisão', action:'revisar'}] },
 
-      { id:'ari3', municipio:'Aragarças', gleba:'talhão 3', car:'CAR‑GO‑50442‑3', mudou:'Não dá para saber ainda: as três últimas passagens do Sentinel-2 vieram totalmente encobertas por nuvem. Sem imagem válida, não há delta para medir.', group:'revisar', conf:'baixa', area:'120 ha', coord:'15°53′S · 52°15′W',
-        tagsText:'nuvem 100%', change:false, changeKind:null, alert:null,
+      { id:'ari3', municipio:'Aragarças', gleba:'talhão 3', car:'CAR‑GO‑50442‑3', group:'revisar', conf:'baixa', area:'120 ha', coord:'15°53′S · 52°15′W',
+        changeKind:'nuvem 100%', change:false, alert:null, nuvem:true,
         img:'Sentinel‑2 · 05/03 · nuvem 100%', imgShort:'05/03/26', base:'estadual · 2023', score:'imagem insuficiente', scoreVer:'v2.1',
-        recoType:'danger', antecip:null, nuvem:true,
+        recoType:'danger', antecip:null,
+        queueNote:'Sem imagem válida: 100% de nuvem em 3 passagens.',
+        mudou:'Não dá para saber ainda: as três últimas passagens do Sentinel‑2 vieram totalmente encobertas por nuvem. Sem imagem válida, não há delta para medir.',
         reco:'Cobertura de nuvem de 100% nas três últimas passagens Sentinel‑2, sem observação óptica válida para compor o delta. Reagendar a aquisição para a próxima janela de céu limpo.',
-        cells:[],
         primary:{label:'Reagendar imagem (céu limpo)', action:'reagendar'},
         secondary:[{label:'Revisão', action:'revisar'}] },
 
-      { id:'luz2', municipio:'Luziânia', gleba:'gleba 2', car:'CAR‑GO‑53310‑2', mudou:'Nada mudou desde a base de 2023. A cobertura está estável, sem sinal de supressão ou conversão.', group:'liberavel', conf:'alta', area:'210 ha', coord:'16°15′S · 47°56′W',
-        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+      { id:'luz2', municipio:'Luziânia', gleba:'gleba 2', car:'CAR‑GO‑53310‑2', group:'liberavel', conf:'alta', area:'210 ha', coord:'16°15′S · 47°56′W',
+        changeKind:'sem delta', change:false, alert:null,
         img:'Sentinel‑2 · 16/03/26', imgShort:'16/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
+        queueNote:'Estável desde a base — nenhuma mudança.',
+        mudou:'Nada mudou desde a base de 2023. A cobertura está estável, sem sinal de supressão ou conversão.',
         reco:'Delta nulo no período e confiança acima do limiar. Apta à liberação automática com trilha; recibo anexado ao fluxo da análise dinamizada.',
-        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+        primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'cat5', municipio:'Catalão', gleba:'gleba 5', car:'CAR‑GO‑47815‑5', mudou:'Área consolidada estável desde o t0. Nenhuma mudança relevante no período.', group:'liberavel', conf:'alta', area:'178 ha', coord:'18°10′S · 47°56′W',
-        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+      { id:'cat5', municipio:'Catalão', gleba:'gleba 5', car:'CAR‑GO‑47815‑5', group:'liberavel', conf:'alta', area:'178 ha', coord:'18°10′S · 47°56′W',
+        changeKind:'sem delta', change:false, alert:null,
         img:'Sentinel‑2 · 13/03/26', imgShort:'13/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
+        queueNote:'Área consolidada estável desde o t0.',
+        mudou:'Área consolidada estável desde o t0. Nenhuma mudança relevante no período.',
         reco:'Área consolidada estável desde o t0, sem delta significativo. Confiança alta: liberação automática com trilha.',
-        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+        primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'ita1', municipio:'Itaberaí', gleba:'talhão 1', car:'CAR‑GO‑46002‑1', mudou:'Sem mudança desde a base de 2022. Cobertura estável no período.', group:'liberavel', conf:'alta', area:'96 ha', coord:'16°01′S · 49°48′W',
-        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+      { id:'ita1', municipio:'Itaberaí', gleba:'talhão 1', car:'CAR‑GO‑46002‑1', group:'liberavel', conf:'alta', area:'96 ha', coord:'16°01′S · 49°48′W',
+        changeKind:'sem delta', change:false, alert:null,
         img:'Sentinel‑2 · 15/03/26', imgShort:'15/03/26', base:'estadual · 2022', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
+        queueNote:'Sem mudança desde a base de 2022.',
+        mudou:'Sem mudança desde a base de 2022. Cobertura estável no período.',
         reco:'Sem delta detectado e confiança acima do limiar. Liberação automática com trilha; recorte datado arquivado como evidência.',
-        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+        primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
 
-      { id:'for9', municipio:'Formosa', gleba:'talhão 9', car:'CAR‑GO‑54127‑9', mudou:'Nada mudou no período e a confiança está alta. Apta a liberar com trilha.', group:'liberavel', conf:'alta', area:'143 ha', coord:'15°32′S · 47°20′W',
-        tagsText:'sem delta', change:false, changeKind:null, alert:null,
+      { id:'for9', municipio:'Formosa', gleba:'talhão 9', car:'CAR‑GO‑54127‑9', group:'liberavel', conf:'alta', area:'143 ha', coord:'15°32′S · 47°20′W',
+        changeKind:'sem delta', change:false, alert:null,
         img:'Sentinel‑2 · 17/03/26', imgShort:'17/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
+        queueNote:'Nada mudou e a confiança está alta.',
+        mudou:'Nada mudou no período e a confiança está alta. Apta a liberar com trilha.',
         reco:'Delta nulo e confiança acima do limiar. Liberação automática com trilha; recibo anexado à análise dinamizada.',
-        cells:[], primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
+        primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
     ];
+
+    this.signMap = {
+      notificar:'o auto de notificação ao produtor, com a trilha datada (imagem + alerta + base) anexada como prova. É o seu nome no ato.',
+      liberar:'que o talhão está regular e pode seguir, com recibo auditável anexado à análise dinamizada. É o seu nome no ato.',
+      revisar:'nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',
+      reagendar:'nada ainda: o sistema aguarda a próxima imagem de céu limpo para reavaliar.',
+    };
 
     this.tourSteps = [
       { key:null, place:'center',
@@ -479,62 +476,86 @@ class Component extends DCLogic {
         body:'Eu vou te ensinar a usar, do começo ao fim, em passos curtos. Você não precisa decorar nada. Quando quiser seguir, aperte o botão laranja “Próximo”.' },
       { key:'fila', place:'right',
         title:'1 · A fila de fazendas',
-        body:'Aqui do lado esquerdo ficam as fazendas esperando você. As de bolinha vermelha mudaram e precisam do seu olho. As de bolinha verde não mudaram, são as fáceis. Você clica numa para abrir.' },
+        body:'Aqui do lado esquerdo ficam as fazendas esperando você. Cada uma já vem com uma frase do que mudou. Bolinha vermelha = mudou, precisa do seu olho; bolinha verde = não mudou, é a fácil. Clique numa para abrir.' },
       { key:'map', place:'bottom',
         title:'2 · O mapa de satélite',
-        body:'No meio aparece a foto de satélite da fazenda escolhida. O contorno amarelo é o limite da fazenda no cadastro. As marcas vermelhas são exatamente o pedaço que mudou no terreno.' },
-      { key:'epoch', place:'bottom',
-        title:'3 · Antes e depois',
-        body:'Aperte “Base · 2023” e depois “Sentinel‑2 · hoje”. O mapa troca da foto antiga para a de agora e você vê a mudança aparecer. É assim que você confere com seus próprios olhos.' },
+        body:'No meio aparece a imagem de satélite real da fazenda escolhida. O contorno amarelo é o limite do talhão no cadastro; o rio é a linha azul que corta a cena.' },
+      { key:'wipe', place:'bottom',
+        title:'3 · Antes e depois (arraste)',
+        body:'Pegue a alça no meio do mapa e arraste para os lados. À esquerda fica a base antiga (mata íntegra); à direita, a imagem de hoje. O solo exposto aparece embaixo do seu dedo — você vê o desmate com seus próprios olhos.' },
       { key:'trilha', place:'left',
         title:'4 · A prova guardada',
         body:'Aqui do lado direito fica a prova de cada caso: a foto, a data, o alerta oficial e a base usada. É isso que deixa você assinar com segurança: fica tudo registrado e ninguém pode contestar depois.' },
       { key:'decisao', place:'left',
         title:'5 · A sua decisão',
-        body:'Quando estiver pronta, aperte o botão grande. Ele muda conforme o caso: verde libera a fazenda, ou então você avisa o produtor / manda pra revisão. Pronto: a fazenda sai da fila e a prova vai junto.' },
+        body:'O botão grande fica sempre visível embaixo. Acima dele, “Você assina” diz exatamente o que o seu nome confirma. Decidiu: a fazenda sai da fila e vai para “Concluídos”, com a prova anexada.' },
       { key:null, place:'center',
         title:'É só isso. Pode começar.',
         body:'Comece pela primeira fazenda da fila e siga os passos. Se esquecer alguma coisa, aperte “Tutorial” lá em cima, a qualquer hora, que eu te mostro de novo.' },
     ];
 
     let done = false;
-    try { done = !!localStorage.getItem('gab_tour_v1'); } catch(e){}
+    try { done = !!localStorage.getItem('gab_tour_v2'); } catch(e){}
 
     this.state = {
-      selectedId:'rv7', decided:{}, epoch:'atual', zoom:1, panX:0, panY:0, _smooth:true,
-      layers:{ nativa:true, consolidada:true, hidro:true, mudanca:true },
-      toast:null,
-      tourActive:!done, tourStep:0,
+      selectedId:'rv7', decided:{}, wipe:50, wipeTouched:false, filaOpen:true,
+      toast:null, tourActive:!done, tourStep:0,
     };
   }
 
   componentDidMount(){
     this._onResize = ()=>this.forceUpdate();
     window.addEventListener('resize', this._onResize);
-    this._mmH=(e)=>this._mapMove(e); this._muH=()=>this._mapUp(); window.addEventListener('mousemove',this._mmH); window.addEventListener('mouseup',this._muH);
+    this._mmH = (e)=>this._mapMove(e);
+    this._muH = ()=>this._mapUp();
+    window.addEventListener('mousemove', this._mmH);
+    window.addEventListener('mouseup', this._muH);
     if(this.state.tourActive) requestAnimationFrame(()=>this.forceUpdate());
   }
   componentWillUnmount(){
     window.removeEventListener('resize', this._onResize);
-    window.removeEventListener('mousemove',this._mmH); window.removeEventListener('mouseup',this._muH);
+    window.removeEventListener('mousemove', this._mmH);
+    window.removeEventListener('mouseup', this._muH);
     clearTimeout(this._t);
   }
 
-  select(id){ this.setState({ selectedId:id, epoch:'atual', zoom:1, panX:0, panY:0, _smooth:true }); }
-  toggleLayer(k){ this.setState({ layers:{ ...this.state.layers, [k]:!this.state.layers[k] } }); }
-  setEpoch(e){ this.setState({ epoch:e }); }
+  // ---------- cena de satélite por caso (imagens reais) ----------
+  _scene(sel){
+const PARCEL='385,300 565,268 760,360 700,520 470,558 368,432';
+    const m = {
+      rv7:  { img:'assets/sat/rv7-hoje.jpg', baseImg:'assets/sat/rv7-base.jpg',  wipe:true,  poly:PARCEL, app:false, cloudFull:false, cloudPartial:false },
+      jat12:{ img:'assets/sat/jat12-hoje.jpg', baseImg:'assets/sat/jat12-base.jpg',  wipe:true,  poly:PARCEL, app:false, cloudFull:false, cloudPartial:false },
+      min8: { img:'assets/sat/min8-hoje.jpg', baseImg:'assets/sat/min8-base.jpg',  wipe:true,  poly:PARCEL, app:true,  cloudFull:false, cloudPartial:false },
+      cris4:{ img:'assets/sat/cris4-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:false, cloudPartial:true  },
+      ari3: { img:'assets/sat/ari3-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:true,  cloudPartial:false },
+      luz2: { img:'assets/sat/luz2-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:false, cloudPartial:false },
+      cat5: { img:'assets/sat/cat5-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:false, cloudPartial:false },
+      ita1: { img:'assets/sat/ita1-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:false, cloudPartial:false },
+      for9: { img:'assets/sat/for9-hoje.jpg', baseImg:'', wipe:false, poly:'',     app:false, cloudFull:false, cloudPartial:false },
+    };
+    return m[sel.id] || { img:'assets/sat/for9-hoje.jpg', baseImg:'', wipe:false, poly:'', app:false, cloudFull:false, cloudPartial:false };
+  }
+
+  // ---------- comparison slider ----------
+  _dims(){ var el=document.querySelector('[data-tour="map"]'); if(!el) return false; var r=el.getBoundingClientRect(); if(!r.width||!r.height) return false; this._mw=r.width; this._ml=r.left; return true; }
+  _mapMove(e){ if(!this._wipe) return; var pct=Math.max(5,Math.min(95,((e.clientX-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }
+  _mapUp(){ this._wipe=false; }
+  _wipeDown(e){ if(e.stopPropagation) e.stopPropagation(); if(e.preventDefault) e.preventDefault(); if(!this._dims()) return; this._wipe=true; if(!this.state.wipeTouched) this.setState({ wipeTouched:true }); }
+  wipeKey(e){
+    var k=e.key, w=this.state.wipe;
+    if(k==='ArrowLeft'){ this.setState({ wipe:Math.max(5,w-4), wipeTouched:true }); }
+    else if(k==='ArrowRight'){ this.setState({ wipe:Math.min(95,w+4), wipeTouched:true }); }
+  }
+  toggleFila(){ this.setState({ filaOpen:!this.state.filaOpen }); }
+  select(id){ this.setState({ selectedId:id, wipe:50 }); }
   dismissToast(){ this.setState({ toast:null }); }
 
-  startTour(){ this.setState({ selectedId:'rv7', epoch:'atual', tourActive:true, tourStep:0 }); requestAnimationFrame(()=>this.forceUpdate()); }
+  startTour(){ this.setState({ selectedId:'rv7', wipe:50, tourActive:true, tourStep:0 }); requestAnimationFrame(()=>this.forceUpdate()); }
   tourNext(){ if(this.state.tourStep >= this.tourSteps.length-1){ this.tourFinish(); } else { this.setState({ tourStep:this.state.tourStep+1 }); } }
   tourPrev(){ this.setState({ tourStep:Math.max(0, this.state.tourStep-1) }); }
-  tourFinish(){ try{ localStorage.setItem('gab_tour_v1','1'); }catch(e){} this.setState({ tourActive:false }); }
+  tourFinish(){ try{ localStorage.setItem('gab_tour_v2','1'); }catch(e){} this.setState({ tourActive:false }); }
 
-  _flash(toast){
-    clearTimeout(this._t);
-    this.setState({ toast });
-    this._t = setTimeout(()=>this.setState({ toast:null }), 3800);
-  }
+  _flash(toast){ clearTimeout(this._t); this.setState({ toast }); this._t = setTimeout(()=>this.setState({ toast:null }), 3800); }
 
   decide(action){
     const c = this.cases.find(x=>x.id===this.state.selectedId);
@@ -542,7 +563,7 @@ class Component extends DCLogic {
     const decided = { ...this.state.decided, [c.id]:action };
     const active = this.cases.filter(x=>!decided[x.id]);
     const labels = { liberar:'Liberado com trilha', notificar:'Notificação emitida', revisar:'Enviado para revisão manual', reagendar:'Reimagem agendada' };
-    this.setState({ decided, selectedId: active[0] ? active[0].id : null, epoch:'atual' });
+    this.setState({ decided, selectedId: active[0] ? active[0].id : null, wipe:50 });
     this._flash({ action, title: labels[action] || 'Resolvido', sub: `${c.municipio} · ${c.gleba} · ${c.car} · trilha registrada` });
   }
 
@@ -552,29 +573,10 @@ class Component extends DCLogic {
     const decided = { ...this.state.decided };
     list.forEach(c=>{ decided[c.id]='liberar'; });
     const active = this.cases.filter(x=>!decided[x.id]);
-    this.setState({ decided, selectedId: active[0] ? active[0].id : null, epoch:'atual' });
+    this.setState({ decided, selectedId: active[0] ? active[0].id : null, wipe:50 });
     this._flash({ action:'liberar', title:`${list.length} imóveis liberados com trilha`, sub:'Lote sem delta · confiança alta · recibo único gerado' });
   }
 
-  _rng(s){var h=2166136261>>>0;for(var i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;}return function(){h^=h<<13;h^=h>>>17;h^=h<<5;h=h>>>0;return h/4294967296;};}
-  _terrain(sel){var r=this._rng(sel.id),C=3,Rr=3,pts=[],i,j;function jit(b,a){return b+(r()*2-1)*a;}
-    for(i=0;i<=Rr;i++){pts[i]=[];for(j=0;j<=C;j++){var x=(j/C)*1100-50,y=(i/Rr)*1100-50;if(j>0&&j<C)x=jit(x,70);if(i>0&&i<Rr)y=jit(y,70);pts[i][j]={x:Math.round(x),y:Math.round(y)};}}
-    function quad(i,j){var a=pts[i][j],b=pts[i][j+1],c=pts[i+1][j+1],d=pts[i+1][j];return 'M'+a.x+','+a.y+' L'+b.x+','+b.y+' L'+c.x+','+c.y+' L'+d.x+','+d.y+' Z';}
-    function cen(i,j){var a=pts[i][j],b=pts[i][j+1],c=pts[i+1][j+1],d=pts[i+1][j];return {x:Math.round((a.x+b.x+c.x+d.x)/4),y:Math.round((a.y+b.y+c.y+d.y)/4)};}
-    var frontier=r()<0.5?1:2,nativa=[],fields=[],parcels=[],ng=['#2f4327','#33492b','#3a512f'],fg=['#b9a36e','#c2ad77','#ad9760'];
-    for(i=0;i<Rr;i++)for(j=0;j<C;j++){var d=quad(i,j);parcels.push({d:d});var isN=j<frontier?true:(r()<0.18);if(isN)nativa.push({d:d,fill:ng[Math.floor(r()*3)]});else fields.push({d:d,fill:fg[Math.floor(r()*3)]});}
-    var pivots=[],npv=Math.floor(r()*3)+1,k;for(k=0;k<npv;k++){var pi=Math.min(Math.floor(r()*Rr),Rr-1),pj=Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),pc=cen(pi,pj);pivots.push({cx:pc.x,cy:pc.y,r:26+Math.floor(r()*22),fill:'rgba(120,150,80,0.45)'});}
-    var ry=jit(540,120),river='M-30,'+Math.round(jit(ry,40))+' C'+Math.round(jit(280,80))+','+Math.round(jit(ry,90))+' '+Math.round(jit(520,80))+','+Math.round(jit(ry+60,90))+' '+Math.round(jit(760,60))+','+Math.round(jit(ry,80))+' L1030,'+Math.round(jit(ry,40));
-    var fi=Math.min(Math.floor(r()*Rr),Rr-1),fj=sel.change?Math.max(0,frontier-1):Math.min(frontier+Math.floor(r()*(C-frontier)),C-1),fc=cen(fi,fj);
-    return {bg:'linear-gradient('+Math.floor(jit(135,30))+'deg,#3a4a2c,#445331)',nativa:nativa,fields:fields,pivots:pivots,river:river,parcels:parcels,focusD:quad(fi,fj),fcx:fc.x,fcy:fc.y};}
-  _mapDims(e){var r=e.currentTarget.getBoundingClientRect();this._mw=r.width;this._mh=r.height;this._ml=r.left;this._mt=r.top;}
-  _dims(){var el=document.querySelector('[data-tour="map"]');if(!el)return false;var r=el.getBoundingClientRect();if(!r.width||!r.height)return false;this._mw=r.width;this._mh=r.height;this._ml=r.left;this._mt=r.top;return true;}
-  _clampPan(px,py,z){var W=this._mw,H=this._mh;return {x:Math.max(W-z*W,Math.min(0,px)),y:Math.max(H-z*H,Math.min(0,py))};}
-  _zoomBtn(d){if(!this._dims())return;var z=this.state.zoom,nz=Math.max(1,Math.min(5,d>0?z*1.4:z/1.4)),cx=this._mw/2,cy=this._mh/2,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:true});}
-  _mapWheel(e){this._mapDims(e);var z=this.state.zoom,f=e.deltaY<0?1.18:1/1.18,nz=Math.max(1,Math.min(5,z*f)),cx=e.clientX-this._ml,cy=e.clientY-this._mt,k=nz/z,px=cx-k*(cx-this.state.panX),py=cy-k*(cy-this.state.panY),p=this._clampPan(px,py,nz);if(nz===1){p.x=0;p.y=0;}this.setState({zoom:nz,panX:p.x,panY:p.y,_smooth:false});}
-  _mapDown(e){if(this.state.zoom<=1)return;this._mapDims(e);this._drag={x:e.clientX,y:e.clientY,px:this.state.panX,py:this.state.panY};this.setState({_smooth:false});}
-  _mapMove(e){if(!this._drag)return;var px=this._drag.px+(e.clientX-this._drag.x),py=this._drag.py+(e.clientY-this._drag.y),p=this._clampPan(px,py,this.state.zoom);this.setState({panX:p.x,panY:p.y});}
-  _mapUp(){this._drag=null;}
   renderVals(){
     const S = this.state, decided = S.decided;
     const fmt = n => n.toLocaleString('pt-BR');
@@ -587,7 +589,7 @@ class Component extends DCLogic {
     ];
     const groups = defs.map(g=>{
       const items = active.filter(c=>c.group===g.key).map(c=>({
-        id:c.id, municipio:c.municipio, gleba:c.gleba, tagsText:(c.changeKind||c.tagsText),
+        id:c.id, municipio:c.municipio, gleba:c.gleba, tagsText:c.changeKind, note:c.queueNote,
         tagFg: g.key==='revisar' ? '#E0926E' : '#7FB07A',
         tagBg: g.key==='revisar' ? 'rgba(192,87,59,0.16)' : 'rgba(127,176,122,0.18)',
         cardBg: c.id===S.selectedId ? '#2E3E2B' : '#202E22',
@@ -598,39 +600,48 @@ class Component extends DCLogic {
       if(g.key==='liberavel' && items.length>1){ r.batchShow=true; r.batchLabel=`Liberar lote (${items.length}) com trilha`; r.onBatch=()=>this.batchLiberar(); }
       return r;
     }).filter(g=>g.items.length);
-    var __cc=this.cases.filter(c=>decided[c.id]);
-    if(__cc.length){var __lb={liberar:'Liberado',notificar:'Notificado',revisar:'Em revisão',reagendar:'Reagendado'};
-      groups.push({key:'concluido',label:'Concluídos',color:'#7FB07A',sub:'revisados e finalizados · Luana A.',count:__cc.length,batchShow:false,
-        items:__cc.map(c=>({id:c.id,municipio:c.municipio,gleba:c.gleba,tagsText:'✓ '+(__lb[decided[c.id]]||'Concluído')+' · Luana A.',tagFg:'#9FB191',tagBg:'rgba(127,176,122,0.12)',cardBg:c.id===S.selectedId?'#2E3E2B':'rgba(255,255,255,0.02)',outline:c.id===S.selectedId?'2px solid #D6A23E':'1px solid rgba(255,255,255,0.05)',onSelect:()=>this.select(c.id)}))});}
+
+    const conc = this.cases.filter(c=>decided[c.id]);
+    if(conc.length){
+      const lb = { liberar:'Liberado', notificar:'Notificado', revisar:'Em revisão', reagendar:'Reagendado' };
+      groups.push({
+        key:'concluido', label:'Concluídos', color:'#7FB07A', sub:'revisados e finalizados · Luana A.', count:conc.length, batchShow:false,
+        items: conc.map(c=>({
+          id:c.id, municipio:c.municipio, gleba:c.gleba,
+          tagsText:'✓ '+(lb[decided[c.id]]||'Concluído')+' · Luana A.', note:'',
+          tagFg:'#9FB191', tagBg:'rgba(127,176,122,0.12)',
+          cardBg: c.id===S.selectedId ? '#2E3E2B' : 'rgba(255,255,255,0.02)',
+          outline: c.id===S.selectedId ? '2px solid #D6A23E' : '1px solid rgba(255,255,255,0.05)',
+          onSelect: ()=>this.select(c.id)
+        }))
+      });
+    }
 
     const sel = this.cases.find(c=>c.id===S.selectedId) || null;
     const hasSelected = !!sel;
 
     const out = {
+      headerLoc: sel ? (sel.municipio+' · GO') : 'Goiás · todos',
       filaRestante: fmt(12480 - concluded),
       concludedLabel: concluded===0 ? 'nenhum concluído ainda' : (concluded===1 ? '1 concluído hoje' : concluded+' concluídos hoje'),
       groups, hasSelected, emptyState: !hasSelected,
-      layerNativa:S.layers.nativa, layerConsolidada:S.layers.consolidada, layerHidro:S.layers.hidro, layerMudanca:S.layers.mudanca,
       legend: [
-        { key:'nativa', label:'Vegetação nativa', color:'#5f8a55' },
-        { key:'consolidada', label:'Área consolidada', color:'#c9a86a' },
-        { key:'hidro', label:'Hidrografia', color:'#5E8CA8' },
-        { key:'mudanca', label:'Mudança recente', color:'#C0573B' },
-      ].map(x=>({
-        key:x.key, label:x.label, color:x.color, on:S.layers[x.key],
-        onToggle: ()=>this.toggleLayer(x.key),
-        chipStyle: `display:flex; align-items:center; gap:7px; font-size:10.5px; font-weight:600; cursor:pointer; border:none; font-family:'Hanken Grotesk',sans-serif; padding:5px 10px; border-radius:999px; transition:all .15s; background:${S.layers[x.key]?'rgba(255,255,255,0.09)':'transparent'}; color:${S.layers[x.key]?'#DCD3BE':'#6E8067'};${S.layers[x.key]?'':'text-decoration:line-through; text-decoration-color:rgba(255,255,255,0.3);'}`
-      })),
-      epoch:S.epoch,
-      baseBtnBg:  S.epoch==='base'  ? '#D6A23E' : 'transparent', baseBtnFg:  S.epoch==='base'  ? '#1B2A1F' : '#C7CFB9',
-      atualBtnBg: S.epoch==='atual' ? '#D6A23E' : 'transparent', atualBtnFg: S.epoch==='atual' ? '#1B2A1F' : '#C7CFB9',
-      setBase: ()=>this.setEpoch('base'), setAtual: ()=>this.setEpoch('atual'),
+        { label:'Vegetação nativa', color:'#3E6B45' },
+        { label:'Área consolidada', color:'#C9A86A' },
+        { label:'Hidrografia', color:'#5E8CA8' },
+        { label:'Mudança recente', color:'#C0573B' },
+      ],
       toast:S.toast, dismiss: ()=>this.dismissToast(),
       toastBg: S.toast ? ({ liberar:'#3E6B45', notificar:'#B5832B', revisar:'#5A3326', reagendar:'#2F4A6B' }[S.toast.action] || '#25382A') : '#25382A',
       startTour: ()=>this.startTour(),
       tourActive: S.tourActive,
-      selMap:{bg:'linear-gradient(135deg,#3a4a2c,#445331)',nativa:[],fields:[],pivots:[],parcels:[],river:'',focusD:'',focusFill:'rgba(242,200,75,0.12)',scarFill:'#a8663f'}, selShowScar:false, selAlertPos:'left:20%; top:30%;', selEpochWash:'transparent',
-      mapStyle:'transform:translate('+S.panX+'px,'+S.panY+'px) scale('+S.zoom+'); transform-origin:0 0; transition:'+(S._smooth?'transform .16s ease':'none')+'; will-change:transform;', mapCursor:(S.zoom>1?'grab':'default'), mapWheel:(e)=>this._mapWheel(e), mapDown:(e)=>this._mapDown(e), zoomIn:()=>this._zoomBtn(1), zoomOut:()=>this._zoomBtn(-1),
+      filaOpen:S.filaOpen, toggleFila:()=>this.toggleFila(),
+      filaPanelStyle: S.filaOpen ? 'left:14px; top:14px; bottom:14px; width:266px;' : 'left:14px; top:14px; bottom:auto; width:auto;',
+      filaToggleIcon: S.filaOpen ? '‹' : '›',
+      scene:{ img:'assets/sat/luz2-hoje.jpg', baseImg:'', wipe:false, poly:'', app:false, cloudFull:false, cloudPartial:false },
+      selShowWipe:false, wipeInset:'inset(0 50% 0 0)',
+      wipeDown:(e)=>this._wipeDown(e), wipeKey:(e)=>this.wipeKey(e),
+      sceneSource:'Sentinel‑2 · RGB · cena', sceneCoord:'Goiás', sceneNoWipe:false,
     };
 
     if(sel){
@@ -654,30 +665,32 @@ class Component extends DCLogic {
         { k:'Base t0', val:sel.base, color:'#C9A86A' },
         { k:'Score · '+sel.scoreVer, val:sel.score, color: sel.recoType==='ok' ? '#7FB07A' : '#C0573B' },
       ];
-      const cells = (sel.cells||[]).map(c=>({
-        style: `position:absolute; left:${c.l}%; top:${c.t}%; width:${c.s}px; height:${c.s}px; border:2px solid #C0573B; border-radius:2px; background-color:rgba(192,87,59,0.14); background-image:repeating-linear-gradient(45deg, rgba(192,87,59,0.5) 0 4px, transparent 4px 9px); opacity:${S.epoch==='atual'?1:0}; transform:${S.epoch==='atual'?'scale(1)':'scale(0.5)'}; transition:opacity .45s ease, transform .45s ease;${c.strong?' box-shadow:0 0 0 1px rgba(255,255,255,0.25); animation:gpulse 2s ease-in-out infinite;':''}`
-      }));
       const primaryIcon = sel.recoType==='ok' ? '✓' : (sel.recoType==='danger' ? '↻' : '✉');
+      const baseYear = (sel.base.match(/\d{4}/) || ['—'])[0];
+      const sc = this._scene(sel);
 
-      var __T=this._terrain(sel), __base=(S.epoch==='base');
       Object.assign(out, {
-        selMap:{bg:__T.bg,nativa:__T.nativa,fields:__T.fields,pivots:__T.pivots,river:__T.river,parcels:__T.parcels,focusD:__T.focusD,focusFill:(sel.change&&__base)?'#33492b':'rgba(242,200,75,0.12)',scarFill:'#a8663f'},
-        selShowScar: !!sel.change && S.layers.mudanca && S.epoch==='atual',
-        selEpochWash: sel.change ? (__base?'rgba(54,96,52,0.20)':'rgba(176,112,58,0.16)') : 'transparent',
-        selAlertPos: 'left:'+Math.max(8,Math.min(70,Math.round(__T.fcx/10)))+'%; top:'+Math.max(12,Math.min(66,Math.round(__T.fcy/10)))+'%;',
         selected: sel,
+        selSign: this.signMap[sel.primary.action] || '',
         confColor:cm.c, confBg:cm.b, confLabel:cm.l,
         recoBg:rm.bg, recoBd:rm.bd, recoTag:rm.tag,
         primaryBg:pkind.bg, primaryColor:pkind.fg, primaryIcon,
-        selEv:ev, selCells:cells,
-        selChange:!!sel.change, selNoChange:(!sel.change && !sel.nuvem), selNuvem:!!sel.nuvem,
-        selOk:sel.recoType==='ok', selWarn:sel.recoType==='warn', selDanger:sel.recoType==='danger',
-        selAntecip:!!sel.antecip, selAntecipWidth: sel.antecip ? Math.min(94, sel.antecip*1.7+18)+'%' : '0%',
-        selAlertPill: sel.alert ? (sel.changeKind || 'mudança')+' · '+sel.alert : null,
-        selCoord: sel.coord, selBasemap: 'Sentinel‑2 · RGB B4/B3/B2 · '+sel.imgShort,
-        selSign: ({notificar:'o auto de notificação ao produtor, com a trilha datada (imagem + alerta + base) anexada como prova. É o seu nome no ato.',liberar:'que o talhão está regular e pode seguir, com recibo auditável anexado à análise dinamizada. É o seu nome no ato.',revisar:'nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',reagendar:'nada ainda: o sistema aguarda a próxima imagem de céu limpo para reavaliar.'})[sel.primary.action] || '',
+        selEv:ev,
+        selNoChange:(!sel.change && !sel.nuvem),
+        selNoChangeLabel: 'Sem mudança desde '+baseYear+' · estável',
+        selDanger:sel.recoType==='danger',
+        selAntecip:!!sel.antecip,
         decideP: ()=>this.decide(sel.primary.action),
         selSecondary: (sel.secondary||[]).map(s=>({ label:s.label, onClick: ()=>this.decide(s.action) })),
+        scene: sc,
+        selShowWipe: sc.wipe,
+        sceneNoWipe: !sc.wipe,
+        wipeInset: 'inset(0 '+(100-S.wipe)+'% 0 0)',
+        wipeLeftPct: S.wipe+'%',
+        wipeShowHint: !S.wipeTouched && sc.wipe,
+        wipeBaseYear: baseYear,
+        sceneSource: 'Sentinel‑2 · RGB B4/B3/B2 · '+sel.imgShort,
+        sceneCoord: sel.coord,
       });
     }
 
@@ -703,8 +716,7 @@ class Component extends DCLogic {
         tourCalloutStyle: cs,
         tourTitle: step.title, tourBody: step.body,
         tourStepLabel: `Passo ${i+1} de ${total}`,
-        tourShowPrev: i>0, tourIsLast: i===total-1,
-        tourNextLabel: i===total-1 ? 'Começar a usar' : 'Próximo',
+        tourShowPrev: i>0, tourNextLabel: i===total-1 ? 'Começar a usar' : 'Próximo',
         tourDots: this.tourSteps.map((s,idx)=>({ style:`width:7px; height:7px; border-radius:50%; transition:all .2s; background:${idx===i?'#D6A23E':(idx<i?'#7FB07A':'rgba(46,37,25,0.2)')};` })),
         tourNext: ()=>this.tourNext(), tourPrev: ()=>this.tourPrev(), tourSkip: ()=>this.tourFinish(),
       });
