@@ -47,7 +47,7 @@ sections = sections.replace(/(<!-- chips QGIS-like -->)/, '<div style="position:
 // Reescrevemos pra honesto (futuro/projeção) e trocamos AL->GO. split/join = literal, idempotente.
 const sanitize = [
   ['Testamos em cerca de vinte áreas de Goiás, no Cerrado, com céu limpo. O resultado: o Gabarito apontou a mudança antes do alerta oficial, com pelo menos dois meses de antecedência na mediana, e mais de oitenta por cento de acerto na fila.',
-   'Nosso protótipo é um backtest: vamos medir, em cerca de vinte áreas de Goiás no Cerrado de céu limpo, quantos dias o Gabarito aponta a mudança antes do alerta oficial. As metas são pelo menos dois meses de antecedência na mediana e mais de oitenta por cento de acerto na fila — números a validar no piloto, não resultados já obtidos.'],
+   'Nosso protótipo é um backtest: vamos medir, em cerca de vinte áreas de Goiás no Cerrado de céu limpo, quantos dias o Gabarito aponta a mudança antes da base ser atualizada, calibrado contra PRODES e DETER. As metas são recall acima de 0,90 e kappa acima de 0,70, números a validar no piloto, não resultados já obtidos.'],
   ['Testamos em ~20 áreas de ', 'O protótipo é um backtest em ~20 áreas de '],
   ['(Cerrado, céu limpo): o Gabarito apontou a mudança ', '(Cerrado, céu limpo): mede se o Gabarito aponta a mudança '],
   ['Quantos dias antes a gente avisou · por área', 'Quantos dias antes o Gabarito avisaria · projeção (não medido)'],
@@ -68,6 +68,14 @@ const sanitize = [
   // a imagem virou antes/depois real: ajusta a fala (não há mais retângulo vermelho)
   ['A área que mudou aparece destacada em vermelho, dentro do limite do imóvel.',
    'Dá pra ver a mudança comparando as duas datas: o que era verde virou solo exposto, dentro do limite do imóvel.'],
+  // metas do backtest = as do apresentacao-mentores (recall/kappa), NÃO "2 meses / 80%" (esses
+  // eram do bundle do designer). Corrige corpo + os dois ladrilhos. Anti-circular: vs base, calibrado por PRODES/DETER.
+  ['mede se o Gabarito aponta a mudança <strong style="color:#2E2519;">antes</strong> do alerta oficial, sempre comparando com uma verdade de fora, nunca com o mapa velho.',
+   'mede quantos dias o Gabarito aponta a mudança <strong style="color:#2E2519;">antes</strong> da base ser atualizada, calibrado contra PRODES e DETER, nunca contra o mapa velho.'],
+  ['≥ 2 meses</p><p style="font-size:20px; margin:10px 0 0; color:#5A4F3D;">meta de antecedência · mediana',
+   '≥ 0,90</p><p style="font-size:20px; margin:10px 0 0; color:#5A4F3D;">recall do delta · vs DETER no bioma calibrado'],
+  ['≥ 80%</p><p style="font-size:20px; margin:8px 0 0; color:#5A4F3D;">meta de acerto na fila',
+   '≥ 0,70</p><p style="font-size:20px; margin:8px 0 0; color:#5A4F3D;">kappa · classes que os estados usam'],
 ];
 for (const [a, b] of sanitize) sections = sections.split(a).join(b);
 const forbidden = ['Testamos', 'resultado publicado', 'a gente avisou', 'O resultado:', 'Penedo', 'Coruripe', 'Igreja N', 'Marechal Deodoro', 'CAR-AL'];
