@@ -1,46 +1,42 @@
 # Pitch — narração do áudio (≤ 3 min)
 
-> **Formato Live 7:** o pitch é **slides PDF estático + áudio narrado** (não é mais vídeo livre), ≤ 3 min, subido no YouTube (público/não-listado). Os slides são `../pitch.html` → `⌘/Ctrl+P` → "Salvar como PDF" (cada slide vira uma página 16:9). Esta é a faixa de áudio, slide a slide.
+> **Formato (Live 08):** slides na horizontal + áudio narrado (não é vídeo editado/animado), ≤ 3 min, no YouTube como **público ou não-listado** (privado **desclassifica**). Slides: `../pitch.html` → `⌘/Ctrl+P` → "Salvar como PDF" (cada slide vira página 16:9), ou grave direto no Canva.
 >
-> **5 beats, um eixo só: impacto na decisão pública.** Nunca dizer "o algoritmo decide" (vende-se blindagem da assinatura, não automação). ~460 palavras faladas ≈ 2 min 52 s a 160 ppm. **Cronometrar antes de subir — se passar de 3 min, cortar o slide 6.** "Portaria" aparece exatamente 1× (slide 11): é maturidade institucional, não promessa de norma pronta.
+> **10 slides, estrutura oficial:** Introdução · Problema (quem sofre) · Problema (números) · Solução · Como funciona · Diferenciais · Impacto · Time · Próximos passos/pedido · Encerramento.
+>
+> **Como ler:** voz de conversa, não de leitura. Frase curta, respira nos pontos. ~440 palavras ≈ 2 min 55 s a 150 ppm — **cronometre**. Os **[ ]** são direção de atuação, não fale. Pausa de verdade depois de "assinar embaixo".
 
 ---
 
-**Slide 1 — Capa** *(beat 0: posicionamento)*
-"Gabarito: o roteador auditável da análise do CAR. Em uma frase — ninguém precisa de um mapa mais novo; precisa de uma decisão que dê pra assinar."
+**Slide 1 · Capa** *(Introdução)*
+"Todo dia, numa secretaria de meio ambiente, alguém abre uma fazenda no mapa e precisa decidir: libera, ou não? E essa pessoa trava. A gente é a equipe do Gabarito. E a nossa frase é essa: ninguém precisa de um mapa mais novo, precisa de uma decisão que dê pra assinar."
 
-**Slide 2 — Quem assina** *(beat a: a heroína)*
-"A heroína é a Luana, analista ambiental de um órgão estadual. Validar ou notificar um CAR leva o nome e a responsabilidade jurídica dela. O produto não é o herói — ela é."
+**Slide 2 · Quem assina** *(Problema — quem sofre)*
+"Essa pessoa tem nome: Luana, analista ambiental do estado. Quando ela libera um CAR, vai junto o nome dela e a responsabilidade jurídica dela. Então, sem uma prova firme pra sustentar a decisão, ela faz o que qualquer um faria: recua. Volta a conferir imóvel por imóvel, na mão. E a fila para de andar."
 
-**Slide 3 — O paradoxo** *(beat b: os stakes)*
-"Os números são duros. O SICAR já tria até 66 mil cadastros por dia. Mesmo assim, a conclusão nacional foi de 2,3 para 5,9 por cento em um ano — e 94 por cento dos 8,1 milhões seguem sem conclusão. Detectar não é o gargalo."
+**Slide 3 · O paradoxo** *(Problema — os números)*
+"E aí está o paradoxo. O sistema já tria 66 mil cadastros por dia, detecção sobra. Mas em um ano inteiro o país saiu de 2,3 pra só 5,9 por cento de análises concluídas. 94 por cento dos 8 milhões de cadastros continuam parados. Não falta imagem. Falta alguém que se sinta seguro pra assinar."
 
-**Slide 4 — A virada** *(beat b)*
-"A virada: base velha é o sintoma; a raiz é que ninguém quer assinar no escuro. Sem lastro defensável, o servidor recua pro manual. O Gabarito não é dado mais novo — é um roteador de atenção com uma trilha que protege quem assina."
+**Slide 4 · O produto** *(Solução)*
+"O Gabarito resolve isso com duas telas e uma regra. Na fila, a nota de risco é invisível: ela só organiza, pra Luana olhar primeiro o que importa. No caso, a Luana abre a prova com data: a mesma imagem de satélite que ela já usa, lado a lado, antes e depois, o alerta oficial e a base de onde aquilo veio. É essa prova que vira um 'pode assinar'."
 
-**Slide 5 — O produto** *(beat c: antecipação + evidência)*
-"Duas telas, uma regra. Na fila, o score é invisível: só ordena por risco. No caso, a analista abre a evidência datada — recorte Sentinel, alerta DETER, base de origem, versão do score. Essa trilha torna a liberação assinável."
+**Slide 5 · Como funciona** *(Como funciona)*
+"Por baixo, três passos. Um: acha o que mudou, cruzando satélite gratuito com os alertas oficiais. Dois: refaz só o talhão que mudou, com uma pessoa revisando, em vez de redesenhar a fazenda inteira. Três: entrega a base nova, aberta, com a nota de risco e a prova. Roda em ferramenta livre, e não substitui o SICAR: encaixa nele."
 
-**Slide 6 — Como funciona**
-"São três passos: detecta a mudança, remapeia só os talhões que mudaram com revisão humana, e entrega a base aberta com o score. Roda em QGIS, exporta pro SICAR — não substitui nada, acopla."
+**Slide 6 · Comparativo** *(Diferenciais)*
+"'Mas isso já não existe?' Priorizar a fila, sim, o MapBiomas Alerta já faz por imóvel. O que ninguém entrega é a prova datada que dá pra assinar, talhão por talhão. Essa é a linha que só o Gabarito preenche. A gente prioriza; a Luana decide e assina."
 
-**Slide 7 — Frase âncora** *(beat d)*
-"Numa frase: o MapBiomas pinta o Brasil; o Gabarito mostra à analista o que ela pode assinar primeiro — e por quê."
+**Slide 7 · A prova** *(Impacto esperado)*
+"E a gente não pede pra acreditar, pede pra medir. O protótipo é um backtest em cerca de vinte áreas de Goiás: quantos dias o Gabarito enxerga a mudança antes do alerta oficial. Sempre comparando com uma verdade de fora, nunca com o mapa velho. As metas, dois meses de antecedência e 80 por cento de acerto, a gente valida no piloto, de matriz de confusão aberta."
 
-**Slide 8 — Posicionamento** *(beat d)*
-"Sejamos honestos: priorizar já existe — o MapBiomas Alerta prioriza por imóvel. O fosso que ninguém ocupa é confiança por talhão, com trilha assinável. O Gabarito prioriza; a Luana decide e assina."
+**Slide 8 · Time** *(Time)*
+"Somos um time pequeno: produto, geoprocessamento e política pública. O que muda o jogo não é o tamanho, é o método. A gente foi atrás da dor real, não da feature bonita, e brigou com os próprios números antes de confiar neles."
 
-**Slide 9 — Honestidade**
-"A regra que não quebramos: o score só vale se não medir a própria ignorância. Nunca calibramos contra a base velha — só contra verdade independente: PRODES, DETER, campo. E sejamos claros: recall acima de 0,90, kappa 0,70, falso-negativo visível zero são metas que validamos no piloto — não números que já cravamos."
+**Slide 9 · A chamada** *(Próximos passos / pedido)*
+"O pedido tem duas partes: a ferramenta que prova o método, e quem cuida disso depois que o piloto acaba. A gente começa pela SEMAD de Goiás, que já tem a base. Um piloto custa quase nada e dá resposta em duas semanas."
 
-**Slide 10 — A prova**
-"Não pedimos pra acreditar; pedimos pra medir. Em cerca de vinte talhões de Goiás, o backtest projeta quantos dias o Gabarito vê a mudança antes de a base anual ser atualizada — calibrado contra PRODES e DETER, nunca contra a base velha, e validável pela SEMAD-GO. É o protótipo, matriz de confusão pública."
-
-**Slide 11 — A chamada** *(beat e: o pedido)*
-"Por isso a submissão é dupla: o artefato que prova o método, e a governança que dá respaldo a quem assina. A prova abre a porta; uma portaria estadual transforma o score em rotina — e isso pede um padrinho institucional, não só uma boa minuta. Começamos pela SEMAD-GO: tem a base, e um piloto nosso custa quase zero e mede em duas semanas."
-
-**Slide 12 — Fecho**
-"A máquina já vê tudo. O que falta é alguém que aceite assinar embaixo. Gabarito — o roteador auditável da análise do CAR. Obrigado."
+**Slide 10 · Fecho** *(Encerramento)*
+"A máquina já vê tudo. O que falta é alguém que aceite assinar embaixo. [pausa de 1 segundo] Gabarito: a base viva do CAR. Obrigado."
 
 ---
-*Dica: pausar meio segundo depois de "assinar embaixo". É o pico emocional do pitch.*
+*Antes de gravar: no slide 1 e no slide 8, troque "a equipe do Gabarito" pelos nomes reais, se quiserem se apresentar.*

@@ -11,8 +11,8 @@
 ---
 
 ### Cena 1 — O gancho (0:00–0:18) · ~42 palavras
-**Tela:** rosto/voz do integrante, ou o slide "A virada".
-**Narração:** "Validar um CAR é um ato administrativo — leva o nome de uma servidora. A máquina já tria 66 mil cadastros por dia, mas o país concluiu só 5,9%. O gargalo não é detecção. É uma decisão que alguém aceite assinar."
+**Tela:** rosto/voz do integrante, ou a abertura do pitch.
+**Narração:** "Validar um CAR é um ato com peso jurídico, leva o nome de uma servidora. A máquina já tria 66 mil cadastros por dia, mas o país concluiu só 5,9%. O gargalo não é detecção. É uma decisão que alguém aceite assinar."
 
 ### Cena 2 — O produto, na fila (0:18–0:42) · ~38 palavras
 **Tela:** cockpit (slide "O produto") — a fila à esquerda.
