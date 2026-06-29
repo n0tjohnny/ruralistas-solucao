@@ -29,7 +29,8 @@ shot_painel () { # $1=selectedId  $2=outfile
 echo "[1/4] capturing frames…"
 magick -density 150 "submission/gabarito-pitch.pdf[0]" -background "#25382A" -flatten "$TMP/s1.png"  # capa
 shot_painel rv7  s2.png
-cp "$TMP/s2.png" "$TMP/s3.png"                                                                       # mesma tela, narração guia o olho
+# cena 3 = plano de detalhe: zoom na trilha de auditoria (painel direito do mesmo frame)
+magick "$TMP/s2.png" -crop 820x1080+1100+0 +repage "$TMP/s3.png"
 shot_painel ari3 s4.png                                                                              # conf baixa -> bloqueio
 magick -density 150 "submission/gabarito-pitch.pdf[6]" -background "#25382A" -flatten "$TMP/s5.png"  # Impacto/backtest
 
