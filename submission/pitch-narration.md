@@ -30,7 +30,7 @@
 "E a gente não pede pra acreditar, pede pra medir. O protótipo é um backtest em cerca de vinte áreas de Goiás: quantos dias o Gabarito enxerga a mudança antes do alerta oficial. Sempre comparando com uma verdade de fora, nunca com o mapa velho. As metas, dois meses de antecedência e 80 por cento de acerto, a gente valida no piloto, de matriz de confusão aberta."
 
 **Slide 8 · Time** *(Time)*
-"Somos um time pequeno: produto, geoprocessamento e política pública. O que muda o jogo não é o tamanho, é o método. A gente foi atrás da dor real, não da feature bonita, e brigou com os próprios números antes de confiar neles."
+"Somos três: Mário Guilberto, João Marcos e Jackson. O que muda o jogo não é o tamanho, é o método. A gente foi atrás da dor real, não da primeira ideia, com debates estruturados e um Council, e brigou com os próprios números antes de confiar neles."
 
 **Slide 9 · A chamada** *(Próximos passos / pedido)*
 "O pedido tem duas partes: a ferramenta que prova o método, e quem cuida disso depois que o piloto acaba. A gente começa pela SEMAD de Goiás, que já tem a base. Um piloto custa quase nada e dá resposta em duas semanas."
