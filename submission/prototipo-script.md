@@ -15,7 +15,7 @@
 **Narração:** "Validar um CAR é um ato com peso jurídico, leva o nome de uma servidora. A máquina já tria 66 mil cadastros por dia, mas o país concluiu só 5,9%. O gargalo não é detecção. É uma decisão que alguém aceite assinar."
 
 ### Cena 2 — O produto, na fila (0:18–0:42) · ~38 palavras
-**Tela:** cockpit (slide "O produto") — a fila à esquerda.
+**Tela:** painel ao vivo (`/painel`), a fila à esquerda.
 **Narração:** "O Gabarito ordena a fila por risco. O score fica invisível aqui — ele só decide a ordem. A analista gasta o olho onde importa: nos talhões que mudaram e na confiança baixa."
 
 ### Cena 3 — O caso, assinável (0:42–1:08) · ~44 palavras
