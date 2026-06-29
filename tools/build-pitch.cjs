@@ -23,10 +23,23 @@ let sections = bundle.slice(bStart, bEnd);
 // adiciona class="stage" (o runtime standalone seleciona por section.stage)
 sections = sections.replace(/<section (?!class=)/g, '<section class="stage" ');
 
-// self-contained: o bundle referencia assets/satelite-imovel.png (>256KiB, não baixável
-// inteiro via DesignSync e fora do princípio "no external assets"). Troca por mock aéreo inline.
-const satMock = `<!-- mock de imagem aérea (self-contained; substitui assets/satelite-imovel.png) -->\n            <div style="position:absolute; inset:0; background:radial-gradient(circle at 24% 28%, #51713f 0 11%, transparent 12%), radial-gradient(circle at 72% 62%, #5d7c4e 0 15%, transparent 16%), linear-gradient(115deg, #3c5836 0%, #46603c 36%, #6b7a44 62%, #4f6b42 100%);">\n              <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute; inset:0; width:100%; height:100%; opacity:0.55;">\n                <rect x="0" y="0" width="40" height="55" fill="#54713f"/><rect x="40" y="0" width="60" height="30" fill="#6f7b42"/><rect x="0" y="55" width="55" height="45" fill="#415d38"/><rect x="55" y="30" width="45" height="40" fill="#5c7544"/><rect x="55" y="70" width="45" height="30" fill="#6b8a4c"/>\n                <path d="M0,68 Q30,58 55,74 T100,70 L100,80 Q60,71 0,82 Z" fill="#5e8ca8" opacity="0.5"/>\n              </svg>\n            </div>`;
+// self-contained: o bundle referencia assets/satelite-imovel.png (não baixável via DesignSync e
+// fora do princípio "no external assets"). Troca pela MESMA imagem real do protótipo /painel:
+// Sentinel-2 do caso rv7 (Rio Verde, gleba 7), antes (verde) | depois (solo exposto), em
+// base64 — assim o deck segue self-contained e exporta em PDF sem asset externo.
+const b64 = f => fs.readFileSync(path.join(ROOT, f)).toString('base64');
+const RV7_BASE = b64('public/assets/sat/rv7-base.jpg');
+const RV7_HOJE = b64('public/assets/sat/rv7-hoje.jpg');
+const dateChip = (pos, txt) => `<div style="position:absolute; ${pos} transform:translateX(-50%); background:rgba(20,17,12,0.82); color:#F3ECDC; padding:6px 14px; border-radius:999px; font-size:15px; font-weight:700; letter-spacing:1px;">${txt}</div>`;
+const satMock = `<!-- imagem REAL Sentinel-2 (antes/depois) — mesmo caso e mesmo enquadramento do protótipo /painel (Rio Verde · gleba 7): clip-path divide a MESMA cena em duas datas, igual ao swipe -->\n            <img src="data:image/jpeg;base64,${RV7_HOJE}" alt="Satélite · depois (solo exposto)" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;">\n            <img src="data:image/jpeg;base64,${RV7_BASE}" alt="Satélite · antes (vegetação)" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block; clip-path:inset(0 50% 0 0);">\n            <div style="position:absolute; left:50%; top:0; bottom:0; width:3px; background:#F6EFE0; transform:translateX(-1.5px); box-shadow:0 0 12px rgba(0,0,0,0.4);"></div>\n            ${dateChip('top:16px; left:25%;', 'ANTES')}\n            ${dateChip('top:16px; left:75%;', 'DEPOIS')}`;
 sections = sections.replace(/<img src="assets\/satelite-imovel\.png"[^>]*>/g, satMock);
+
+// a imagem agora é real: remove o retângulo vermelho fabricado (cairia em local arbitrário) e a
+// legenda de classificação (engana sobre RGB cru). A mudança fica óbvia no contraste antes/depois.
+sections = sections.replace(/\s*<rect x="58" y="30" width="30" height="36" fill="rgba\(192,87,59,0\.18\)" stroke="#FF6A4D" stroke-width="2\.4" vector-effect="non-scaling-stroke"\/>/, '');
+sections = sections.replace(/\s*<!-- legenda -->[\s\S]*?Mudança recente<\/span>\s*<\/div>/, '');
+// nota de rodapé honesta no lugar da legenda removida
+sections = sections.replace(/(<!-- chips QGIS-like -->)/, '<div style="position:absolute; right:14px; bottom:14px; background:rgba(20,17,12,0.72); color:#EDE6D5; padding:7px 13px; border-radius:9px; font-size:13px;">Imagem real Sentinel-2 · área de exemplo (Goiás)</div>\n            $1');
 
 // 2.5 SANEAMENTO (idempotente) — o bundle do designer afirma resultados FABRICADOS
 // como fato ("Testamos", gráfico com dias por município, "resultado publicado") e usa
@@ -52,6 +65,9 @@ const sanitize = [
   // --- números de UI inventados: marcar como exemplo (não são dados operacionais reais) ---
   ['propriedades aguardando análise', 'propriedades aguardando análise · exemplo'],
   ['A prova, com data · imóvel CAR-GO-0421', 'A prova, com data · imóvel exemplo CAR-GO-0421'],
+  // a imagem virou antes/depois real: ajusta a fala (não há mais retângulo vermelho)
+  ['A área que mudou aparece destacada em vermelho, dentro do limite do imóvel.',
+   'Dá pra ver a mudança comparando as duas datas: o que era verde virou solo exposto, dentro do limite do imóvel.'],
 ];
 for (const [a, b] of sanitize) sections = sections.split(a).join(b);
 const forbidden = ['Testamos', 'resultado publicado', 'a gente avisou', 'O resultado:', 'Penedo', 'Coruripe', 'Igreja N', 'Marechal Deodoro', 'CAR-AL'];
