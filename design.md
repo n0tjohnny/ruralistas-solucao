@@ -71,6 +71,7 @@ As cores são a legenda do mapa — nada de azul corporativo frio. `--ga-accent:
 - **Navbar de abas** (deck): sticky `top:0`, fundo `#25382A`, scroll horizontal com inércia, **touch target ≥44px**, chip ativo na cor acento, auto-scroll-into-view, fade na borda direita (`#ga-navbar::after`).
 - **Termo do glossário** (`.ga-term`): `border-bottom:1.5px dotted rgba(214,162,62,.9); cursor:help`. Sublinhado só em **corpo de texto** — **nunca** em H1–H4.
 - **Tooltip** (`#ga-gtip`): `position:fixed`, fundo `#1F2D22`, borda acento, raio 12px, `max-width:300px` (mobile `calc(100vw-24px)`), clampado à viewport, `pointer-events:none`, título em Spectral acento.
+- **Microcopy / voz do sistema (texto da UI):** só **termos reais do CAR/SICAR** (fotointerpretação manual, liberação automática, análise dinamizada, analista responsável, parecer, cena, talhão, delta, limiar) — **não inventar linguagem**. **Sem travessão `—`** (lê como IA; usar ponto ou vírgula). O humano é a autoridade que **assina**: a máquina **encaminha** o caso a ele, **nunca "rebaixa"**. Registro profissional, sem coloquialismo nem frase redundante. Canônico em `pm-role.md` → "Marca, Voz e Identidade"; no `/painel`, o build (`tools/build-painel.cjs`) trava `—`/`rebaix`/`seu nome no ato`.
 
 ---
 
@@ -113,3 +114,4 @@ Páginas são compiladas de bundles do Claude Design (`*.dc.html`) via DesignSyn
 - [ ] Glossário: termo sublinhado só em corpo (nunca em H1–H4); todos os cards têm `data-terms`.
 - [ ] Mobile: grids colapsam, títulos ≥40px encolhem, touch ≥44px, sem scroll horizontal.
 - [ ] `index.html`/`apresentacao*.html` idênticos aos espelhos em `public/`.
+- [ ] Microcopy: **sem travessão `—`**; só termos reais do CAR/SICAR; humano **encaminhado**, nunca "rebaixado".
