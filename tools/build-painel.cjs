@@ -87,6 +87,20 @@ must('<!-- fonte da cena (canto superior) -->\n      <sc-if value="{{ hasSelecte
 must("sceneCoord:'Goiás',", "sceneCoord:'Goiás', sceneNoWipe:false,", 1);
 must('selShowWipe: sc.wipe,', 'selShowWipe: sc.wipe,\n        sceneNoWipe: !sc.wipe,', 1);
 
+// ════════════════ MOBILE — comparador funciona no toque ════════════════
+// O slider antes/depois era mouse-only (onMouseDown + window mousemove/up). Em celular o
+// gesto central do protótipo ficava morto. Adiciona toque: touchstart na alça, listeners
+// touchmove/touchend na window, e leitura de e.touches[0].clientX no move (com preventDefault
+// p/ não rolar a página durante o arraste). O layout já empilha via @media(max-width:900px).
+// touchstart é delegado pela window (não depende do binding de atributo do DCLogic e
+// sobrevive a re-render): se o toque cai dentro da alça [role=slider], inicia o arraste.
+must("    window.addEventListener('mousemove', this._mmH);\n    window.addEventListener('mouseup', this._muH);",
+     "    window.addEventListener('mousemove', this._mmH);\n    window.addEventListener('mouseup', this._muH);\n    this._tsH = (e)=>{ if(e.target && e.target.closest && e.target.closest('[role=\"slider\"]')) this._wipeDown(e); };\n    window.addEventListener('touchstart', this._tsH, {passive:false});\n    window.addEventListener('touchmove', this._mmH, {passive:false});\n    window.addEventListener('touchend', this._muH);", 1);
+must("    window.removeEventListener('mousemove', this._mmH);\n    window.removeEventListener('mouseup', this._muH);",
+     "    window.removeEventListener('mousemove', this._mmH);\n    window.removeEventListener('mouseup', this._muH);\n    window.removeEventListener('touchstart', this._tsH);\n    window.removeEventListener('touchmove', this._mmH);\n    window.removeEventListener('touchend', this._muH);", 1);
+must('_mapMove(e){ if(!this._wipe) return; var pct=Math.max(5,Math.min(95,((e.clientX-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }',
+     '_mapMove(e){ if(!this._wipe) return; var cx=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX; if(e.touches&&e.cancelable) e.preventDefault(); var pct=Math.max(5,Math.min(95,((cx-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }', 1);
+
 // ════════════════ SANITIZE — anti-fabricação ════════════════
 // "sinalizou" (passado) afirma um resultado medido. Vira condicional + marcador de projeção.
 // (O número de dias é ilustrativo; o bloco passa a se declarar projeção, não fato.)
@@ -143,6 +157,8 @@ const MUST = [
   'projeção (não medido)', 'na fila · exemplo', 'Dados ilustrativos (Goiás)', 'sinalizaria', 'sceneNoWipe',
   // runtime DCLogic
   '<x-dc>', 'data-dc-script', './support.js',
+  // mobile: comparador responde ao toque
+  "window.addEventListener('touchstart'", "window.addEventListener('touchmove'", 'e.touches&&e.touches[0]', "closest('[role=\"slider\"]')",
 ];
 for (const s of MUST) { if (!html.includes(s)) throw new Error(`build-painel ASSERT: faltou "${s}"`); }
 // 13 referências a imagem real (3 pares base+hoje = 6, 6 hoje únicas, 1 fallback)

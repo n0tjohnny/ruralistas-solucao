@@ -510,12 +510,19 @@ class Component extends DCLogic {
     this._muH = ()=>this._mapUp();
     window.addEventListener('mousemove', this._mmH);
     window.addEventListener('mouseup', this._muH);
+    this._tsH = (e)=>{ if(e.target && e.target.closest && e.target.closest('[role="slider"]')) this._wipeDown(e); };
+    window.addEventListener('touchstart', this._tsH, {passive:false});
+    window.addEventListener('touchmove', this._mmH, {passive:false});
+    window.addEventListener('touchend', this._muH);
     if(this.state.tourActive) requestAnimationFrame(()=>this.forceUpdate());
   }
   componentWillUnmount(){
     window.removeEventListener('resize', this._onResize);
     window.removeEventListener('mousemove', this._mmH);
     window.removeEventListener('mouseup', this._muH);
+    window.removeEventListener('touchstart', this._tsH);
+    window.removeEventListener('touchmove', this._mmH);
+    window.removeEventListener('touchend', this._muH);
     clearTimeout(this._t);
   }
 
@@ -538,7 +545,7 @@ const PARCEL='385,300 565,268 760,360 700,520 470,558 368,432';
 
   // ---------- comparison slider ----------
   _dims(){ var el=document.querySelector('[data-tour="map"]'); if(!el) return false; var r=el.getBoundingClientRect(); if(!r.width||!r.height) return false; this._mw=r.width; this._ml=r.left; return true; }
-  _mapMove(e){ if(!this._wipe) return; var pct=Math.max(5,Math.min(95,((e.clientX-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }
+  _mapMove(e){ if(!this._wipe) return; var cx=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX; if(e.touches&&e.cancelable) e.preventDefault(); var pct=Math.max(5,Math.min(95,((cx-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }
   _mapUp(){ this._wipe=false; }
   _wipeDown(e){ if(e.stopPropagation) e.stopPropagation(); if(e.preventDefault) e.preventDefault(); if(!this._dims()) return; this._wipe=true; if(!this.state.wipeTouched) this.setState({ wipeTouched:true }); }
   wipeKey(e){
