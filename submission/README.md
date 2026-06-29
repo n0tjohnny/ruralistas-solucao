@@ -10,7 +10,7 @@ Direção canônica: `../pm-role.md` (DIREÇÃO DECIDIDA). Deck: `../pitch.html`
 | Entregável | Formato exigido | Artefato neste pacote | Status |
 |---|---|---|---|
 | **Ideação** | Formulário appdesafios (nome, logo, resumo ≤300, próximos passos) | `ideacao-form.md` · campo de IA em `uso-de-ia.md` | ✅ texto pronto p/ colar |
-| **Protótipo** | Vídeo **≤ 2 min**, YouTube público/não-listado, narração humana | `prototipo-script.md` (roteiro + shotlist) — **filma ao vivo o protótipo interativo `gabarito.pages.dev/painel`** | ✅ roteiro + protótipo prontos · falta gravar |
+| **Protótipo** | Vídeo **≤ 2 min**, YouTube público/não-listado | `prototipo-gabarito.mp4` (**90 s, 1080p — RASCUNHO pronto p/ subir**, capturas reais do `/painel` + deck, narração TTS pt-BR via `../tools/build-prototipo-video.sh`); roteiro/shotlist em `prototipo-script.md` | ✅ vídeo-rascunho gerado · **falta só subir no YouTube** (idealmente re-narrar com voz de um integrante antes — voz de IA é permitida pelo edital, humana é só recomendada) |
 | **Pitch** | Slides (horizontal) **+ áudio**, ≤ 3 min | `../pitch.html` (10 slides, estrutura oficial; satélite real; slide Time com fotos) → `⌘/Ctrl+P` (PDF) · **roteiro do Jackson: `roteiro-jackson.md`** (corrido, pronto p/ ler; `pitch-narration.md` é a versão com notas) | ✅ deck + roteiro prontos · falta gravar |
 
 ## Submissão dupla (artefato técnico + governança)
