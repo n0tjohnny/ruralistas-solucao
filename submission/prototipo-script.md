@@ -23,8 +23,8 @@
 **Narração:** "Ela abre o caso e arrasta: à esquerda a base, à direita a imagem de hoje — o desmate aparece com os próprios olhos, em satélite real. Ao lado, a evidência datada: a cena Sentinel, o alerta DETER, a base de 2023, a versão do score. É essa trilha que torna a liberação assinável — e reconstitui o ato depois."
 
 ### Cena 4 — O caso difícil (a força é recusar) (1:08–1:30) · ~38 palavras
-**Tela:** um talhão com borda/nuvem → o sistema marca "Sistema recusou — rever".
-**Narração:** "E o mais importante: quando há borda, nuvem ou classe não calibrada, o sistema **não** libera. Ele rebaixa pro humano e diz por quê. Falso-negativo visível é critério de morte: na dúvida, vai pra pessoa."
+**Tela:** um talhão com borda/nuvem → o sistema marca "Liberação automática bloqueada" e encaminha para fotointerpretação manual.
+**Narração:** "E o mais importante: quando há borda, nuvem ou classe não calibrada, o sistema **não** libera. Ele encaminha para fotointerpretação manual e diz por quê. Falso-negativo visível é critério de morte: na dúvida, vai pra pessoa."
 
 ### Cena 5 — A prova (1:30–1:50) · ~38 palavras
 **Tela:** slide "A prova" — gráfico "dias de antecipação".

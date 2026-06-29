@@ -30,7 +30,7 @@ Para cada imóvel/talhão na fila:
 | **Com delta** OU **s < L** | **Fila de análise humana** (não libera sozinho) | Analista, caso a caso, com assinatura individual |
 | **Falso-negativo visível** (borda, nuvem, classe não calibrada, desalinhamento) | **Sempre humano** | Analista |
 
-**Cláusula de segurança (inegociável):** a meta operacional é **falso-negativo visível = 0**. Em qualquer ambiguidade, o talhão é rebaixado para análise humana. O sistema **roteia e ordena**; **não decide o mérito**.
+**Cláusula de segurança (inegociável):** a meta operacional é **falso-negativo visível = 0**. Em qualquer ambiguidade, o talhão é encaminhado para fotointerpretação manual. O sistema **roteia e ordena**; **não decide o mérito**.
 
 ## 5. Trilha de auditoria (campos mínimos por decisão)
 Toda liberação automática registrada anexa, de forma imutável e datada:

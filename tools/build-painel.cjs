@@ -95,6 +95,29 @@ must(
   'de antecipação · projeção (não medido).</strong> O Gabarito <em>sinalizaria</em> antes de a base de referência atualizar (só na consolidação anual). Meta a validar no backtest contra PRODES/DETER.',
   1
 );
+// COPY do sistema (feedback de teste de usuário): registro profissional, SEM travessão
+// (travessão lê como IA), humano como autoridade (nunca "rebaixado"), e SÓ termos que o
+// CAR/SICAR já usam (fotointerpretação manual · liberação automática · analista responsável ·
+// parecer · cena), nada inventado.
+// "rebaixado para revisão humana" → termo real "fotointerpretação manual".
+must(
+  'na dúvida, o caso é rebaixado para revisão humana.',
+  'o caso segue para fotointerpretação manual.',
+  1
+);
+// "É o seu nome no ato." ("no ato" lê como "na hora") → campo real do SICAR "analista responsável" (×2).
+must('É o seu nome no ato.', 'Você é a analista responsável.', 2);
+// "nada ainda:" (coloquial) → registro profissional com termos reais (×2: revisar/reagendar).
+must('nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',
+     'o caso segue para fotointerpretação manual antes de qualquer parecer.', 1);
+must('nada ainda: o sistema aguarda a próxima imagem de céu limpo para reavaliar.',
+     'o sistema aguarda a próxima cena Sentinel-2 sem nuvem para reavaliar.', 1);
+// TRAVESSÃO fora — "travessão é coisa de IA" (regra do dono). Troca por ponto/vírgula nas
+// strings visíveis e por 'n/d' no fallback de código. O trap abaixo garante zero travessão.
+must('Nativa virou pasto — PRODES 2025 confirma.', 'Nativa virou pasto, confirmado pelo PRODES 2025.', 1);
+must('Estável desde a base — nenhuma mudança.', 'Estável desde a base, sem mudança.', 1);
+must('embaixo do seu dedo — você vê o desmate', 'embaixo do seu dedo. Você vê o desmate', 1);
+must("|| ['—'])[0];", "|| ['n/d'])[0];", 1);
 
 // ════════════════ TRAP — strings proibidas ════════════════
 const FORBIDDEN = [
@@ -103,6 +126,7 @@ const FORBIDDEN = [
   /vs PRODES\b/, /PRODES anual/,                                                   // anti-circularidade
   /aprova(r)? autom[aá]tico/i, /aprova sozinho/i, /fiscal ambiental/i,
   /sat-A-base/, /sat-A-hoje/, /sat-A-pasto/, /sat-fields/, /sat-river/,            // asset ilustrado antigo
+  /—/, /rebaix/i, /seu nome no ato/,                                              // travessão (lê como IA) + cópia ruim
 ];
 for (const re of FORBIDDEN) { const m = html.match(re); if (m) throw new Error(`build-painel TRAP: string proibida "${m[0]}"`); }
 

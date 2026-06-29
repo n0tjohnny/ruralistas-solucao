@@ -290,7 +290,7 @@
             <sc-if value="{{ selDanger }}" hint-placeholder-val="{{ false }}">
               <div style="display:flex; gap:10px; align-items:flex-start; padding:10px 12px; background:rgba(192,87,59,0.1); border:1px solid rgba(192,87,59,0.35); border-radius:10px; margin-bottom:11px;">
                 <span style="width:18px; height:18px; border-radius:6px; background:#C0573B; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; flex:none;">✕</span>
-                <p style="font-size:11.5px; line-height:1.45; margin:0; color:#7A3320;"><strong>Liberação automática bloqueada.</strong> Confiança abaixo do limiar: na dúvida, o caso é rebaixado para revisão humana.</p>
+                <p style="font-size:11.5px; line-height:1.45; margin:0; color:#7A3320;"><strong>Liberação automática bloqueada.</strong> Confiança abaixo do limiar: o caso segue para fotointerpretação manual.</p>
               </div>
             </sc-if>
 
@@ -400,7 +400,7 @@ class Component extends DCLogic {
         changeKind:'conversão', change:true, alert:'PRODES · 2025',
         img:'Sentinel‑2 · 09/03/26', imgShort:'09/03/26', base:'estadual · 2022', score:'conversão p/ pasto', scoreVer:'v2.1',
         recoType:'warn', antecip:41,
-        queueNote:'Nativa virou pasto — PRODES 2025 confirma.',
+        queueNote:'Nativa virou pasto, confirmado pelo PRODES 2025.',
         mudou:'Era vegetação nativa na base de 2022; a imagem de 09/03/26 mostra pastagem. Conversão de nativa para pasto, confirmada pelo PRODES 2025.',
         reco:'Conversão de nativa para pastagem corroborada pelo PRODES 2025 (polígono coincidente), com delta acima do MMU de 6,25 ha. Notificar: a trilha datada sustenta o auto de infração.',
         primary:{label:'Notificar produtor', action:'notificar'},
@@ -430,7 +430,7 @@ class Component extends DCLogic {
         changeKind:'sem delta', change:false, alert:null,
         img:'Sentinel‑2 · 16/03/26', imgShort:'16/03/26', base:'estadual · 2023', score:'estável', scoreVer:'v2.1',
         recoType:'ok', antecip:null,
-        queueNote:'Estável desde a base — nenhuma mudança.',
+        queueNote:'Estável desde a base, sem mudança.',
         mudou:'Nada mudou desde a base de 2023. A cobertura está estável, sem sinal de supressão ou conversão.',
         reco:'Delta nulo no período e confiança acima do limiar. Apta à liberação automática com trilha; recibo anexado ao fluxo da análise dinamizada.',
         primary:{label:'Liberar com trilha', action:'liberar'}, secondary:[] },
@@ -464,10 +464,10 @@ class Component extends DCLogic {
     ];
 
     this.signMap = {
-      notificar:'o auto de notificação ao produtor, com a trilha datada (imagem + alerta + base) anexada como prova. É o seu nome no ato.',
-      liberar:'que o talhão está regular e pode seguir, com recibo auditável anexado à análise dinamizada. É o seu nome no ato.',
-      revisar:'nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',
-      reagendar:'nada ainda: o sistema aguarda a próxima imagem de céu limpo para reavaliar.',
+      notificar:'o auto de notificação ao produtor, com a trilha datada (imagem + alerta + base) anexada como prova. Você é a analista responsável.',
+      liberar:'que o talhão está regular e pode seguir, com recibo auditável anexado à análise dinamizada. Você é a analista responsável.',
+      revisar:'o caso segue para fotointerpretação manual antes de qualquer parecer.',
+      reagendar:'o sistema aguarda a próxima cena Sentinel-2 sem nuvem para reavaliar.',
     };
 
     this.tourSteps = [
@@ -482,7 +482,7 @@ class Component extends DCLogic {
         body:'No meio aparece a imagem de satélite real da fazenda escolhida. O contorno amarelo é o limite do talhão no cadastro; o rio é a linha azul que corta a cena.' },
       { key:'wipe', place:'bottom',
         title:'3 · Antes e depois (arraste)',
-        body:'Pegue a alça no meio do mapa e arraste para os lados. À esquerda fica a base antiga (mata íntegra); à direita, a imagem de hoje. O solo exposto aparece embaixo do seu dedo — você vê o desmate com seus próprios olhos.' },
+        body:'Pegue a alça no meio do mapa e arraste para os lados. À esquerda fica a base antiga (mata íntegra); à direita, a imagem de hoje. O solo exposto aparece embaixo do seu dedo. Você vê o desmate com seus próprios olhos.' },
       { key:'trilha', place:'left',
         title:'4 · A prova guardada',
         body:'Aqui do lado direito fica a prova de cada caso: a foto, a data, o alerta oficial e a base usada. É isso que deixa você assinar com segurança: fica tudo registrado e ninguém pode contestar depois.' },
@@ -666,7 +666,7 @@ const PARCEL='385,300 565,268 760,360 700,520 470,558 368,432';
         { k:'Score · '+sel.scoreVer, val:sel.score, color: sel.recoType==='ok' ? '#7FB07A' : '#C0573B' },
       ];
       const primaryIcon = sel.recoType==='ok' ? '✓' : (sel.recoType==='danger' ? '↻' : '✉');
-      const baseYear = (sel.base.match(/\d{4}/) || ['—'])[0];
+      const baseYear = (sel.base.match(/\d{4}/) || ['n/d'])[0];
       const sc = this._scene(sel);
 
       Object.assign(out, {
