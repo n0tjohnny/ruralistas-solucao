@@ -19,8 +19,8 @@
 **Narração:** "O Gabarito ordena a fila por risco. O score fica invisível aqui — ele só decide a ordem. A analista gasta o olho onde importa: nos talhões que mudaram e na confiança baixa."
 
 ### Cena 3 — O caso, assinável (0:42–1:08) · ~44 palavras
-**Tela:** abrir "Rio Verde · gleba 7" → mapa + trilha de auditoria (recorte Sentinel datado, alerta DETER, base t0, score).
-**Narração:** "Ela abre o caso. Aparece a evidência datada: a imagem Sentinel de 14 de março, o alerta DETER, a base de 2023 e a versão do score. É essa trilha que torna a liberação assinável — e reconstitui o ato depois."
+**Tela:** abrir "Rio Verde · gleba 7" → **arrastar a alça do comparador antes/depois** sobre a imagem de satélite real (cerrado verde de 2018 → solo exposto de 2024, a supressão saltando aos olhos) → a trilha de auditoria à direita (recorte Sentinel datado, alerta DETER, base t0, score), com as 4 evidências acima da dobra.
+**Narração:** "Ela abre o caso e arrasta: à esquerda a base, à direita a imagem de hoje — o desmate aparece com os próprios olhos, em satélite real. Ao lado, a evidência datada: a cena Sentinel, o alerta DETER, a base de 2023, a versão do score. É essa trilha que torna a liberação assinável — e reconstitui o ato depois."
 
 ### Cena 4 — O caso difícil (a força é recusar) (1:08–1:30) · ~38 palavras
 **Tela:** um talhão com borda/nuvem → o sistema marca "Sistema recusou — rever".

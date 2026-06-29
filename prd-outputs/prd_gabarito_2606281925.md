@@ -8,7 +8,7 @@
 | Status | Draft — **direção travada pelo PM** |
 | Fontes | `pm-role.md` (seção **DIREÇÃO DECIDIDA 27/06**) · `reports/09` (dados, prevalece) · `debate-outputs/debate_output_viabilidade-edital-chance_2606271700.md` (10 rounds) · `debate-outputs/debate_output_refutacao-oradores_2606271830.md` (**verificação web 2025-2026**) · `debate_output_council-dor-real-desafio02_2606280330` · `memory/ideas/gabarito/{idea.md,scores.json}` |
 
-> **Mudança vs 5.0 (somente §11):** documenta o **protótipo interativo entregue** em `gabarito.pages.dev/painel` (Painel do Analista) — a tela 1+2 do §11 saíram do conceito e viraram um app React/DCLogic navegável, compilado de forma idempotente por `tools/build-painel.cjs`. Sem mudança de escopo, requisitos funcionais ou métricas; é a materialização da UI já especificada. Detalhe na nova subseção **§11.1**.
+> **Mudança vs 5.0 (somente §11):** documenta o **protótipo interativo entregue** em `gabarito.pages.dev/painel` (Painel do Analista, **v2**) — a tela 1+2 do §11 saíram do conceito e viraram um app React/DCLogic navegável, com **imagem de satélite Sentinel-2 REAL** e comparador antes/depois arrastável, compilado de forma idempotente por `tools/build-painel.cjs`. Sem mudança de escopo, requisitos funcionais ou métricas; é a materialização (com dados reais de imagem) da UI já especificada. Detalhe na subseção **§11.1**.
 
 > **Mudanças vs PRD 4.0 — DECISÕES TRAVADAS (pós-debate viabilidade/edital/chance + refutação adversarial com pesquisa web).** O haCARthon **está acontecendo agora (26–28/06/2026)**; o edital foi reconfirmado na fonte primária.
 >
@@ -160,20 +160,20 @@ Auth: institucional (OEMA). Erros: 422 (cena sem observação válida/nuvem), 40
 
 ### 11.1 Protótipo interativo entregue — `/painel` (Painel do Analista)
 
-As telas (1) Fila e (2) Painel de evidência saíram do conceito: estão **navegáveis** em `gabarito.pages.dev/painel` (app React/DCLogic, **não** página estática). É o artefato que o jurado/analista vê e o que o vídeo de protótipo (≤2 min) filma ao vivo. Compilado de forma **idempotente** por `tools/build-painel.cjs` (mapa de saneamento literal + trap de strings proibidas + asserts; root e `public/` byte-idênticos). Funcionalidades:
+As telas (1) Fila e (2) Painel de evidência saíram do conceito: estão **navegáveis** em `gabarito.pages.dev/painel` (app React/DCLogic, **não** página estática). É o artefato que o jurado/analista vê e o que o vídeo de protótipo (≤2 min) filma ao vivo. **Versão v2** (redesign Claude Design) com **imagem de satélite Sentinel-2 REAL**, compilada de forma **idempotente** por `tools/build-painel.cjs` (transforms IMAGERY · LAYOUT · POLISH · SANITIZE + trap de strings proibidas + asserts; root e `public/` byte-idênticos). Funcionalidades:
 
 | # | Funcionalidade | Por que existe (decisão de produto) |
 |---|---|---|
-| P-1 | **Fila por risco com score invisível** (3 grupos: a revisar · em foco · **Concluídos**) | Hierarquia de informação do council: score roteia, não aparece como número na fila. |
+| P-1 | **Fila por risco com score invisível** (3 grupos: a revisar · liberável · **Concluídos**) | Hierarquia de informação do council: score roteia, não aparece como número na fila. |
 | P-2 | **"O que mudou neste talhão"** — texto claro por caso + "Você assina:" | A analista assina com o próprio nome → cada caso diz, em português, o que está errado e o que ela está assinando (pedido direto do dono). |
-| P-3 | **Mapa gerado por talhão** (PRNG xorshift semeado pelo id) — mosaico, cobertura, rio, pivôs e parcela-foco distintos por caso | Mata o "troco de território e continuo no mesmo território": cada caso tem o seu território. |
-| P-4 | **Antes/depois dramático** (Base = nativa íntegra verde ↔ Sentinel-2 hoje = solo exposto + wash âmbar) | A virada da base precisa ser visível: a mudança que justifica a fila tem de saltar aos olhos. |
-| P-5 | **Mapa com zoom/pan** (+/−, roda do mouse para o cursor, arrastar) | Inspeção real do talhão. Dimensões **medidas do elemento** (`_dims()`), sem fallback hardcoded. |
-| P-6 | **Rodapé de decisão fixo** (`flex:none`) + breakpoint responsivo `≤880px` | Os botões assinar/override nunca cortam, inclusive no mobile. |
-| P-7 | **Trilha de auditoria abrível** (recorte Sentinel datado + alerta + base t0 + versão do score) | É o que torna a liberação assinável e reconstituível (FR-006, US-02). |
-| P-8 | **Recusa visível** (borda/nuvem/classe não calibrada → "Sistema recusou — rever") | Falso-negativo visível = critério de morte: na dúvida vai pra pessoa, e diz por quê. |
+| P-3 | **Mapa de satélite Sentinel-2 REAL por talhão** (EOX cloudless · CC-BY · coordenadas reais em Goiás, via `tools/fetch-satellite.cjs` → `public/assets/sat/`) | Mata o "vitral" e o "mesmo território": cada caso é uma cena de satélite **real** do seu município, com o contorno cadastral do talhão por cima. |
+| P-4 | **Antes/depois arrastável (swipe) entre duas épocas REAIS** (base 2018 × hoje 2024, co-registradas, nos 3 casos de mudança) | A virada precisa ser vista com os próprios olhos **e ser real**: rv7 mostra cerrado verde virando solo exposto; sem cicatriz fabricada. |
+| P-5 | **Nada crítico abaixo da dobra** (veredito + antecipação + as 4 evidências cabem acima do rodapé fixo a 850px) | Queixa direta do dono: a prova mais forte estava enterrada sob scroll. Ritmo vertical apertado no transform LAYOUT. |
+| P-6 | **Rodapé de decisão fixo** (`flex:none`) + breakpoint responsivo `≤900px` | Os botões assinar/override nunca cortam, inclusive no mobile. |
+| P-7 | **Trilha de auditoria** (recorte Sentinel datado + alerta + base t0 + versão do score) acima da dobra | É o que torna a liberação assinável e reconstituível (FR-006, US-02). |
+| P-8 | **Recusa visível** (borda/nuvem/classe não calibrada → "liberação bloqueada · rever") | Falso-negativo visível = critério de morte: na dúvida vai pra pessoa, e diz por quê. |
 
-**Anti-fabricação na tela:** números ilustrativos de mockup marcados `· exemplo`; antecipação marcada `· projeção (não medido)`; nada de resultado medido apresentado como fato. **Anti-circularidade:** "antecipação vs **atualização da base**" (nunca "vs PRODES") — PRODES/DETER é a verdade independente de rotulagem, jamais a base que se corre para bater.
+**Anti-fabricação na tela:** números ilustrativos de mockup marcados `· exemplo`; antecipação marcada `· projeção (não medido)` e em condicional ("**sinalizaria**", nunca "sinalizou"); nada de resultado medido apresentado como fato. **Anti-circularidade:** a antecipação é "antes de a **base de referência** atualizar" (nunca "vs PRODES") — PRODES/DETER é a verdade independente de rotulagem, jamais a base que se corre para bater. O trap do build derruba a compilação se qualquer dessas voltar.
 
 **Como manter:** nunca editar `painel.html` à mão (a próxima recompilação reverte) — correções vivem como transforms em `tools/build-painel.cjs`; verificar com `node tools/build-painel.cjs` (md5 duplo idêntico) + boot real em chromium headless.
 

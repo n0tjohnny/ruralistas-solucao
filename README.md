@@ -7,7 +7,7 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 | URL | O que é | Público |
 |---|---|---|
 | [`/`](https://gabarito.pages.dev/) | Visão do produto | geral |
-| [`/painel`](https://gabarito.pages.dev/painel) | **Painel do Analista — protótipo interativo** (fila por risco, mapa por talhão com zoom/pan, antes/depois, trilha de auditoria assinável, fila Concluídos). App React/DCLogic; **NÃO editar à mão** — compilado por `tools/build-painel.cjs`. É o que o vídeo de protótipo filma ao vivo. | banca / analista |
+| [`/painel`](https://gabarito.pages.dev/painel) | **Painel do Analista — protótipo interativo** (fila por risco, **mapa de satélite Sentinel-2 real** com comparador **antes/depois** arrastável, trilha de auditoria assinável, fila Concluídos). App React/DCLogic; **NÃO editar à mão** — compilado por `tools/build-painel.cjs`. É o que o vídeo de protótipo filma ao vivo. | banca / analista |
 | [`/pitch`](https://gabarito.pages.dev/pitch) | Deck do pitch (13 slides, tecla `N` = narração). Compilado via `tools/build-pitch.cjs` do bundle Claude Design. | banca do haCARthon |
 | [`/entenda`](https://gabarito.pages.dev/entenda) | **Explicador sem jargão** — analogia do GPS, fluxos simples e pitch comercial. | o **time** (entender antes de vender) |
 | [`/fluxos`](https://gabarito.pages.dev/fluxos) | Fluxogramas técnicos (hoje × com o Gabarito × comparativo). | banca / técnico |
@@ -34,7 +34,7 @@ Repositório de **estratégia de produto** para o **haCARthon** (maratona de ino
 | `APRESENTACAO-INTERNA-DESAFIO-02.md` | **Apresentação do time:** problema, gargalos, jornada e conformidade com o edital. Comece por aqui. |
 | `index.html` · `public/index.html` | Página de visão do Gabarito (entregável; cópias idênticas — editar as duas). Deploy via Cloudflare Wrangler. |
 | `pitch.html` · `public/pitch.html` | **Deck do pitch** (`/pitch`, 13 slides). **NÃO editar à mão** — é compilado por `tools/build-pitch.cjs` a partir do bundle Claude Design; cópias idênticas geradas pelo script. |
-| `painel.html` · `public/painel.html` · `support.js` · `public/support.js` | **Painel do Analista — protótipo interativo** (`/painel`, app React/DCLogic). **NÃO editar à mão** — compilado por `tools/build-painel.cjs` (mapa por talhão, zoom/pan, antes/depois, rodapé fixo + responsivo, fila Concluídos); as 4 saídas são geradas byte-idênticas. |
+| `painel.html` · `public/painel.html` · `support.js` · `public/support.js` | **Painel do Analista — protótipo interativo** (`/painel`, app React/DCLogic). **NÃO editar à mão** — compilado por `tools/build-painel.cjs` (imagem Sentinel-2 **real** + comparador antes/depois, rodapé fixo + responsivo, fila Concluídos); as 4 saídas são byte-idênticas. As imagens reais ficam em `public/assets/sat/` e são geradas por `tools/fetch-satellite.cjs`. |
 | `submission/` | Pacote de submissão da Live 7 (ideação, roteiro do protótipo que filma o `/painel`, narração do pitch, receita do backtest, minuta de nota técnica). Ver `submission/README.md`. |
 | `public/entenda.html` | Explicador sem jargão (`/entenda`) para o time. |
 | `public/fluxos.html` | Fluxogramas técnicos (`/fluxos`). |
