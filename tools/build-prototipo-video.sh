@@ -7,8 +7,19 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 ROOT="$PWD"; TMP="$(mktemp -d)"; CH=/usr/bin/chromium-browser
-OUT="$ROOT/submission/prototipo-gabarito.mp4"
-RATE=168   # espeak wpm; bump if total creeps over budget
+VOICE="${1:-espeak}"   # espeak (license-clean, robótica) | xtts (natural pt-BR, modelo CPML não-comercial em cache)
+RATE=168               # espeak wpm; bump if total creeps over budget
+XTTS=tools/xtts-venv/bin/tts; XSPK="Ana Florence"
+if [ "$VOICE" = "xtts" ]; then OUT="$ROOT/submission/prototipo-gabarito-voz-natural.mp4";
+else OUT="$ROOT/submission/prototipo-gabarito.mp4"; fi
+synth () { # $1=text $2=outwav
+  if [ "$VOICE" = "xtts" ]; then
+    "$XTTS" --model_name tts_models/multilingual/multi-dataset/xtts_v2 \
+      --text "$1" --language_idx pt --speaker_idx "$XSPK" --out_path "$2" >/dev/null 2>&1
+  else
+    espeak-ng -v pt-br -s $RATE -p 42 "$1" -w "$2" 2>/dev/null
+  fi
+}
 
 # --- narration per scene (number words expanded for clean TTS) ---
 N1="Validar um C A R é um ato com peso jurídico, leva o nome de uma servidora. A máquina já tria sessenta e seis mil cadastros por dia, mas o país concluiu só cinco vírgula nove por cento. O gargalo não é detecção. É uma decisão que alguém aceite assinar."
@@ -35,13 +46,16 @@ shot_painel ari3 s4.png                                                         
 magick -density 150 "submission/gabarito-pitch.pdf[6]" -background "#25382A" -flatten "$TMP/s5.png"  # Impacto/backtest
 
 # --- 2. TTS + per-scene clips ---
-echo "[2/4] narration + clips…"
+echo "[2/4] narration + clips… (voz=$VOICE)"
+if [ "$VOICE" = "xtts" ]; then AF="atempo=1.06,apad=pad_dur=0.4"; else AF="apad=pad_dur=0.45"; fi
+# xtts: gera as 5 narrações carregando o modelo UMA vez (CLI recarrega 1.8GB por chamada)
+if [ "$VOICE" = "xtts" ]; then tools/xtts-venv/bin/python tools/xtts-narrate.py "$TMP"; fi
 i=0; : > "$TMP/list.txt"
 for VAR in N1 N2 N3 N4 N5; do
   i=$((i+1)); txt="${!VAR}"
-  espeak-ng -v pt-br -s $RATE -p 42 "$txt" -w "$TMP/a$i.wav" 2>/dev/null
+  [ -f "$TMP/a$i.wav" ] || synth "$txt" "$TMP/a$i.wav"
   ffmpeg -y -loglevel error -loop 1 -i "$TMP/s$i.png" -i "$TMP/a$i.wav" \
-    -af "apad=pad_dur=0.45" -shortest \
+    -af "$AF" -shortest \
     -c:v libx264 -tune stillimage -r 25 -pix_fmt yuv420p \
     -vf "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x25382A,setsar=1" \
     -c:a aac -b:a 128k "$TMP/clip$i.mp4"
