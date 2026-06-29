@@ -74,34 +74,55 @@ const forbidden = ['Testamos', 'resultado publicado', 'a gente avisou', 'O resul
 const leaked = forbidden.filter(s => sections.includes(s));
 if (leaked.length) throw new Error('SANEAMENTO falhou — strings fabricadas/inconsistentes sobreviveram: ' + leaked.join(', '));
 
-// 3. analogia do GPS — inserir logo após a seção "Quem assina"
-const gps = `
-  <!-- ================= 2B · A ANALOGIA (GPS DESATUALIZADO) ================= -->
-  <section class="stage" data-label="A analogia" data-screen-label="A analogia" data-speaker-notes="Pra explicar sem termo técnico: o mapa que a Luana usa pra conferir é como um GPS desatualizado. Ele mostra as ruas de anos atrás — tem rua nova, tem rua que virou rio. Você não confia, então dirige devagar, olhando pela janela. É exatamente o que ela faz: sem confiar no mapa, confere tudo na mão. O Gabarito é a atualização automática desse GPS — mostra só o que mudou." style="background:#F6EFE0; color:#2E2519; padding:96px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">
-    <div style="max-width:1560px; margin:0 auto; width:100%;">
-      <p style="font-size:22px; letter-spacing:4px; text-transform:uppercase; color:#C0573B; font-weight:700; margin:0 0 26px;">Pra entender em 10 segundos</p>
-      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:78px; line-height:1.04; margin:0 0 44px; letter-spacing:-1.4px;">O mapa do governo é um <span style="color:var(--ga-accent,#D6A23E);">GPS desatualizado</span>.</h2>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:stretch;">
-        <div style="background:#FBEDE6; border:1px solid #E8C3B4; border-radius:24px; padding:46px 44px;">
-          <div style="font-size:52px; margin-bottom:18px;">\u{1F5FA}\u{FE0F}</div>
-          <p style="font-size:30px; line-height:1.45; margin:0; color:#7A2E1C;">Seu GPS ainda mostra as ruas de anos atrás. Tem rua nova, tem rua que virou rio. Você <strong>não confia</strong> — então dirige devagar, olhando pela janela.</p>
-        </div>
-        <div style="background:#25382A; border-radius:24px; padding:46px 44px; color:#F3ECDC;">
-          <div style="font-size:52px; margin-bottom:18px;">\u{1F6F0}\u{FE0F}</div>
-          <p style="font-size:30px; line-height:1.45; margin:0; color:#DCD3BE;">A base que a Luana usa pra conferir é assim: feita anos atrás. Sem confiar, ela confere tudo à mão. <strong style="color:#F3ECDC;">O Gabarito é a atualização automática desse GPS</strong> — mostra só o que mudou.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-`;
-// ponto de inserção: fim da seção "Quem assina" (primeira </section> após data-label="Quem assina")
-const qaIdx = sections.indexOf('data-label="Quem assina"');
-if (qaIdx < 0) throw new Error('não achei a seção Quem assina');
-const closeIdx = sections.indexOf('</section>', qaIdx) + '</section>'.length;
-sections = sections.slice(0, closeIdx) + '\n' + gps + sections.slice(closeIdx);
+// 3. ESTRUTURA OFICIAL DO PITCH (Live 08): 10 slides na ordem INTRODUÇÃO · PROBLEMA ·
+// SOLUÇÃO · COMO FUNCIONA · DIFERENCIAIS · IMPACTO · TIME · PRÓXIMOS PASSOS · ENCERRAMENTO.
+// Sem a analogia GPS (vive em /entenda). Cortamos 3 seções redundantes e injetamos o TIME.
+function dropSection(label) {
+  const i = sections.indexOf('data-label="' + label + '"');
+  if (i < 0) throw new Error('dropSection: não achei ' + label);
+  const start = sections.lastIndexOf('<section', i);
+  const end = sections.indexOf('</section>', i) + '</section>'.length;
+  sections = sections.slice(0, start) + sections.slice(end);
+}
+['A virada', 'Frase âncora', 'Honestidade'].forEach(dropSection);
+
+// 3.1 kickers ganham o rótulo da estrutura oficial (e somem travessões: "— é coisa de IA")
+const kickers = [
+  ['Os números do próprio CAR', 'Problema · os números do CAR'],
+  ['O produto, na prática', 'Solução · o produto na prática'],
+  ['Por que vamos ganhar', 'Diferenciais · por que vamos ganhar'],
+  ['A prova — protótipo do haCARthon', 'Impacto esperado · a prova que vamos medir'],
+];
+for (const [a, b] of kickers) sections = sections.split(a).join(b);
+
+// 3.2 menos texto por slide (Live 08 pede sucinto): encurta parágrafos e tira travessões
+const trims = [
+  ['É ela quem olha a fila de propriedades e decide cada caso. No fim, é o nome dela na aprovação ou na notificação. O que ela quer não é um número novo — é <strong style="color:#F3ECDC;">uma fila que para de crescer</strong> e um parecer que ela aceita assinar.',
+   'No fim, é o nome dela em cada CAR que libera. O que ela quer não é um mapa novo, é <strong style="color:#F3ECDC;">uma fila que para de crescer</strong> e um parecer que ela aceita assinar.'],
+  ['Compara um mapa-base aberto com imagens de satélite gratuitas e os alertas oficiais de desmatamento. Mostra onde a base realmente envelheceu.',
+   'Cruza o mapa-base com satélite grátis e alertas oficiais. Aponta onde a base envelheceu.'],
+  ['Em vez de redesenhar a propriedade inteira, atualiza só a parte que mudou — e uma pessoa revisa ali mesmo. O vaivém de meses entre estado e empresa vira um fluxo só.',
+   'Atualiza só a parte que mudou, e uma pessoa revisa ali mesmo. O vaivém de meses vira um fluxo só.'],
+  ['Mapa novo em formato aberto, com uma nota de risco que organiza a fila e a evidência datada pra decidir. Automático onde a confiança é alta; humano onde é baixa.',
+   'Mapa novo e aberto, com a nota de risco que ordena a fila e a prova datada. Automático onde a confiança é alta, humano onde é baixa.'],
+];
+for (const [a, b] of trims) sections = sections.split(a).join(b);
+
+// 3.3 slide TIME (não existe no bundle) — injeta antes de "A chamada".
+// Sem nomes inventados: descreve o time por função + o método (nosso diferencial real).
+const time = `\n  <!-- ================= TIME ================= -->\n  <section class="stage" data-label="Time" data-screen-label="Time" data-speaker-notes="Somos um time pequeno e multidisciplinar. O que nos diferencia é o método: não fomos atrás de mais detecção, fomos atrás da dor real, a decisão que ninguém assina, com debates estruturados e uma verificação adversarial dos nossos próprios números. As decisões de produto são nossas; a IA foi apoio." style="background:#1F2D22; color:#F3ECDC; padding:90px 120px; display:flex; flex-direction:column; justify-content:center; font-family:'Hanken Grotesk',sans-serif;">\n    <div style="max-width:1560px; margin:0 auto; width:100%;">\n      <p style="font-size:21px; letter-spacing:4px; text-transform:uppercase; color:var(--ga-accent,#D6A23E); font-weight:700; margin:0 0 18px;">Time</p>\n      <h2 style="font-family:'Spectral',serif; font-weight:700; font-size:62px; line-height:1.05; margin:0 0 18px; letter-spacing:-1px;">Time pequeno, método de gente grande.</h2>\n      <p style="font-size:23px; line-height:1.5; color:#9FB191; max-width:1000px; margin:0 0 40px;">Equipe Gabarito · haCARthon 2026 · Desafio 02. O que nos diferencia não é o tamanho, é o método: fomos atrás da dor real, não da feature fácil.</p>\n      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:22px;">\n        <div style="background:#25382A; border:1px solid #2f4733; border-radius:18px; padding:30px 28px;"><p style="font-family:'Spectral',serif; font-size:24px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">Produto &amp; estratégia</p><p style="font-size:18px; line-height:1.45; color:#C7CFB9; margin:0;">Achou a dor-raiz (a decisão que ninguém assina) em 8 debates e no Council.</p></div>\n        <div style="background:#25382A; border:1px solid #2f4733; border-radius:18px; padding:30px 28px;"><p style="font-family:'Spectral',serif; font-size:24px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">Geo &amp; dados</p><p style="font-size:18px; line-height:1.45; color:#C7CFB9; margin:0;">Sentinel-2 + PRODES/DETER, score por talhão, tudo aberto e gratuito.</p></div>\n        <div style="background:#25382A; border:1px solid #2f4733; border-radius:18px; padding:30px 28px;"><p style="font-family:'Spectral',serif; font-size:24px; font-weight:700; color:#F3ECDC; margin:0 0 8px;">Política &amp; conformidade</p><p style="font-size:18px; line-height:1.45; color:#C7CFB9; margin:0;">Governança (SFB-serviço, ABEMA, Fundo Amazônia) e 100% dentro do edital.</p></div>\n      </div>\n      <p style="margin:34px 0 0; font-size:16px; line-height:1.5; color:#7E8E72;">As escolhas de produto e os cortes de escopo são da equipe. A IA foi apoio: pesquisa, verificação dos números, redação e protótipo.</p>\n    </div>\n  </section>\n`;
+const chamadaIdx = sections.indexOf('data-label="A chamada"');
+if (chamadaIdx < 0) throw new Error('não achei a seção A chamada');
+const chamadaStart = sections.lastIndexOf('<section', chamadaIdx);
+sections = sections.slice(0, chamadaStart) + time + sections.slice(chamadaStart);
 
 let out = preamble + sections + '\n\n' + postamble;
+// voz natural/humana (igual à página #perguntas, que tem 0 travessões): "— é coisa de IA".
+// Todo travessão aqui é " — " (espaçado) em texto/comentário, nunca em CSS/JS — vírgula é segura.
+out = out.split(' — ').join(', ');
+if (out.includes('—')) throw new Error('sobrou travessão (não espaçado) — revisar');
 const nSlides = (out.match(/<section class="stage"/g) || []).length;
+if (nSlides !== 10) throw new Error('esperado 10 slides (estrutura Live 08), veio ' + nSlides);
 // contador estático (antes do JS rodar / fallback de print) reflete a contagem real
 out = out.replace(/(id="counter">)[^<]*(<)/, "$11 / "+nSlides+"$2");
 fs.writeFileSync(path.join(ROOT, 'pitch.html'), out);
