@@ -105,8 +105,9 @@ must(
   'o caso segue para fotointerpretação manual.',
   1
 );
-// "É o seu nome no ato." ("no ato" lê como "na hora") → campo real do SICAR "analista responsável" (×2).
-must('É o seu nome no ato.', 'Você é a analista responsável.', 2);
+// "É o seu nome no ato." era redundante/ambíguo; e "analista responsável" ali não faz sentido.
+// O "Você assina:" já diz que a decisão é dela → removo a frase final de vez (×2).
+must(' É o seu nome no ato.', '', 2);
 // "nada ainda:" (coloquial) → registro profissional com termos reais (×2: revisar/reagendar).
 must('nada ainda: o caso vai para fotointerpretação manual antes de qualquer decisão.',
      'o caso segue para fotointerpretação manual antes de qualquer parecer.', 1);
