@@ -101,6 +101,14 @@ must("    window.removeEventListener('mousemove', this._mmH);\n    window.remove
 must('_mapMove(e){ if(!this._wipe) return; var pct=Math.max(5,Math.min(95,((e.clientX-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }',
      '_mapMove(e){ if(!this._wipe) return; var cx=(e.touches&&e.touches[0])?e.touches[0].clientX:e.clientX; if(e.touches&&e.cancelable) e.preventDefault(); var pct=Math.max(5,Math.min(95,((cx-this._ml)/this._mw)*100)); this.setState({ wipe:pct }); }', 1);
 
+// A legenda usa left:calc(50% - 54px) p/ desviar do painel creme (382px) à direita no desktop.
+// No mobile o painel não fica sobreposto, então esse empurrão de 54px corta a legenda fora da
+// borda esquerda em telas estreitas (≤360px). Marca a legenda e recentra em 50% no @media.
+must('<div style="position:absolute; bottom:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:14px;',
+     '<div data-legend="1" style="position:absolute; bottom:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:14px;', 1);
+must('order:3;box-shadow:none!important;}\n  }',
+     'order:3;box-shadow:none!important;}\n    [data-legend]{left:50%!important;max-width:94%!important;}\n  }', 1);
+
 // ════════════════ SANITIZE — anti-fabricação ════════════════
 // "sinalizou" (passado) afirma um resultado medido. Vira condicional + marcador de projeção.
 // (O número de dias é ilustrativo; o bloco passa a se declarar projeção, não fato.)
@@ -159,6 +167,7 @@ const MUST = [
   '<x-dc>', 'data-dc-script', './support.js',
   // mobile: comparador responde ao toque
   "window.addEventListener('touchstart'", "window.addEventListener('touchmove'", 'e.touches&&e.touches[0]', "closest('[role=\"slider\"]')",
+  'data-legend="1"', '[data-legend]{left:50%!important;',
 ];
 for (const s of MUST) { if (!html.includes(s)) throw new Error(`build-painel ASSERT: faltou "${s}"`); }
 // 13 referências a imagem real (3 pares base+hoje = 6, 6 hoje únicas, 1 fallback)

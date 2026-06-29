@@ -30,6 +30,7 @@
     .ga-main>section[data-tour="map"]{position:relative!important;inset:auto!important;height:54vh!important;min-height:320px!important;order:1;}
     .ga-main>aside[data-tour="fila"]{position:static!important;width:auto!important;inset:auto!important;border-radius:0!important;max-height:40vh;order:2;box-shadow:none!important;}
     .ga-main>aside.ga-cream{position:static!important;width:auto!important;inset:auto!important;border-radius:0!important;height:auto!important;order:3;box-shadow:none!important;}
+    [data-legend]{left:50%!important;max-width:94%!important;}
   }
 </style>
 </helmet>
@@ -214,7 +215,7 @@
       </sc-if>
 
       <!-- legenda + coordenadas (na faixa livre, fora do painel) -->
-      <div style="position:absolute; bottom:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:14px; padding:7px 13px; background:rgba(20,30,23,0.8); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.07); border-radius:11px; box-shadow:0 8px 22px rgba(0,0,0,0.3); max-width:92%;">
+      <div data-legend="1" style="position:absolute; bottom:14px; left:calc(50% - 54px); transform:translateX(-50%); display:flex; align-items:center; gap:14px; padding:7px 13px; background:rgba(20,30,23,0.8); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.07); border-radius:11px; box-shadow:0 8px 22px rgba(0,0,0,0.3); max-width:92%;">
         <div style="display:flex; flex-wrap:wrap; gap:11px;">
           <sc-for list="{{ legend }}" as="chip" hint-placeholder-count="4">
             <span style="display:flex; align-items:center; gap:6px; font-size:10.5px; font-weight:600; color:#CFD7C2; white-space:nowrap;"><span style="width:9px; height:9px; border-radius:3px; background:{{ chip.color }}; flex:none;"></span>{{ chip.label }}</span>
